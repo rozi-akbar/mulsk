@@ -34,12 +34,31 @@
                 <div class="heading bgbl dn">
                     <a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_product_description"><span class="txt_h_tab">Introduction</span><span class="nav_link_icon ml__5"></span></a>
                 </div>
-                <div class="sp-tab-content">
-                    <p class="mb__40 cb">
-                        Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse
-                        id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus
-                        nunc ullamcorper orci.
+                <div class="sp-tab-content cb">
+                    <h3>INTRODUCTION</h3>
+                    <p style="text-indent: 50px; text-align: justify;">
+                        Berbicara mengenai cara merawat kesehatan dan kecantikan kulit biasanya bantal menjadi hal yang tak terpikirkan, padahal siapa sangka bila bantal yang kita gunakan saat tidur dapat berperan besar dalam kesehatan dan kecantikan kulit kita. Walaupun tampaknya sepele ternyata bahan sarung bantal yang digunakan dapat berdampak pada kulit wajah. Penggunaan sarung bantal berbahan polyester memiliki kelemahan tidak tahan terhadap suhu panas dan tidak menyerap keringat, terlebih jika sarung bantal tersebut tidak bersih dan teksturnya yang kasar dapat mengakibatkan iritasi pada kulit mulai dari berjerawat, kusam hingga keriput pada wajah.
                     </p>
+                    <p style="text-indent: 50px; text-align: justify;">
+                        Dilansir dari Nakita.id hal tersebut juga dikemukakan oleh Holly Smith seorang ahli kebugaran yang berada di North Carolina mencoba membuktikannya selama satu bulan Smith mencoba tidur dengan menggunakan sarung bantal sutra. Smith mengatakan bahwa kulit dan rambutnya menjadi lebih halus dan sehat, sehingga penggunaan sarung bantal berbahan sutra dapat membantu memperlambat tanda-tanda penuaan.
+                    </p>
+                    <div style="text-align: center;">
+                        <img class="img-fluid" src="assets/images/introduction.png">
+                    </div>
+                    <p style="text-indent: 50px; text-align: justify;padding-top: 15px;">
+                        Penelitian ini juga dipublikasikan dalam Journal of Cosmetics, Dermatological Sciences and Applications. Laporan menunjukkan garis tidur akan terjadi ketika ada ketegangan jangka panjang yang berulang pada kulit. Studi mengungkapkan peningkatan rata-rata 12% pada kerutan ini membutuhkan 28 hari untuk menghilangkan sumber gesekan. Pencegahannya yaitu dengan menggunakan <strong>sarung bantal sutra</strong> agar dapat merasakan <strong>efek anti-aging</strong>. Kejadian tersebut juga didukung oleh pernyataan dari model Victoria Secret, <strong>Rosie Huntington-Whiteley</strong> yang dikutip oleh Health.com. <strong>Rosie</strong> mengatakan salah satu tips menjaga kesehatan pada kulit wajah yaitu dengan menggunakan sarung bantal berbahan sutra.
+                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid" src="assets/images/sandy.png">
+                        </div>
+                        <div class="col-8">
+                            <p style="text-indent: 50px; text-align: justify;">
+                                Our Founder, <strong>Shandy Purnamasari</strong> has created this premium-quality <strong>Mulberry Silk PIllowcases</strong> to help us have a better quality sleep, with anti-aging and hypoallergenic quality. Available to purchase through our official store & resellers, now you can enjoy your beauty sleep and wake up with glowing skin and smooth hair!
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="panel entry-content sp-tab des_mb_2 des_style_1 dn" id="tab_wash_and_care">
@@ -105,13 +124,13 @@
                     </div>
                     <!--shipping info-->
                     <div class="kalles-section nt_section type_shipping kalles-section__type_shipping">
-                        <div class="container bgbl">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-12" style="text-align: center;">
-                                <h3>Mulsk Certifications :</h3>
+                                    <h3>Mulsk Certifications :</h3>
                                 </div>
                             </div>
-                            <br/>
+                            <br />
                             <div class="row fl_wrap fl_wrap_md oah use_border_false">
                                 <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-0">
                                     <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
