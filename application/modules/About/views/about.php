@@ -184,8 +184,7 @@
         <!-- end description and review -->
 
     </div>
-
-    <div class="clearfix"></div>
+    <br />
 
     <script src="assets/js/photoswipe.min.js"></script>
     <script src="assets/js/photoswipe-ui-default.min.js"></script>
