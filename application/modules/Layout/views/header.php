@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,300i,400,400i,500,500i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-icon.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-icon.min.css">
+    <link rel="stylesheet" href="assets/css/font-futura.css">
+    <link rel="stylesheet" href="assets/css/font-evenir-next-rounded.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/defined.css">
     <link rel="stylesheet" href="assets/css/base.css">
@@ -45,13 +47,13 @@
                                     <nav class="nt_navigation tc hover_side_up nav_arrow_false">
                                         <ul id="nt_menu_id" class="nt_menu in_flex al_center">
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">HOME</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Home')?>">HOME</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">ABOUT MULSK</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('About')?>">ABOUT MULSK</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">PRODUCTS</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Products')?>">PRODUCTS</a>
                                             </li>
                                             <li class="menu-item branding ts__05 lh__1">
                                                 <a class="lh__1 flex al_center pr" href="#">
@@ -61,13 +63,13 @@
                                                 </a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">HOW TO BUY</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('How')?>">HOW TO BUY</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">BLOG</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Blog')?>">BLOG</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="index.html">CONTACT US</a>
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Contack_Us')?>">CONTACT US</a>
                                             </li>
                                         </ul>
                                     </nav>
