@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home-default.css">
+    <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
 
     <style>
         .main-logo {
@@ -47,13 +49,13 @@
                                     <nav class="nt_navigation tc hover_side_up nav_arrow_false">
                                         <ul id="nt_menu_id" class="nt_menu in_flex al_center">
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Home')?>">HOME</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Home') ?>">HOME</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('About')?>">ABOUT MULSK</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('About') ?>">ABOUT MULSK</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Products')?>">PRODUCTS</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Products') ?>">PRODUCTS</a>
                                             </li>
                                             <li class="menu-item branding ts__05 lh__1">
                                                 <a class="lh__1 flex al_center pr" href="#">
@@ -63,13 +65,13 @@
                                                 </a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('How')?>">HOW TO BUY</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('How') ?>">HOW TO BUY</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Blog')?>">BLOG</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Blog') ?>">BLOG</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Contack_Us')?>">CONTACT US</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Contack_Us') ?>">CONTACT US</a>
                                             </li>
                                         </ul>
                                     </nav>

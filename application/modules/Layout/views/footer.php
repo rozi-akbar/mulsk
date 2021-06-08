@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 mb__50 order-lg-2 order-1">
+                    <div class="col-lg-2 col-md-6 col-12 mb__50 order-lg-2 order-1">
                         <div class="widget widget_nav_menu">
                             <div class="menu_footer widget_footer">
                                 <ul class="menu">
@@ -52,13 +52,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 mb__50 order-lg-5 order-1">
+                    <div class="col-lg-4 col-md-6 col-12 mb__50 order-lg-5 order-1">
                         <div class="widget widget_text">
                             <p>
                                 <i class="pegk pe-7s-mail"></i>
-                                <span><a href="#"><span class="__cf_email__">info@mulskid.com</span></a></span>
+                                <span><a href="#"><span class="__cf_email__">mulskmulskbeauty@gmail.com</span></a></span>
                             </p>
-                            <p><i class="pegk pe-7s-call"></i> <span>+62 812 2244 3455 </span></p>
+                            <p><i class="pegk pe-7s-call"></i> <span>+62 822-3248-1689</span></p>
                             <div class="nt-social">
                                 <a href="https://www.facebook.com/" class="facebook cb ttip_nt tooltip_top">
                                     <span class="tt_txt">Follow on Facebook</span>
@@ -689,8 +689,6 @@
 <!-- back to top button-->
 <a id="nt_backtop" class="pf br__50 z__100 des_bt1" href="#"><span class="tc br__50 db cw"><i class="pr pegk pe-7s-angle-up"></i></span></a>
 
-<script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
-<script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/jarallax.min.js"></script>
 <script src="assets/js/packery.pkgd.min.js"></script>
 <script src="assets/js/jquery.hoverIntent.min.js"></script>

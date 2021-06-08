@@ -223,7 +223,7 @@
         <div class="container">
             <div class="wrap_title mb__30 des_title_2">
                 <h3 class="section-title tc pr flex fl_center al_center fs__24 title_2">
-                    <span class="mr__10 ml__10">LATES FROM BLOG</span>
+                    <span class="mr__10 ml__10">LATEST FROM BLOG</span>
                 </h3>
                 <span class="dn tt_divider">
                     <span></span><i class="dn clprfalse title_2 la-pencil-alt"></i><span></span>
