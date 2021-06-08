@@ -41,46 +41,32 @@
                     <div class="header__mid">
                         <div class="container">
                             <div class="row al_center css_h_se">
-                                <div class="col-md-4 col-3 dn_lg">
-                                    <a href="#" data-id="#nt_menu_canvas" class="push_side push-menu-btn  lh__1 flex al_center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
-                                            <rect width="30" height="1.5"></rect>
-                                            <rect y="7" width="20" height="1.5"></rect>
-                                            <rect y="14" width="30" height="1.5"></rect>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6 tc tl_lg main-logo">
-                                    <div class=" branding ts__05 lh__1">
-                                        <a class="dib" href="home-default.html">
-                                            <img class="w__95 logo_normal dn db_lg" src="assets/images/svg/mulsk2.svg">
-                                            <img class="w__100 logo_sticky dn" src="assets/images/svg/mulsk2.svg">
-                                            <img class="w__100 logo_mobile dn_lg" src="assets/images/svg/mulsk2.svg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col dn db_lg">
-                                    <nav class="nt_navigation kl_navigation tc hover_side_up nav_arrow_false">
-                                        <ul id="nt_menu_id" class="nt_menu in_flex wrap al_center">
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                <div class="col-12">
+                                    <nav class="nt_navigation tc hover_side_up nav_arrow_false">
+                                        <ul id="nt_menu_id" class="nt_menu in_flex al_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">HOME</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">ABOUT MULSK</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">PRODUCTS</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
-                                                <img src="assets/images/svg/mulsk.svg" width="125px">
+                                            <li class="menu-item branding ts__05 lh__1">
+                                                <a class="lh__1 flex al_center pr" href="#">
+                                                    <img class="w__100 logo_normal dn db_lg max-width__95px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                    <img class="w__100 logo_sticky dn max-width__100px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                    <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                </a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">HOW TO BUY</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">BLOG</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="index.html">CONTACT US</a>
                                             </li>
                                         </ul>
