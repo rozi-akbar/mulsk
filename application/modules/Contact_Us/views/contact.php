@@ -18,8 +18,8 @@
             <div class="contact-form col-12 col-md-6 order-1 order-md-0">
                 <h3 class="mb__20 mt__40">CONTACT INFORMATION</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed faucibus turpis in eu mi bibendum neque egestas congue. </p>
-                <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:info@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">[email&#160;protected]</a></p>
-                <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">[Hubungi Admin melalui WhatsApp]</a></p>
+                <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:hello@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">hello@mulskid.com</a></p>
+                <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
                 <div class="nt-social">
                     <a href="https://www.facebook.com/" class="facebook cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Facebook</span>

@@ -65,7 +65,7 @@
                                                 </a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?= site_url('How') ?>">HOW TO BUY</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('How_to_Buy') ?>">HOW TO BUY</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Blog') ?>">BLOG</a>

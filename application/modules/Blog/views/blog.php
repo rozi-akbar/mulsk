@@ -9,68 +9,35 @@
                         <!--articles-->
                         <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
                             <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
+                                <a class="mb__20 db pr oh" href="#">
                                     <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-01.jpg"></div>
                                 </a>
                                 <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:22:00Z">April 6, 2020</time></span></span>
+                                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
                                     <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">Spring – Summer Trending 2020</a>
+                                        <a class="cd chp open" href="#">Blog Artikel Judul #3</a>
                                     </h4>
                                 </div>
                             </article>
                             <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
-                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-02.jpg"></div>
+                                <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202102') ?>">
+                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/silk.png"></div>
                                 </a>
                                 <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:22:00Z">April 6, 2020</time></span></span>
+                                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
                                     <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">The Easiest Way to Break Out on Top</a>
+                                        <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</a>
                                     </h4>
                                 </div>
                             </article>
                             <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
-                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-03.jpg"></div>
+                                <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202101') ?>">
+                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog_1.jpg"></div>
                                 </a>
                                 <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:17:00Z">April 6, 2020</time></span></span>
+                                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">Juni 12, 2021</time></span></span>
                                     <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">Style for couple in Weeding season</a>
-                                    </h4>
-                                </div>
-                            </article>
-                            <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
-                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-04.jpg"></div>
-                                </a>
-                                <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:14:00Z">April 6, 2020</time></span></span>
-                                    <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">Cool Spring Street Style Looks</a>
-                                    </h4>
-                                </div>
-                            </article>
-                            <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
-                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-05.jpg"></div>
-                                </a>
-                                <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:17:00Z">April 6, 2020</time></span></span>
-                                    <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">Style for couple in Weeding season</a>
-                                    </h4>
-                                </div>
-                            </article>
-                            <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                                <a class="mb__20 db pr oh" href="blog-post-with-instagram-shop.html">
-                                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-06.jpg"></div>
-                                </a>
-                                <div class="post-info mb__5">
-                                    <span class="post-author mr__5">By <span class="cd">admin</span></span><span class="post-time">on <span class="cd"><time datetime="2020-04-06T02:14:00Z">April 6, 2020</time></span></span>
-                                    <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="blog-post-with-instagram-shop.html">Cool Spring Street Style Looks</a>
+                                        <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">Pentingnya tidur berkualitas dengan memakai perlengkapan yang mendukung: sarung bantal dengan material utama mulberry silk.</a>
                                     </h4>
                                 </div>
                             </article>
@@ -82,8 +49,8 @@
                             <nav class="nt-pagination w__100 tc paginate_ajax">
                                 <ul class="pagination-page page-numbers">
                                     <li><span class="page-numbers current">1</span></li>
-                                    <li><a class="page-numbers" href="#">2</a></li>
-                                    <li><a class="page-numbers" href="#">3</a></li>
+                                    <!-- <li><a class="page-numbers" href="#">2</a></li>
+                                    <li><a class="page-numbers" href="#">3</a></li> -->
                                     <li><a href="#" class="next page-numbers">Next</a></li>
                                 </ul>
                             </nav>

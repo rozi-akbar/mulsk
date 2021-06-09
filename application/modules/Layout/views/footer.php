@@ -26,13 +26,13 @@
                             <div class="menu_footer widget_footer">
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="shop-filter-options.html">About Us</a>
+                                        <a href="<?=site_url('About')?>">About Us</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="shop-filter-options.html">Products</a>
+                                        <a href="<?=site_url('Products')?>">Products</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="shop-1600px-layout.html">How to Buy</a>
+                                        <a href="<?=site_url('How_to_Buy')?>">How to Buy</a>
                                     </li>
                                 </ul>
                             </div>
@@ -43,10 +43,10 @@
                             <div class="menu_footer widget_footer">
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="about-us.html">Blog</a>
+                                        <a href="<?=site_url('Blog')?>">Blog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="about-us.html">Contact Us</a>
+                                        <a href="<?=site_url('Contact_Us')?>">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,9 +56,9 @@
                         <div class="widget widget_text">
                             <p>
                                 <i class="pegk pe-7s-mail"></i>
-                                <span><a href="mailto:info@mulskid.com"><span class="__cf_email__">info@mulskid.com</span></a></span>
+                                <span><a href="mailto:hello@mulskid.com"><span class="__cf_email__">hello@mulskid.com</span></a></span>
                             </p>
-                            <p><i class="pegk pe-7s-call"></i> <span>+62 822-3248-1689</span></p>
+                            <p><i class="pegk pe-7s-call"></i> <a href="https://wa.me/+6282232481689">Hubungi Admin melalui WhatsApp</a></p>
                             <div class="nt-social">
                                 <a href="https://www.facebook.com/" class="facebook cb ttip_nt tooltip_top">
                                     <span class="tt_txt">Follow on Facebook</span>

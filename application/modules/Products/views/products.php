@@ -27,8 +27,8 @@
                             <div class="row theiaStickySidebar">
                                 <div class="col-12 col-lg col_thumb">
                                     <div class="p-thumb p-thumb_ppr images sp-pr-gallery equal_nt nt_contain ratio_imgtrue position_8 nt_slider pr_carousel" data-flickity='{"initialIndex": ".media_id_001","fade":true,"draggable":">1","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : 6,"pageDots": false,"rightToLeft": false }'>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-cap="Blush Beanie - color pink , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-cap="Blush Beanie - color grey , size M"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-cap="Silk Pillowcase - color gold"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-cap="Silk Pillowcase - color silver"></div>
                                     </div>
                                     <div class="p_group_btns pa flex">
                                         <button class="br__40 tc flex al_center fl_center show_btn_pr_gallery ttip_nt tooltip_top_left">
@@ -256,7 +256,7 @@
 
         <div class="clearfix">
             <div style="width: 300px; margin: auto;">
-                <a href="<?= site_url('How') ?>" style="background-color: #F7B538; color: black; text-align: center; border: none;" class="button w__100 mt__20 d-inline-block">
+                <a href="<?= site_url('How_to_Buy') ?>" style="background-color: #F7B538; color: black; text-align: center; border: none;" class="button w__100 mt__20 d-inline-block">
                     <span class="txt_add ">I want to buy this!</span>
                 </a>
             </div>
