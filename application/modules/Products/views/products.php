@@ -132,10 +132,7 @@
                         </div>
                         <div class="sp-tab-content cb">
                             <p class="mb__5">
-                                - Terbuat dari bahan 100% mulberry silk berkualitas tinggi
-                            </p>
-                            <p>
-                                Sarung bantal Mulsk menggunakan bahan 100% mulberry silk berkualitas tinggi yang terjamin halus dan lembut. Ketebalan gramasinya 22 momme untuk memberikan kelembutan dan kenyamanan yang maksimal. Dengan ketebalan itu, sarung bantal Mulsk dapat dikategorikan sebagai sutra premium dengan kualitas tinggi yang dapat Anda miliki.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas sed tempus. Pretium viverra suspendisse potenti nullam ac. Commodo quis imperdiet massa tincidunt. Mattis enim ut tellus elementum. Dignissim convallis aenean et tortor at. Cursus mattis molestie a iaculis at erat. Ultricies mi quis hendrerit dolor magna eget est. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Ac tortor vitae purus faucibus ornare. Risus nullam eget felis eget nunc lobortis mattis aliquam. Consectetur adipiscing elit pellentesque habitant. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Felis eget nunc lobortis mattis aliquam faucibus purus in.
                             </p>
                             <div class="row al_center fl_center bgbl_ pt__100 pb__35">
                                 <div class="col-12 col-md-3 tc tr_md">
@@ -168,7 +165,7 @@
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-6">
-                                    <img class="lazyload w__100 db" data-srcset="assets/images/silk_portrait.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+                                    <img class="lazyload w__100 db" data-srcset="assets/images/silver.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-3 tc tl_md">
