@@ -138,11 +138,12 @@
                         <div class="heading bgbl dn">
                             <a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_product_description"><span class="txt_h_tab">Benefits</span><span class="nav_link_icon ml__5"></span></a>
                         </div>
-                        <div class="sp-tab-content">
-                            <p class="mb__40 cb">
-                                Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse
-                                id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus
-                                nunc ullamcorper orci.
+                        <div class="sp-tab-content cb">
+                            <p class="mb__5">
+                                - Terbuat dari bahan 100% mulberry silk berkualitas tinggi
+                            </p>
+                            <p>
+                            Sarung bantal Mulsk menggunakan bahan 100% mulberry silk berkualitas tinggi yang terjamin halus dan lembut. Ketebalan gramasinya 22 momme untuk memberikan kelembutan dan kenyamanan yang maksimal. Dengan ketebalan itu, sarung bantal Mulsk dapat dikategorikan sebagai sutra premium dengan kualitas tinggi yang dapat Anda miliki. 
                             </p>
                             <div class="row al_center fl_center bgbl_ pt__100 pb__35">
                                 <div class="col-12 col-md-3 tc tr_md">

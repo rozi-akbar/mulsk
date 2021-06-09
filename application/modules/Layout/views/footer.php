@@ -83,8 +83,7 @@
         <div class="footer__bot_wrap pt__20 pb__20">
             <div class="container pr tc">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-12 col_1"></div>
-                    <div class="col-lg-6 col-md-12 col-12 col_2">
+                    <div class="col-lg-12 col-md-12 col-12 col_2">
                         Copyright © <?= date('Y') ?>. PT Kosmetika Cantik Indonesia IT Team. All Rights Reserved.
                     </div>
                 </div>
