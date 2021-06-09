@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="assets/css/single-masonry-theme.css">
-<link rel="stylesheet" href="assets/css/single-product.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/single-product.css">
 <div id="nt_content">
 
     <!--hero banner-->
@@ -43,14 +43,14 @@
                         Dilansir dari Nakita.id hal tersebut juga dikemukakan oleh Holly Smith seorang ahli kebugaran yang berada di North Carolina mencoba membuktikannya selama satu bulan Smith mencoba tidur dengan menggunakan sarung bantal sutra. Smith mengatakan bahwa kulit dan rambutnya menjadi lebih halus dan sehat, sehingga penggunaan sarung bantal berbahan sutra dapat membantu memperlambat tanda-tanda penuaan.
                     </p>
                     <div style="text-align: center;">
-                        <img class="img-fluid" src="assets/images/introduction.png">
+                        <img class="img-fluid" src="<?= base_url() ?>assets/images/introduction.png">
                     </div>
                     <p style="text-indent: 30px; text-align: justify;padding-top: 15px;">
                         Penelitian ini juga dipublikasikan dalam Journal of Cosmetics, Dermatological Sciences and Applications. Laporan menunjukkan garis tidur akan terjadi ketika ada ketegangan jangka panjang yang berulang pada kulit. Studi mengungkapkan peningkatan rata-rata 12% pada kerutan ini membutuhkan 28 hari untuk menghilangkan sumber gesekan. Pencegahannya yaitu dengan menggunakan <strong>sarung bantal sutra</strong> agar dapat merasakan <strong>efek anti-aging</strong>. Kejadian tersebut juga didukung oleh pernyataan dari model Victoria Secret, <strong>Rosie Huntington-Whiteley</strong> yang dikutip oleh Health.com. <strong>Rosie</strong> mengatakan salah satu tips menjaga kesehatan pada kulit wajah yaitu dengan menggunakan sarung bantal berbahan sutra.
                     </p>
                     <div class="row">
                         <div class="col-4">
-                            <img class="img-fluid" src="assets/images/sandy.png">
+                            <img class="img-fluid" src="<?= base_url() ?>assets/images/sandy.png">
                         </div>
                         <div class="col-8">
                             <p style="text-indent: 30px; text-align: justify;">
@@ -76,7 +76,7 @@
                         <br />
                         <div class="row">
                             <div class="col-lg-5">
-                                <img src="assets/images/about-us/why-mulsk.jpg" width="100%">
+                                <img src="<?= base_url() ?>assets/images/about-us/why-mulsk.jpg" width="100%">
                             </div>
                             <div class="col-lg-7">
                                 <p>
@@ -189,9 +189,9 @@
 </div>
 <br />
 
-<script src="assets/js/photoswipe.min.js"></script>
-<script src="assets/js/photoswipe-ui-default.min.js"></script>
-<script src="assets/js/drift.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/resize-sensor.min.js"></script>
-<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+<script src="<?= base_url() ?>assets/js/photoswipe.min.js"></script>
+<script src="<?= base_url() ?>assets/js/photoswipe-ui-default.min.js"></script>
+<script src="<?= base_url() ?>assets/js/drift.min.js"></script>
+<script src="<?= base_url() ?>assets/js/isotope.pkgd.min.js"></script>
+<script src="<?= base_url() ?>assets/js/resize-sensor.min.js"></script>
+<script src="<?= base_url() ?>assets/js/theia-sticky-sidebar.min.js"></script>

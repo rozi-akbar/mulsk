@@ -14,7 +14,7 @@
                                 <div class="footer-contact">
                                     <p>
                                         <a class="d-block" href="<?= base_url() ?>">
-                                            <img class="mb__5 lz_op_ef lazyload" width="200px" data-src="assets/images/svg/mulsk2.svg">
+                                            <img class="mb__5 lz_op_ef lazyload" width="200px" data-src="<?= base_url() ?>assets/images/svg/mulsk2.svg">
                                         </a>
                                     </p>
                                 </div>
@@ -225,7 +225,7 @@
                             </div>
                             <div id="trust_seal_qv" class="pr_trust_seal tl">
                                 <p class="mess_cd cb mb__10 fwm tu fs_16"></p>
-                                <img class="lazyload img_tr_s1 w__100" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%202244%20285%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="assets/images/trust_img2.png" alt="">
+                                <img class="lazyload img_tr_s1 w__100" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%202244%20285%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="<?= base_url() ?>assets/images/trust_img2.png" alt="">
                             </div>
                             <div class="product_meta">
                                 <span class="sku_wrapper"><span class="cb">SKU:</span> <span class="sku value cg">4540967714955-1</span></span>
@@ -688,15 +688,15 @@
 <!-- back to top button-->
 <a id="nt_backtop" class="pf br__50 z__100 des_bt1" href="#"><span class="tc br__50 db cw"><i class="pr pegk pe-7s-angle-up"></i></span></a>
 
-<script src="assets/js/jarallax.min.js"></script>
-<script src="assets/js/packery.pkgd.min.js"></script>
-<script src="assets/js/jquery.hoverIntent.min.js"></script>
-<script src="assets/js/magnific-popup.min.js"></script>
-<script src="assets/js/flickity.pkgd.min.js"></script>
-<script src="assets/js/lazysizes.min.js"></script>
-<script src="assets/js/js-cookie.min.js"></script>
-<script src="assets/js/jquery.countdown.min.js"></script>
-<script src="assets/js/interface.js"></script>
+<script src="<?= base_url() ?>assets/js/jarallax.min.js"></script>
+<script src="<?= base_url() ?>assets/js/packery.pkgd.min.js"></script>
+<script src="<?= base_url() ?>assets/js/jquery.hoverIntent.min.js"></script>
+<script src="<?= base_url() ?>assets/js/magnific-popup.min.js"></script>
+<script src="<?= base_url() ?>assets/js/flickity.pkgd.min.js"></script>
+<script src="<?= base_url() ?>assets/js/lazysizes.min.js"></script>
+<script src="<?= base_url() ?>assets/js/js-cookie.min.js"></script>
+<script src="<?= base_url() ?>assets/js/jquery.countdown.min.js"></script>
+<script src="<?= base_url() ?>assets/js/interface.js"></script>
 </body>
 
 </html>

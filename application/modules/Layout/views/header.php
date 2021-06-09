@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/k_favicon_32x.png">
+    <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>assets/images/k_favicon_32x.png">
     <title>Mulsk Beauty</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,300i,400,400i,500,500i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-icon.min.css">
-    <link rel="stylesheet" href="assets/css/font-futura.css">
-    <link rel="stylesheet" href="assets/css/font-evenir-next-rounded.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/defined.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home-default.css">
-    <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-icon.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-futura.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-evenir-next-rounded.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/reset.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/defined.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/base.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/home-default.css">
+    <script data-cfasync="false" src="<?= base_url() ?>assets/js/email-decode.min.js"></script>
+    <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
 
     <style>
         .main-logo {
@@ -59,9 +59,9 @@
                                             </li>
                                             <li class="menu-item branding ts__05 lh__1">
                                                 <a class="lh__1 flex al_center pr" href="<?=site_url('Home')?>">
-                                                    <img class="w__100 logo_normal dn db_lg max-width__95px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
-                                                    <img class="w__100 logo_sticky dn max-width__100px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
-                                                    <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                    <img class="w__100 logo_normal dn db_lg max-width__95px max-height__60px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                    <img class="w__100 logo_sticky dn max-width__100px max-height__60px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
+                                                    <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                 </a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
@@ -71,7 +71,7 @@
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Blog') ?>">BLOG</a>
                                             </li>
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
-                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Contack_Us') ?>">CONTACT US</a>
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Contact_Us') ?>">CONTACT US</a>
                                             </li>
                                         </ul>
                                     </nav>

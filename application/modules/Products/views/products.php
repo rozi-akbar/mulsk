@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="assets/css/single-masonry-theme.css">
-<link rel="stylesheet" href="assets/css/single-product.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/single-product.css">
 <div id="nt_content">
     <div class="sp-single sp-single-1 des_pr_layout_1 mb__60">
 
@@ -27,13 +27,13 @@
                             <div class="row theiaStickySidebar">
                                 <div class="col-12 col-lg col_thumb">
                                     <div class="p-thumb p-thumb_ppr images sp-pr-gallery equal_nt nt_contain ratio_imgtrue position_8 nt_slider pr_carousel" data-flickity='{"initialIndex": ".media_id_001","fade":true,"draggable":">1","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : 6,"pageDots": false,"rightToLeft": false }'>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-01.jpg" data-bgset="assets/images/single-product/thumb-01.jpg" data-cap="Blush Beanie - color pink , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-02.jpg" data-bgset="assets/images/single-product/thumb-02.jpg" data-cap="Blush Beanie - color grey , size M"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_003" data-mdid="003" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-03.jpg" data-bgset="assets/images/single-product/thumb-03.jpg" data-cap="Blush Beanie - color pink , size L"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_004" data-mdid="004" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-04.jpg" data-bgset="assets/images/single-product/thumb-04.jpg" data-cap="Blush Beanie - color pink , size M"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_005" data-mdid="005" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-05.jpg" data-bgset="assets/images/single-product/thumb-05.jpg" data-cap="Blush Beanie - color pink , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_006" data-mdid="006" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-06.jpg" data-bgset="assets/images/single-product/thumb-06.jpg" data-cap="Blush Beanie - color black , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_007" data-mdid="007" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="assets/images/single-product/pr-07.jpg" data-bgset="assets/images/single-product/thumb-07.jpg" data-cap="Blush Beanie - color black , size M"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-01.jpg" data-bgset="assets/images/single-product/thumb-01.jpg" data-cap="Blush Beanie - color pink , size S"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-02.jpg" data-bgset="assets/images/single-product/thumb-02.jpg" data-cap="Blush Beanie - color grey , size M"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_003" data-mdid="003" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-03.jpg" data-bgset="assets/images/single-product/thumb-03.jpg" data-cap="Blush Beanie - color pink , size L"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_004" data-mdid="004" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-04.jpg" data-bgset="assets/images/single-product/thumb-04.jpg" data-cap="Blush Beanie - color pink , size M"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_005" data-mdid="005" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-05.jpg" data-bgset="assets/images/single-product/thumb-05.jpg" data-cap="Blush Beanie - color pink , size S"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_006" data-mdid="006" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-06.jpg" data-bgset="assets/images/single-product/thumb-06.jpg" data-cap="Blush Beanie - color black , size S"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_007" data-mdid="007" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-07.jpg" data-bgset="assets/images/single-product/thumb-07.jpg" data-cap="Blush Beanie - color black , size M"></div>
                                     </div>
                                     <div class="p_group_btns pa flex">
                                         <button class="br__40 tc flex al_center fl_center show_btn_pr_gallery ttip_nt tooltip_top_left">
@@ -149,7 +149,7 @@
                                 <div class="col-12 col-md-3 tc tr_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="40" width="44" alt="rain" class="lazyload" data-src="assets/images/single-product/water-resistant.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="40" width="44" alt="rain" class="lazyload" data-src="<?= base_url() ?>assets/images/single-product/water-resistant.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Hypoallergenic
@@ -157,7 +157,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="39" width="36" alt="sun" data-src="assets/images/single-product/uv-resistant.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="39" width="36" alt="sun" data-src="<?= base_url() ?>assets/images/single-product/uv-resistant.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Menjaga kadar air dan<br />
@@ -166,7 +166,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="33" width="49" alt="sea-water" data-src="assets/images/single-product/corrosion-resistance.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="33" width="49" alt="sea-water" data-src="<?= base_url() ?>assets/images/single-product/corrosion-resistance.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Lebih baik untuk pemilik<br />
@@ -182,7 +182,7 @@
                                 <div class="col-12 col-md-3 tc tl_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="51" width="52" alt="lead" data-src="assets/images/single-product/lead-free.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="51" width="52" alt="lead" data-src="<?= base_url() ?>assets/images/single-product/lead-free.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Mencegah Kerutan<br />
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="37" width="52" alt="spills" data-src="assets/images/single-product/resistant-to-spills.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="37" width="52" alt="spills" data-src="<?= base_url() ?>assets/images/single-product/resistant-to-spills.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Anti-Aging
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="38" width="39" alt="recycle" data-src="assets/images/single-product/recyclable.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="38" width="39" alt="recycle" data-src="<?= base_url() ?>assets/images/single-product/recyclable.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Mencegah rambut kusut<br />
@@ -271,9 +271,9 @@
         </div>
     </div>
 </div>
-<script src="assets/js/photoswipe.min.js"></script>
-<script src="assets/js/photoswipe-ui-default.min.js"></script>
-<script src="assets/js/drift.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/resize-sensor.min.js"></script>
-<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+<script src="<?= base_url() ?>assets/js/photoswipe.min.js"></script>
+<script src="<?= base_url() ?>assets/js/photoswipe-ui-default.min.js"></script>
+<script src="<?= base_url() ?>assets/js/drift.min.js"></script>
+<script src="<?= base_url() ?>assets/js/isotope.pkgd.min.js"></script>
+<script src="<?= base_url() ?>assets/js/resize-sensor.min.js"></script>
+<script src="<?= base_url() ?>assets/js/theia-sticky-sidebar.min.js"></script>

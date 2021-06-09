@@ -23,14 +23,14 @@
                 <h4>Official E-Commerce :</h4>
                 <div style="width: 500px; margin: auto;">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="card" style="width: fit-content;">
-                                <img src="assets/images/svg/shopee.svg" class="img-fluid" style="width: 100px; margin: 50px;">
+                                <img src="<?= base_url() ?>assets/images/svg/shopee.svg" class="img-fluid" style="width: 100px; margin: 50px;">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="card" style="width: fit-content;">
-                                <img src="assets/images/svg/tokopedia.svg" class="img-fluid" style="width: 100px; margin: 50px;">
+                                <img src="<?= base_url() ?>assets/images/svg/tokopedia.svg" class="img-fluid" style="width: 100px; margin: 50px;">
                             </div>
                         </div>
                     </div>
