@@ -27,13 +27,8 @@
                             <div class="row theiaStickySidebar">
                                 <div class="col-12 col-lg col_thumb">
                                     <div class="p-thumb p-thumb_ppr images sp-pr-gallery equal_nt nt_contain ratio_imgtrue position_8 nt_slider pr_carousel" data-flickity='{"initialIndex": ".media_id_001","fade":true,"draggable":">1","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : 6,"pageDots": false,"rightToLeft": false }'>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-01.jpg" data-bgset="assets/images/single-product/thumb-01.jpg" data-cap="Blush Beanie - color pink , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-02.jpg" data-bgset="assets/images/single-product/thumb-02.jpg" data-cap="Blush Beanie - color grey , size M"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_003" data-mdid="003" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-03.jpg" data-bgset="assets/images/single-product/thumb-03.jpg" data-cap="Blush Beanie - color pink , size L"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_004" data-mdid="004" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-04.jpg" data-bgset="assets/images/single-product/thumb-04.jpg" data-cap="Blush Beanie - color pink , size M"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_005" data-mdid="005" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-05.jpg" data-bgset="assets/images/single-product/thumb-05.jpg" data-cap="Blush Beanie - color pink , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_006" data-mdid="006" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-06.jpg" data-bgset="assets/images/single-product/thumb-06.jpg" data-cap="Blush Beanie - color black , size S"></div>
-                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_007" data-mdid="007" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/single-product/pr-07.jpg" data-bgset="assets/images/single-product/thumb-07.jpg" data-cap="Blush Beanie - color black , size M"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-cap="Blush Beanie - color pink , size S"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-cap="Blush Beanie - color grey , size M"></div>
                                     </div>
                                     <div class="p_group_btns pa flex">
                                         <button class="br__40 tc flex al_center fl_center show_btn_pr_gallery ttip_nt tooltip_top_left">
@@ -64,7 +59,7 @@
                                         <p class="price_range" id="price_ppr">Rp 600.000</p>
                                     </div>
                                     <div class="pr_short_des">
-                                        <p class="mg__0">Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>
+                                        <p class="mg__0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div class="btn-atc atc-slide btn_des_1 btn_txt_3">
                                         <div id="callBackVariant_ppr">
@@ -74,14 +69,11 @@
                                                         <span class="nt_name_current user_choose_js">Pink</span>
                                                     </h4>
                                                     <ul class="swatches-select swatch__list_pr d-flex">
-                                                        <li class="ttip_nt tooltip_top_right nt-swatch swatch_pr_item" data-escape="Grey">
-                                                            <span class="tt_txt">Grey</span><span class="swatch__value_pr pr bg_color_grey lazyload"></span>
+                                                        <li class="ttip_nt tooltip_top_right nt-swatch swatch_pr_item" data-escape="Silver">
+                                                            <span class="tt_txt">Silver</span><span class="swatch__value_pr pr bg_color_silver lazyload"></span>
                                                         </li>
-                                                        <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item is-selected" data-escape="Pink">
-                                                            <span class="tt_txt">Pink</span><span class="swatch__value_pr pr bg_color_pink lazyload"></span>
-                                                        </li>
-                                                        <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item" data-escape="Black">
-                                                            <span class="tt_txt">Black</span><span class="swatch__value_pr pr bg_color_black lazyload"></span>
+                                                        <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item is-selected" data-escape="Gold">
+                                                            <span class="tt_txt">Gold</span><span class="swatch__value_pr pr bg_color_gold lazyload"></span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -143,55 +135,55 @@
                                 - Terbuat dari bahan 100% mulberry silk berkualitas tinggi
                             </p>
                             <p>
-                            Sarung bantal Mulsk menggunakan bahan 100% mulberry silk berkualitas tinggi yang terjamin halus dan lembut. Ketebalan gramasinya 22 momme untuk memberikan kelembutan dan kenyamanan yang maksimal. Dengan ketebalan itu, sarung bantal Mulsk dapat dikategorikan sebagai sutra premium dengan kualitas tinggi yang dapat Anda miliki. 
+                                Sarung bantal Mulsk menggunakan bahan 100% mulberry silk berkualitas tinggi yang terjamin halus dan lembut. Ketebalan gramasinya 22 momme untuk memberikan kelembutan dan kenyamanan yang maksimal. Dengan ketebalan itu, sarung bantal Mulsk dapat dikategorikan sebagai sutra premium dengan kualitas tinggi yang dapat Anda miliki.
                             </p>
                             <div class="row al_center fl_center bgbl_ pt__100 pb__35">
                                 <div class="col-12 col-md-3 tc tr_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="40" width="44" alt="rain" class="lazyload" data-src="<?= base_url() ?>assets/images/single-product/water-resistant.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="40" width="44" alt="rain" class="lazyload" data-src="<?= base_url() ?>assets/images/svg/anti-bacterial.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
-                                            Hypoallergenic
+                                            Hypoallergenic, Anti-Bacterial, and Natural Plant Extract
                                         </div>
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="39" width="36" alt="sun" data-src="<?= base_url() ?>assets/images/single-product/uv-resistant.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="39" width="36" alt="sun" data-src="<?= base_url() ?>assets/images/svg/dermatologist.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
-                                            Menjaga kadar air dan<br />
+                                            Menjaga kadar air dan
                                             kelembaban pada kulit wajah
                                         </div>
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="33" width="49" alt="sea-water" data-src="<?= base_url() ?>assets/images/single-product/corrosion-resistance.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="33" width="49" alt="sea-water" data-src="<?= base_url() ?>assets/images/svg/skincare-absorb.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
-                                            Lebih baik untuk pemilik<br />
+                                            Lebih baik untuk pemilik
                                             kulit berjerawat
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-6">
-                                    <img class="lazyload w__100 db" data-srcset="assets/images/single-product/athun.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+                                    <img class="lazyload w__100 db" data-srcset="assets/images/silk_portrait.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-3 tc tl_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="51" width="52" alt="lead" data-src="<?= base_url() ?>assets/images/single-product/lead-free.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="51" width="52" alt="lead" data-src="<?= base_url() ?>assets/images/svg/reduce-wrinkles.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
-                                            Mencegah Kerutan<br />
+                                            Mencegah Kerutan
                                             di Wajah
                                         </div>
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="37" width="52" alt="spills" data-src="<?= base_url() ?>assets/images/single-product/resistant-to-spills.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="37" width="52" alt="spills" data-src="<?= base_url() ?>assets/images/svg/low-ph.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Anti-Aging
@@ -199,10 +191,10 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="38" width="39" alt="recycle" data-src="<?= base_url() ?>assets/images/single-product/recyclable.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img height="38" width="39" alt="recycle" data-src="<?= base_url() ?>assets/images/svg/luxury-gift.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
-                                            Mencegah rambut kusut<br />
+                                            Mencegah rambut kusut
                                             dan bercabang
                                         </div>
                                     </div>
