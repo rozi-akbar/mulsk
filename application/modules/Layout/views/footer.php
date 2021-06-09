@@ -56,7 +56,7 @@
                         <div class="widget widget_text">
                             <p>
                                 <i class="pegk pe-7s-mail"></i>
-                                <span><a href="#"><span class="__cf_email__">mulskmulskbeauty@gmail.com</span></a></span>
+                                <span><a href="mailto:info@mulskid.com"><span class="__cf_email__">info@mulskid.com</span></a></span>
                             </p>
                             <p><i class="pegk pe-7s-call"></i> <span>+62 822-3248-1689</span></p>
                             <div class="nt-social">
