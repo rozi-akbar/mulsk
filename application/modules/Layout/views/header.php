@@ -58,7 +58,7 @@
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Products') ?>">PRODUCTS</a>
                                             </li>
                                             <li class="menu-item branding ts__05 lh__1">
-                                                <a class="lh__1 flex al_center pr" href="#">
+                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Home')?>">
                                                     <img class="w__100 logo_normal dn db_lg max-width__95px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                     <img class="w__100 logo_sticky dn max-width__100px max-height__60px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                     <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px" src="assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
