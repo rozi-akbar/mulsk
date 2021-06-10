@@ -236,10 +236,8 @@
         <!-- end description and review -->
 
         <div class="clearfix">
-            <div style="width: 300px; margin: auto;">
-                <a href="<?= site_url('How_to_Buy') ?>" style="background-color: #F7B538; color: black; text-align: center; border: none;" class="button w__100 mt__20 d-inline-block">
-                    <span class="txt_add ">I want to buy this!</span>
-                </a>
+            <div style="width: 250px; margin: auto;">
+                <a class="btn btn-warning" style="width: 250px; height: 50px; border-radius: 100px;" href="<?= site_url('How_to_Buy') ?>" role="button">I want to buy this!</a>
             </div>
         </div>
     </div>
