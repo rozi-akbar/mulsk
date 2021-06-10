@@ -146,7 +146,7 @@
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-1">
                                         <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
                                             <div class="col-auto icon medium csi">
-                                                <i class="pegk pe-7s-help2"></i>
+                                                <img src="<?=base_url()?>assets/images/spin-control-idea.png" width="50px" style="border: 1px solid #000;border-radius: 100px;">
                                             </div>
                                             <div class="col content">
                                                 <h3 class="title cd fs__14 mg__0 mb__5">SpinControl Idea</h3>
