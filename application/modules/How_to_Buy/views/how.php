@@ -1,3 +1,10 @@
+<style>
+    @media only screen and (max-width: 426px) {
+        .card-how {
+            margin-bottom: 15px;
+        }
+    }
+</style>
 <div id="nt_content">
 
     <!--hero banner-->
@@ -25,7 +32,7 @@
                     <div class="row" style="max-width: 500px; margin: auto;">
                         <div class="col-lg-6 col-md-6 col-12">
                             <a href="#">
-                                <div class="card" style="height: 125px">
+                                <div class="card card-how" style="height: 125px">
                                     <img src="<?= base_url() ?>assets/images/svg/shopee.svg" class="img-fluid" style="width: 125px; margin: auto;">
                                 </div>
                             </a>
