@@ -66,7 +66,7 @@
                                             <div class="variations mb__40 style__circle size_medium style_color des_color_1">
                                                 <div class="swatch is-color kalles_swatch_js">
                                                     <h4 class="swatch__title">Color:
-                                                        <span class="nt_name_current user_choose_js">Pink</span>
+                                                        <span class="nt_name_current user_choose_js">Golden</span>
                                                     </h4>
                                                     <ul class="swatches-select swatch__list_pr d-flex">
                                                         <li class="ttip_nt tooltip_top_right nt-swatch swatch_pr_item" data-escape="Silver">
