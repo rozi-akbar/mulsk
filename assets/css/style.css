@@ -9693,7 +9693,7 @@ input.search_header__input:not([type="submit"]):not([type="checkbox"]) {
 }
 
 .font-poppins {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .p_group_btns {
@@ -10412,7 +10412,7 @@ input[type="checkbox"].css_agree_ck {
     font-size: 15px;
     margin-top: 0;
     font-weight: 500;
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .shipping_calculator select,
@@ -11150,7 +11150,7 @@ body .tooltip_bottom_right:hover .tt_txt {
 }
 
 .kalles-caption-layout-01__subtitle {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: #222222;
@@ -11158,7 +11158,7 @@ body .tooltip_bottom_right:hover .tt_txt {
 }
 
 .kalles-caption-layout-01__title {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 25px;
     font-weight: 600;
     color: #222222;

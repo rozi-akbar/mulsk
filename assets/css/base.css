@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.75;
     color: #878787;
@@ -21,7 +21,7 @@ body {
 .f_body,
 .nt_action .tcount,
 .lazyloaded h4.f_body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .lazyloaded h1,
@@ -32,7 +32,7 @@ body {
 .lazyloaded h6,
 .lazyloaded .f__mont,
 .lazyloaded .f_heading {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h1,
@@ -4674,7 +4674,7 @@ a.button.btn_style_2:hover, a.button.btn_style_2:focus {
 
 .footer__top .widget-title {
     color: #222;
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .footer__top .menu li {
@@ -7078,7 +7078,7 @@ input[type="checkbox"] {
 }
 
 .template-index .ssw-html-widget.ssw-instagram-widget .ssw-instagram-slide-title {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;

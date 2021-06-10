@@ -57,7 +57,7 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.75;
     color: #696969;
@@ -67,7 +67,7 @@ body {
 .f_body,
 .nt_action .tcount,
 .lazyloaded h4.f_body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .lazyloaded h1,
@@ -1442,7 +1442,7 @@ a.button:hover,
 }
 
 .kalles-kids__banner-element .nt_promotion_html .kalles-kids__banner-element__sup-title {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: #000;
     letter-spacing: 1px;
     font-weight: 400;
@@ -1559,7 +1559,7 @@ a.button:hover,
 }
 
 .kalles-kids__banner-style-04 .nt_promotion_html .bn-title--sup {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: #000;
     letter-spacing: 1px;
     font-weight: 400;

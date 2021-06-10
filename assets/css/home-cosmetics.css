@@ -1,5 +1,5 @@
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.75;
     color: #878787;
@@ -9,7 +9,7 @@ body {
 .f_body,
 .nt_action .tcount,
 .lazyloaded h4.f_body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .widget-title .txt_title,
@@ -44,7 +44,7 @@ h6,
 .lazyloaded .f__libre,
 .lazyloaded blockquote,
 .lazyloaded em {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .sub-title,

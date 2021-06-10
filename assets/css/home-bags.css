@@ -1,5 +1,5 @@
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.75;
     color: #878787;
@@ -10,11 +10,11 @@ body {
 }
 
 .f_body, .nt_action .tcount, .lazyloaded h4.f_body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .lazyloaded h1, .lazyloaded h2, .lazyloaded h3, .lazyloaded h4, .lazyloaded h5, .lazyloaded h6, .lazyloaded .f__mont, .lazyloaded .f_heading {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .f__mont, .f_heading, .h3 {
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, .f__mont, .f_heading, .h3 {
 }
 
 .lazyloaded .sub-title, .lazyloaded .f__libre, .lazyloaded blockquote, .lazyloaded em {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .sub-title, .section-subtitle {

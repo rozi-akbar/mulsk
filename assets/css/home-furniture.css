@@ -1,5 +1,5 @@
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     line-height: 1.75;
     color: #7b7b7b;
@@ -7,11 +7,11 @@ body {
 }
 
 .f_body, .nt_action .tcount, .lazyloaded h4.f_body {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .lazyloaded h1, .lazyloaded h2, .lazyloaded h3, .lazyloaded h4, .lazyloaded h5, .lazyloaded h6, .lazyloaded .f__mont, .lazyloaded .f_heading {
-    font-family: Poppins, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .f__mont, .f_heading, .h3 {
