@@ -6,7 +6,7 @@
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog_1.jpg"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</h1>
-                <p class="mg__0">8 June 2021</p>
+                <p class="mg__0">12 Juni 2021</p>
             </div>
         </div>
     </div>

@@ -24,7 +24,7 @@
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-01.jpg"></div>
                             </a>
                             <div class="post-info mb__5">
-                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
                                     <a class="cd chp open" href="#">Blog Artikel Judul #3</a>
                                 </h4>
@@ -35,7 +35,7 @@
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/silk.png"></div>
                             </a>
                             <div class="post-info mb__5">
-                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</a>
                                 </h4>
@@ -46,7 +46,7 @@
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog_1.jpg"></div>
                             </a>
                             <div class="post-info mb__5">
-                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">Juni 12, 2021</time></span></span>
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">12 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
                                 </h4>
