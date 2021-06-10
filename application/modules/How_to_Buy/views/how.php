@@ -22,7 +22,7 @@
             <div style="text-align: center;">
                 <h4>Official E-Commerce :</h4>
                 <div>
-                    <div class="row">
+                    <div class="row" style="max-width: 500px; margin: auto;">
                         <div class="col-lg-6 col-md-6 col-12">
                             <a href="#">
                                 <div class="card" style="height: 125px">
