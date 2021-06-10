@@ -15,7 +15,7 @@
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
                                     <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Newly Launched!</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Mullbery Silk<br/>Pillowcase</h3>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Mullbery Silk<br />Pillowcase</h3>
                                 </div>
                             </div>
                         </div>
@@ -97,13 +97,6 @@
                             <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
                                 <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_gold.jpg"></div>
                             </div>
-                            <div class="hover_button op__0 tc pa flex column ts__03">
-                                <a class="pr nt_add_qv js_add_qv cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= site_url('Products') ?>">
-                                    <span class="tt_txt">Quick view</span>
-                                    <i class="iccl iccl-eye"></i>
-                                    <span>Quick view</span>
-                                </a>
-                            </div>
                         </div>
                         <div class="product-info mt__15">
                             <h3 class="product-title position-relative fs__14 mg__0 fwm">
@@ -128,13 +121,6 @@
                             </a>
                             <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
                                 <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_silver.jpg"></div>
-                            </div>
-                            <div class="hover_button op__0 tc pa flex column ts__03">
-                                <a class="pr nt_add_qv js_add_qv cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= site_url('Products') ?>">
-                                    <span class="tt_txt">Quick view</span>
-                                    <i class="iccl iccl-eye"></i>
-                                    <span>Quick view</span>
-                                </a>
                             </div>
                         </div>
                         <div class="product-info mt__15">
@@ -169,9 +155,9 @@
                                 <h3 class="mt__0 mg__0 lh__1">Premium Quality Pillowcases</h3>
                                 <div class="kalles-handmade__full-width-banner__br imtt4_space"></div>
                                 <p class="kalles-handmade__full-width-banner__desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br />et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br /> ut aliquip ex ea commodo consequat. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br />et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br /> ut aliquip ex ea commodo consequat.
                                 </p>
-                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy')?>">How to Order</a>
+                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Order</a>
                             </div>
                         </div>
                         <a href="shop-hidden-sidebar.html" class="pa t__0 l__0 b__0 r__0"></a>

@@ -142,6 +142,88 @@
     left: 50%
 }
 
+
+/*********************************************************
+* full width banner section
+**********************************************************/
+.kalles-handmade__full-width-banner {
+    margin: 80px auto 50px;
+}
+
+.kalles-handmade__full-width-banner .nt_img_txt > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.kalles-handmade__full-width-banner .pa_txts {
+    top: 50%;
+    left: 24%;
+    transform: translate(-24%, -50%);
+}
+
+.kalles-handmade__full-width-banner.se_height_cus_h .js_full_ht4 {
+    padding-top: 350px;
+}
+
+@media (min-width: 768px) {
+    .kalles-handmade__full-width-banner.se_height_cus_h .js_full_ht4 {
+        padding-top: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .kalles-handmade__full-width-banner.se_height_cus_h .js_full_ht4 {
+        padding-top: 400px;
+    }
+}
+
+.kalles-handmade__full-width-banner .nt_img_txt h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #222222;
+}
+
+@media (min-width: 768px) {
+    .kalles-handmade__full-width-banner .nt_img_txt h3 {
+        font-size: 40px;
+    }
+}
+
+.kalles-handmade__full-width-banner__br {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-handmade__full-width-banner__br {
+        height: 20px;
+    }
+}
+
+.kalles-handmade__full-width-banner .imtt4_btn {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #222222;
+}
+
+.kalles-handmade__full-width-banner .imtt4_btn.btn_icon_true:after {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-handmade__full-width-banner .imtt4_btn {
+        font-weight: 500;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.kalles-handmade__full-width-banner__desc {
+    color: #6d6964;
+}
+
+
 /* ==========================================================================
 *! shipping info
 ========================================================================== */

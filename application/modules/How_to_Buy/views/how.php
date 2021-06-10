@@ -21,17 +21,21 @@
             <br />
             <div style="text-align: center;">
                 <h4>Official E-Commerce :</h4>
-                <div style="width: 500px; margin: auto;">
+                <div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="card" style="width: fit-content;">
-                                <img src="<?= base_url() ?>assets/images/svg/shopee.svg" class="img-fluid" style="width: 100px; margin: 50px;">
-                            </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <a href="#">
+                                <div class="card" style="height: 125px">
+                                    <img src="<?= base_url() ?>assets/images/svg/shopee.svg" class="img-fluid" style="width: 125px; margin: auto;">
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="card" style="width: fit-content;">
-                                <img src="<?= base_url() ?>assets/images/svg/tokopedia.svg" class="img-fluid" style="width: 100px; margin: 50px;">
-                            </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <a href="#">
+                                <div class="card" style="height: 125px;">
+                                    <img src="<?= base_url() ?>assets/images/svg/tokopedia.svg" class="img-fluid" style="width: 125px; margin: auto;">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

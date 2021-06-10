@@ -37,7 +37,7 @@
                                 <div class="post-info mb__5">
                                     <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">Juni 12, 2021</time></span></span>
                                     <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                        <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">Pentingnya tidur berkualitas dengan memakai perlengkapan yang mendukung: sarung bantal dengan material utama mulberry silk.</a>
+                                        <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
                                     </h4>
                                 </div>
                             </article>
