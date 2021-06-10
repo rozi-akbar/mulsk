@@ -160,7 +160,6 @@
                                 <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Order</a>
                             </div>
                         </div>
-                        <a href="shop-hidden-sidebar.html" class="pa t__0 l__0 b__0 r__0"></a>
                     </div>
                 </div>
             </div>
