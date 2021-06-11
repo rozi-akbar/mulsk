@@ -99,33 +99,31 @@
 <div id="nt_menu_canvas" class="nt_fk_canvas nt_sleft dn lazyload">
     <i class="close_pp pegk pe-7s-close ts__03 cd"></i>
     <div class="mb_nav_tabs flex al_center mb_cat_true">
-        <div class="mb_nav_title pr mb_nav_ul flex al_center fl_center active" data-id="#kalles-section-mb_nav_js">
+    <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px ml-2" src="<?= base_url() ?>assets/images/svg/mulsk2.svg"/>
+        <!-- <div class="mb_nav_title pr mb_nav_ul flex al_center fl_center active" data-id="#kalles-section-mb_nav_js">
             <span class="db truncate">Menu</span>
-        </div>
-        <div class="mb_nav_title pr flex al_center fl_center" data-id="#kalles-section-mb_cat_js">
-            <span class="db truncate">Categories</span>
-        </div>
+        </div> -->
     </div>
     <div id="kalles-section-mb_nav_js" class="mb_nav_tab active">
         <div id="kalles-section-mb_nav" class="kalles-section">
             <ul id="menu_mb_ul" class="nt_mb_menu">
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('Home') ?>"><span class="nav_link_txt flex al_center">HOME</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('Home') ?>">HOME</a>
                 </li>
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('About') ?>"><span class="nav_link_txt flex al_center">ABOUT MULSK</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('About') ?>">ABOUT MULSK</a>
                 </li>
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('Products') ?>"><span class="nav_link_txt flex al_center">PRODUCTS</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('Products') ?>">PRODUCTS</a>
                 </li>
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('How_to_Buy') ?>"><span class="nav_link_txt flex al_center">HOW TO BUY</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('How_to_Buy') ?>">HOW TO BUY</a>
                 </li>
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('Blog') ?>"><span class="nav_link_txt flex al_center">BLOG</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('Blog') ?>">BLOG</a>
                 </li>
-                <li class="menu-item menu-item-has-children only_icon_false">
-                    <a href="<?= site_url('Contact_Us') ?>"><span class="nav_link_txt flex al_center">CONTACT US</span><span class="nav_link_icon ml__5"></span></a>
+                <li class="menu-item">
+                    <a href="<?= site_url('Contact_Us') ?>">CONTACT US</a>
                 </li>
             </ul>
         </div>
