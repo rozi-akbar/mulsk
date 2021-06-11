@@ -1,9 +1,14 @@
+<style>
+.post-author{
+    font-size: 12px;
+}
+</style>
 <div id="nt_content">
 
     <!--hero banner-->
     <div class="kalles-section page_section_heading">
         <div class="page-head tc pr oh cat_bg_img page_head_">
-            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="assets/images/banner-blog.jpg"></div>
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/banner-blog.jpg"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw">BLOG</h1>
             </div>
@@ -45,35 +50,35 @@
 
                     <!--articles-->
                     <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
-                        <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                            <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
-                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-01.jpg"></div>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
                             </a>
-                            <div class="post-info mb__5">
+                            <div class="post-info">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
-                                <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep luxury, beauty, and wellness pada Mulsk pillowcase</a>
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep Luxury, Beauty, and Wellness pada Mulsk Pillowcase</a>
                                 </h4>
                             </div>
                         </article>
-                        <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                            <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202102') ?>">
-                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/silk.png"></div>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202102') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/silk.png"></div>
                             </a>
-                            <div class="post-info mb__5">
+                            <div class="post-info">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">10 Juni 2021</time></span></span>
-                                <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</a>
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Kelebihan Penggunaan Mulberry Silk Untuk Kecantikan dan Kesehatan</a>
                                 </h4>
                             </div>
                         </article>
-                        <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                            <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202101') ?>">
-                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog_1.jpg"></div>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202101') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog_1.jpg"></div>
                             </a>
-                            <div class="post-info mb__5">
+                            <div class="post-info">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">08 Juni 2021</time></span></span>
-                                <h4 class="mg__0 fs__16 mt__15 ls__0">
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
                                 </h4>
                             </div>

@@ -28,7 +28,11 @@
                                 <div class="col-12 col-lg col_thumb">
                                     <div class="p-thumb p-thumb_ppr images sp-pr-gallery equal_nt nt_contain ratio_imgtrue position_8 nt_slider pr_carousel" data-flickity='{"initialIndex": ".media_id_001","fade":true,"draggable":">1","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : 6,"pageDots": false,"rightToLeft": false }'>
                                         <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_001" data-mdid="001" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" data-cap="Silk Pillowcase - color gold"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/gold-2.jpg" data-bgset="<?= base_url() ?>assets/images/gold-2.jpg" data-cap="Silk Pillowcase - color silver"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/gold-3.jpg" data-bgset="<?= base_url() ?>assets/images/gold-3.jpg" data-cap="Silk Pillowcase - color silver"></div>
                                         <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" data-cap="Silk Pillowcase - color silver"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/silver-2.jpg" data-bgset="<?= base_url() ?>assets/images/silver-2.jpg" data-cap="Silk Pillowcase - color silver"></div>
+                                        <div class="img_ptw p_ptw p-item sp-pr-gallery__img w__100 nt_bg_lz lazyload padding-top__127_66 media_id_002" data-mdid="002" data-height="1440" data-width="1128" data-ratio="0.7833333333333333" data-mdtype="image" data-src="<?= base_url() ?>assets/images/silver-3.jpg" data-bgset="<?= base_url() ?>assets/images/silver-3.jpg" data-cap="Silk Pillowcase - color silver"></div>
                                     </div>
                                     <div class="p_group_btns pa flex">
                                         <button class="br__40 tc flex al_center fl_center show_btn_pr_gallery ttip_nt tooltip_top_left">
@@ -54,7 +58,7 @@
                         <div class="col-md-6 col-12 product-infors pr_sticky_su">
                             <div class="theiaStickySidebar">
                                 <div class="kalles-section-pr_summary kalles-section summary entry-summary mt__30">
-                                    <h1 class="product_title entry-title fs__16">Mulberry Silk Envelope Pillowcase</h1>
+                                    <h1 class="product_title entry-title fs__16">Mulberry Silk Pillowcase</h1>
                                     <div class="flex wrap fl_between al_center price-review">
                                         <p class="price_range" id="price_ppr">Rp 749.900</p>
                                     </div>
@@ -183,7 +187,7 @@
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-6">
-                                    <img class="lazyload w__100 db" data-srcset="assets/images/silver.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+                                    <img class="lazyload w__100 db" data-srcset="<?= base_url() ?>assets/images/silver.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-3 tc tl_md">
@@ -245,6 +249,40 @@
                                     </div>
                                 </div>
                             </div>
+                            <br />
+                            <div>
+                                <p style="text-align: justify;">
+                                <h3><b>Easy Care Washing Pillowcase</b></h3>
+                                </p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Pisahkan Mulsk Pillowcase dengan bahan yang lain</b><br></li>
+                                </ul>
+                                <p style="text-align: justify;">Hal ini dilakukan untuk menghindari kain 100% mulberry silk terkena luntur dari bahan lain.</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Mencuci secara manual dan tidak disikat atau kucek berlebih</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Guna menjaga serat sutra agar tidak rusak dan kustu, disarankan untuk dicuci secara manual menggunakan air bersih dengan suhu netral, jangan menggunakan air sumur</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Cuci dengan Silky Detergent, detergent tanpa softener khusus untuk kain sutra dengan pH netral</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Menambahkan beberapa 3-5 tetes detergent ke dalam baskom/bak berisi air, kemudian aduk hingga merata dengan tangan. Masukkan Mulsk ke dalam air dan tekan dengan tangan agar terendam, diamkan selama 1-2 menit.</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Cuci dengan lembut dan perlahan agar tidak merusak kain sutra</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Angkat Mulsk lalu celupkan perlahan kedalam air beberapa kali, apabila terdapat noda usap dengan hari secara lembut pada bagian noda tersebut secara perlahan. Angkat Mulsk lalu buang air sabun, gantikan dengan air bersih untuk membilas seluruh permukaan sarung bantal</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Serap kelembabapan dengan handuk</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Letakkan sarung bantal sutra pada handuk lalu gulung secara perlahan. Jangan memeras handuk yang sudah digulung karena akan dapat merusak sutra</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Proses menjemur dan pengeringan kain sutra</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Kerangkan dan beri angin-angin di tempat teduh agar produk segera kering. Jangan terkena sinar matahari secara langsung karena dapat merusak kualitas benang sutra</p>
+                                <ul>
+                                    <li style="text-align: justify;"><b>Proses setrika Mulsk Pillowcase</b></li>
+                                </ul>
+                                <p style="text-align: justify;">Setrika dengan setelan suhu rendah (khusus untuk sutra), jangan terlalu panas karena suhu panas tinggi dapat membuat sutra berkerut. Saat menyetrika, disarankan dapat melapisi dengan kain katun terlebih dahulu</p>
+                            </div>
                         </div>
                     </div>
                     <!-- end tab contents -->
@@ -255,7 +293,7 @@
         <br />
         <div class="clearfix">
             <div style="width: 250px; margin: auto;">
-                <a class="btn btn-warning" style="width: 250px; height: 50px; border-radius: 100px;" href="<?= site_url('How_to_Buy') ?>" role="button">I want to buy this!</a>
+                <a class="btn btn-warning" style="width: 250px; height: 50px; border-radius: 100px;padding:0.75em;font-weight:bold" href="<?= site_url('How_to_Buy') ?>" role="button">I want to buy this!</a>
             </div>
         </div>
     </div>

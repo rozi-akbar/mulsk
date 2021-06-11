@@ -52,7 +52,7 @@
                                         Diabetes dan resistensi insulin
                                     </li>
                                 </ul>
-                                <p style="text-indent: 30px; text-align:justify">
+                                <p style="text-indent: 30px; text-align:justify; padding-top:10px">
                                     Tidur tidak hanya soal durasi waktu, tetapi Anda juga harus memastikan mendapat kualitasnya. Lalu, bagaimana cara agar Anda bisa mendapat tidur yang berkualitas?
                                 </p>
                             </div>
@@ -60,15 +60,15 @@
                                 <img class="img-fluid" src="<?= base_url() ?>assets/images/blog_1.jpg">
                             </div>
                         </div>
-                        <p>1. Ubah Gaya Hidup Anda</p>
+                        <p><b>1. Ubah Gaya Hidup Anda</b></p>
                         <p style="text-indent: 30px; text-align:justify">
                             Gaya hidup ikut berpengaruh pada kualitas tidur Anda. Terapkan gaya hidup sehat untuk meningkatkan kualitas tidur. Mulailah berolahraga secara teratur, kurangi rokok, alkohol, dan kafein beberapa jam sebelum tidur.
                         </p>
-                        <p>2. Hindari Penggunaan Ponsel sebelum Tidur</p>
+                        <p><b>2. Hindari Penggunaan Ponsel sebelum Tidur</b></p>
                         <p style="text-indent: 30px; text-align:justify">
                             Penggunaan ponsel sebelum tidur dapat memengaruhi kualitas tidur. Menggunakan ponsel di tempat tidur cenderung membuat Anda terus menghabiskan waktu menatap layar sehingga menunda waktu tidur. Alhasil, durasi tidur Anda berlangsung tidak ideal.
                         </p>
-                        <p>3. Investasi Perlengkapan untuk Tidur yang Nyaman</p>
+                        <p><b>3. Investasi Perlengkapan untuk Tidur yang Nyaman</b></p>
                         <p style="text-indent: 30px; text-align:justify">
                             Masih sering merasa lelah saat bangun tidur? Hal itu bisa saja disebabkan oleh perlengkapan tidur yang tidak nyaman. Pilihlah kasur dan bantal terbaik sebagai bentuk investasi dalam menunjang lingkungan tidur sesuai preferensi Anda. Hal yang tidak kalah penting adalah memilih sarung bantal sebagai alas kepala Anda saat menghabiskan waktu berjam-jam untuk tidur.
                         </p>

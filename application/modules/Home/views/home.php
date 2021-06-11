@@ -9,12 +9,12 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_zoom pa l__0 t__0 r__0 b__0" data-bgset="assets/images/homepage_2.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_zoom pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/homepage_2.jpg"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tr_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-right">
                                 <div class="right_left">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1">New Innovation<br />for New Experience</h3>
                                 </div>
                             </div>
@@ -28,14 +28,14 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="assets/images/homepage-3.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/homepage-3.jpg"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Helps your skin and hair retain its natural moisture<br />and hydration, leaving it feeling smoother and softer</h4>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">Helps your skin and hair retain its natural moisture<br />and hydration, leaving it feeling smoother and softer</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Maximizes Your<br />Skincare Absorption</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="#">FIND OUT MORE</a>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?=site_url('Products')?>">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -48,14 +48,14 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="assets/images/homepage-6.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/homepage-6.jpg"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">100% Mulberry silk material will help you maintain<br />your skin moisturized and hair soft while you sleep</h4>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">100% Mulberry silk material will help you maintain<br />your skin moisturized and hair soft while you sleep</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Reduce Wrinkles &<br />Face Creases</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="#">FIND OUT MORE</a>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?=site_url('Products')?>">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -92,20 +92,20 @@
                         <div class="product-image position-relative oh lazyload">
 
                             <a class="d-block" href="<?= site_url('Products') ?>">
-                                <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_gold.jpg"></div>
+                                <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg"></div>
                             </a>
                             <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_gold.jpg"></div>
+                                <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg"></div>
                             </div>
                         </div>
                         <div class="product-info mt__15">
                             <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                <a class="cd chp" href="<?= site_url('Products') ?>">Silk Pillowcase</a>
+                                <a class="cd chp" href="<?= site_url('Products') ?>"><b>Mulberry Silk Pillowcase</b></a>
                             </h3>
-                            <span class="price dib mb__5">Rp 600.000</span>
+                            <span class="price dib mb__5">Rp 749.900</span>
                             <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                <span data-bgset="assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
-                                <span data-bgset="assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
+                                <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
+                                <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
                             </div>
                         </div>
                     </div>
@@ -117,22 +117,22 @@
                             <span class="tc nt_labels pa pe_none cw">
                             </span>
                             <a class="d-block" href="<?= site_url('Products') ?>">
-                                <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_silver.jpg"></div>
+                                <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg"></div>
                             </a>
                             <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="assets/images/products/pillow_silver.jpg"></div>
+                                <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg"></div>
                             </div>
                         </div>
                         <div class="product-info mt__15">
                             <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                <a class="cd chp" href="<?= site_url('Products') ?>">Silk Pillowcase</a>
+                                <a class="cd chp" href="<?= site_url('Products') ?>"><b>Mulberry Silk Pillowcase</b></a>
                             </h3>
                             <span class="price dib mb__5">
-                                <span class="price dib mb__5">Rp 600.000</span>
+                                <span class="price dib mb__5">Rp 749.900</span>
                             </span>
                             <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                <span data-bgset="assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
-                                <span data-bgset="assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
+                                <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
+                                <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
                             </div>
                         </div>
                     </div>
@@ -149,15 +149,15 @@
             <div class="row equal_nt">
                 <div class="col-12">
                     <div class="nt_img_txt oh pr middle center">
-                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center" data-bgset="assets/images/how-to-order.jpg"></div>
+                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center" data-bgset="<?= base_url() ?>assets/images/how-to-order.jpg"></div>
                         <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-1 flex column shadow_wrap tl pe_none z__100">
                             <div class="pa pa_txts">
-                                <h3 class="mt__0 mg__0 lh__1">Premium Quality Pillowcases</h3>
+                                <h3 class="mt__0 mg__0 lh__1">100% Mulberry Silk Pillowcase</h3>
                                 <div class="kalles-handmade__full-width-banner__br imtt4_space"></div>
-                                <p class="kalles-handmade__full-width-banner__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br />et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br /> ut aliquip ex ea commodo consequat.
+                                <p class="kalles-handmade__full-width-banner__desc" style="width: 500px;">
+                                    Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEXⓇ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.
                                 </p>
-                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Order</a>
+                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Buy</a>
                             </div>
                         </div>
                     </div>
@@ -180,38 +180,38 @@
             </div>
             <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
                 <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="blog-left-sidebar.html">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog/blog-03.jpg"></div>
+                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
+                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
                     </a>
                     <div class="post-info mb__10">
                         <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="blog-post-with-instagram-shop.html">Blog Artikel Judul #3</a>
+                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep luxury, beauty, and wellness pada Mulsk pillowcase</a>
                         </h4>
                         <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
                     </div>
-                    <div class="post-content">Deskripsi pendek dari artikel, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</div>
+                    <div class="post-content">Sarung bantal menjadi perlengkapan tidur yang juga harus Anda perhatikan. Mengapa demikian?</div>
                 </article>
                 <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="blog-left-sidebar.html">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/silk.png"></div>
+                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202102') ?>">
+                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/silk.png"></div>
                     </a>
                     <div class="post-info mb__10">
                         <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="blog-post-with-instagram-shop.html">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
+                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
                         </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
+                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 10, 2021</time></span></span>
                     </div>
                     <div class="post-content">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</div>
                 </article>
                 <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="blog-left-sidebar.html">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog_1.jpg"></div>
+                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202101') ?>">
+                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog_1.jpg"></div>
                     </a>
                     <div class="post-info mb__10">
                         <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="blog-post-with-instagram-shop.html">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
+                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
                         </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
+                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 08, 2021</time></span></span>
                     </div>
                     <div class="post-content">Pentingnya tidur berkualitas dengan memakai perlengkapan yang mendukung: sarung bantal dengan material utama mulberry silk.</div>
                 </article>

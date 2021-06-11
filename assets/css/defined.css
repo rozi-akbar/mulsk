@@ -1289,6 +1289,10 @@
     line-height: 1;
 }
 
+.lh__2 {
+    line-height: 1.25;
+}
+
 .f__pop {
     font-family: 'Poppins', sans-serif;
 }
