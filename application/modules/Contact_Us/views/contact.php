@@ -16,8 +16,10 @@
         <br />
         <div class="row fl_center">
             <div class="contact-form col-12 col-md-6 order-1 order-md-0">
-                <h3 class="mb__20 mt__40">CONTACT INFORMATION</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed faucibus turpis in eu mi bibendum neque egestas congue. </p>
+                <h3 class="mb__20 mt__40">Halo, teman Mulsk!</h3>
+                <p>Email kami melalui hello@mulskid.com dan kami akan sesegera mungkin menghubungi anda!</p>
+                    <p>Anda juga dapat mengikuti lini instagram kami di <a href="https://instagram.com/mulskbeauty" target="_blank">@mulskbeauty</a> untuk info promo serta update terbaru tentang produk Mulsk Beauty!</p>
+                    <p>Informasi lebih lanjut :</p>
                 <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:hello@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">hello@mulskid.com</a></p>
                 <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
                 <div class="nt-social">
