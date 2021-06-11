@@ -40,42 +40,53 @@
     <div id="nt_wrapper">
 
         <!-- header -->
-        <header id="ntheader" class="ntheader header_3 h_icon_iccl ">
-            <div class="kalles-header__wrapper ntheader_wrapper pr z_200">
-                <div class="sp_header_mid">
+        <header id="ntheader" class="ntheader header_2 h_icon_iccl">
+            <div class="ntheader_wrapper pr z_200">
+                <div id="kalles-section-header_2" class="kalles-section sp_header_mid">
                     <div class="header__mid">
                         <div class="container">
                             <div class="row al_center css_h_se">
-                                <div class="col-12">
+                                <div class="col-lg-2 col-md-4 col-3">
+                                    <a href="#" data-id="#nt_menu_canvas" class="push_side push-menu-btn dn_lg lh__1 flex al_center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+                                            <rect width="30" height="1.5"></rect>
+                                            <rect y="7" width="20" height="1.5"></rect>
+                                            <rect y="14" width="30" height="1.5"></rect>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-4 col-6">
                                     <nav class="nt_navigation tc hover_side_up nav_arrow_false">
                                         <ul id="nt_menu_id" class="nt_menu in_flex al_center">
                                             <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Home') ?>">HOME</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('About') ?>">ABOUT MULSK</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
+                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Products') ?>">PRODUCTS</a>
                                             </li>
                                             <li class="menu-item branding ts__05 lh__1">
-                                                <a class="lh__1 flex al_center pr" href="<?=site_url('Home')?>">
+                                                <a class="lh__1 flex al_center pr" href="<?= site_url('Home') ?>">
                                                     <img class="w__100 logo_normal dn db_lg max-width__95px max-height__60px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                     <img class="w__100 logo_sticky dn max-width__100px max-height__60px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                     <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" alt="Kalles Html Template" />
                                                 </a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
+                                            <li class="type_dropdown menu_wid_ menu-item has-children menu_has_offsets menu_right pos_right">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('How_to_Buy') ?>">HOW TO BUY</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
+                                            <li class="type_dropdown menu_wid_ menu-item has-children menu_has_offsets menu_right pos_right">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Blog') ?>">BLOG</a>
                                             </li>
-                                            <li class="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_default pos_default">
+                                            <li class="menu-item type_simple">
                                                 <a class="lh__1 flex al_center pr" href="<?= site_url('Contact_Us') ?>">CONTACT US</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-3 tr">
                                 </div>
                             </div>
                         </div>

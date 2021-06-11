@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="contact-content col-12 col-md-6 order-0 order-md-1">
-                <img class="img-fluid" src="<?= base_url() ?>assets/images/blog_1.jpg" style="max-width: 300px; margin-top: 40px;">
+                <img class="img-fluid" src="<?= base_url() ?>assets/images/blog_1.jpg" style="max-width: 300px; margin-top: 40px; border-radius: 10px;">
             </div>
         </div>
     </div>
