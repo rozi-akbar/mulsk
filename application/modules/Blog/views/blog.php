@@ -12,14 +12,14 @@
     <!--end hero banner-->
 
     <!--main content-->
-    <div class="container container_cat cat_default mt__60 mb__20">
+    <div class="container container_cat cat_default mt__10 mb__20">
         <div class="row nt_single_blog">
             <div class="col-lg-12 col-xs-12">
                 <div class="cat_toolbar row fl_center al_center mt__30">
-                    <div class="col cb">
+                    <div class="col-lg-6 cb col-12">
                         <span style="font-size: 36px; font-weight: 700;line-height: 46.87px;">Everything you need to know about Mulsk!</span>
                     </div>
-                    <div class="cat_sortby cat_sortby_js col tr kalles_dropdown kalles_dropdown_container">
+                    <div class="cat_sortby cat_sortby_js col-lg-6 col-12 tr kalles_dropdown kalles_dropdown_container">
                         <a class="in_flex fl_between al_center sortby_pick kalles_dropDown_label" href="#">
                             <span class="lbl-title sr_txt dn">Date, new to old</span>
                             <span class="lbl-title sr_txt_mb">Sort by</span>

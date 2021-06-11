@@ -61,11 +61,11 @@
                                     <div class="pr_short_des">
                                         <p class="mg__0">Say Goodbye To Dull Skin and Bed Head With Mulsk, 100% Mulberry Silk Pillow Case!</p><br>
                                         <p class="mg__0"><b>Bahan:</b> 100% mulberry silk, top grade 6A
-                                        <br><b>Ketebalan:</b> 22 momme
-                                        <br><b>Ukuran:</b> 52 cm x 72 cm
-                                        
+                                            <br><b>Ketebalan:</b> 22 momme
+                                            <br><b>Ukuran:</b> 52 cm x 72 cm
+
                                         </p>
-                                      
+
                                     </div>
                                     <div class="btn-atc atc-slide btn_des_1 btn_txt_3">
                                         <div id="callBackVariant_ppr">
@@ -137,7 +137,21 @@
                             <a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_product_description"><span class="txt_h_tab">Benefits</span><span class="nav_link_icon ml__5"></span></a>
                         </div>
                         <div class="sp-tab-content cb">
-                        <p>Waktu tidur adalah waktu yang paling signifikan untuk memperbaiki metabolisme tubuh, dan sangat berperan penting dalam kesehatan dan kecantikan.</p><p>Mulsk hadir sebagai sarung bantal yang berbahan 100% sutra mulberry dengan ketebalan 22 momme. Sutra mulberry sendiri merupakan sutra dengan kualitas terbaik di dunia saat ini karena diproduksi oleh bombyx mori moth yang hanya diberi makan daun mulberry saja, sehingga menghasilkan sutra terbaik dan terlembut dibandingkan dengan seluruh jenis sutra lainnya.</p><p>Didesain untuk kenyamanan Anda, Mulsk menggunakan bukaan yang tersembunyi atau model amplop tanpa resleting untuk bagian penutupnya.&nbsp; Pilihan ukuran sarung bantal yang tersedia adalah 52 x 72 cm.</p><p>Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEX®️ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.</p><p>Manfaat dan Kelebihan dari Mulsk Pillow Case adalah:</p><ul><li>Mengurangi inflamasi jerawat</li><li>Menjaga kelembapan kulit</li><li>Mencegah iritasi</li><li>Hypoallergenic</li><li>Mengurangi resiko kerutan pada wajah</li><li>Tidak membuat rambut kusut saat bangun</li><li>Membuat rambut lebih lembap&nbsp;</li><li>Terasa sejuk dan tidak panas saat digunakan</li></ul>
+                            <p>Waktu tidur adalah waktu yang paling signifikan untuk memperbaiki metabolisme tubuh, dan sangat berperan penting dalam kesehatan dan kecantikan.</p>
+                            <p>Mulsk hadir sebagai sarung bantal yang berbahan 100% sutra mulberry dengan ketebalan 22 momme. Sutra mulberry sendiri merupakan sutra dengan kualitas terbaik di dunia saat ini karena diproduksi oleh bombyx mori moth yang hanya diberi makan daun mulberry saja, sehingga menghasilkan sutra terbaik dan terlembut dibandingkan dengan seluruh jenis sutra lainnya.</p>
+                            <p>Didesain untuk kenyamanan Anda, Mulsk menggunakan bukaan yang tersembunyi atau model amplop tanpa resleting untuk bagian penutupnya.&nbsp; Pilihan ukuran sarung bantal yang tersedia adalah 52 x 72 cm.</p>
+                            <p>Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEX®️ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.</p>
+                            <p>Manfaat dan Kelebihan dari Mulsk Pillow Case adalah:</p>
+                            <ul>
+                                <li>Mengurangi inflamasi jerawat</li>
+                                <li>Menjaga kelembapan kulit</li>
+                                <li>Mencegah iritasi</li>
+                                <li>Hypoallergenic</li>
+                                <li>Mengurangi resiko kerutan pada wajah</li>
+                                <li>Tidak membuat rambut kusut saat bangun</li>
+                                <li>Membuat rambut lebih lembap&nbsp;</li>
+                                <li>Terasa sejuk dan tidak panas saat digunakan</li>
+                            </ul>
                             <div class="row al_center fl_center bgbl_ pt__100 pb__35">
                                 <div class="col-12 col-md-3 tc tr_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
@@ -238,7 +252,7 @@
             </div>
         </div>
         <!-- end description and review -->
-
+        <br />
         <div class="clearfix">
             <div style="width: 250px; margin: auto;">
                 <a class="btn btn-warning" style="width: 250px; height: 50px; border-radius: 100px;" href="<?= site_url('How_to_Buy') ?>" role="button">I want to buy this!</a>
