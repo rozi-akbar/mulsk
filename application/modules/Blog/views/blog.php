@@ -15,6 +15,32 @@
     <div class="container container_cat cat_default mt__60 mb__20">
         <div class="row nt_single_blog">
             <div class="col-lg-12 col-xs-12">
+                <div class="cat_toolbar row fl_center al_center mt__30">
+                    <div class="col cb">
+                        <span style="font-size: 36px; font-weight: 700;line-height: 46.87px;">Everything you need to know about Mulsk!</span>
+                    </div>
+                    <div class="cat_sortby cat_sortby_js col tr kalles_dropdown kalles_dropdown_container">
+                        <a class="in_flex fl_between al_center sortby_pick kalles_dropDown_label" href="#">
+                            <span class="lbl-title sr_txt dn">Date, new to old</span>
+                            <span class="lbl-title sr_txt_mb">Sort by</span>
+                            <i class="ml__5 mr__5 facl facl-angle-down"></i>
+                        </a>
+                        <div class="nt_sortby dn">
+                            <svg class="ic_triangle_svg" viewBox="0 0 20 9" role="presentation">
+                                <path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+                            </svg>
+                            <div class="h3 mg__0 tc cd tu ls__2 dn_lg db">Sort by<i class="pegk pe-7s-close fs__50 ml__5"></i>
+                            </div>
+                            <div class="nt_ajaxsortby wrap_sortby kalles_dropdown_options">
+                                <a data-label="Alphabetically, A-Z" class="kalles_dropdown_option truncate" href="#">Alphabetically, A-Z</a>
+                                <a data-label="Alphabetically, Z-A" class="kalles_dropdown_option truncate" href="#">Alphabetically, Z-A</a>
+                                <a data-label="Date, old to new" class="kalles_dropdown_option truncate" href="#">Date, old to new</a>
+                                <a data-label="Date, new to old" class="kalles_dropdown_option truncate" href="#">Date, new to old</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
                 <div class="kalles-section nt_section type_isotope">
 
                     <!--articles-->
@@ -35,7 +61,7 @@
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/silk.png"></div>
                             </a>
                             <div class="post-info mb__5">
-                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">10 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</a>
                                 </h4>
@@ -46,7 +72,7 @@
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog_1.jpg"></div>
                             </a>
                             <div class="post-info mb__5">
-                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">12 Juni 2021</time></span></span>
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">08 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
                                 </h4>
