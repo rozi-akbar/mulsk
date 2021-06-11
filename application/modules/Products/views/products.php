@@ -54,19 +54,25 @@
                         <div class="col-md-6 col-12 product-infors pr_sticky_su">
                             <div class="theiaStickySidebar">
                                 <div class="kalles-section-pr_summary kalles-section summary entry-summary mt__30">
-                                    <h1 class="product_title entry-title fs__16">Silk Pillowcase</h1>
+                                    <h1 class="product_title entry-title fs__16">Mulberry Silk Envelope Pillowcase</h1>
                                     <div class="flex wrap fl_between al_center price-review">
-                                        <p class="price_range" id="price_ppr">Rp 600.000</p>
+                                        <p class="price_range" id="price_ppr">Rp 749.900</p>
                                     </div>
                                     <div class="pr_short_des">
-                                        <p class="mg__0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="mg__0">Say Goodbye To Dull Skin and Bed Head With Mulsk, 100% Mulberry Silk Pillow Case!</p><br>
+                                        <p class="mg__0"><b>Bahan:</b> 100% mulberry silk, top grade 6A
+                                        <br><b>Ketebalan:</b> 22 momme
+                                        <br><b>Ukuran:</b> 52 cm x 72 cm
+                                        
+                                        </p>
+                                      
                                     </div>
                                     <div class="btn-atc atc-slide btn_des_1 btn_txt_3">
                                         <div id="callBackVariant_ppr">
                                             <div class="variations mb__40 style__circle size_medium style_color des_color_1">
                                                 <div class="swatch is-color kalles_swatch_js">
                                                     <h4 class="swatch__title">Color:
-                                                        <span class="nt_name_current user_choose_js">Golden</span>
+                                                        <span class="nt_name_current user_choose_js">Gold</span>
                                                     </h4>
                                                     <ul class="swatches-select swatch__list_pr d-flex">
                                                         <li class="ttip_nt tooltip_top_right nt-swatch swatch_pr_item" data-escape="Silver">
@@ -131,9 +137,7 @@
                             <a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_product_description"><span class="txt_h_tab">Benefits</span><span class="nav_link_icon ml__5"></span></a>
                         </div>
                         <div class="sp-tab-content cb">
-                            <p class="mb__5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas sed tempus. Pretium viverra suspendisse potenti nullam ac. Commodo quis imperdiet massa tincidunt. Mattis enim ut tellus elementum. Dignissim convallis aenean et tortor at. Cursus mattis molestie a iaculis at erat. Ultricies mi quis hendrerit dolor magna eget est. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Ac tortor vitae purus faucibus ornare. Risus nullam eget felis eget nunc lobortis mattis aliquam. Consectetur adipiscing elit pellentesque habitant. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Felis eget nunc lobortis mattis aliquam faucibus purus in.
-                            </p>
+                        <p>Waktu tidur adalah waktu yang paling signifikan untuk memperbaiki metabolisme tubuh, dan sangat berperan penting dalam kesehatan dan kecantikan.</p><p>Mulsk hadir sebagai sarung bantal yang berbahan 100% sutra mulberry dengan ketebalan 22 momme. Sutra mulberry sendiri merupakan sutra dengan kualitas terbaik di dunia saat ini karena diproduksi oleh bombyx mori moth yang hanya diberi makan daun mulberry saja, sehingga menghasilkan sutra terbaik dan terlembut dibandingkan dengan seluruh jenis sutra lainnya.</p><p>Didesain untuk kenyamanan Anda, Mulsk menggunakan bukaan yang tersembunyi atau model amplop tanpa resleting untuk bagian penutupnya.&nbsp; Pilihan ukuran sarung bantal yang tersedia adalah 52 x 72 cm.</p><p>Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEX®️ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.</p><p>Manfaat dan Kelebihan dari Mulsk Pillow Case adalah:</p><ul><li>Mengurangi inflamasi jerawat</li><li>Menjaga kelembapan kulit</li><li>Mencegah iritasi</li><li>Hypoallergenic</li><li>Mengurangi resiko kerutan pada wajah</li><li>Tidak membuat rambut kusut saat bangun</li><li>Membuat rambut lebih lembap&nbsp;</li><li>Terasa sejuk dan tidak panas saat digunakan</li></ul>
                             <div class="row al_center fl_center bgbl_ pt__100 pb__35">
                                 <div class="col-12 col-md-3 tc tr_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
