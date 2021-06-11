@@ -18,19 +18,9 @@
             <div class="col-lg-12 col-xs-12">
                 <div class="kalles-section nt_section type_isotope">
                     <div class="cb">
-                        <p>Konsep luxury, beauty, and wellness pada Mulsk pillowcase series pertama dengan dua warna elegan: silver dan gold. (Note: Fokus dibuat untuk menjelaskan brand Mulsk. Tentang pillow case di artikel selanjutnya supaya isinya balance).</p>
-                        <p style="text-align: center; ">
-                            <b>Mulsk: Perpaduan Kemewahan, Kecantikan, dan Kesehatan dalam Setiap Produknya</b>
-                        </p>
-                        <ol>
-                            <li>Banyak brand yang menghasilkan produk sarung bantal dengan motif beragam, tetapi terbuat dari katun.&nbsp;</li>
-                            <li>Bahan kain yang bisa digunakan untuk sarung bantal apa saja. Kekurangannya juga disebutkan.</li>
-                            <li>Mulsk hadir dengan sebuah inovasi membuat produk perlengkapan tidur dari bahan berkualitas yakni mulberry silk.</li>
-                            <li>Mulsk berkomitmen menghasilkan produk-produk berkualitas menggunakan 100% mulberry silk.</li>
-                            <li>Konsep produk Mulsk : perpaduan kemewahan, kecantikan, dan kesehatan</li>
-                        </ol>
-                        <div><br></div>
-                        <br />
+                        <p style="text-indent: 30px; text-align: justify;">Sering kebingungan saat ingin membeli seprai dan sarung bantal karena bahan yang beragam? Tentu banyak pertimbangan sebelum menjatuhkan pilihan pada satu bahan. Terlebih, saat ini semakin banyak brand yang mengeluarkan produk dengan bahan dan motif yang beraneka.</p>
+                        <p style="text-indent: 30px; text-align: justify;">Dari banyaknya pertimbangan, tentu Anda mengutamakan bahan yang lembut sehingga menghasilkan kenyamanan terutama untuk sarung bantal. Sarung bantal menjadi perlengkapan tidur yang juga harus Anda perhatikan. Mengapa demikian? Sebab kain pembungkus bantal ini menjadi alas Anda selama berjam-jam meletakkan kepala. Pilihlah bahan yang terjamin kelembutannya dan tidak membuat Anda gerah saat tidur.</p>
+                        <p style="text-indent: 30px; text-align: justify;">Sebelum memilih bahan terbaik, ketahui beberapa jenis kain yang banyak digunakan untuk sarung bantal. Apa saja?</p>
                     </div>
                 </div>
             </div>

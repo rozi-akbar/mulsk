@@ -14,8 +14,8 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tr_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-right">
                                 <div class="right_left">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Newly Launched!</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Comfortable Pillow</h3>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">New Innovation<br />for New Experience</h3>
                                 </div>
                             </div>
                         </div>
@@ -33,9 +33,9 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">SUMMER SALE</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Save up to 70%</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="shop-filter-options.html">Explore Now</a>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">Helps your skin and hair retain its natural moisture<br />and hydration, leaving it feeling smoother and softer</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Maximizes Your<br />Skincare Absorption</h3>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="#">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -53,9 +53,9 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">SUMMER SALE</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Save up to 70%</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="shop-filter-options.html">Explore Now</a>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__1">100% Mulberry silk material will help you maintain<br />your skin moisturized and hair soft while you sleep</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Reduce Wrinkles &<br />Face Creases</h3>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="#">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
