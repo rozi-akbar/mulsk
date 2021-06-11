@@ -24,7 +24,7 @@ class Blog extends CI_Controller
         $this->load->view('Layout/footer');
     }
 
-    public function blog3()
+    public function bg1206202103()
     {
         $this->load->view('Layout/header');
         $this->load->view('blog3');

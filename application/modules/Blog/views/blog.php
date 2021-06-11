@@ -46,13 +46,13 @@
                     <!--articles-->
                     <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
                         <article class="post_nt_loop post_1 col-lg-6 col-md-6 col-12 mb__40">
-                            <a class="mb__20 db pr oh" href="#">
+                            <a class="mb__20 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="assets/images/blog-page/blog-slide-01.jpg"></div>
                             </a>
                             <div class="post-info mb__5">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__15 ls__0">
-                                    <a class="cd chp open" href="#">Blog Artikel Judul #3</a>
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep luxury, beauty, and wellness pada Mulsk pillowcase</a>
                                 </h4>
                             </div>
                         </article>
