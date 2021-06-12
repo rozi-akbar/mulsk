@@ -22,13 +22,13 @@
                             <div class="menu_footer widget_footer">
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="<?=site_url('About')?>">About Us</a>
+                                        <a href="<?= site_url('About') ?>">About Us</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="<?=site_url('Products')?>">Products</a>
+                                        <a href="<?= site_url('Products') ?>">Products</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="<?=site_url('How_to_Buy')?>">How to Buy</a>
+                                        <a href="<?= site_url('How_to_Buy') ?>">How to Buy</a>
                                     </li>
                                 </ul>
                             </div>
@@ -39,10 +39,10 @@
                             <div class="menu_footer widget_footer">
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="<?=site_url('Blog')?>">Blog</a>
+                                        <a href="<?= site_url('Blog') ?>">Blog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="<?=site_url('Contact_Us')?>">Contact Us</a>
+                                        <a href="<?= site_url('Contact_Us') ?>">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,7 +54,10 @@
                                 <i class="pegk pe-7s-mail"></i>
                                 <span><a href="mailto:hello@mulskid.com"><span class="__cf_email__">hello@mulskid.com</span></a></span>
                             </p>
-                            <p><i class="pegk pe-7s-call"></i> <a href="https://wa.me/+6282232481689">Hubungi Admin melalui WhatsApp</a></p>
+                            <p>
+                                <i class="pegk pe-7s-call"></i>
+                                <a href="https://wa.me/+6282232481689">Hubungi Admin melalui WhatsApp</a>
+                            </p>
                             <div class="nt-social">
                                 <a href="https://www.facebook.com/Mulsk-Beauty-102496688739429" class="facebook cb ttip_nt tooltip_top">
                                     <span class="tt_txt">Follow on Facebook</span>
@@ -68,7 +71,7 @@
                                     <span class="tt_txt">Follow on Instagram</span>
                                     <i class="facl facl-instagram"></i>
                                 </a>
-                                <a href="https://www.pinterest.com/mulskbeauty" class="instagram cb ttip_nt tooltip_top">
+                                <a href="https://www.pinterest.com/mulskbeauty" class="pinterest cb ttip_nt tooltip_top">
                                     <span class="tt_txt">Follow on Pinterest</span>
                                     <i class="facl facl-pinterest"></i>
                                 </a>
@@ -103,7 +106,7 @@
 <div id="nt_menu_canvas" class="nt_fk_canvas nt_sleft dn lazyload">
     <i class="close_pp pegk pe-7s-close ts__03 cd"></i>
     <div class="mb_nav_tabs flex al_center mb_cat_true">
-    <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px ml-2" src="<?= base_url() ?>assets/images/svg/mulsk2.svg"/>
+        <img class="w__100 logo_mobile dn_lg max-width__100px max-height__57px ml-2" src="<?= base_url() ?>assets/images/svg/mulsk2.svg" />
         <!-- <div class="mb_nav_title pr mb_nav_ul flex al_center fl_center active" data-id="#kalles-section-mb_nav_js">
             <span class="db truncate">Menu</span>
         </div> -->

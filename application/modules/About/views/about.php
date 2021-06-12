@@ -53,9 +53,8 @@
                             <img class="img-fluid" src="<?= base_url() ?>assets/images/sandy.png">
                         </div>
                         <div class="col-8">
-                            <p style="text-indent: 30px; text-align: justify;">
-                                Our Founder, <strong>Shandy Purnamasari</strong> has created this premium-quality <strong>Mulberry Silk PIllowcases</strong> to help us have a better quality sleep, with anti-aging and hypoallergenic quality. Available to purchase through our official store & resellers, now you can enjoy your beauty sleep and wake up with glowing skin and smooth hair!
-                            </p>
+                            <p style="text-indent: 30px; text-align: justify;">Juragan 99 Garment terus berinovasi membuat produk yang berkualitas tinggi. Perusahaan yang didirikan oleh sepasang pengusaha muda, <b>Gilang Widya Pramana</b> dan <b>Shandy Purnamasari</b>, sejak 2020 ini siap merilis sebuah brand perlengkapan tidur yang dinamai <b>Mulsk</b>.</p>
+                            <p style="text-indent: 30px; text-align: justify;"><b>Mulsk </b>hadir sebagai bentuk inovasi dari <b>Juragan 99 Garment</b> yang berangkat dari keinginan untuk fokus pada produk yang berkaitan dengan kesehatan sekaligus kecantikan. Produk-produk dari brand yang akan diluncurkan pada 13 Juni 2021 ini menggunakan 100% bahan alami <b>Mulberry Silk</b>.</p>
                         </div>
                     </div>
 

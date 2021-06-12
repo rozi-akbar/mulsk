@@ -22,18 +22,23 @@
                     <p>Informasi lebih lanjut :</p>
                 <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:hello@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">hello@mulskid.com</a></p>
                 <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
+                <p class="mb__5 d-flex"><i class="las la-shopping-cart fs__20 mr__10 text-primary"></i> <a href="https://shopee.co.id/mulskbeauty" target="_blank">Shopee</a>  <a href="https://www.tokopedia.com/mulskbeauty" target="_blank">Tokopedia</a></p>
                 <div class="nt-social">
-                    <a href="https://www.facebook.com/" class="facebook cb ttip_nt tooltip_top">
+                    <a href="https://www.facebook.com/Mulsk-Beauty-102496688739429" class="facebook cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Facebook</span>
                         <i class="facl facl-facebook"></i>
                     </a>
-                    <a href="https://twitter.com/" class="twitter cb ttip_nt tooltip_top">
+                    <a href="https://twitter.com/mulskbeauty" class="twitter cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Twitter</span>
                         <i class="facl facl-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/" class="instagram cb ttip_nt tooltip_top">
+                    <a href="https://instagram.com/mulskbeauty" class="instagram cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Instagram</span>
                         <i class="facl facl-instagram"></i>
+                    </a>
+                    <a href="https://instagram.com/mulskbeauty" class="pinterest cb ttip_nt tooltip_top">
+                        <span class="tt_txt">Follow on Pinterest</span>
+                        <i class="facl facl-pinterest"></i>
                     </a>
                 </div>
             </div>
