@@ -19,7 +19,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="shop.html" class="pa t__0 l__0 b__0 r__0 pe_none"></a>
                     </div>
                 </div>
                 <!-- end first slide -->
