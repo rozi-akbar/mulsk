@@ -1,7 +1,20 @@
 <style>
-.post-author{
-    font-size: 12px;
-}
+    .post-author {
+        font-size: 12px;
+    }
+
+    .everything_you {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46.87px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .everything_you {
+            font-size: 19px;
+            line-height: 35px;
+        }
+    }
 </style>
 <div id="nt_content">
 
@@ -22,7 +35,7 @@
             <div class="col-lg-12 col-xs-12">
                 <div class="cat_toolbar row fl_center al_center mt__30">
                     <div class="col-lg-6 cb col-12">
-                        <span style="font-size: 36px; font-weight: 700;line-height: 46.87px;">Everything you need to know about Mulsk!</span>
+                        <span class="everything_you">Everything you need to know about Mulsk!</span>
                     </div>
                     <div class="cat_sortby cat_sortby_js col-lg-6 col-12 tr kalles_dropdown kalles_dropdown_container">
                         <a class="in_flex fl_between al_center sortby_pick kalles_dropDown_label" href="#">
