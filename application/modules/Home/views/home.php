@@ -55,7 +55,7 @@
 
     @media only screen and (max-width: 600px) {
         .content_890 {
-            width: 100%;
+            width: 60%;
         }
 
         .img_banner2 {
@@ -95,6 +95,10 @@
         .banner-title3_2 {
             margin-right: 150px;
             font-size: 22px;
+        }
+
+        .background-change{
+            background-image: url('<?=base_url()?>assets/images/how-to-order-mobile.jpg') !important;
         }
     }
 </style>
@@ -248,7 +252,7 @@
             <div class="row equal_nt">
                 <div class="col-12">
                     <div class="nt_img_txt oh pr middle center">
-                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center" data-bgset="<?= base_url() ?>assets/images/how-to-order.jpg"></div>
+                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center background-change" data-bgset="<?= base_url() ?>assets/images/how-to-order.jpg"></div>
                         <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-1 flex column shadow_wrap tl pe_none z__100">
                             <div class="pa pa_txts">
                                 <h3 class="mt__0 mg__0 lh__1">100% Mulberry Silk Pillowcase</h3>
