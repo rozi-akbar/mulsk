@@ -180,7 +180,7 @@
                                 <div class="col-12 col-md-3 tc tr_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="40" width="44" alt="rain" class="lazyload" data-src="<?= base_url() ?>assets/images/svg/anti-bacterial.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="rain" class="lazyload" data-src="<?= base_url() ?>assets/images/svg/anti-bacterial.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Hypoallergenic, Anti-Bacterial, and Natural Plant Extract
@@ -188,7 +188,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="39" width="36" alt="sun" data-src="<?= base_url() ?>assets/images/svg/dermatologist.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="sun" data-src="<?= base_url() ?>assets/images/svg/dermatologist.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Menjaga kadar air dan
@@ -197,7 +197,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10 order-md-4">
-                                            <img height="33" width="49" alt="sea-water" data-src="<?= base_url() ?>assets/images/svg/skincare-absorb.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="sea-water" data-src="<?= base_url() ?>assets/images/svg/skincare-absorb.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Lebih baik untuk pemilik
@@ -213,7 +213,7 @@
                                 <div class="col-12 col-md-3 tc tl_md">
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="51" width="52" alt="lead" data-src="<?= base_url() ?>assets/images/svg/reduce-wrinkles.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="lead" data-src="<?= base_url() ?>assets/images/svg/reduce-wrinkles.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Mencegah Kerutan
@@ -222,7 +222,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters mb__60">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="37" width="52" alt="spills" data-src="<?= base_url() ?>assets/images/svg/low-ph.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="spills" data-src="<?= base_url() ?>assets/images/svg/low-ph.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Anti-Aging
@@ -230,7 +230,7 @@
                                     </div>
                                     <div class="row fl_center al_center no-gutters">
                                         <div class="col-12 col-md-auto cl_depr_img ml__10 mr__10">
-                                            <img height="38" width="39" alt="recycle" data-src="<?= base_url() ?>assets/images/svg/luxury-gift.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                            <img width="50" alt="recycle" data-src="<?= base_url() ?>assets/images/svg/luxury-gift.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         </div>
                                         <div class="col-12 col-md">
                                             Mencegah rambut kusut
