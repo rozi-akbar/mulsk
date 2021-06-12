@@ -1,3 +1,30 @@
+<style>
+    .content_890 {
+        width: 500px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .banner-title2 {
+            font-size:45px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .content_890 {
+            width: 100%;
+        }
+
+        .banner-title1 {
+            text-align: right;
+            margin-left: 160px;
+        }
+
+        .banner-title2 {
+            text-align: right;
+            font-size: 15px;
+        }
+    }
+</style>
 <div id="nt_content">
 
     <!-- main slide -->
@@ -14,8 +41,8 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tr_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-right">
                                 <div class="right_left">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">New Innovation<br />for New Experience</h3>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title1">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title2">New Innovation<br />for New Experience</h3>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +61,7 @@
                                 <div class="left_right">
                                     <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">Helps your skin and hair retain its natural moisture<br />and hydration, leaving it feeling smoother and softer</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Maximizes Your<br />Skincare Absorption</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?=site_url('Products')?>">FIND OUT MORE</a>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?= site_url('Products') ?>">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +81,7 @@
                                 <div class="left_right">
                                     <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">100% Mulberry silk material will help you maintain<br />your skin moisturized and hair soft while you sleep</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Reduce Wrinkles &<br />Face Creases</h3>
-                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?=site_url('Products')?>">FIND OUT MORE</a>
+                                    <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?= site_url('Products') ?>">FIND OUT MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +180,7 @@
                             <div class="pa pa_txts">
                                 <h3 class="mt__0 mg__0 lh__1">100% Mulberry Silk Pillowcase</h3>
                                 <div class="kalles-handmade__full-width-banner__br imtt4_space"></div>
-                                <p class="kalles-handmade__full-width-banner__desc" style="width: 500px;">
+                                <p class="kalles-handmade__full-width-banner__desc content_890">
                                     Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEXⓇ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.
                                 </p>
                                 <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Buy</a>
