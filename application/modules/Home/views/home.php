@@ -56,6 +56,8 @@
     @media only screen and (max-width: 600px) {
         .content_890 {
             width: 60%;
+            font-size: 12px;
+            line-height: 1.5;
         }
 
         .img_banner2 {
