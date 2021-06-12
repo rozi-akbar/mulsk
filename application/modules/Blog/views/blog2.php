@@ -30,12 +30,14 @@
                                 <img src="<?= base_url() ?>assets/images/cocoon.jpg" width="100%">
                             </div>
                         </div>
+                        <br />
                         <p><b>Mulberry Silk Bernilai Jual Tinggi</b></p>
                         <p style="text-indent: 30px;text-align: justify;">Proses yang tidak singkat dengan hasil akhir benang yang lembut tentu menjadikan mulberry silk bernilai jual tinggi. Dengan pemrosesan untuk menghasilkan kualitas terbaik, tak heran jika mulberry silk memiliki karakteristik kain yang sangat ringan, jatuh, dan lembut di kulit.&nbsp;</p>
                         <p style="text-indent: 30px;text-align: justify;">Kain mulberry silk sangat cocok dijadikan sebagai pakaian karena kelembutannya. Namun, belakangan ini kain sutra pun mulai banyak diaplikasikan untuk perlengkapan tidur. Beberapa di antaranya, yaitu sarung bantal, selimut, hingga seprai.</p>
                         <div class="row">
                             <div class="col-lg-4">
                                 <img src="<?= base_url() ?>assets/images/why-mulsk.jpg" width="100%">
+                                <br />
                             </div>
                             <div class="col-lg-8">
                                 <p><b>Manfaat Memilih Perlengkapan Tidur Berbahan Kain Mulberry Silk</b></p>

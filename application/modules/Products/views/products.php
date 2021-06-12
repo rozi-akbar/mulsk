@@ -9,7 +9,7 @@
                 <div class="row al_center">
                     <div class="col">
                         <nav class="sp-breadcrumb">
-                            <a href="index.html">Home</a><i class="facl facl-angle-right"></i>Silk Pillowcase
+                            <a href="<?=site_url('Home')?>">Home</a><i class="facl facl-angle-right"></i>Silk Pillowcase
                         </nav>
                     </div>
                 </div>

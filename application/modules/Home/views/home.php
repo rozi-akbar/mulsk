@@ -3,6 +3,11 @@
         width: 500px;
     }
 
+    .banner-title1_1 {
+        text-align: right;
+        margin-left: 680px;
+    }
+
     .banner-title2_1 {
         text-align: left;
         margin-right: 600px;
@@ -17,8 +22,34 @@
     }
 
     @media only screen and (max-width: 768px) {
+        .banner-title1_1 {
+            text-align: right;
+            margin-left: 300px;
+        }
         .banner-title1_2 {
+            text-align: right;
             font-size: 40px;
+            margin-left: 300px;
+        }
+
+        .banner-title2_1 {
+            text-align: left;
+            margin-right: 300px;
+        }
+        .banner-title2_2 {
+            text-align: left;
+            font-size: 40px;
+            margin-right: 300px;
+        }
+
+        .banner-title3_1 {
+            text-align: left;
+            margin-right: 400px;
+        }
+        .banner-title3_2 {
+            text-align: left;
+            font-size: 40px;
+            margin-right: 300px;
         }
     }
 
@@ -81,7 +112,7 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tr_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-right">
                                 <div class="right_left">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title1_1">Natural premium material, Fibers that come from nature<br /> are perfect just the way they are⁣</h4>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title1_1">Natural premium material, Fibers that come from nature are perfect just the way they are⁣</h4>
                                     <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title1_2">New Innovation<br />for New Experience</h3>
                                 </div>
                             </div>
@@ -114,7 +145,7 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/home_mobile_3.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" style="background-image: url(<?=base_url()?>);"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">

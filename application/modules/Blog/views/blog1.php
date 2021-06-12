@@ -28,7 +28,7 @@
                             Kualitas tidur dapat berpengaruh pada kesehatan fisik, mental, dan kualitas hidup seseorang. Dikutip dari Sleep.org, terdapat beberapa akibat yang dialami jika seseorang tidak mendapat tidur yang berkualitas, seperti:
                         </p>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-lg-8">
                                 <ul>
                                     <li>
                                         Defisit kognitif, memori, dan kinerja
@@ -56,10 +56,11 @@
                                     Tidur tidak hanya soal durasi waktu, tetapi Anda juga harus memastikan mendapat kualitasnya. Lalu, bagaimana cara agar Anda bisa mendapat tidur yang berkualitas?
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <img class="img-fluid" src="<?= base_url() ?>assets/images/blog_1.jpg">
                             </div>
                         </div>
+                        <br />
                         <p><b>1. Ubah Gaya Hidup Anda</b></p>
                         <p style="text-indent: 30px; text-align:justify">
                             Gaya hidup ikut berpengaruh pada kualitas tidur Anda. Terapkan gaya hidup sehat untuk meningkatkan kualitas tidur. Mulailah berolahraga secara teratur, kurangi rokok, alkohol, dan kafein beberapa jam sebelum tidur.

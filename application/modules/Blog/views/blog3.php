@@ -16,7 +16,7 @@
         <div class="page-head tc pr oh cat_bg_img page_head_">
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/banner-blog-3.jpg"></div>
             <div class="container pr z_100">
-                <h1 class="mb__5 cw">Konsep luxury, beauty, and wellness pada Mulsk pillowcase</h1>
+                <h1 class="mb__5 cw">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</h1>
                 <p class="mg__0">12 Juni 2021</p>
             </div>
         </div>
