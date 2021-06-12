@@ -50,6 +50,15 @@
                             <p style="text-align: justify;text-indent: 30px;">Nah, bahan satu ini sudah sering digunakan untuk seprai maupun sarung bantal. Tak heran jika katun jepang banyak dipilih karena teksturnya yang lembut. Bahan ini juga memiliki banyak motif sehingga banyak orang yang menyukainya.</p>
                         </div>
                         <p style="text-align: justify;text-indent: 30px;">Semakin berkembangnya minat masyarakat, muncullah sarung bantal yang terbuat dari bahan sutra. Bahan yang sudah tidak perlu diragukan kelembutannya ini beberapa tahun belakang ikut bersaing menjadi bahan sarung bantal favorit.</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <img src="<?= base_url() ?>assets/images/pic-blog-3-1.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img src="<?= base_url() ?>assets/images/pic-blog-3-2.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <br />
                         <p style="text-align: justify;"><b>Mulsk Berinovasi Menghasilkan Produk Perlengkapan Tidur Berkualitas</b></p>
                         <p style="text-align: justify;text-indent: 30px">Mulsk hadir dengan sebuah inovasi membuat produk perlengkapan tidur dari bahan sutra berkualitas, yakni mulberry silk. Mulsk berkomitmen menghasilkan produk-produk berkualitas menggunakan 100% sutra yang dihasilkan dari ulat sutra yang diberi pakan utama daun mulberry atau murbei.&nbsp;</p>
                         <p style="text-align: justify;text-indent: 30px">Mengusung perpaduan konsep kemewahan, kecantikan, dan kesehatan, Mulsk memberi jaminan produk-produknya akan lekat dengan kesan elegan dan memiliki manfaat bagi penggunanya. Untuk produk pertamanya, Mulsk akan meluncurkan sarung bantal berbahan mulberry silk dengan pilihan warna silver dan gold yang memesona. Penasaran dengan produk sarung bantal Mulsk? Klik link berikut (link produk) untuk dapat merasakan kelembutannya.</p>

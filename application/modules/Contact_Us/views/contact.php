@@ -43,7 +43,7 @@
                 <p class="mb__5 mt__10 d-flex"><a href="https://shopee.co.id/mulskbeauty" target="_blank"><img src="<?=base_url()?>assets/images/svg/shopee_square.svg" width="20px"> Shopee</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.tokopedia.com/mulskbeauty" target="_blank"><img src="<?=base_url()?>assets/images/svg/tokped_square.svg" width="20px"> Tokopedia</a></p>
             </div>
             <div class="contact-content col-12 col-md-6 order-0 order-md-1">
-                <img class="img-fluid" src="<?= base_url() ?>assets/images/img-contact-us.jpg" style="max-width: 300px; margin-top: 40px; border-radius: 10px;">
+                <img class="img-fluid" src="<?= base_url() ?>assets/images/img-contact-us.jpg" style="max-width: 100%; margin-top: 40px; border-radius: 10px;">
             </div>
         </div>
     </div>
