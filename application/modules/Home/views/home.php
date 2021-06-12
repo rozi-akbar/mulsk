@@ -3,9 +3,22 @@
         width: 500px;
     }
 
+    .banner-title2_1 {
+        text-align: left;
+        margin-right: 600px;
+    }
+
+    .banner-title3_1 {
+        margin-right: 700px;
+    }
+
+    .banner-title3_2 {
+        margin-right: 700px;
+    }
+
     @media only screen and (max-width: 768px) {
-        .banner-title2 {
-            font-size:45px;
+        .banner-title1_2 {
+            font-size: 40px;
         }
     }
 
@@ -14,14 +27,41 @@
             width: 100%;
         }
 
-        .banner-title1 {
+        .img_banner2 {
+            background-image: url('<?= base_url() ?>assets/images/home_mobile_2.jpg');
+        }
+
+        .img_banner3 {
+            background-image: url('<?= base_url() ?>assets/images/home_mobile_3s.jpg');
+        }
+
+        .banner-title1_1 {
             text-align: right;
             margin-left: 160px;
         }
 
-        .banner-title2 {
+        .banner-title1_2 {
             text-align: right;
-            font-size: 15px;
+            font-size: 22px;
+        }
+
+        .banner-title2_1 {
+            text-align: left;
+            margin-right: 100px;
+        }
+
+        .banner-title2_2 {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .banner-title3_1 {
+            margin-right: 150px;
+        }
+
+        .banner-title3_2 {
+            margin-right: 150px;
+            font-size: 22px;
         }
     }
 </style>
@@ -41,8 +81,8 @@
                         <div class="caption-wrap caption-w-1 pe_none z_100 tr_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-right">
                                 <div class="right_left">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title1">Natural premium material, Fibers that come from<br />nature are perfect just the way they are⁣</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title2">New Innovation<br />for New Experience</h3>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title1_1">Natural premium material, Fibers that come from nature<br /> are perfect just the way they are⁣</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title1_2">New Innovation<br />for New Experience</h3>
                                 </div>
                             </div>
                         </div>
@@ -54,13 +94,13 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/homepage-3.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/home_mobile_2.jpg"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">Helps your skin and hair retain its natural moisture<br />and hydration, leaving it feeling smoother and softer</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Maximizes Your<br />Skincare Absorption</h3>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title2_1">Helps your skin and hair retain its natural moisture and hydration, leaving it feeling smoother and softer</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title2_2">Maximizes Your<br />Skincare Absorption</h3>
                                     <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?= site_url('Products') ?>">FIND OUT MORE</a>
                                 </div>
                             </div>
@@ -74,13 +114,13 @@
                 <div class="col-12 slideshow__slide">
                     <div class="oh position-relative nt_img_txt bg-black--transparent">
                         <div class="js_full_ht4 img_slider_block kalles-slide-element__pdb-600">
-                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/homepage-6.jpg"></div>
+                            <div class="bg_rp_norepeat bg_sz_cover lazyload item__position center center img_tran_ef pa l__0 t__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/home_mobile_3.jpg"></div>
                         </div>
                         <div class="caption-wrap caption-w-1 pe_none z_100 tl_md tl">
                             <div class="pa_txts caption kalles-caption-layout-01 kalles-caption--midle-left">
                                 <div class="left_right">
-                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2">100% Mulberry silk material will help you maintain<br />your skin moisturized and hair soft while you sleep</h4>
-                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1">Reduce Wrinkles &<br />Face Creases</h3>
+                                    <h4 class="kalles-caption-layout-01__subtitle mg__0 lh__2 banner-title3_1">100% Mulberry silk material will help you maintain your skin moisturized and hair soft while you sleep</h4>
+                                    <h3 class="kalles-caption-layout-01__title mg__0 lh__1 banner-title3_2">Reduce Wrinkles & Face Creases</h3>
                                     <a class="kalles-caption-layout-01__button kalles-button--square slt4_btn button pe_auto round_false btn_icon_false" href="<?= site_url('Products') ?>">FIND OUT MORE</a>
                                 </div>
                             </div>
