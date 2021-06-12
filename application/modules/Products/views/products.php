@@ -60,7 +60,7 @@
                                 <div class="kalles-section-pr_summary kalles-section summary entry-summary mt__30">
                                     <h1 class="product_title entry-title fs__16">Mulberry Silk Pillowcase</h1>
                                     <div class="flex wrap fl_between al_center price-review">
-                                        <p class="price_range" id="price_ppr">Rp 749.900</p>
+                                        <p class="price_range" id="price_ppr">Rp 599.000</p>
                                     </div>
                                     <div class="pr_short_des">
                                         <p class="mg__0">Say Goodbye To Dull Skin and Bed Head With Mulsk, 100% Mulberry Silk Pillow Case!</p><br>
