@@ -70,7 +70,7 @@
                             <div class="post-info">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__10 ls__0">
-                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep Luxury, Beauty, and Wellness pada Mulsk Pillowcase</a>
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
                                 </h4>
                             </div>
                         </article>

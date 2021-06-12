@@ -184,7 +184,7 @@
                     </a>
                     <div class="post-info mb__10">
                         <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Konsep luxury, beauty, and wellness pada Mulsk pillowcase</a>
+                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
                         </h4>
                         <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
                     </div>

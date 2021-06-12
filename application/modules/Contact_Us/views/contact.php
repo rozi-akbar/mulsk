@@ -22,8 +22,7 @@
                     <p>Informasi lebih lanjut :</p>
                 <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:hello@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">hello@mulskid.com</a></p>
                 <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
-                <p class="mb__5 d-flex"><i class="las la-shopping-cart fs__20 mr__10 text-primary"></i> <a href="https://shopee.co.id/mulskbeauty" target="_blank">Shopee</a>  <a href="https://www.tokopedia.com/mulskbeauty" target="_blank">Tokopedia</a></p>
-                <div class="nt-social">
+                <div class="nt-social mt__10">
                     <a href="https://www.facebook.com/Mulsk-Beauty-102496688739429" class="facebook cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Facebook</span>
                         <i class="facl facl-facebook"></i>
@@ -41,9 +40,10 @@
                         <i class="facl facl-pinterest"></i>
                     </a>
                 </div>
+                <p class="mb__5 mt__10 d-flex"><a href="https://shopee.co.id/mulskbeauty" target="_blank"><img src="<?=base_url()?>assets/images/svg/shopee_square.svg" width="20px"> Shopee</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.tokopedia.com/mulskbeauty" target="_blank"><img src="<?=base_url()?>assets/images/svg/tokped_square.svg" width="20px"> Tokopedia</a></p>
             </div>
             <div class="contact-content col-12 col-md-6 order-0 order-md-1">
-                <img class="img-fluid" src="<?= base_url() ?>assets/images/blog_1.jpg" style="max-width: 300px; margin-top: 40px; border-radius: 10px;">
+                <img class="img-fluid" src="<?= base_url() ?>assets/images/img-contact-us.jpg" style="max-width: 300px; margin-top: 40px; border-radius: 10px;">
             </div>
         </div>
     </div>
