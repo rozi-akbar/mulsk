@@ -4207,7 +4207,7 @@ button.plyr__control.plyr__control--overlaid {
 .sp-content-help {
     position: relative;
     background-color: #fff;
-    max-width: 980px;
+    max-width: fit-content;
     overflow: hidden;
     margin: auto;
 }

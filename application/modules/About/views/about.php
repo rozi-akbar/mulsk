@@ -1,3 +1,34 @@
+<style>
+    .portrait {
+        height: 100vh;
+        display: block;
+        margin: auto;
+        border: 1px solid #E2e2e2;
+    }
+
+    .landscape {
+        width: 100vh;
+        display: block;
+        margin: auto;
+        border: 1px solid #E2e2e2;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .portrait {
+            height: auto;
+            display: block;
+            margin: auto;
+            border: 1px solid #E2e2e2;
+        }
+
+        .landscape {
+            width: auto;
+            display: block;
+            margin: auto;
+            border: 1px solid #E2e2e2;
+        }
+    }
+</style>
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-product.css">
 <div id="nt_content">
@@ -134,8 +165,10 @@
                                 <div class="row fl_wrap fl_wrap_md oah use_border_false">
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-0">
                                         <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
-                                            <div class="col-auto icon medium csi">
-                                                <img src="<?= base_url() ?>assets/images/SGS.jpg" width="150px">
+                                            <div class="col-auto icon medium csi" style="display: block;margin: auto;">
+                                                <a class="js_add_qv js_sgs" href="#">
+                                                    <img src="<?= base_url() ?>assets/images/SGS.jpg" width="150px">
+                                                </a>
                                             </div>
                                             <!-- <div class="col content">
                                                 <h3 class="title cd fs__14 mg__0 mb__5">SGS Certification</h3>
@@ -144,22 +177,28 @@
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-1">
                                         <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
-                                            <div class="col-auto icon medium csi">
-                                                <img src="<?= base_url() ?>assets/images/SPIN-CONTROL.jpg" width="150px">
+                                            <div class="col-auto icon medium csi" style="display: block;margin: auto;">
+                                                <a class="js_add_qv js_spin" href="#">
+                                                    <img src="<?= base_url() ?>assets/images/SPIN-CONTROL.jpg" width="150px">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-2">
                                         <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
-                                            <div class="col-auto icon medium csi">
-                                                <img src="<?= base_url() ?>assets/images/oeko-tex.jpg" width="150px">
+                                            <div class="col-auto icon medium csi" style="display: block;margin: auto;">
+                                                <a class="js_add_qv js_oeko" href="#">
+                                                    <img src="<?= base_url() ?>assets/images/oeko-tex.jpg" width="150px">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-3">
                                         <div class="nt_shipping nt_icon_deafult tl row no-gutters al_center_">
-                                            <div class="col-auto icon medium csi">
-                                                <img src="<?= base_url() ?>assets/images/balai-textile.jpg" width="150px">
+                                            <div class="col-auto icon medium csi" style="display: block;margin: auto;">
+                                                <a class="js_add_qv js_kemenper" href="#">
+                                                    <img src="<?= base_url() ?>assets/images/balai-textile.jpg" width="150px">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -177,6 +216,30 @@
     </div>
 </div>
 <br />
+
+<!--SGS view-->
+<div id="SGS" class="dn">
+    <img src="<?= base_url() ?>assets/images/sertif-sgs.jpg" class="img-fluid portrait">
+</div>
+<!--end SGS view-->
+
+<!--SGS view-->
+<div id="SPINCONTROL" class="dn">
+    <img src="<?= base_url() ?>assets/images/sertif-spincontrol.jpg" class="img-fluid landscape">
+</div>
+<!--end SGS view-->
+
+<!--SGS view-->
+<div id="OEKO-TEX" class="dn">
+    <img src="<?= base_url() ?>assets/images/sertif-oekotex.jpg" class="img-fluid portrait">
+</div>
+<!--end SGS view-->
+
+<!--SGS view-->
+<div id="KEMENTRIAN-PERINDUSTRIAN" class="dn">
+    <img src="<?= base_url() ?>assets/images/sertifikat-balai-textile.jpg" class="img-fluid portrait">
+</div>
+<!--end SGS view-->
 
 <script src="<?= base_url() ?>assets/js/photoswipe.min.js"></script>
 <script src="<?= base_url() ?>assets/js/photoswipe-ui-default.min.js"></script>
