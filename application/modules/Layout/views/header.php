@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-icon.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-futura.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-evenir-next-rounded.css">
-    <link rel="stylesheet" href="<?= base_url() ?>assets/css/fontawesome.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/reset.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/defined.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/base.css">
