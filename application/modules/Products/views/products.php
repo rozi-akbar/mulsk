@@ -327,18 +327,3 @@
 <script src="<?= base_url() ?>assets/js/isotope.pkgd.min.js"></script>
 <script src="<?= base_url() ?>assets/js/resize-sensor.min.js"></script>
 <script src="<?= base_url() ?>assets/js/theia-sticky-sidebar.min.js"></script>
-<script>
-    function silver() {
-        $(".p-thumb.flickity-enabled").flickity(
-            "select",
-            '3',
-        );
-    }
-
-    function gold() {
-        $(".p-thumb.flickity-enabled").flickity(
-            "select",
-            '0',
-        );
-    }
-</script>

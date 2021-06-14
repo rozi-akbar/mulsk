@@ -21,15 +21,6 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/home-header-02.css">
     <script data-cfasync="false" src="<?= base_url() ?>assets/js/email-decode.min.js"></script>
     <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/jarallax.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/packery.pkgd.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/jquery.hoverIntent.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/magnific-popup.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/flickity.pkgd.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/lazysizes.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/js-cookie.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/jquery.countdown.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/interface.js"></script>
 
     <style>
         .main-logo {
