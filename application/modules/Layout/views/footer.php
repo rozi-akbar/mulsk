@@ -56,7 +56,7 @@
                             </p>
                             <p>
                                 <i class="pegk pe-7s-call"></i>
-                                <a href="https://wa.me/+6282232481689">Hubungi Admin melalui WhatsApp</a>
+                                <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a>
                             </p>
                             <div class="nt-social">
                                 <a href="https://www.facebook.com/Mulsk-Beauty-102496688739429" class="facebook cb ttip_nt tooltip_top">

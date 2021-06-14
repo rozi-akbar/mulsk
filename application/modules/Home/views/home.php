@@ -218,7 +218,9 @@
                                 <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                     <a class="cd chp" href="<?= site_url('Products') ?>"><b>Mulberry Silk Pillowcase</b></a>
                                 </h3>
-                                <span class="price dib mb__5">Rp 599.000</span>
+                                <span class="price dib mb__5"><del>Rp 750.000</del><ins>Rp 599.000</ins></span>
+                                <br />
+                                <span>Harga Launching - 13 Juni Only</span>
                                 <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                     <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                     <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
@@ -243,9 +245,9 @@
                                 <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                     <a class="cd chp" href="<?= site_url('Products') ?>"><b>Mulberry Silk Pillowcase</b></a>
                                 </h3>
-                                <span class="price dib mb__5">
-                                    <span class="price dib mb__5">Rp 599.000</span>
-                                </span>
+                                <span class="price dib mb__5"><del>Rp 750.000</del><ins>Rp 599.000</ins></span>
+                                <br />
+                                <span>Harga Launching - 13 Juni Only</span>
                                 <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                     <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                     <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
@@ -301,7 +303,7 @@
                         </a>
                         <div class="post-info mb__10">
                             <h4 class="mg__0 fs__16 mb__5 ls__0">
-                                <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
+                                <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Mulsk : Perpaduan Kemewahan, Kecantikan, dan Kesehatan dalam Setiap Produknya</a>
                             </h4>
                             <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 12, 2021</time></span></span>
                         </div>
