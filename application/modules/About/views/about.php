@@ -28,7 +28,7 @@
             border: 1px solid #E2e2e2;
         }
 
-        .mobile_padding {
+        .mobile_margin {
             margin-top: 30px;
         }
     }
@@ -50,9 +50,9 @@
 
     <!-- description and review -->
     <div class="container container_des">
-        <div class="kalles-section-pr_description kalles-section kalles-tabs sp-tabs nt_section">
+        <div class="kalles-section-pr_description kalles-section kalles-tabs sp-tabs nt_section mobile_margin">
             <!-- tab buttons -->
-            <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1 mobile_margin">
+            <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1">
                 <li class="tab_title_block active">
                     <a class="db cg truncate pr" href="#tab_product_description">Introduction</a>
                 </li>
