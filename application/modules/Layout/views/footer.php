@@ -140,16 +140,6 @@
 
 <!-- back to top button-->
 <a id="nt_backtop" class="pf br__50 z__100 des_bt1" href="#"><span class="tc br__50 db cw"><i class="pr pegk pe-7s-angle-up"></i></span></a>
-
-<script src="<?= base_url() ?>assets/js/jarallax.min.js"></script>
-<script src="<?= base_url() ?>assets/js/packery.pkgd.min.js"></script>
-<script src="<?= base_url() ?>assets/js/jquery.hoverIntent.min.js"></script>
-<script src="<?= base_url() ?>assets/js/magnific-popup.min.js"></script>
-<script src="<?= base_url() ?>assets/js/flickity.pkgd.min.js"></script>
-<script src="<?= base_url() ?>assets/js/lazysizes.min.js"></script>
-<script src="<?= base_url() ?>assets/js/js-cookie.min.js"></script>
-<script src="<?= base_url() ?>assets/js/jquery.countdown.min.js"></script>
-<script src="<?= base_url() ?>assets/js/interface.js"></script>
 </body>
 
 </html>
