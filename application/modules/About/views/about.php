@@ -27,6 +27,10 @@
             margin: auto;
             border: 1px solid #E2e2e2;
         }
+
+        .mobile_padding {
+            margin-top: 30px;
+        }
     }
 </style>
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
@@ -47,9 +51,8 @@
     <!-- description and review -->
     <div class="container container_des">
         <div class="kalles-section-pr_description kalles-section kalles-tabs sp-tabs nt_section">
-
             <!-- tab buttons -->
-            <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1">
+            <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1 mobile_margin">
                 <li class="tab_title_block active">
                     <a class="db cg truncate pr" href="#tab_product_description">Introduction</a>
                 </li>
@@ -80,10 +83,10 @@
                         Penelitian ini juga dipublikasikan dalam Journal of Cosmetics, Dermatological Sciences and Applications. Laporan menunjukkan garis tidur akan terjadi ketika ada ketegangan jangka panjang yang berulang pada kulit. Studi mengungkapkan peningkatan rata-rata 12% pada kerutan ini membutuhkan 28 hari untuk menghilangkan sumber gesekan. Pencegahannya yaitu dengan menggunakan <strong>sarung bantal sutra</strong> agar dapat merasakan <strong>efek anti-aging</strong>. Kejadian tersebut juga didukung oleh pernyataan dari model Victoria Secret, <strong>Rosie Huntington-Whiteley</strong> yang dikutip oleh Health.com. <strong>Rosie</strong> mengatakan salah satu tips menjaga kesehatan pada kulit wajah yaitu dengan menggunakan sarung bantal berbahan sutra.
                     </p>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <img class="img-fluid" src="<?= base_url() ?>assets/images/sandy.png">
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <p style="text-indent: 30px; text-align: justify;">Juragan 99 Garment terus berinovasi membuat produk yang berkualitas tinggi. Perusahaan yang didirikan oleh sepasang pengusaha muda, <b>Gilang Widya Pramana</b> dan <b>Shandy Purnamasari</b>, sejak 2020 ini siap merilis sebuah brand perlengkapan tidur yang dinamai <b>Mulsk</b>.</p>
                             <p style="text-indent: 30px; text-align: justify;"><b>Mulsk </b>hadir sebagai bentuk inovasi dari <b>Juragan 99 Garment</b> yang berangkat dari keinginan untuk fokus pada produk yang berkaitan dengan kesehatan sekaligus kecantikan. Produk-produk dari brand yang akan diluncurkan pada 13 Juni 2021 ini menggunakan 100% bahan alami <b>Mulberry Silk</b>.</p>
                         </div>
