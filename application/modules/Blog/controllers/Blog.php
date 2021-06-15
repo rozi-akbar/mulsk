@@ -30,4 +30,32 @@ class Blog extends CI_Controller
         $this->load->view('blog3');
         $this->load->view('Layout/footer');
     }
+
+    public function bg1406202101()
+    {
+        $this->load->view('Layout/header');
+        $this->load->view('blog4');
+        $this->load->view('Layout/footer');
+    }
+
+    public function bg1406202102()
+    {
+        $this->load->view('Layout/header');
+        $this->load->view('blog5');
+        $this->load->view('Layout/footer');
+    }
+
+    public function bg1406202103()
+    {
+        $this->load->view('Layout/header');
+        $this->load->view('blog6');
+        $this->load->view('Layout/footer');
+    }
+
+    public function bg1406202104()
+    {
+        $this->load->view('Layout/header');
+        $this->load->view('blog7');
+        $this->load->view('Layout/footer');
+    }
 }
