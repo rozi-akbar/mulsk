@@ -64,6 +64,39 @@
                     <!--articles-->
                     <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
                         <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1506202103') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog6.jpg"></div>
+                            </a>
+                            <div class="post-info">
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">15 Juni 2021</time></span></span>
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1506202103') ?>">Benarkah Sarung Bantal Mulberry Silk Bisa Cegah Jerawat di Wajah?</a>
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1506202102') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog5.jpg"></div>
+                            </a>
+                            <div class="post-info">
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">15 Juni 2021</time></span></span>
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1506202102') ?>">Ramai Dipakai Selebriti Tanah Air hingga Luar Negeri, Sarung Bantal Mulberry Silk Bikin Tetap Cantik saat Bangun Tidur</a>
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                            <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1506202101') ?>">
+                                <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg"></div>
+                            </a>
+                            <div class="post-info">
+                                <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">15 Juni 2021</time></span></span>
+                                <h4 class="mg__0 fs__16 mt__10 ls__0">
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg1506202101') ?>">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</a>
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
                             <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
                             </a>
