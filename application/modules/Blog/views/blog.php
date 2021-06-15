@@ -63,7 +63,7 @@
 
                     <!--articles-->
                     <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
-                        <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
+                        <!-- <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
                             <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1506202103') ?>">
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog6.jpg"></div>
                             </a>
@@ -95,7 +95,7 @@
                                     <a class="cd chp open" href="<?= site_url('Blog/bg1506202101') ?>">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</a>
                                 </h4>
                             </div>
-                        </article>
+                        </article> -->
                         <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
                             <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
                                 <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
