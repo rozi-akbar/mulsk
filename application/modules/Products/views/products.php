@@ -67,7 +67,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <p>PROMO PRICE ONLY IN JUNE, LIMITED STOCK!</p>
+                                        <p>Promo Price Only in June, Limited Stock!</p>
                                     </div>
                                     <div class="pr_short_des">
                                         <p class="mg__0">Say Goodbye To Dull Skin and Bed Head With Mulsk, 100% Mulberry Silk Pillow Case!</p><br>
