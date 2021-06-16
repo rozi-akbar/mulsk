@@ -62,14 +62,13 @@
                                     <div class="flex wrap fl_between al_center price-review">
                                         <p class="price_range" id="price_ppr">
                                             <span class="price dib mb__5">
-                                            Rp 599.000
-                                                <!-- <del>Rp 750.000</del><ins>Rp 599.000</ins> -->
+                                                <del>Rp 750.000</del><ins>Rp 599.000</ins>
                                             </span>
                                         </p>
                                     </div>
-                                    <!-- <div>
-                                        <p>Harga Launching - 13 Juni Only</p>
-                                    </div> -->
+                                    <div>
+                                        <p>PROMO PRICE ONLY IN JUNE, LIMITED STOCK!</p>
+                                    </div>
                                     <div class="pr_short_des">
                                         <p class="mg__0">Say Goodbye To Dull Skin and Bed Head With Mulsk, 100% Mulberry Silk Pillow Case!</p><br>
                                         <p class="mg__0"><b>Bahan:</b> 100% mulberry silk, top grade 6A
