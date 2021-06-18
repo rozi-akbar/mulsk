@@ -5,6 +5,8 @@ class Not_Found extends CI_Controller
 {
     public function index()
     {
+        $this->load->view('Layout/header');
         $this->load->view('not_found');
+        $this->load->view('Layout/footer');
     }
 }
