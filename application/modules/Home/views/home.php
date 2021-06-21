@@ -298,6 +298,18 @@
                 </div>
                 <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
                     <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                        <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202101') ?>">
+                            <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg"></div>
+                        </a>
+                        <div class="post-info mb__10">
+                            <h4 class="mg__0 fs__16 mb__5 ls__0">
+                                <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</a>
+                            </h4>
+                            <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">Juni 21, 2021</time></span></span>
+                        </div>
+                        <div class="post-content">Mulsk akhirnya merilis produk pertamanya, yakni sarung bantal berbahan sutra murbei atau mulberry silk. Produk ini menjadi sarung bantal mulberry silk pertama yang dibuat di Indonesia. </div>
+                    </article>
+                    <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
                         <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
                             <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
                         </a>
