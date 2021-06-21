@@ -12,7 +12,7 @@
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-blog-4.jpg"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</h1>
-                <p class="mg__0">14 Juni 2021</p>
+                <p class="mg__0">21 Juni 2021</p>
             </div>
         </div>
     </div>
