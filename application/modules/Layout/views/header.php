@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="facebook-domain-verification" content="3cpsnnfkyl8gl9pezvcqgfqslc4ig3" />
     <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>assets/images/svg/favicon_mulsk.svg">
     <title>Mulsk Beauty - Berry Good Sleep</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/">
