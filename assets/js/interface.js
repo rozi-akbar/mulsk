@@ -2863,7 +2863,8 @@
       } else if ($this.hasClass("js_kemenper")) {
         $this.kallesLoadKemenper();
       } else {
-        $this.kallesLoadQuickView();
+        window.location = 'https://mulskid.com/Products';
+        // $this.kallesLoadQuickView();
       }
     }, delay);
   });

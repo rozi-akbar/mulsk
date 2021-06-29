@@ -213,6 +213,13 @@
                                 <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
                                     <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg"></div>
                                 </div>
+                                <div class="hover_button op__0 tc pa flex column ts__03">
+                                    <a class="pr nt_add_qv js_add_qv cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= site_url('Products') ?>">
+                                        <span class="tt_txt">Click to View</span>
+                                        <i class="iccl iccl-eye"></i>
+                                        <span>Click to View</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="product-info mt__15">
                                 <h3 class="product-title position-relative fs__14 mg__0 fwm">
@@ -239,6 +246,13 @@
                                 </a>
                                 <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
                                     <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg"></div>
+                                </div>
+                                <div class="hover_button op__0 tc pa flex column ts__03">
+                                    <a class="pr nt_add_qv js_add_qv cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= site_url('Products') ?>">
+                                        <span class="tt_txt">Click to View</span>
+                                        <i class="iccl iccl-eye"></i>
+                                        <span>Click to View</span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="product-info mt__15">
