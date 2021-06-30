@@ -21,7 +21,7 @@
                     <p>Anda juga dapat mengikuti lini instagram kami di <a href="https://instagram.com/mulskbeauty" target="_blank">@mulskbeauty</a> untuk info promo serta update terbaru tentang produk Mulsk Beauty!</p>
                     <p>Informasi lebih lanjut :</p>
                 <p class="mb__5 d-flex"><i class="las la-envelope fs__20 mr__10 text-primary"></i> <a href="mailto:hello@mulskid.com" class="__cf_email__" data-cfemail="e88b87869c898b9ca88b878598898691c68b8785">hello@mulskid.com</a></p>
-                <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
+                <p class="mb__5 d-flex"><i class="las la-phone fs__20 mr__10 text-primary"></i> <a href="https://wa.me/+6282232481689?text=Hallo%2C+saya+mau+order+ya+kak" target="_blank">Hubungi Admin melalui WhatsApp</a></p>
                 <div class="nt-social mt__10">
                     <a href="https://www.facebook.com/Mulsk-Beauty-102496688739429" class="facebook cb ttip_nt tooltip_top">
                         <span class="tt_txt">Follow on Facebook</span>

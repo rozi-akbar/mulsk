@@ -145,7 +145,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <a class="btn btn-warning" style="width: 215px; height: 40px; border-radius: 30px;padding:0.65em;font-weight:700;font-size:14px" href="https://wa.me/+6282232481689" target="_blank" role="button">ORDER VIA WHATSAPP</a>
+                                    <a class="btn btn-warning" style="width: 215px; height: 40px; border-radius: 30px;padding:0.65em;font-weight:700;font-size:14px" href="https://wa.me/+6282232481689?text=Hallo%2C+saya+mau+order+ya+kak" target="_blank" role="button">ORDER VIA WHATSAPP</a>
                                 </div>
                             </div>
                         </div>

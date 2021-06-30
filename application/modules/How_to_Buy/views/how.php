@@ -45,7 +45,7 @@
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
-                            <a href="https://wa.me/+6282232481689" target="_blank">
+                            <a href="https://wa.me/+6282232481689?text=Hallo%2C+saya+mau+order+ya+kak" target="_blank">
                                 <div class="card" style="height: 125px;">
                                     <img src="<?= base_url() ?>assets/images/svg/whatsapp.svg" class="img-fluid" style="width: 125px; margin: auto;">
                                 </div>
