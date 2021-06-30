@@ -72,7 +72,7 @@
                                     <div class="flex wrap fl_between al_center price-review">
                                         <p class="price_range" id="price_ppr">
                                             <span class="price dib mb__5">
-                                                <del>Rp 750.000</del><ins>Rp 599.000</ins>
+                                                Rp 750.000
                                             </span>
                                         </p>
                                     </div>

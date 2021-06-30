@@ -71,7 +71,7 @@
                                     <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                         <a class="cd chp" href="<?= site_url('Products') ?>">Mulberry Silk Pillowcase</a>
                                     </h3>
-                                    <span class="price dib mb__5"><del>Rp 750.000</del><ins>Rp 599.000</ins></span>
+                                    <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
                                     <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
@@ -98,7 +98,7 @@
                                     <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                         <a class="cd chp" href="<?= site_url('Products') ?>">Mulberry Silk Pillowcase</a>
                                     </h3>
-                                    <span class="price dib mb__5"><del>Rp 750.000</del><ins>Rp 599.000</ins></span>
+                                    <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
                                     <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
