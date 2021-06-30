@@ -301,41 +301,41 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pillow-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pillow-icon.svg" width="60px"><br>
                                             <span>Cek label perawatan pada sisi dalam Mulsk Pillowcase</span>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/detergen-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/detergen-icon.svg" width="60px"><br>
                                             <span>Jangan gunakan pemutih pakaian atau pelembut</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pisahkan-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pisahkan-icon.svg" width="60px"><br>
                                             <span>Pisahkan dengan bahan yang lain ketika mencuci</span>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/matahari-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/matahari-icon.svg" width="60px"><br>
                                             <span>Hindari terkena matahari secara langsung ketika menjemur</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/ph-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/ph-icon.svg" width="60px"><br>
                                             <span>Gunakan detergent khusus sutra dengan pH netral</span>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/machine-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/machine-icon.svg" width="60px"><br>
                                             <span>Jangan menggunakan mesin cuci ataupun dikucek berlebih</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/setrika-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/setrika-icon.svg" width="60px"><br>
                                             <span>Setrika dengan suhu rendah khusus untuk sutra</span>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url() ?>assets/images/svg/dodont/squeeze-icon.svg" width="75px"><br>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/squeeze-icon.svg" width="60px"><br>
                                             <span>Jangan memeras kain ketika proses mengeringkan</span>
                                         </td>
                                     </tr>
