@@ -1,3 +1,13 @@
+<style>
+    table {
+        border: 0;
+    }
+
+    td {
+        text-align: center;
+        border: 0;
+    }
+</style>
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-product.css">
 <div id="nt_content">
@@ -278,10 +288,61 @@
                                 </div>
                             </div>
                             <br />
+                            <h3 class="text-center"><b><u>Some Precautions, Pay attention to your 100% Mulberry Silk</u></b></h3>
+                            <div class="fl_wrap fl_wrap_md oah use_border_false fl_center text-center">
+                                <table style="width: 600px; margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <h3 class="text-center"><b>Do's</b></h3>
+                                        </td>
+                                        <td>
+                                            <h3 class="text-center"><b>Dont's</b></h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pillow-icon.svg" width="75px"><br>
+                                            <span>Cek label perawatan pada sisi dalam Mulsk Pillowcase</span>
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/detergen-icon.svg" width="75px"><br>
+                                            <span>Jangan gunakan pemutih pakaian atau pelembut</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/pisahkan-icon.svg" width="75px"><br>
+                                            <span>Pisahkan dengan bahan yang lain ketika mencuci</span>
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/matahari-icon.svg" width="75px"><br>
+                                            <span>Hindari terkena matahari secara langsung ketika menjemur</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/ph-icon.svg" width="75px"><br>
+                                            <span>Gunakan detergent khusus sutra dengan pH netral</span>
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/machine-icon.svg" width="75px"><br>
+                                            <span>Jangan menggunakan mesin cuci ataupun dikucek berlebih</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/setrika-icon.svg" width="75px"><br>
+                                            <span>Setrika dengan suhu rendah khusus untuk sutra</span>
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url() ?>assets/images/svg/dodont/squeeze-icon.svg" width="75px"><br>
+                                            <span>Jangan memeras kain ketika proses mengeringkan</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
                             <div>
-                                <p style="text-align: justify;">
-                                <h3><b>Easy Care Washing Pillowcase</b></h3>
-                                </p>
                                 <ul>
                                     <li style="text-align: justify;"><b>Pisahkan Mulsk Pillowcase dengan bahan yang lain</b><br></li>
                                 </ul>

@@ -29,18 +29,25 @@
             <div style="text-align: center;">
                 <h4>Official E-Commerce :</h4>
                 <div>
-                    <div class="row" style="max-width: 500px; margin: auto;">
-                        <div class="col-lg-6 col-md-6 col-12">
+                    <div class="row" style="max-width: 700px; margin: auto;">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <a href="https://shopee.co.id/mulskbeauty" target="_blank">
                                 <div class="card card-how" style="height: 125px">
                                     <img src="<?= base_url() ?>assets/images/svg/shopee.svg" class="img-fluid" style="width: 125px; margin: auto;">
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <a href="https://www.tokopedia.com/mulskbeauty" target="_blank">
                                 <div class="card" style="height: 125px;">
                                     <img src="<?= base_url() ?>assets/images/svg/tokopedia.svg" class="img-fluid" style="width: 125px; margin: auto;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <a href="https://wa.me/+6282232481689" target="_blank">
+                                <div class="card" style="height: 125px;">
+                                    <img src="<?= base_url() ?>assets/images/svg/whatsapp.svg" class="img-fluid" style="width: 125px; margin: auto;">
                                 </div>
                             </a>
                         </div>
