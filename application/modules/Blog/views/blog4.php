@@ -26,7 +26,7 @@
                     <div class="cb">
                         <p><b>Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</b></p>
                         <p class="indent-justify">Mulsk akhirnya merilis produk pertamanya, yakni sarung bantal berbahan sutra murbei atau mulberry silk. Produk ini menjadi sarung bantal mulberry silk pertama yang dibuat di Indonesia.&nbsp;<br></p>
-                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-1.jpg" width="400px" class="img-fluid" style="display: block;margin: auto;">
+                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-1.jpg" width="400px" class="img-fluid blog-img" style="display: block;margin: auto;">
                         <p><b>Mulsk Fokus pada Produk Perlengkapan Tidur Berbahan Sutra&nbsp;</b><br></p>
                         <p class="indent-justify">Mengapa memilih bahan sutra? Mulsk fokus menghasilkan produk-produk perlengkapan tidur yang berkualitas dari segi bahan serta manfaatnya. Tak dapat dianggap remeh, bahan sutra memiliki banyak manfaat yang dapat Anda rasakan saat menggunakannya.<br></p>
                         <p class="indent-justify">Bahan mulberry silk yang mulai banyak digunakan untuk perlengkapan tidur ini telah dikenal karena manfaatnya dari segi kesehatan dan kecantikan. Apa saja keunggulan bahan mulberry silk pada sarung bantal Mulsk?<br></p>
@@ -38,7 +38,7 @@
                             <li>Melindungi kulit sensitif dari bahaya alergi karena sifatnya yang hypoallergenic.<br></li>
                             <li>Mampu mengatur suhu tubuh sehingga Anda tetap nyaman ketika tidur dalam cuaca hangat atau pun dingin.<br></li>
                         </ol>
-                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg" width="500px" class="img-fluid" style="display: block;margin: auto;">
+                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg" width="500px" class="img-fluid blog-img" style="display: block;margin: auto;">
                         <p><b>Mulsk Hadirkan Desain Sarung Bantal yang Aman dan Nyaman</b><br></p>
                         <p class="indent-justify">Mulsk memberikan kenyamanan pada desain sarung bantal dengan meggunakan bukaan tersembunyi gaya amplop tanpa resleting. Anda akan merasa aman saat tidur tanpa rasa khawatir rambut akan tersangkut.&nbsp;<br></p>
                         <p class="indent-justify">Menjanjikan kesan mewah sesuai konsepnya, sarung bantal Mulsk dirilis dalam dua warna elegan, yakni silver dan gold. Pilihlah warna yang sesuai dengan karakter Anda!&nbsp;<br></p>
@@ -76,7 +76,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
@@ -103,7 +102,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>

@@ -40,7 +40,7 @@
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-blog-5.jpg"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw">Ramai Dipakai Selebriti Tanah Air hingga Luar Negeri, Sarung Bantal Mulberry Silk Bikin Tetap Cantik saat Bangun Tidur</h1>
-                <p class="mg__0">15 Juni 2021</p>
+                <p class="mg__0">11 Oktober 2021</p>
             </div>
         </div>
     </div>
@@ -54,21 +54,14 @@
                     <div class="cb">
                         <p class="indent-justify">Tidur menggunakan sarung bantal berbahan sutra seolah menjadi tren di kalangan selebriti baik Tanah Air maupun luar negeri beberapa tahun belakang. Sebut saja Nagita Slavina hingga selebriti Hollywood seperti Victoria Beckham dan Kim Kardashian. Salah satu beauty vlogger lokal, Sanly Liuu, pun menyebut sarung bantal sutra ramah untuk dijadikan alas tidur bagi rambut dan kulitnya.</p>
                         <p class="indent-justify">Memang tak bisa dimungkiri jika Anda harus merogoh kocek yang lumayan untuk bisa memiliki sebuah sarung bantal sutra. Namun, berbagai manfaat tidur beralaskan sarung bantal sutra juga sangat sebanding dengan harganya yang terbilang tidak murah.</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <img class="img-fluid img1" src="<?= base_url() ?>assets/images/blog/cindy-crawford.jpg">
-                            </div>
-                            <div class="col-lg-6">
-                                <img class="img-fluid img2" src="<?= base_url() ?>assets/images/blog/kim-kardashian.jpg">
-                            </div>
-                        </div>
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article-5.png" style="display: block;margin: auto;width: 400px;">
                         <p><b>Alasan Memilih Sarung Bantal Sutra</b></p>
                         <p class="indent-justify">Material sutra pada sarung bantal membantu Anda mengatasi alergi. Sifat hypoallergenic pada bahan sutra sangat pas bagi siapa pun dengan kulit sensitif atau memiliki alergi. Berdasarkan penelitian, kandungan protein alami dalam sutra yang disebut sericin mampu mengurangi kemungkinan reaksi alergi. Sericin membuat sutra tahan terhadap jamur dan bakteri. Selain itu, Anda juga tidak perlu khawatir akan mengalami iritasi selama menghabiskan waktu berjam-jam tidur di atas sarung bantal berbahan sutra.</p>
-                        <img class="img-fluid" src="<?= base_url() ?>assets/images/blog/silk_silver.jpg" style="display: block;margin: auto;width: 400px;">
+                        
                         <p><b>Sarung Bantal Sutra Mampu Menjaga Kelembapan Kulit</b></p>
                         <p class="indent-justify">Sarung bantal sutra juga menyerap kelembapan kulit lebih sedikit daripada bahan katun. Kemampuan ini dapat menjaga kelembapan kulit selama tidur. Kelembapan alami di dalam kulit Anda dapat membantu melindungi dari kekeringan dan iritasi.&nbsp;</p>
                         <p class="indent-justify">Kerutan di wajah pun dapat dicegah oleh penggunaan sarung bantal sutra. Bahannya yang sangat lembut mengurangi gesekan-gesekan antara wajah dan permukaan sarung bantal.&nbsp;</p>
-                        <img class="img-fluid" src="<?= base_url() ?>assets/images/blog/img-blog5.jpg" style="display: block;margin: auto;width: 400px;">
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article-5-1.jpg" style="display: block;margin: auto;width: 400px;">
                         <p><b>Bangun dengan Rambut Kusut dan Berantakan? Sarung Bantal Sutra Dapat Mencegahnya</b></p>
                         <p class="indent-justify">Sering terbangun dengan rambut kusut dan berantakan? Ini tentu sangat mengganggu. Halusnya permukaan sarung bantal sutra dapat mencegahnya. Rambut Anda akan tetap terjaga di atas permukaan sutra yang lembut. Bangun tidur dengan tampilan rambut yang lebih halus dan bebas kusut tentu menjadi impian, bukan?</p>
                         <p><b>Rasakan Manfaat dan Kelembutan Sarung Bantal Sutra Keluaran Mulsk</b></p>
@@ -106,7 +99,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
@@ -133,7 +125,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>

@@ -2372,6 +2372,51 @@
     }
   };
 
+  $.fn.kallesLoadSGSControl = function () {
+    const $btn = $(this),
+      $container = $("#SGS"),
+      data = $container.length ? $container.html() : null;
+
+    if (data.length) {
+      $.magnificPopup.open({
+        items: {
+          src:
+            '<div class="mfp-with-anim popup-quick-view" id="content_quickview">' +
+            data +
+            "</div>",
+          type: "inline",
+        },
+        tClose: "Close (Esc)",
+        removalDelay: 500 /*delay removal by X to allow out-animation*/,
+        callbacks: {
+          beforeOpen: function () {
+            this.st.mainClass = "mfp-move-horizontal";
+          },
+          open: function () {
+            const el = $(".nt_carousel_qv"),
+              option = el.attr("data-flickity") || "{}";
+            el.flickity(JSON.parse(option));
+            body.addClass("open_ntqv");
+            $(".kalles_swatch_js").kallesSwatches();
+            $(
+              "#callBackVariant_qv .single_add_to_cart_button"
+            ).kallesAnimation();
+            $("#nt_countdow_qv").initCountdown_pr();
+            $btn.removeClass("loading");
+            $(".dropdown_picker_js").kallesDropdownPicker();
+          },
+          close: function () {
+            $("#content_quickview").empty();
+            body.removeClass("open_ntqv");
+            $(".dropdown_picker_js").kallesDropdownPicker();
+          },
+        },
+      });
+    } else {
+      $btn.removeClass("loading");
+    }
+  };
+
   $.fn.kallesLoadSpinControl = function () {
     const $btn = $(this),
       $container = $("#SPINCONTROL"),
@@ -2856,6 +2901,8 @@
     setTimeout(function () {
       if ($this.hasClass("js__qs")) {
         $this.kallesLoad();
+      } else if ($this.hasClass("js_sgs")) {
+        $this.kallesLoadSGSControl();
       } else if ($this.hasClass("js_spin")) {
         $this.kallesLoadSpinControl();
       } else if ($this.hasClass("js_oeko")) {

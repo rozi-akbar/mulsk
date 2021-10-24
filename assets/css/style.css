@@ -91,6 +91,10 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
 }
 
+.blog-img{
+    margin-bottom: 25px !important;
+}
+
 #ntheader.live_stuck #kalles-section-header_banner,
 #ntheader.live_stuck #kalles-section-header_top,
 #ntheader.live_stuck .logo_normal,

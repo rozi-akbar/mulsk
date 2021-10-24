@@ -27,7 +27,7 @@
                                 <p style="text-indent: 30px;text-align: justify;">Ulat yang telah memakan daun mulberry akan melewati beberapa fase hingga menghasilkan kepompong. Kepompong inilah yang menjadi bahan dasar benang sutra. Benang sutra yang telah dihasilkan ulat sutra masih harus diproses dan dipilah kualitasnya untuk akhirnya dipintal menjadi kain.</p>
                             </div>
                             <div class="col-lg-5">
-                                <img src="<?= base_url() ?>assets/images/cocoon.jpg" width="100%">
+                                <img src="<?= base_url() ?>assets/images/cocoon.jpg" class="blog-img" width="100%">
                             </div>
                         </div>
                         <br />
@@ -36,7 +36,7 @@
                         <p style="text-indent: 30px;text-align: justify;">Kain mulberry silk sangat cocok dijadikan sebagai pakaian karena kelembutannya. Namun, belakangan ini kain sutra pun mulai banyak diaplikasikan untuk perlengkapan tidur. Beberapa di antaranya, yaitu sarung bantal, selimut, hingga seprai.</p>
                         <div class="row">
                             <div class="col-lg-4">
-                                <img src="<?= base_url() ?>assets/images/why-mulsk.jpg" width="100%">
+                                <img src="<?= base_url() ?>assets/images/why-mulsk.jpg" class="blog-img" width="100%">
                                 <br />
                             </div>
                             <div class="col-lg-8">
@@ -77,7 +77,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>
@@ -104,7 +103,6 @@
                                     </h3>
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
-                                    <span>Promo Price Only in June, Limited Stock!</span>
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Silver</span><span class="swatch__value bg_color_siler"></span></span>
                                         <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Gold</span><span class="swatch__value bg_color_gold"></span></span>

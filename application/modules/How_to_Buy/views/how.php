@@ -23,7 +23,6 @@
             <br />
             <h3>Get Mulsk Products Here!</h3>
             <p>Produk Mulsk 100% Mulberry Silk Pillowcase dengan kandungan natural yang memiliki banyak manfaat untuk kulit dan kesehatan, dapat anda dapatkan di Official Marketplace Mulsk Beauty, <a href="https://shopee.co.id/mulskbeauty" target="_blank"><b>Shopee Mulsk Beauty</b></a> &amp; <a href="https://www.tokopedia.com/mulskbeauty" target="_blank"><b>Tokopedia Mulsk Beauty</b></a></p>
-            <p>Beli sekarang juga dan dapatkan <b>BONUS Silky Gentle Wash &amp; Silk Spray</b> hingga 20 juni 2021 (<b>stok terbatas</b>)</p>
             <p>Info terbaru lebih lanjut cek lini instagram kami di <a href="https://www.instagram.com/mulskbeauty/" target="_blank"><b>@mulskbeauty</b></a></p>
             <br />
             <div style="text-align: center;">

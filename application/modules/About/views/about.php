@@ -173,9 +173,6 @@
                                                     <img src="<?= base_url() ?>assets/images/SGS.jpg" width="150px">
                                                 </a>
                                             </div>
-                                            <!-- <div class="col content">
-                                                <h3 class="title cd fs__14 mg__0 mb__5">SGS Certification</h3>
-                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3 mb__25 bl_1581530479619-1">

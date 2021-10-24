@@ -1465,7 +1465,7 @@
 /*150 colors css*/
 [class*=bg_color_] {
     font-size: 0;
-    background-color: #e5e5e5
+    background-color: #D6D6D6
 }
 
 .bg_color_cyan {
@@ -1518,7 +1518,7 @@
 }
 
 .bg_color_gold {
-    background-color: #cea525
+    background-color: #FFE297
 }
 
 .bg_color_beige {

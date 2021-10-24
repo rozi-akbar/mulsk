@@ -1,0 +1,148 @@
+.content_889 {
+    width: 500px;
+}
+
+.content_890 {
+    width: 500px;
+}
+
+.banner-title1_1 {
+    text-align: right;
+    margin-left: 680px;
+}
+
+.banner-title2_1 {
+    text-align: left;
+    margin-right: 600px;
+}
+
+.banner-title3_1 {
+    margin-right: 700px;
+}
+
+.banner-title3_2 {
+    margin-right: 700px;
+}
+
+.img_banner1 {
+    background-image: url('../images/homebanner/banner-1-mulsk.jpg');
+}
+
+.img_banner2 {
+    background-image: url('../images/homebanner/banner-2-mulsk.jpg');
+}
+
+.img_banner3 {
+    background-image: url('../images/homebanner/banner-3-mulsk.jpg');
+}
+
+.post-content{
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-title1_1 {
+        text-align: right;
+        margin-left: 300px;
+    }
+
+    .banner-title1_2 {
+        text-align: right;
+        font-size: 40px;
+        margin-left: 300px;
+    }
+
+    .banner-title2_1 {
+        text-align: left;
+        margin-right: 300px;
+    }
+
+    .banner-title2_2 {
+        text-align: left;
+        font-size: 40px;
+        margin-right: 300px;
+    }
+
+    .banner-title3_1 {
+        text-align: left;
+        margin-right: 400px;
+    }
+
+    .banner-title3_2 {
+        text-align: left;
+        font-size: 40px;
+        margin-right: 300px;
+    }
+
+    .img_banner1 {
+        background-image: url('../images/homebanner/banner-1-mobile.jpg');
+    }
+
+    .img_banner2 {
+        background-image: url('../images/homebanner/banner-2-mobile.jpg');
+    }
+
+    .img_banner3 {
+        background-image: url('../images/homebanner/banner-3-mobile.jpg');
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content_889 {
+        width: 60%;
+    }
+
+    .content_890 {
+        width: 60%;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .img_banner1 {
+        background-image: url('../images/homebanner/banner-1-mobile.jpg');
+    }
+
+    .img_banner2 {
+        background-image: url('../images/homebanner/banner-2-mobile.jpg');
+    }
+
+    .img_banner3 {
+        background-image: url('../images/homebanner/banner-3-mobile.jpg');
+    }
+
+    .banner-title1_1 {
+        text-align: right;
+        margin-left: 160px;
+    }
+
+    .banner-title1_2 {
+        text-align: right;
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    .banner-title2_1 {
+        text-align: left;
+        margin-right: 100px;
+    }
+
+    .banner-title2_2 {
+        text-align: left;
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .banner-title3_1 {
+        margin-right: 150px;
+    }
+
+    .banner-title3_2 {
+        margin-right: 150px;
+        font-size: 22px;
+    }
+
+    .background-change {
+        background-image: url('assets/images/how-to-order-mobile.jpg') !important;
+    }
+}
