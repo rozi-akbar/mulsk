@@ -3,10 +3,10 @@
     <!--hero banner-->
     <div class="kalles-section page_section_heading">
         <div class="page-head tc pr oh cat_bg_img page_head_">
-            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/banner-blog-2.jpg"></div>
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-article-7.png"></div>
             <div class="container pr z_100">
-                <h1 class="mb__5 cw">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</h1>
-                <p class="mg__0">10 Juni 2021</p>
+                <h1 class="mb__5 cw">Punya Segudang Manfaat, Sarung Bantal Mulberry Silk Jadi Ide Hadiah Istimewa untuk Orang-orang Terkasih</h1>
+                <p class="mg__0">15 Oktober 2021</p>
             </div>
         </div>
     </div>
@@ -18,34 +18,33 @@
             <div class="col-lg-12 col-xs-12">
                 <div class="kalles-section nt_section type_isotope">
                     <div class="cb">
-                        <p style="text-indent: 30px;text-align: justify;">Pernahkah Anda mendengar tentang mulberry silk? Kain satu ini seharusnya tidak asing karena banyak dimanfaatkan untuk pakaian pria maupun wanita, seperti kemeja, gaun, scarf, hingga pakaian dalam.&nbsp;</p>
-                        <p><b>Apa yang Menarik dari Kain Mulberry Silk?</b></p>
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <p style="text-indent: 30px;text-align: justify;">Mulberry silk termasuk ke dalam kategori kain yang sangat berkualitas karena diperoleh dari proses yang terbilang tidak singkat. Tak diragukan lagi jika kain ini banyak disukai dan memiliki nilai jual yang tinggi.</p>
-                                <p style="text-indent: 30px;text-align: justify;">Serat mulberry silk dihasilkan dari ulat sutra yang hanya diberi pakan utama daun mulberry atau murbei. Daun mulberry berguna sebagai sumber nutrisi ulat. Daun mulberry berkualitas dapat meningkatkan daya tahan ulat terhadap serangan penyakit dan tentu menjadikan produksi kokon meningkat 20% lebih banyak.</p>
-                                <p style="text-indent: 30px;text-align: justify;">Ulat yang telah memakan daun mulberry akan melewati beberapa fase hingga menghasilkan kepompong. Kepompong inilah yang menjadi bahan dasar benang sutra. Benang sutra yang telah dihasilkan ulat sutra masih harus diproses dan dipilah kualitasnya untuk akhirnya dipintal menjadi kain.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <img src="<?= base_url() ?>assets/images/cocoon.jpg" width="100%">
-                            </div>
-                        </div>
-                        <br />
-                        <p><b>Mulberry Silk Bernilai Jual Tinggi</b></p>
-                        <p style="text-indent: 30px;text-align: justify;">Proses yang tidak singkat dengan hasil akhir benang yang lembut tentu menjadikan mulberry silk bernilai jual tinggi. Dengan pemrosesan untuk menghasilkan kualitas terbaik, tak heran jika mulberry silk memiliki karakteristik kain yang sangat ringan, jatuh, dan lembut di kulit.&nbsp;</p>
-                        <p style="text-indent: 30px;text-align: justify;">Kain mulberry silk sangat cocok dijadikan sebagai pakaian karena kelembutannya. Namun, belakangan ini kain sutra pun mulai banyak diaplikasikan untuk perlengkapan tidur. Beberapa di antaranya, yaitu sarung bantal, selimut, hingga seprai.</p>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="<?= base_url() ?>assets/images/why-mulsk.jpg" width="100%">
-                                <br />
-                            </div>
-                            <div class="col-lg-8">
-                                <p><b>Manfaat Memilih Perlengkapan Tidur Berbahan Kain Mulberry Silk</b></p>
-                                <p style="text-indent: 30px;text-align: justify;">Sarung bantal mulberry silk mulai banyak digunakan oleh orang-orang yang ingin mendapatkan manfaat terutama dari segi kesehatan. Mulberry silk dapat menjaga kelembapan kulit selama tidur. Mulberry silk mampu menyerap kelembapan tanpa meninggalkan efek berat atau basah. Di sisi lain, kelembutannya juga dapat mencegah iritasi, garis-garis halus, serta kerutan pada wajah.&nbsp;</p>
-                                <p style="text-indent: 30px;text-align: justify;">Anda saat ini bisa merasakan kelembutan sarung bantal mulberry silk pada produk Mulsk. Keunggulan sarung bantal Mulsk dipastikan terbuat dari bahan alami 100% mulberry silk, tidak berbau, dan hypoallergenic. Dapatkan produk Mulsk melalui website dan marketplace!</p>
-                            </div>
-                        </div>
-                        <div><br></div>
+                        <p style="text-indent: 30px;text-align: justify;">Sering bingung saat memberi hadiah untuk orang-orang terkasih? Memilih hadiah bukan perkara sederhana dan mudah. Bagi sebagian orang, hadiah harus memiliki manfaat bagi penerimanya. Sebab, sebuah hadiah menjadi tanda kasih sayang dari pemberi kepada penerima.</p>
+                        <p style="text-indent: 30px;text-align: justify;">Sering kali tidak sedikit orang yang enggan memilih barang mainstream untuk dijadikan hadiah. Tidak ada salahnya bagi Anda memberikan sebuah sarung bantal kepada orang-orang terkasih. Mengapa memilih sarung bantal? Meski terkesan sepele, memberikan sarung bantal dengan bahan yang tidak sembarangan tentu akan sangat bermanfaat bagi penerima.</p>
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article-7.jpg" style="display: block;margin: auto;width: 600px;">
+                        <p><b>Rekomendasi Hadiah Berupa Sarung Bantal Sutra dari Mulsk</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Sarung bantal dengan material sutra menjadi rekomendasi untuk Anda. Material sutra sudah dikenal karena kemewahan dan kelembutannya. Anda bisa membayangkan kelembutan material sutra pada sarung bantal yang dapat menemani tidur orang-orang kesayangan.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Sutra bahkan telah direkomendasikan oleh ahli dermatologi sebagai bahan yang sangat tepat untuk digunakan sebagai sarung bantal. Dikutip dari Total Beauty, menurut dokter kulit dari Texas, dr. Adam Mamelak, MD, sarung bantal sutra tidak menyerap kelembapan lebih banyak dibandingkan dengan bahan katun sehingga membantu mencegah iritasi akibat gesekan kain yang menyentuh kulit Anda saat tidur.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Pastikan memilih sarung bantal sutra dari produsen yang menggunakan kain sutra asli. Mulsk memastikan produk sarung bantalnya terbuat dari 100% sutra murbei atau mulberry silk berkualitas. Apa saja manfaat menggunakan sarung bantal sutra?
+                        </p>
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/blog-7-2.jpg" style="display: block;margin: auto;width: 600px;">
+                        <p><b>Manfaat Menggunakan Sarung Bantal Sutra</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Kain sutra memiliki tenunan yang lebih ketat sehingga permukaannya dipastikan sangat halus. Kulit wajah tidak akan mengalami gesekan yang cukup menyakitkan. Bahkan, kelembutan sutra juga tidak akan mengganggu tatanan rambut selama tidur. Bahan sutra membuat rambut tidak kusut dan tetap rapi saat bangun. Permasalahan rambut yang acak-acakan ketika bangun ini cukup mengganggu dan umumnya dirasakan oleh wanita dengan rambut panjang.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Selain dari segi kecantikan penampilan, manfaat tentang kesehatan pada sarung bantal sutra juga bisa menjadi pertimbangan. Sarung bantal sutra dari Mulsk menjadi teman tidur yang tepat untuk semua jenis kulit, terutama sensitif dan berjerawat.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Sarung bantal sutra Mulsk mengandung protein yang dapat menjaga kelembapan kulit agar tetap sehat. Di sisi lain, sifat hypoallergenic pada produk Mulsk juga tidak akan menyebabkan reaksi alergi untuk penggunanya.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Harga yang dibanderol untuk sebuah sarung bantal Mulsk berbahan 100% mulberry silk memang tidak murah. Namun, mengingat kemewahan dan manfaat yang dapat dirasakan tentu akan sebanding. Untuk orang-orang terkasih, pilihlah yang terbaik! Dapatkan sarung bantal Mulsk dengan mengunjungi link di sini.
+                        </p>
                         <br />
                     </div>
                     <div class="wrap_title des_title_2">
