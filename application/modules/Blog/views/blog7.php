@@ -5,7 +5,7 @@
         <div class="page-head tc pr oh cat_bg_img page_head_">
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-article-7.png"></div>
             <div class="container pr z_100">
-                <h1 class="mb__5 cw">Punya Segudang Manfaat, Sarung Bantal Mulberry Silk Jadi Ide Hadiah Istimewa untuk Orang-orang Terkasih</h1>
+                <h1 class="mb__5 cw" style="line-height: 30px;">Punya Segudang Manfaat, Sarung Bantal Mulberry Silk Jadi Ide Hadiah Istimewa untuk Orang-orang Terkasih</h1>
                 <p class="mg__0">15 Oktober 2021</p>
             </div>
         </div>
