@@ -3,7 +3,7 @@
     <!--hero banner-->
     <div class="kalles-section page_section_heading">
         <div class="page-head tc pr oh cat_bg_img page_head_">
-            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-article-7.png"></div>
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-article-8.jpg"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw" style="line-height: 30px;">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</h1>
                 <p class="mg__0">29 November 2021</p>

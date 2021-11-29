@@ -70,7 +70,7 @@
                             <div class="post-info">
                                 <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:17:00Z">29 November 2021</time></span></span>
                                 <h4 class="mg__0 fs__16 mt__10 ls__0">
-                                    <a class="cd chp open" href="<?= site_url('Blog/bg1511202101') ?>">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</a>
+                                    <a class="cd chp open" href="<?= site_url('Blog/bg2911202101') ?>">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</a>
                                 </h4>
                             </div>
                         </article>
