@@ -70,6 +70,7 @@
                             <li>Membuat rambut lebih lembab</li>
                             <li>Terasa sejuk dan tidak panas saat digunakan</li>
                         </ul>
+                        <br>
                         <p style="text-indent: 30px;text-align: justify;">
                             Segera atasi kulit berjerawat dengan mengganti sarung bantalmu ke produk milik Mulsk. Dapatkan di Official Shopee Mulskbeauty dan Website!
                         </p>
