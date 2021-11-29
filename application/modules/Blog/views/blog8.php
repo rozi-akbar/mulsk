@@ -1,18 +1,12 @@
-<style>
-    .indent-justify {
-        text-indent: 30px;
-        text-align: justify;
-    }
-</style>
 <div id="nt_content">
 
     <!--hero banner-->
     <div class="kalles-section page_section_heading">
         <div class="page-head tc pr oh cat_bg_img page_head_">
-            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-blog-4.jpg"></div>
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/blog/banner-article-7.png"></div>
             <div class="container pr z_100">
-                <h1 class="mb__5 cw">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</h1>
-                <p class="mg__0">21 Juni 2021</p>
+                <h1 class="mb__5 cw" style="line-height: 30px;">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</h1>
+                <p class="mg__0">29 November 2021</p>
             </div>
         </div>
     </div>
@@ -24,28 +18,62 @@
             <div class="col-lg-12 col-xs-12">
                 <div class="kalles-section nt_section type_isotope">
                     <div class="cb">
-                        <p><b>Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</b></p>
-                        <p class="indent-justify">Mulsk akhirnya merilis produk pertamanya, yakni sarung bantal berbahan sutra murbei atau mulberry silk. Produk ini menjadi sarung bantal mulberry silk pertama yang dibuat di Indonesia.&nbsp;<br></p>
-                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-1.jpg" width="400px" class="img-fluid blog-img" style="display: block;margin: auto;">
-                        <p><b>Mulsk Fokus pada Produk Perlengkapan Tidur Berbahan Sutra&nbsp;</b><br></p>
-                        <p class="indent-justify">Mengapa memilih bahan sutra? Mulsk fokus menghasilkan produk-produk perlengkapan tidur yang berkualitas dari segi bahan serta manfaatnya. Tak dapat dianggap remeh, bahan sutra memiliki banyak manfaat yang dapat Anda rasakan saat menggunakannya.<br></p>
-                        <p class="indent-justify">Bahan mulberry silk yang mulai banyak digunakan untuk perlengkapan tidur ini telah dikenal karena manfaatnya dari segi kesehatan dan kecantikan. Apa saja keunggulan bahan mulberry silk pada sarung bantal Mulsk?<br></p>
-                        <ol style="list-style-position: outside;">
-                            <li>Kain sarung bantal Mulsk dipastikan terbuat dari bahan alami, tidak berbau, dan hypoallergenic.<br></li>
-                            <li>Kelembutannya tidak membuat rambut kusut dan berantakan saat bangun tidur.<br></li>
-                            <li>Mampu menyerap kelembapan sekitar sehingga tidak meninggalkan keringat pada sarung bantal.<br></li>
-                            <li>Bahan mulberry silk memberikan kelembutan untuk kulit sehingga mengurangi gesekan dan mampu mencegah iritasi, garis-garis halus, serta kerutan pada wajah.<br></li>
-                            <li>Melindungi kulit sensitif dari bahaya alergi karena sifatnya yang hypoallergenic.<br></li>
-                            <li>Mampu mengatur suhu tubuh sehingga Anda tetap nyaman ketika tidur dalam cuaca hangat atau pun dingin.<br></li>
-                        </ol>
-                        <img src="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg" width="500px" class="img-fluid blog-img" style="display: block;margin: auto;">
-                        <p><b>Mulsk Hadirkan Desain Sarung Bantal yang Aman dan Nyaman</b><br></p>
-                        <p class="indent-justify">Mulsk memberikan kenyamanan pada desain sarung bantal dengan meggunakan bukaan tersembunyi gaya amplop tanpa resleting. Anda akan merasa aman saat tidur tanpa rasa khawatir rambut akan tersangkut.&nbsp;<br></p>
-                        <p class="indent-justify">Menjanjikan kesan mewah sesuai konsepnya, sarung bantal Mulsk dirilis dalam dua warna elegan, yakni silver dan gold. Pilihlah warna yang sesuai dengan karakter Anda!&nbsp;<br></p>
-                        <p><b>Mengapa Harus Memilih Sarung Bantal Mulsk Selain Bahannya yang Lembut?</b><br></p>
-                        <p class="indent-justify">Selain dari kualitas bahan dan manfaat-manfaat yang dapat Anda rasakan, Mulsk dipastikan terbuat dari 100% bahan mulberry silk tanpa campuran. Selain itu, Mulsk memilih sutra yang diproduksi oleh petani lokal. Itu artinya, Anda juga mendukung produk-produk lokal untuk semakin unggul di negara sendiri.&nbsp;<br></p>
-                        <p class="indent-justify">Tunggu apalagi? Segera dapatkan sarung bantal Mulsk untuk membuktikan manfaatnya melalui <b><a href="https://shopee.co.id/mulskbeauty" target="_blank">Official Shopee @mulskbeauty</a></b> dan <b><a href="https://www.tokopedia.com/mulskbeauty" target="_blank">Official Tokopedia @mulskbeauty</a></b>.<br></p>
-                        <p><br></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Melakukan perawatan kulit wajah agaknya saat ini menjadi keharusan bagi banyak orang. Tidak hanya wanita, tetapi para pria juga mulai banyak yang sadar untuk merawat kulit.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Salah satu cara merawat kulit wajah adalah dengan menggunakan berbagai produk perawatan yang sesuai dengan jenis kulit. Mengapa merawat kulit menjadi hal yang penting? Bagi sebagian orang, menjaga kulit tetap sehat adalah sebuah keharusan.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Beberapa orang memang memiliki kondisi kulit yang rentan berjerawat atau disebut acne-prone skin. Kondisi itu memang umumnya dialami oleh pemilik kulit berminyak, tetapi tidak menutup kemungkinan masalah tersebut juga dialami tipe kulit kering.
+                        </p>
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article8_mulsk.jpg" style="display: block;margin: auto;width: 800px;">
+                        <p><b>Tak Cuma Andalkan Produk Skincare yang Sesuai dengan Tipe Kulit</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Memilih produk perawatan kulit atau skincare yang cocok untuk menghindari kulit berjerawat memang bukan hal yang mudah. Namun, setidaknya produk tersebut bisa membantumu dalam mengatasi permasalahan kulit.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Selain mengandalkan produk perawatan kulit, melakukan pola hidup sehat juga turut berperan penting. Apa saja pola hidup yang dapat dilakukan?
+                        </p>
+                        <p><b>1. Atur pola makan dengan sehat</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Seperti kita tahu, jerawat juga dapat timbul akibat asupan makanan yang masuk ke dalam tubuh. Batasi asupan gula dari makanan dan minuman. Selain itu, kamu bisa menghindari konsumsi makanan yang memang memicu timbulnya jerawat pada kulit wajahmu.
+                        </p>
+                        <p><b>2. Cuci muka dua kali sehari</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Cara lain merawat kulit berjerawat adalah mencuci muka secara teratur. Lakukan dua kali dalam sehari, terutama setelah beraktivitas di luar ruangan. Mencuci muka dapat membersihkan wajah, tapi jangan lakukan lebih dari dua kali agar kulit tidak kering.
+                        </p>
+                        <p><b>3. Hindari Kebiasaan Begadang</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Tidur yang cukup selama 8 jam sehari termasuk cara merawat kulit berjerawat. Jika kurang tidur, maka akan merangsang produksi hormon kortisol dalam tubuh. Hormon ini memicu peradangan pada kulit.
+                        </p>
+                        <p><b>4. Minum Air Putih</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Nah, jangan menyepelekan minum air putih dalam mengatasi wajah berjerawat. Cairan yang cukup untuk tubuh dapat membantu proses penyembuhan kulit. Minumlah air putih sebanyak 2 liter per hari untuk mencukupi kebutuhan cairan tubuh.
+                        </p>
+                        <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article8-mulsk-2.jpg" style="display: block;margin: auto;width: 800px;">
+                        <p><b>Munculnya Jerawat di Wajah Juga Bisa Diakibatkan Sarung Bantal yang Kotor</b></p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Jerawat di bagian wajah juga bisa disebabkan oleh penggunaan sarung bantal yang kotor. Apakah kamu sudah rutin menggantinya? Atau bisa jadi kamu tidak cocok dengan bahan kain sarung bantal tertentu.
+                        </p>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Saat ini, sarung bantal berbahan sutra mulai banyak digunakan oleh berbagai kalangan sebagai usaha menjaga kulit tetap sehat. Untuk membantu orang-orang dalam merawat kulit, Mulsk memberikan produk sarung bantal berkualitas dari bahan 100% sutra murbei atau mulberry silk.
+                        </p>
+                        <p><b>Kelebihan Sarung Bantal dari Mulsk</b></p>
+                        <ul>
+                            <li>Mengurangi inflamasi jerawat</li>
+                            <li>Menjaga kelembaban kulit</li>
+                            <li>Mencegah iritasi</li>
+                            <li>Hypoallergenic</li>
+                            <li>Mengurangi resiko kerutan pada wajah</li>
+                            <li>Tidak membuat rambut kusut saat bangun</li>
+                            <li>Membuat rambut lebih lembab</li>
+                            <li>Terasa sejuk dan tidak panas saat digunakan</li>
+                        </ul>
+                        <p style="text-indent: 30px;text-align: justify;">
+                            Segera atasi kulit berjerawat dengan mengganti sarung bantalmu ke produk milik Mulsk. Dapatkan di Official Shopee Mulskbeauty dan Website!
+                        </p>
+                        <br />
                     </div>
                     <div class="wrap_title des_title_2">
                         <h3 class="section-title tc position-relative flex fl_center al_center fs__24 title_2">
