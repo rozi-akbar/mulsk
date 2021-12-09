@@ -34,21 +34,21 @@
                         </p>
                         <p><b>Sutra Juga Membantu Penyerapan Skincare</b></p>
                         <p style="text-indent: 30px;text-align: justify;">
-                            Bagi pemilik wajah berjerawat atau kulit sensitif, memakai produk perawatan kulit atau skincare sebelum tidur termasuk bagian dari rutinitas. Namun, apa kamu yakin skincare-mu terserap sempurna ke dalam kulit? Salah memilih bahan sarung bantal juga bisa berpotensi menyebabkan penggunaan skincare terasa sia-sia.
+                            Bagi pemilik wajah berjerawat atau kulit sensitif, memakai produk perawatan kulit atau <span style="font-style: italic;">skincare</span> sebelum tidur termasuk bagian dari rutinitas. Namun, apa kamu yakin <span style="font-style: italic;">skincare</span>-mu terserap sempurna ke dalam kulit? Salah memilih bahan sarung bantal juga bisa berpotensi menyebabkan penggunaan <span style="font-style: italic;">skincare</span> terasa sia-sia.
                         </p>
                         <p style="text-indent: 30px;text-align: justify;">
-                            Sarung bantal dengan bahan sutra bisa mendukung penggunaan skincare-mu pada malam hari sebelum tidur. Kelembutan sutra dipastikan bisa membantu penyerapan skincare ke dalam kulit. Sutra tidak akan membuat produk skincare¬ yang telah kamu aplikasikan pada wajah menempel pada permukaannya. Ya, sutra memang memiliki kelebihan dibanding bahan kain lainnya sehingga kandungan dalam produk yang kamu pakai dapat terserap sempurna ke dalam kulit.
+                            Sarung bantal dengan bahan sutra bisa mendukung penggunaan <span style="font-style: italic;">skincare</span>-mu pada malam hari sebelum tidur. Kelembutan sutra dipastikan bisa membantu penyerapan <span style="font-style: italic;">skincare</span> ke dalam kulit. Sutra tidak akan membuat produk <span style="font-style: italic;">skincare</span> yang telah kamu aplikasikan pada wajah menempel pada permukaannya. Ya, sutra memang memiliki kelebihan dibanding bahan kain lainnya sehingga kandungan dalam produk yang kamu pakai dapat terserap sempurna ke dalam kulit.
                         </p>
                         <img class="img-fluid blog-img" src="<?= base_url() ?>assets/images/blog/article9_2.jpg" style="display: block;margin: auto;width: 800px;">
                         <p><b>Pastikan Sarung Bantal Berbahan Sutra Pilihanmu adalah yang Berkualitas</b></p>
                         <p style="text-indent: 30px;text-align: justify;">
-                            Saat ini, banyak produk yang menggunakan label sutra sebagai keunggulan. Namun, kandungan dalam kainnya tidak murni sutra sepenuhnya. Pilihlah sarung bantal yang memang berbahan 100% sutra. Mulsk adalah pilihan tepat untuk kamu yang ingin memilih kualitas sarung bantal dengan kemurnian sutra murbei atau mulberry silk.
+                            Saat ini, banyak produk yang menggunakan label sutra sebagai keunggulan. Namun, kandungan dalam kainnya tidak murni sutra sepenuhnya. Pilihlah sarung bantal yang memang berbahan 100% sutra. Mulsk adalah pilihan tepat untuk kamu yang ingin memilih kualitas sarung bantal dengan kemurnian sutra murbei atau <span style="font-style: italic;">mulberry silk</span>.
                         </p>
                         <p style="text-indent: 30px;text-align: justify;">
-                            Sarung bantal Mulsk adalah pilihan tepat untuk kamu yang ingin tetap nyaman saat tidur. Bangun pagi hari pasti merasa fresh dan tidak khawatir produk skincare semalam menempel pada sarung bantal. 
+                            Sarung bantal Mulsk adalah pilihan tepat untuk kamu yang ingin tetap nyaman saat tidur. Bangun pagi hari pasti merasa fresh dan tidak khawatir produk <span style="font-style: italic;">skincare</span> semalam menempel pada sarung bantal. 
                         </p>
                         <p style="text-indent: 30px;text-align: justify;">
-                            Kelembutan sarung bantal Mulsk tentu mampu memaksimalkan penyerapan skincare sepenuhnya ke kulit. Kamu bisa membelinya lewat Official Marketplace Mulskbeauty sekarang juga sebelum kehabisan!
+                            Kelembutan sarung bantal Mulsk tentu mampu memaksimalkan penyerapan <span style="font-style: italic;">skincare</span> sepenuhnya ke kulit. Kamu bisa membelinya lewat <a href="<?=base_url()?>How_to_Buy">Official Marketplace Mulskbeauty</a> sekarang juga sebelum kehabisan!
                         </p>
                         <br />
                     </div>
