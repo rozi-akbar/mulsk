@@ -269,7 +269,7 @@
                         <h4 class="mg__0 fs__16 mb__5 ls__0">
                             <a class="cd chp open" href="<?= site_url('Blog/bg0912202101') ?>">Sarung Bantal Mulsk Mampu Maksimalkan Penyerapan Skincare ke Kulit</a>
                         </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">29 November 2021</time></span></span>
+                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">09 Desember 2021</time></span></span>
                     </div>
                     <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah? Jika belum, saat ini kamu sudah harus mulai menyadarinya. Kain yang menjadi bahan sarung bantal adalah kuncinya. Tidak semua kain cocok digunakan sebagai bahan sarung bantal yang nyatanya kamu gunakan untuk tidur selama berjam-jam.</div>
                 </article>
