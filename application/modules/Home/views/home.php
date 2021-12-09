@@ -271,7 +271,7 @@
                         </h4>
                         <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">09 Desember 2021</time></span></span>
                     </div>
-                    <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah? Jika belum, saat ini kamu sudah harus mulai menyadarinya. Kain yang menjadi bahan sarung bantal adalah kuncinya. Tidak semua kain cocok digunakan sebagai bahan sarung bantal yang nyatanya kamu gunakan untuk tidur selama berjam-jam.</div>
+                    <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah?</div>
                 </article>
                 <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
                     <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg2911202101') ?>">
