@@ -262,6 +262,18 @@
             </div>
             <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
                 <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg0912202101') ?>">
+                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article9_2.jpg"></div>
+                    </a>
+                    <div class="post-info mb__10">
+                        <h4 class="mg__0 fs__16 mb__5 ls__0">
+                            <a class="cd chp open" href="<?= site_url('Blog/bg0912202101') ?>">Sarung Bantal Mulsk Mampu Maksimalkan Penyerapan Skincare ke Kulit</a>
+                        </h4>
+                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">29 November 2021</time></span></span>
+                    </div>
+                    <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah? Jika belum, saat ini kamu sudah harus mulai menyadarinya. Kain yang menjadi bahan sarung bantal adalah kuncinya. Tidak semua kain cocok digunakan sebagai bahan sarung bantal yang nyatanya kamu gunakan untuk tidur selama berjam-jam.</div>
+                </article>
+                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
                     <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg2911202101') ?>">
                         <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article8_mulsk.jpg"></div>
                     </a>
@@ -308,54 +320,6 @@
                         <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">11 Oktober 2021</time></span></span>
                     </div>
                     <div class="post-content">Tidur menggunakan sarung bantal berbahan sutra seolah menjadi tren di kalangan selebriti baik Tanah Air maupun luar negeri beberapa tahun belakang. </div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202101') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog4-2.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Sarung Bantal Mulberry Silk Pertama di Indonesia, Mulsk Pilih Bahan Baku dari Petani Lokal</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">21 Juni 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Mulsk akhirnya merilis produk pertamanya, yakni sarung bantal berbahan sutra murbei atau mulberry silk. Produk ini menjadi sarung bantal mulberry silk pertama yang dibuat di Indonesia. </div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/pic-blog-3-1.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202103') ?>">Mulsk : Perpaduan Kemewahan, Kecantikan, dan Kesehatan dalam Setiap Produknya</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">12 Juni 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Sarung bantal menjadi perlengkapan tidur yang juga harus Anda perhatikan. Mengapa demikian?</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202102') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/silk.png"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202102') ?>">Termasuk Kain Berkualitas Tinggi, Apa itu Mulberry Silk?</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">10 Juni 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Kelebihan penggunaan mulberry silk untuk kecantikan dan kesehatan.</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1206202101') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog_1.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1206202101') ?>">3 Cara Jaga Tidur Tetap Berkualitas setelah Lelah Beraktivitas</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">08 Juni 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Pentingnya tidur berkualitas dengan memakai perlengkapan yang mendukung: sarung bantal dengan material utama mulberry silk.</div>
                 </article>
             </div>
         </div>

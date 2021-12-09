@@ -65,4 +65,11 @@ class Blog extends CI_Controller
         $this->load->view('blog8');
         $this->load->view('Layout/footer');
     }
+
+    public function bg0912202101()
+    {
+        $this->load->view('Layout/header');
+        $this->load->view('blog9');
+        $this->load->view('Layout/footer');
+    }
 }
