@@ -521,3 +521,16 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+function kang_controller($class) 
+{
+ if (strpos($class, 'CI_') !== 0)
+ {
+     if (is_readable(APPPATH . 'core/' . $class . '.php'))
+     {
+      require_once(APPPATH . 'core/' . $class . '.php');
+     }
+ }
+}
+ 
+spl_autoload_register('kang_controller');
