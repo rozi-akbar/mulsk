@@ -1,10 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-require_once(APPPATH . 'core/' . 'UTC.php');
-require_once(APPPATH . 'core/' . 'Hash.php');
-
-class Login extends Authentication
+class Login extends CI_Controller
 {
     public function __construct()
     {
@@ -15,6 +12,24 @@ class Login extends Authentication
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->helper('download');
+    }
+
+    //convert string to md5 and sha256 hashing
+    public function sha256_md5($String)
+    {
+        return hash('sha256', md5($String));
+    }
+
+    //encrypt string message or text with key
+    public function safeEncrypt($message, $key)
+    {
+        return openssl_encrypt($message, "AES-128-ECB", $key);
+    }
+
+    //decrypt string message or text with key
+    public function safeDecrypt($encrypted, $key)
+    {
+        return openssl_decrypt($encrypted, "AES-128-ECB", $key);
     }
 
     public function LoginPage($Action = "")
@@ -30,8 +45,7 @@ class Login extends Authentication
 
     public function AuthLogin()
     {
-        $hash = new Hash;
-        $pass = $hash->sha256_md5($this->input->post('password'));
+        $pass = $this->sha256_md5($this->input->post('password'));
 
         $get_status = json_decode($this->Auth($this->input->post('username'), $pass), true);
 
@@ -49,9 +63,35 @@ class Login extends Authentication
         }
     }
 
+    public function Auth($username, $pass)
+    {
+        $this->db->where("username", $username);
+        $this->db->where("password", $pass);
+        $this->db->select("*");
+        $db = $this->db->get("v_user");
+        if ($Row = $db->row_array()) {
+            $output = array(
+                'status'        => TRUE,
+                'id'         => $Row['id'],
+                'level'         => $Row['level'],
+                'username'      => $Row['username'],
+                'nama'          => $Row['name'],
+                'nama_level'    => $Row['nama_level'],
+            );
+            // header('Content-Type: application/json; charset=utf-8');
+            return json_encode($output, JSON_PRETTY_PRINT);
+        } else {
+            $output = array(
+                'status' => FALSE
+            );
+            // header('Content-Type: application/json; charset=utf-8');
+            return json_encode($output, JSON_PRETTY_PRINT);
+        }
+    }
+
     public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect(site_url('Administrator/Login/LoginPage'));
-	}
+    {
+        $this->session->sess_destroy();
+        redirect(site_url('Administrator/Login/LoginPage'));
+    }
 }
