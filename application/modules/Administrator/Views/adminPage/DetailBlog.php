@@ -1,48 +1,29 @@
-<div class="kt-content kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-    <!-- begin:: Subheader -->
-    <div class="kt-subheader kt-grid__item" id="kt_subheader">
-        <div class="kt-container kt-container--fluid">
-            <div class="kt-subheader__main">
-                <h3 class="kt-subheader__title">
-                    <?= $file ?>
-                </h3>
-                <span class="kt-subheader__separator kt-hidden"></span>
+<button class="imtt4_btn button pe_auto round_true btn_icon_false" onClick="window.history.back()" style="margin-left: 2%;">GO BACK</button>
+<div id="nt_content" style="margin-top: 2%;">
+
+    <!--hero banner-->
+    <div class="kalles-section page_section_heading">
+        <div class="page-head tc pr oh cat_bg_img page_head_">
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/banner-blog-1.jpg"></div>
+            <div class="container pr z_100">
+                <h1 class="mb__5 cw"><?= $draft['title'] ?></h1>
+                <p class="mg__0"><?= $draft['posted_at'] ?></p>
             </div>
         </div>
     </div>
+    <!--end hero banner-->
 
-    <!-- end:: Subheader -->
-
-    <!-- begin:: Content -->
-    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid">
-
-        <div class="row">
-            <div class="col-12">
-                <!--begin::Portlet-->
-                <div class="kt-portlet">
-                    <div class="kt-portlet__head">
-                        <div class="kt-portlet__head-label">
-                            <h3 class="kt-portlet__head-title">
-                                Detail Blog Mulsk
-                            </h3>
-
-                        </div>
-                    </div>
-
-                    <div class="kt-portlet__body">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <h1><?php echo $title; ?></h1>
-                                <p><?php echo $contents; ?></p>
-                            </div>
-                        </div>
+    <!--main content-->
+    <div class="container container_cat cat_default mt__60 mb__20">
+        <div class="row nt_single_blog">
+            <div class="col-lg-12 col-xs-12">
+                <div class="kalles-section nt_section type_isotope">
+                    <div class="cb">
+                        <p> <?= $draft['content'] ?> </p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+    <!--end main content-->
 </div>
-
-<script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
-<script src="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.js" type="text/javascript"></script>

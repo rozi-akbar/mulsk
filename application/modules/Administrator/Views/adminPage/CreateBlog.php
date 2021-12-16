@@ -1,3 +1,23 @@
+<?php
+
+if ($action == "edit") {
+    foreach ($data_blog as $vaBlog) {
+        $id         = $vaBlog['id_blog'];
+        $title      = $vaBlog['title'];
+        $contents   = $vaBlog['content'];
+    }
+    $valueAction = "Save Change";
+    $fAction = 'UpdateBlog/' . $id;
+} else {
+    $id         = "";
+    $title      = "";
+    $contents   = "";
+    $valueAction = "Save";
+    $fAction = 'save/' . $blog_id;
+}
+
+?>
+
 <div class="kt-content kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
     <!-- begin:: Subheader -->
     <div class="kt-subheader kt-grid__item" id="kt_subheader">
@@ -23,26 +43,26 @@
                     <div class="kt-portlet__head">
                         <div class="kt-portlet__head-label">
                             <h3 class="kt-portlet__head-title">
-                                Summernote
+                                Blog Mulsk
                             </h3>
                         </div>
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('Administrator/Blog_Act/save/' . $blog_id); ?>" method="post">
+                        <form action="<?= site_url('Administrator/Blog_Act/' . $fAction); ?>" method="post">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input type="text" name="title" class="form-control" placeholder="Title" required>
+                                        <input type="text" name="title" class="form-control" placeholder="Title" value="<?= $title ?>" required>
                                         <input type="hidden" name="blog_id" id="blog_id" value="<?= $blog_id ?>">
                                     </div>
                                     <div class="form-group">
-                                    <textarea name="contents" class="summernote" id="summernote" required> </textarea>
+                                        <textarea name="contents" class="summernote" id="summernote" required> <?= $contents ?> </textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary"><?= $valueAction ?></button>
                                 </div>
                             </div>
                         </form>

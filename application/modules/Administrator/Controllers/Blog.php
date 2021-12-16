@@ -27,6 +27,11 @@ class Blog extends CI_Controller
         $this->load->view('container/footer');
     }
 
+    public function T_DataBlog()
+    {
+        redirect(site_url('Administrator/Blog/dataBlog/'));
+    }
+
     public function CreateBlog()
     {
         $UTC = new UTC;
@@ -35,21 +40,28 @@ class Blog extends CI_Controller
         $draftBlog = array(
             'id_blog'   => $blog_id,
             'create_at' => $create_date,
-            'create_by' => $this->session->userdata('username')
+            'create_by' => $this->session->userdata('username'),
+            'draft'     => 1
         );
         $data['blog_id'] = $blog_id;
         $this->model->Insert('blog', $draftBlog);
 
-        redirect(site_url('Administrator/Blog/NewBlog/' . $blog_id));
+        redirect(site_url('Administrator/Blog/NewBlog/C/' . $blog_id));
     }
 
-    public function NewBlog($id)
+    public function NewBlog($action = "", $id)
     {
         $dataHeader['file'] = "Create Blog Mulsk";
         $data['blog_id'] = $id;
-        
+
+        if ($action == 'edit') {
+            $data['data_blog']  = $this->model->Code("SELECT * FROM blog WHERE id = '" . $id . "' ");
+        }
+
+        $data['action'] = $action;
+
         $this->load->view('container/header', $dataHeader);
-        $this->load->view('adminPage/CreateBlog', $data);
+        $this->load->view('adminPage/createBlog', $data);
         $this->load->view('container/footer');
     }
 
@@ -89,5 +101,13 @@ class Blog extends CI_Controller
         if (unlink($file_name)) {
             echo 'File Delete Successfully';
         }
+    }
+
+    function previewBlog($id = "")
+    {
+        $data['draft'] = $this->db->query("SELECT * FROM v_blog_draft WHERE id = '" . $id . "' ")->row_array();
+        $this->load->view('Administrator/container/headerLayoutBlog');
+        $this->load->view('adminPage/detailBlog', $data);
+        $this->load->view('Administrator/container/footerLayoutBlog');
     }
 }

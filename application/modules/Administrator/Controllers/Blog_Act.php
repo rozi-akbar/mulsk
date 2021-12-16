@@ -29,13 +29,49 @@ class Blog_Act extends CI_Controller
         );
         $this->model->Update('blog', 'id_blog', $id, $data);
 
-        // $id = $this->db->insert_id();
-        // $result = $this->post_model->get_article_by_id($id)->row_array();
-        $dataBlog = $this->db->query("SELECT * FROM blog WHERE id_blog = '" . $id . "' ")->row_array();
-        $data['title'] = $dataBlog['title'];
-        $data['contents'] = $dataBlog['content'];
-        $this->load->view('container/header');
-        $this->load->view('adminPage/DetailBlog', $data);
-        $this->load->view('container/footer');
+        redirect(site_url('Administrator/Blog/T_DataBlog'));
+    }
+
+    function UpdateBlog($id = "")
+    {
+        $UTC = new UTC;
+        $title = $this->input->post('title', TRUE);
+        $contents = $this->input->post('contents', TRUE);
+        $data = array(
+            'title'     => $title,
+            'content'   => $contents,
+            'update_at'   => $UTC->DateTimeStamp(),
+            'update_by' => $this->session->userdata('username')
+        );
+        $this->model->Update('blog', 'id_blog', $id, $data);
+
+        redirect(site_url('Administrator/Blog/T_DataBlog'));
+    }
+
+    function Posting($id = "")
+    {
+        $UTC = new UTC;
+        $data = array(
+            'draft'       => 0,
+            'posted'      => 1,
+            'posted_at'   => $UTC->DateTimeStamp(),
+            'posted_by'   => $this->session->userdata('username')
+        );
+        $this->model->Update('blog', 'id', $id, $data);
+
+        redirect(site_url('Administrator/Blog/T_DataBlog'));
+    }
+
+    function HiddenPost($id = "")
+    {
+        $UTC = new UTC;
+        $data = array(
+            'posted'     => 2,
+            'hidden_at'   => $UTC->DateTimeStamp(),
+            'hidden_by'   => $this->session->userdata('username')
+        );
+        $this->model->Update('blog', 'id', $id, $data);
+
+        redirect(site_url('Administrator/Blog/T_DataBlog'));
     }
 }
