@@ -59,6 +59,7 @@ if ($action == "edit") {
                                     <div class="form-group">
                                         <label>Banner Blog <span id="file_error_banner"></span></label>
                                         <input type="file" name="banner" id="banner" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
+                                        <input type="hidden" name="old_url_banner" value="<?= $banner ?>">
                                         <?php
                                         if ($action == "edit") {
                                             if (empty($banner)) {
@@ -78,6 +79,7 @@ if ($action == "edit") {
                                     <div class="form-group">
                                         <label>Thumbnail <span id="file_error_thumbnail"></span></label>
                                         <input type="file" name="thumbnail" id="thumbnail" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
+                                        <input type="hidden" name="old_url_thumbnail" value="<?= $thumbnail ?>">
                                         <?php
                                         if ($action == "edit") {
                                             if (empty($thumbnail)) {
