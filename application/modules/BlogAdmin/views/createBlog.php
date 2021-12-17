@@ -49,7 +49,7 @@ if ($action == "edit") {
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('Administrator/Blog_Act/' . $fAction); ?>" method="post">
+                        <form action="<?= site_url('BlogAdmin/Blog_Act/' . $fAction); ?>" method="post">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <div class="form-group">
@@ -96,7 +96,7 @@ if ($action == "edit") {
             var data = new FormData();
             data.append("image", image);
             $.ajax({
-                url: "<?= site_url('Administrator/Blog/upload_image/' . $blog_id) ?>",
+                url: "<?= site_url('BlogAdmin/Blog/upload_image/' . $blog_id) ?>",
                 cache: false,
                 contentType: false,
                 processData: false,
@@ -117,7 +117,7 @@ if ($action == "edit") {
                     src: src
                 },
                 type: "POST",
-                url: "<?= site_url('Administrator/Blog/delete_image/' . $blog_id) ?>",
+                url: "<?= site_url('BlogAdmin/Blog/delete_image/' . $blog_id) ?>",
                 cache: false,
                 success: function(response) {
                     console.log(response);

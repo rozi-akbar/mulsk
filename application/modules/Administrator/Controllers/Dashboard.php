@@ -18,8 +18,8 @@ class Dashboard extends CI_Controller
     }
 
     public function index(){
-        $this->load->view('container/header');
-        $this->load->view('adminPage/dashboard');
-        $this->load->view('container/footer');
+        $this->load->view('Container/header');
+        $this->load->view('Dashboard/dashboard');
+        $this->load->view('Container/footer');
     }
 }

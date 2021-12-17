@@ -32,17 +32,17 @@ class DatatablesBlog extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'Administrator/Blog/previewBlog/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/previewBlog/' . $person->id . '">
                     <button title="Preview" class="btn btn-success btn-icon">
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog/NewBlog/edit/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/NewBlog/edit/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog_Act/Posting/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/Posting/' . $person->id . '">
                     <button title="Post" class="btn btn-warning btn-icon">
                         <i class="fa fa-arrow-alt-circle-up"></i>
                     </button>
@@ -84,17 +84,17 @@ class DatatablesBlog extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'Administrator/Blog/previewBlog/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/previewBlog/' . $person->id . '">
                     <button title="Preview" class="btn btn-success btn-icon">
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog/NewBlog/edit/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/NewBlog/edit/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog_Act/HiddenPost/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id . '">
                     <button title="Hidden Post" class="btn btn-danger btn-icon">
                         <i class="fa fa-arrow-alt-circle-down"></i>
                     </button>
@@ -138,17 +138,17 @@ class DatatablesBlog extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'Administrator/Blog/previewBlog/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/previewBlog/' . $person->id . '">
                     <button title="Preview" class="btn btn-success btn-icon">
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog/NewBlog/edit/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog/NewBlog/edit/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'Administrator/Blog_Act/Posting/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/Posting/' . $person->id . '">
                     <button title="Post" class="btn btn-warning btn-icon">
                         <i class="fa fa-arrow-alt-circle-up"></i>
                     </button>

@@ -29,7 +29,7 @@ class Blog_Act extends CI_Controller
         );
         $this->model->Update('blog', 'id_blog', $id, $data);
 
-        redirect(site_url('Administrator/Blog/T_DataBlog'));
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 
     function UpdateBlog($id = "")
@@ -45,7 +45,7 @@ class Blog_Act extends CI_Controller
         );
         $this->model->Update('blog', 'id_blog', $id, $data);
 
-        redirect(site_url('Administrator/Blog/T_DataBlog'));
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 
     function Posting($id = "")
@@ -59,7 +59,7 @@ class Blog_Act extends CI_Controller
         );
         $this->model->Update('blog', 'id', $id, $data);
 
-        redirect(site_url('Administrator/Blog/T_DataBlog'));
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 
     function HiddenPost($id = "")
@@ -72,6 +72,6 @@ class Blog_Act extends CI_Controller
         );
         $this->model->Update('blog', 'id', $id, $data);
 
-        redirect(site_url('Administrator/Blog/T_DataBlog'));
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 }

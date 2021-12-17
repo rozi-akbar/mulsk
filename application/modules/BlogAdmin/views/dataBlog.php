@@ -21,7 +21,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="form-group">
                         <div class="pull-right">
-                            <a href="<?= base_url() ?>Administrator/Blog/CreateBlog">
+                            <a href="<?= base_url() ?>BlogAdmin/Blog/CreateBlog">
                                 <button id="create_blog" class="btn btn-primary btn-sm"> Create New Blog</button>
                             </a>
                         </div>
@@ -111,7 +111,7 @@
 
                                                 // Load data for the table's content from an Ajax source
                                                 "ajax": {
-                                                    "url": "<?= site_url("Administrator/DatatablesBlog/draftBlog") ?>",
+                                                    "url": "<?= site_url("BlogAdmin/DatatablesBlog/draftBlog") ?>",
                                                     "type": "POST"
                                                 },
 
@@ -191,7 +191,7 @@
 
                                                 // Load data for the table's content from an Ajax source
                                                 "ajax": {
-                                                    "url": "<?= site_url("Administrator/DatatablesBlog/blogPosted") ?>",
+                                                    "url": "<?= site_url("BlogAdmin/DatatablesBlog/blogPosted") ?>",
                                                     "type": "POST"
                                                 },
 
@@ -275,7 +275,7 @@
 
                                                 // Load data for the table's content from an Ajax source
                                                 "ajax": {
-                                                    "url": "<?= site_url("Administrator/DatatablesBlog/hiddenBlog") ?>",
+                                                    "url": "<?= site_url("BlogAdmin/DatatablesBlog/hiddenBlog") ?>",
                                                     "type": "POST"
                                                 },
 

@@ -22,14 +22,14 @@ class Blog extends CI_Controller
     public function DataBlog()
     {
         $dataHeader['file'] = "Data Blog Mulsk";
-        $this->load->view('container/header', $dataHeader);
-        $this->load->view('adminPage/DataBlog');
-        $this->load->view('container/footer');
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('dataBlog');
+        $this->load->view('Container/footer');
     }
 
     public function T_DataBlog()
     {
-        redirect(site_url('Administrator/Blog/dataBlog/'));
+        redirect(site_url('BlogAdmin/Blog/DataBlog'));
     }
 
     public function CreateBlog()
@@ -46,7 +46,7 @@ class Blog extends CI_Controller
         $data['blog_id'] = $blog_id;
         $this->model->Insert('blog', $draftBlog);
 
-        redirect(site_url('Administrator/Blog/NewBlog/C/' . $blog_id));
+        redirect(site_url('BlogAdmin/Blog/NewBlog/C/' . $blog_id));
     }
 
     public function NewBlog($action = "", $id)
@@ -60,9 +60,9 @@ class Blog extends CI_Controller
 
         $data['action'] = $action;
 
-        $this->load->view('container/header', $dataHeader);
-        $this->load->view('adminPage/createBlog', $data);
-        $this->load->view('container/footer');
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('createBlog', $data);
+        $this->load->view('Container/footer');
     }
 
     //Upload image summernote
@@ -106,8 +106,8 @@ class Blog extends CI_Controller
     function previewBlog($id = "")
     {
         $data['draft'] = $this->db->query("SELECT * FROM v_blog_draft WHERE id = '" . $id . "' ")->row_array();
-        $this->load->view('Administrator/container/headerLayoutBlog');
-        $this->load->view('adminPage/detailBlog', $data);
-        $this->load->view('Administrator/container/footerLayoutBlog');
+        $this->load->view('Container/headerLayoutBlog');
+        $this->load->view('detailBlog', $data);
+        $this->load->view('Container/footerLayoutBlog');
     }
 }
