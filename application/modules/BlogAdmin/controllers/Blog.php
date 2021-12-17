@@ -92,7 +92,7 @@ class Blog extends CI_Controller
             }
         }
     }
-//asu
+
     //Delete image summernote
     function delete_image($id = "")
     {
