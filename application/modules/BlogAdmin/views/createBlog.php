@@ -102,7 +102,18 @@ if ($action == "edit") {
                 processData: false,
                 data: data,
                 type: "POST",
+                beforeSend: function() {
+                    swal.fire({
+                        title: 'Uploading Image',
+                        text: 'will be close at upload finished',
+                        allowOutsideClick: false,
+                        onOpen: function() {
+                            swal.showLoading()
+                        }
+                    })
+                },
                 success: function(url) {
+                    swal.close()
                     $('#summernote').summernote("insertImage", url);
                 },
                 error: function(data) {
