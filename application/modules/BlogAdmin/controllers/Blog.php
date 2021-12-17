@@ -69,7 +69,7 @@ class Blog extends CI_Controller
     function upload_image($id = "")
     {
         if (isset($_FILES["image"]["name"])) {
-            $config['upload_path'] = './assets/images/blog/';
+            $config['upload_path'] = './assets/images/blog/content_images/';
             $config['allowed_types'] = 'jpg|jpeg|png|gif';
             $this->upload->initialize($config);
             if (!$this->upload->do_upload('image')) {
@@ -79,16 +79,16 @@ class Blog extends CI_Controller
                 $data = $this->upload->data();
                 //Compress Image
                 $config['image_library'] = 'gd2';
-                $config['source_image'] = './assets/images/blog/' . $data['file_name'];
+                $config['source_image'] = './assets/images/blog/content_images/' . $data['file_name'];
                 $config['create_thumb'] = FALSE;
                 $config['maintain_ratio'] = TRUE;
                 $config['quality'] = '60%';
                 $config['width'] = 800;
                 $config['height'] = 800;
-                $config['new_image'] = './assets/images/blog/' . $data['file_name'];
+                $config['new_image'] = './assets/images/blog/content_images/' . $data['file_name'];
                 $this->load->library('image_lib', $config);
                 $this->image_lib->resize();
-                echo base_url() . 'assets/images/blog/' . $data['file_name'];
+                echo base_url() . 'assets/images/blog/content_images/' . $data['file_name'];
             }
         }
     }
