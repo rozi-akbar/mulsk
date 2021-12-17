@@ -27,9 +27,20 @@ class Blog_Act extends CI_Controller
             'title'     => $title,
             'content'   => $contents
         );
-        $this->model->Update('blog', 'id_blog', $id, $data);
 
-        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+        $banner = $_FILES['banner']['name'];
+        $thumbnail = $_FILES['thumbnail']['name'];
+        $this->db->trans_start();
+        $this->model->Update('blog', 'id_blog', $id, $data);
+        $this->upload_banner_blog($banner, $id);
+        $this->upload_thumbnail_blog($thumbnail, $id);
+        $this->db->trans_complete();
+
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+        } else {
+            redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+        }
     }
 
     function UpdateBlog($id = "")
@@ -43,9 +54,19 @@ class Blog_Act extends CI_Controller
             'update_at'   => $UTC->DateTimeStamp(),
             'update_by' => $this->session->userdata('username')
         );
+        $banner = $_FILES['banner']['name'];
+        $thumbnail = $_FILES['thumbnail']['name'];
+        $this->db->trans_start();
         $this->model->Update('blog', 'id_blog', $id, $data);
+        $this->upload_banner_blog($banner, $id);
+        $this->upload_thumbnail_blog($thumbnail, $id);
+        $this->db->trans_complete();
 
-        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+        } else {
+            redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+        }
     }
 
     function Posting($id = "")
@@ -76,58 +97,74 @@ class Blog_Act extends CI_Controller
     }
 
     function upload_banner_blog($banner, $noId)
-	{
-		if (empty($banner)) {
-		} else {
-			$date_change = date('YmdHis');
-			$cNew_name = "bannerBlog_$date_change";
-			$image = $_FILES['banner']['name'];
-			$x_image = explode('.', $image);
-			$ekstensi_image = strtolower(end($x_image));
+    {
+        if (empty($banner)) {
+        } else {
+            $date_change = date('YmdHis');
+            $cNew_name = "bannerBlog_$date_change";
+            $image = $_FILES['banner']['name'];
+            $x_image = explode('.', $image);
+            $ekstensi_image = strtolower(end($x_image));
 
-			if ($ekstensi_image == "jpg" || $ekstensi_image == "jpeg" || $ekstensi_image == "png") {
-				$new_name = $cNew_name . "." . $ekstensi_image; //ganti nama file sesuai ekstensi
-				$file_temp = $_FILES['banner']['tmp_name']; //data temp yang di upload
-				$to_folder    = "assets/images/blog/banner/$new_name"; //folder tujuan
+            if ($ekstensi_image == "jpg" || $ekstensi_image == "jpeg" || $ekstensi_image == "png") {
+                $new_name = $cNew_name . "." . $ekstensi_image; //ganti nama file sesuai ekstensi
+                $file_temp = $_FILES['banner']['tmp_name']; //data temp yang di upload
+                $to_folder    = "assets/images/blog/banner/$new_name"; //folder tujuan
 
-				$data = array(
-					'banner_blog' => $to_folder
-				);
+                $data = array(
+                    'banner_blog' => $to_folder
+                );
 
-				$this->model->Update('blog', 'id_blog', $noId, $data);
-				move_uploaded_file($file_temp, "$to_folder");
-				$data_return_banner_blog = $to_folder;
-				return $data_return_banner_blog;
-			} else {
-			}
-		}
-	}
+                $this->db->trans_start();
+                $this->model->Update('blog', 'id_blog', $noId, $data);
+                move_uploaded_file($file_temp, "$to_folder");
+                $this->db->trans_complete();
 
-	function upload_thumbnail_blog($thumbnail, $noId)
-	{
-		if (empty($thumbnail)) {
-		} else {
-			$date_change = date('YmdHis');
-			$cNew_name = "thumbnailBlog_$date_change";
-			$image = $_FILES['thumbnail']['name'];
-			$x_image = explode('.', $image);
-			$ekstensi_image = strtolower(end($x_image));
+                if ($this->db->trans_status() === FALSE) {
+                    $this->db->trans_rollback();
+                    unlink($to_folder);
+                } else {
+                    $data_return_banner_blog = $to_folder;
+                    return $data_return_banner_blog;
+                }
+            } else {
+            }
+        }
+    }
 
-			if ($ekstensi_image == "jpg" || $ekstensi_image == "jpeg" || $ekstensi_image == "png") {
-				$new_name = $cNew_name . "." . $ekstensi_image; //ganti nama file sesuai ekstensi
-				$file_temp = $_FILES['thumbnail']['tmp_name']; //data temp yang di upload
-				$to_folder    = "assets/images/blog/thumbnail/$new_name"; //folder tujuan
+    function upload_thumbnail_blog($thumbnail, $noId)
+    {
+        if (empty($thumbnail)) {
+        } else {
+            $date_change = date('YmdHis');
+            $cNew_name = "thumbnailBlog_$date_change";
+            $image = $_FILES['thumbnail']['name'];
+            $x_image = explode('.', $image);
+            $ekstensi_image = strtolower(end($x_image));
 
-				$data = array(
-					'member_ktp' => $to_folder
-				);
+            if ($ekstensi_image == "jpg" || $ekstensi_image == "jpeg" || $ekstensi_image == "png") {
+                $new_name = $cNew_name . "." . $ekstensi_image; //ganti nama file sesuai ekstensi
+                $file_temp = $_FILES['thumbnail']['tmp_name']; //data temp yang di upload
+                $to_folder    = "assets/images/blog/thumbnail/$new_name"; //folder tujuan
 
-				$this->model->Update('blog', 'id_blog', $noId, $data);
-				move_uploaded_file($file_temp, "$to_folder");
-				$data_return_thumbnail = $to_folder;
-				return $data_return_thumbnail;
-			} else {
-			}
-		}
-	}
+                $data = array(
+                    'thumbnail_blog' => $to_folder
+                );
+
+                $this->db->trans_start();
+                $this->model->Update('blog', 'id_blog', $noId, $data);
+                move_uploaded_file($file_temp, "$to_folder");
+                $this->db->trans_complete();
+
+                if ($this->db->trans_status() === FALSE) {
+                    $this->db->trans_rollback();
+                    unlink($to_folder);
+                } else {
+                    $data_return_thumbnail = $to_folder;
+                    return $data_return_thumbnail;
+                }
+            } else {
+            }
+        }
+    }
 }

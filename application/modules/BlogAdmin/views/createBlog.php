@@ -5,6 +5,8 @@ if ($action == "edit") {
         $id         = $vaBlog['id_blog'];
         $title      = $vaBlog['title'];
         $contents   = $vaBlog['content'];
+        $banner      = $vaBlog['banner_blog'];
+        $thumbnail      = $vaBlog['thumbnail_blog'];
     }
     $valueAction = "Save Change";
     $fAction = 'UpdateBlog/' . $id;
@@ -12,6 +14,8 @@ if ($action == "edit") {
     $id         = "";
     $title      = "";
     $contents   = "";
+    $banner     = "";
+    $thumbnail  = "";
     $valueAction = "Save";
     $fAction = 'save/' . $blog_id;
 }
@@ -49,12 +53,22 @@ if ($action == "edit") {
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('BlogAdmin/Blog_Act/' . $fAction); ?>" method="post">
+                        <form action="<?= site_url('BlogAdmin/Blog_Act/' . $fAction); ?>" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-12 col-md-3">
                                     <div class="form-group">
                                         <label>Banner Blog <span id="file_error_banner"></span></label>
                                         <input type="file" name="banner" id="banner" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
+                                        <?php
+                                        if ($action == "edit") {
+                                            if (empty($banner)) {
+                                            } else {
+                                                echo '<img src="' . base_url() . '' . $banner .
+                                                    '" style="margin-bottom:2%; margin-top:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                                            }
+                                        } else {
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3">
@@ -64,6 +78,16 @@ if ($action == "edit") {
                                     <div class="form-group">
                                         <label>Thumbnail <span id="file_error_thumbnail"></span></label>
                                         <input type="file" name="thumbnail" id="thumbnail" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
+                                        <?php
+                                        if ($action == "edit") {
+                                            if (empty($thumbnail)) {
+                                            } else {
+                                                echo '<img src="' . base_url() . '' . $thumbnail .
+                                                    '" style="margin-bottom:2%; margin-top:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                                            }
+                                        } else {
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3">
