@@ -169,30 +169,6 @@
 <script type="text/javascript">
     "use strict";
 
-    $(document).ready(function() {
-        var size;
-        $('#cropbox').Jcrop({
-            aspectRatio: 1,
-            boxWidth: 250,
-            onSelect: function(c) {
-                size = {
-                    x: c.x,
-                    y: c.y,
-                    w: c.w,
-                    h: c.h
-                };
-                $("#crop").css("visibility", "visible");
-            }
-        });
-
-        $("#crop").click(function() {
-            var img = $("#cropbox").attr('src');
-            $("#cropped_img").show();
-            $("#cropped_img").attr('src', '<?= base_url() ?>assets/msslim/crop/image-crop.php?x=' + size.x + '&y=' + size.y + '&w=' + size.w + '&h=' + size.h + '&img=' + img);
-            $("#cFotoDiri").val('assets/msslim/crop/image-crop.php?x=' + size.x + '&y=' + size.y + '&w=' + size.w + '&h=' + size.h + '&img=' + img);
-        });
-    });
-
     var KTDatatablesDataSourceHtml = function() {
 
         var initTable1 = function() {
