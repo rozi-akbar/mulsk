@@ -65,7 +65,7 @@ if ($action == "edit") {
                                             if (empty($banner)) {
                                             } else {
                                                 echo '<img src="' . base_url() . '' . $banner .
-                                                    '" style="margin-bottom:2%; margin-top:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                                                    '" style="margin-bottom:2%; margin-top:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                                             }
                                         } else {
                                         }
@@ -85,7 +85,7 @@ if ($action == "edit") {
                                             if (empty($thumbnail)) {
                                             } else {
                                                 echo '<img src="' . base_url() . '' . $thumbnail .
-                                                    '" style="margin-bottom:2%; margin-top:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                                                    '" style="margin-bottom:2%; margin-top:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                                             }
                                         } else {
                                         }
@@ -217,7 +217,7 @@ if ($action == "edit") {
             var reader = new FileReader();
             reader.onload = function(e) {
                 document.getElementById('preview_banner').innerHTML = '<img src="' + e.target.result +
-                    '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                    '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
             };
             reader.readAsDataURL(inputFile1.files[0]);
 
@@ -225,7 +225,7 @@ if ($action == "edit") {
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_banner').innerHTML = '<img src="' + e.target.result +
-                        '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                        '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                     document.getElementById("submit").disabled = true;
                 };
                 reader.readAsDataURL(inputFile1.files[0]);
@@ -252,7 +252,7 @@ if ($action == "edit") {
             var reader = new FileReader();
             reader.onload = function(e) {
                 document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
-                    '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                    '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
             };
             reader.readAsDataURL(inputFile2.files[0]);
 
@@ -260,7 +260,7 @@ if ($action == "edit") {
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
-                        '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                        '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                     document.getElementById("submit").disabled = true;
                 };
                 reader.readAsDataURL(inputFile2.files[0]);
@@ -284,7 +284,7 @@ if ($action == "edit") {
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_banner').innerHTML = '<img src="' + e.target.result +
-                        '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                        '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                 };
                 reader.readAsDataURL(inputFile1.files[0]);
             }
@@ -292,7 +292,7 @@ if ($action == "edit") {
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
-                        '" style="margin-bottom:2%; border-radius:10%; background-position: center; background-size: cover; height: 15vh;"/>';
+                        '" style="margin-bottom:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
                 };
                 reader.readAsDataURL(inputFile2.files[0]);
             }
