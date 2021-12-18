@@ -105,7 +105,7 @@ class Blog extends CI_Controller
 
     function previewBlog($id = "")
     {
-        $data['draft'] = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+        $data['vBlog'] = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('detailBlog', $data);
         $this->load->view('Container/footerLayoutBlog');
