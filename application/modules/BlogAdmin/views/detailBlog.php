@@ -4,10 +4,10 @@
     <!--hero banner-->
     <div class="kalles-section page_section_heading">
         <div class="page-head tc pr oh cat_bg_img page_head_">
-            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?>assets/images/banner-blog-1.jpg"></div>
+            <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?><?= $vBlog['banner_blog'] ?>"></div>
             <div class="container pr z_100">
-                <h1 class="mb__5 cw"><?= $draft['title'] ?></h1>
-                <p class="mg__0"><?= $draft['posted_at'] ?></p>
+                <h1 class="mb__5 cw"><?= $vBlog['title'] ?></h1>
+                <p class="mg__0"><?= $vBlog['posted_at'] ?></p>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
             <div class="col-lg-12 col-xs-12">
                 <div class="kalles-section nt_section type_isotope">
                     <div class="cb">
-                        <p> <?= $draft['content'] ?> </p>
+                        <p> <?= $vBlog['content'] ?> </p>
                     </div>
                 </div>
             </div>
