@@ -24,7 +24,7 @@ class M_Product extends CI_Controller
         $dataHeader['file'] = "Mulsk Product";
 
         if($action == "edit"){
-
+            $data['product']    = $this->model->ViewWhere('v_m_product', 'id', $id);
         }
 
         $data['action'] = $action;

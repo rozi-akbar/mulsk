@@ -1,12 +1,16 @@
 <?php
 if ($action == "edit") {
-    
-    $valueAction = "Save Change";
-    $fAction = 'Update/' . $id;
+    foreach ($product as $vaProduct) {
+        $id = $vaProduct['id'];
+        $nama_product = $vaProduct['nama_product'];
+    }
+    $valueAction    = "Save Change";
+    $fAction        = 'Update/' . $id;
 } else {
-    
-    $valueAction = "Save";
-    $fAction = 'Insert/' . $blog_id;
+    $id             = "";
+    $nama_product   = "";
+    $valueAction    = "Save";
+    $fAction        = 'Insert/' . $blog_id;
 }
 ?>
 
@@ -41,12 +45,12 @@ if ($action == "edit") {
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('M_Product_Act/CreateMasterProduct/'.$fAction); ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?= site_url('MasterProduct/M_Product_Act/CreateMasterProduct/' . $fAction); ?>" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label>Product Name</label>
-                                        <input type="text" name="namaProduct" class="form-control" placeholder="Nama" required>
+                                        <input type="text" name="namaProduct" class="form-control" placeholder="Product Name" value="<?= $nama_product ?>" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -69,7 +73,82 @@ if ($action == "edit") {
                     </div>
 
                     <div class="kt-portlet__body">
-                        
+                        <table id="table_1" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Product Name</th>
+                                    <th>Create Date</th>
+                                    <th>Create By</th>
+                                    <th>Update Date</th>
+                                    <th>Update By</th>
+                                    <th style="width:15%;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <th>#</th>
+                                <th>Product Name</th>
+                                <th>Create Date</th>
+                                <th>Create By</th>
+                                <th>Update Date</th>
+                                <th>Update By</th>
+                                <th style="width:15%;">Action</th>
+                            </tfoot>
+                        </table>
+                        <script src="<?= base_url('assets/datatables/jquery/jquery-2.1.4.min.js') ?>"></script>
+                        <script src="<?= base_url('assets/datatables/bootstrap/js/bootstrap.min.js') ?>"></script>
+                        <script src="<?= base_url('assets/datatables/datatables/js/jquery.dataTables.min.js') ?>"></script>
+                        <script src="<?= base_url('assets/datatables/datatables/js/dataTables.bootstrap.js') ?>"></script>
+                        <script src="<?= base_url('assets/datatables/bootstrap-datepicker/js/bootstrap-datepicker.min.js') ?>"></script>
+
+                        <!-- ============================== SHOW AJAX JSON DATATABLES ========================================= -->
+                        <script type="text/javascript">
+                            var save_method; //for save method string
+                            var table;
+
+                            $(document).ready(function() {
+
+                                //datatables
+                                table = $('#table_1').DataTable({
+                                    "responsive": true,
+                                    "processing": true, //Feature control the processing indicator.
+                                    "serverSide": true, //Feature control DataTables' server-side processing mode.
+                                    "order": [], //Initial no order.
+
+                                    // Load data for the table's content from an Ajax source
+                                    "ajax": {
+                                        "url": "<?= site_url("MasterProduct/DatatablesProduct/DT_MasterProduct") ?>",
+                                        "type": "POST"
+                                    },
+
+                                    //Set column definition initialisation properties.
+                                    "columnDefs": [{
+                                        "targets": [-1], //last column
+                                        "orderable": false, //set not orderable
+                                    }, ],
+
+                                });
+
+                                //datepicker
+                                $('.datepicker').datepicker({
+                                    autoclose: true,
+                                    format: "yyyy-mm-dd",
+                                    todayHighlight: true,
+                                    orientation: "top auto",
+                                    todayBtn: true,
+                                    todayHighlight: true,
+                                });
+
+                            });
+
+
+                            function reload_table() {
+                                table.ajax.reload(null, false); //reload datatable ajax 
+                            }
+                        </script>
+                        <!-- ============================== END SHOW AJAX JSON DATATABLES ========================================= -->
                     </div>
                 </div>
             </div>

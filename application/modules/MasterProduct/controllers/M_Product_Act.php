@@ -24,10 +24,9 @@ class M_Product_Act extends CI_Controller
         $UTC = new UTC;
 
         if ($action == "Insert") {
-            $namaProduct = $this->input->post('title', TRUE);
             $data = array(
                 'product_id'    => date('YmdHis'),
-                'nama_product'  => $namaProduct,
+                'nama_product'  => $this->input->post('namaProduct', TRUE),
                 'created_at'    => $UTC->DateTimeStamp(),
                 'created_by'    => $this->session->userdata('username_mulsk')
             );
@@ -42,9 +41,8 @@ class M_Product_Act extends CI_Controller
                 redirect(site_url('MasterProduct/M_Product/T_CreateProduct'));
             }
         } elseif ($action == "Update") {
-            $namaProduct = $this->input->post('title', TRUE);
             $data = array(
-                'nama_product'  => $namaProduct,
+                'nama_product'  => $this->input->post('namaProduct', TRUE),
                 'update_at'    => $UTC->DateTimeStamp(),
                 'update_by'    => $this->session->userdata('username_mulsk')
             );

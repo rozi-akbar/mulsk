@@ -24,9 +24,9 @@ class DatatablesProduct extends Datatables
             $row = array();
             $row[] = ++$no;
 
-            $row[] = $person->title;
-            $row[] = $person->create_at;
-            $row[] = $person->create_by;
+            $row[] = $person->nama_product;
+            $row[] = $person->created_at;
+            $row[] = $person->created_by;
             $row[] = $person->update_at;
             $row[] = $person->update_by;
 
