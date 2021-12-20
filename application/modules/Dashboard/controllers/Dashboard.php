@@ -14,7 +14,7 @@ class Dashboard extends CI_Controller
 	{
 		$data['file'] = 'Dashboard';
 
-		if ($this->session->userdata('level_seller') == 1) {
+		if ($this->session->userdata('level_seller_mulsk') == 1) {
 			$this->load->view('Layout/header');
 			$this->load->view('dashboard', $data);
 			$this->load->view('Layout/footer');

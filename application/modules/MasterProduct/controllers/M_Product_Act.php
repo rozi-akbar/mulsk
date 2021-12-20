@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 require_once(APPPATH . 'core/' . 'UTC.php');
 require_once(APPPATH . 'core/' . 'Hash.php');
 
-class Blog_Act extends CI_Controller
+class M_Product_Act extends CI_Controller
 {
     public function __construct()
     {

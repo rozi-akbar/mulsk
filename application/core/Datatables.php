@@ -92,7 +92,7 @@ class Datatables extends CI_Controller
         $data = array(
             'is_deleted'    => 1,
             'deleted_at'    => date('Y-m-d H:i:s'),
-            'deleted_by'    => $this->session->userdata('username')
+            'deleted_by'    => $this->session->userdata('username_mulsk')
         );
         $this->db->where('id', $id);
         $this->db->update($this->table, $data);

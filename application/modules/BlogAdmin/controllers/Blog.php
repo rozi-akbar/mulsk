@@ -40,7 +40,7 @@ class Blog extends CI_Controller
         $draftBlog = array(
             'id_blog'   => $blog_id,
             'create_at' => $create_date,
-            'create_by' => $this->session->userdata('username'),
+            'create_by' => $this->session->userdata('username_mulsk'),
             'draft'     => 1
         );
         $data['blog_id'] = $blog_id;
