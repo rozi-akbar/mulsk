@@ -124,6 +124,12 @@ if ($this->session->userdata('isLogin') == '' || empty($this->session->userdata(
                                 <i class="kt-menu__section-icon flaticon-more-v2"></i>
                             </li>
                             <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                <a href="<?= base_url() ?>Home/Banner" class="kt-menu__link">
+                                    <i class="kt-menu__link-icon fa fa-file-invoice"></i>
+                                    <span class="kt-menu__link-text">Home Banner </span>
+                                </a>
+                            </li>
+                            <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                 <a href="<?= base_url() ?>BlogAdmin/Blog/DataBlog" class="kt-menu__link">
                                     <i class="kt-menu__link-icon fa fa-file-invoice"></i>
                                     <span class="kt-menu__link-text">Create Blog </span>
