@@ -23,7 +23,7 @@
                     </div>
                     <div class="card-body" style="font-size: 12px;">
                         <?php
-                        if ($this->session->userdata('level_seller') == 2) {
+                        if ($this->session->userdata('level_seller_mulsk') == 2) {
                         ?>
                             <a href="<?= site_url() ?>Order/Create_Order" class="btn btn-large btn-success"><i class="fa fa-shopping-basket"></i> BUAT PESANAN</a>
                         <?php
