@@ -97,7 +97,7 @@ class Banner extends CI_Controller
         $config = array(
             'upload_path'   => './assets/images/banner/',
             'allowed_types' => 'jpg|jpeg|png',
-            'max_sizes'     => 1000,
+            'max_sizes'     => 500,
             'file_name'     => $fileName
         );
 

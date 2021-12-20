@@ -63,9 +63,9 @@ if ($action == "Update") {
 									<div class="alert-text">
 										<p style="font-size: 11px; margin: 0;">Image Requirement:
 										<ul style="font-size: 11px; padding-inline-start:25px;">
-											<li>Desktop: ratio 1920px x 800px</li>
-											<li>Mobile: ratio 768px x 900px</li>
-											<li>File Size max. 1 Mb</li>
+											<li>Desktop: ratio 1920px x 600px</li>
+											<li>Mobile: ratio 1020px x 600px</li>
+											<li>File Size max. 500 Kb</li>
 											<li>JPEG / JPG / PNG</li>
 										</ul>
 										</p>
@@ -203,8 +203,8 @@ if ($action == "Update") {
 				const fsize = p_image.files.item(i).size;
 				const file = Math.round((fsize / 1024));
 				// The size of the file.
-				if (file >= 1000) {
-					alert("File too Big, please select a file less than 1 Mb");
+				if (file >= 500) {
+					alert("File too Big, please select a file less than 500 Kb");
 					p_image.value = null;
 				} else {
 					if (input.files && input.files[0]) {
