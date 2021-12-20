@@ -60,6 +60,13 @@ if ($action == "edit") {
                                         <label>Banner Blog <span id="file_error_banner"></span></label>
                                         <input type="file" name="banner" id="banner" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
                                         <input type="hidden" name="old_url_banner" value="<?= $banner ?>">
+                                        <span class="form-text text-muted">
+                                            <ol>
+                                                <li>Allowed File - <b>images(jpeg,jpg,png).</b></li>
+                                                <li>Max Size 1Mb</li>
+                                                <li>Dimensi : 1920px x 250px</li>
+                                            </ol>
+                                        </span>
                                         <?php
                                         if ($action == "edit") {
                                             if (empty($banner)) {
@@ -80,6 +87,13 @@ if ($action == "edit") {
                                         <label>Thumbnail <span id="file_error_thumbnail"></span></label>
                                         <input type="file" name="thumbnail" id="thumbnail" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
                                         <input type="hidden" name="old_url_thumbnail" value="<?= $thumbnail ?>">
+                                        <span class="form-text text-muted">
+                                            <ol>
+                                                <li>Allowed File - <b>images(jpeg,jpg,png).</b></li>
+                                                <li>Max Size 1Mb</li>
+                                                <li>Dimensi : 1000px x 750px</li>
+                                            </ol>
+                                        </span>
                                         <?php
                                         if ($action == "edit") {
                                             if (empty($thumbnail)) {
