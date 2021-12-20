@@ -44,9 +44,9 @@ class Model extends CI_Model
 		return $Query;
 	}
 
-	public function Code($Query)
+	public function Code($String)
 	{
-		$Query = $this->db->query("  " . $Query . "  ");
+		$Query = $this->db->query($String);
 		return $Query->result_array();
 	}
 	public function LastId($kolom, $table)

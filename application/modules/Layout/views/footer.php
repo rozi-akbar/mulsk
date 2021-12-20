@@ -151,8 +151,8 @@
 <script src="<?= base_url() ?>assets/js/jquery.countdown.min.js"></script>
 <script src="<?= base_url() ?>assets/js/interface.js"></script>
 <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
-<script src="<?= base_url() ?>assets/js/disabled_CtrlShiftC.js"></script>
-<script src="<?= base_url() ?>assets/js/disabled_viewPageSource.js"></script>
+<!-- <script src="<?= base_url() ?>assets/js/disabled_CtrlShiftC.js"></script>
+<script src="<?= base_url() ?>assets/js/disabled_viewPageSource.js"></script> -->
 <script>
     function silver() {
         $(".p-thumb.flickity-enabled").flickity(
