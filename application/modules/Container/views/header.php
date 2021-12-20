@@ -139,14 +139,14 @@ if ($this->session->userdata('isLogin') == '' || empty($this->session->userdata(
                                                 <span class="kt-menu__link-text">Create Blog</span>
                                             </a>
                                         </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'BlogTrash' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                        <!-- <li class="kt-menu__item <?= $this->uri->segment(3) == 'BlogTrash' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                             <a href="<?= site_url('') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
                                                 <span class="kt-menu__link-text">Trash</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </li>
