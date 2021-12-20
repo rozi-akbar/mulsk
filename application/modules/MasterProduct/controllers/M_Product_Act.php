@@ -19,27 +19,63 @@ class M_Product_Act extends CI_Controller
         $this->load->helper('download');
     }
 
-    function save($id = "")
+    function CreateMasterProduct($action = "", $id = "")
     {
-        $title = $this->input->post('title', TRUE);
-        $contents = $this->input->post('contents', TRUE);
-        $data = array(
-            'title'     => $title,
-            'content'   => $contents
-        );
+        $UTC = new UTC;
 
-        $banner = $_FILES['banner']['name'];
-        $thumbnail = $_FILES['thumbnail']['name'];
-        $this->db->trans_start();
-        $this->model->Update('blog', 'id_blog', $id, $data);
-        $this->I_upload_banner_blog($banner, $id);
-        $this->I_upload_thumbnail_blog($thumbnail, $id);
-        $this->db->trans_complete();
+        if ($action == "Insert") {
+            $namaProduct = $this->input->post('title', TRUE);
+            $data = array(
+                'product_id'    => date('YmdHis'),
+                'nama_product'  => $namaProduct,
+                'created_at'    => $UTC->DateTimeStamp(),
+                'created_by'    => $this->session->userdata('username_mulsk')
+            );
 
-        if ($this->db->trans_status() === FALSE) {
-            $this->db->trans_rollback();
+            $this->db->trans_start();
+            $this->model->Insert('m_product', $data);
+            $this->db->trans_complete();
+
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_CreateProduct'));
+            }
+        } elseif ($action == "Update") {
+            $namaProduct = $this->input->post('title', TRUE);
+            $data = array(
+                'nama_product'  => $namaProduct,
+                'update_at'    => $UTC->DateTimeStamp(),
+                'update_by'    => $this->session->userdata('username_mulsk')
+            );
+
+            $this->db->trans_start();
+            $this->model->Update('m_product', 'id', $id, $data);
+            $this->db->trans_complete();
+
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_CreateProduct'));
+            }
+        } elseif ($action == "Delete") {
+            $data = array(
+                'is_delete'  => 1,
+                'deleted_at'    => $UTC->DateTimeStamp(),
+                'deleted_by'    => $this->session->userdata('username_mulsk')
+            );
+
+            $this->db->trans_start();
+            $this->model->Update('m_product', 'id', $id, $data);
+            $this->db->trans_complete();
+
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_CreateProduct'));
+            }
         } else {
-            redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+            redirect(site_url('MasterProduct/M_Product/T_CreateProduct'));
         }
     }
 
