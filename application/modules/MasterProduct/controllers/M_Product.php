@@ -19,11 +19,18 @@ class M_Product extends CI_Controller
         $this->load->helper('download');
     }
 
+    public function ProductData()
+    {
+        $this->load->view('Container/header');
+        $this->load->view('MasterProduct/dataProduct');
+        $this->load->view('Container/footer');
+    }
+
     public function CreateProduct($action = "", $id = "")
     {
         $dataHeader['file'] = "Mulsk Product";
 
-        if($action == "edit"){
+        if ($action == "edit") {
             $data['product']    = $this->model->ViewWhere('v_m_product', 'id', $id);
         }
 
@@ -39,33 +46,31 @@ class M_Product extends CI_Controller
         redirect(site_url('MasterProduct/M_Product/CreateProduct'));
     }
 
-    public function ProductIcon()
+    public function CreateProductData()
     {
         $this->load->view('Container/header');
-        
+        $this->load->view('MasterProduct/createProductData');
         $this->load->view('Container/footer');
     }
 
-    public function ProductDesc()
+    public function T_CreateProductData()
     {
         $this->load->view('Container/header');
-        
+        $this->load->view('MasterProduct/createProductData');
         $this->load->view('Container/footer');
     }
-
-    
 
     public function ListProduct($action = "", $id)
     {
         $this->load->view('Container/header');
-        
+
         $this->load->view('Container/footer');
     }
 
     function previewProductPage($id = "")
     {
         $this->load->view('Container/header');
-        
+
         $this->load->view('Container/footer');
     }
 }
