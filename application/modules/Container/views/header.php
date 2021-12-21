@@ -54,6 +54,10 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
 
     <!-- ============================= END CHARTS CSS ========================================== -->
 
+    <!-- CUSTOM -->
+    <link href="<?= base_url() ?>web/css/pages/wizard/wizard-4.css" rel="stylesheet" type="text/css" />
+    <!-- END CUSTOM -->
+
     <!--end::Layout Skins -->
     <link rel="shortcut icon" href="<?= base_url() ?>assets/images/svg/favicon_mulsk.svg" />
 </head>
@@ -168,16 +172,16 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                 </a>
                                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
                                     <ul class="kt-menu__subnav">
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'CreateProduct' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/CreateProduct') ?>" class="kt-menu__link ">
+                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductData' || $this->uri->segment(3) == 'CreateProduct' || $this->uri->segment(3) == 'CreateProductData' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('MasterProduct/M_Product/ProductData') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
-                                                <span class="kt-menu__link-text">Create Product</span>
+                                                <span class="kt-menu__link-text">Product Data</span>
                                             </a>
                                         </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'CreateProductGallery' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/CreateProductGallery') ?>" class="kt-menu__link ">
+                                        <!-- <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductGallery' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('MasterProduct/M_Product/ProductGallery') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
@@ -207,7 +211,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                                 </i>
                                                 <span class="kt-menu__link-text">List Product</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </li>

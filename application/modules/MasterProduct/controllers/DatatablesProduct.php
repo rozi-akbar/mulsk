@@ -32,7 +32,7 @@ class DatatablesProduct extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProduct/edit/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/edit/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
@@ -58,12 +58,12 @@ class DatatablesProduct extends Datatables
         echo json_encode($output, JSON_PRETTY_PRINT);
     }
 
-    public function blogPosted()
+    public function DT_ProductGallery()
     {
-        $table = 'v_blog_posted';
-        $column_order = array('title', 'create_at', 'create_by', 'posted_at', 'posted_by', null);
-        $column_search = array('title', 'create_at', 'create_by', 'posted_at', 'posted_by');
-        $orderby = array('id_blog' => 'desc');
+        $table = 'v_gallery';
+        $column_order = array('m_product_id', 'nama_product', 'gallery_id', 'jml_gallery', 'url_image', 'created_at', 'created_by', 'update_at', 'update_by', null);
+        $column_search = array('m_product_id', 'nama_product', 'gallery_id', 'jml_gallery', 'url_image', 'created_at', 'created_by', 'update_at', 'update_by');
+        $orderby = array('m_product_id' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
         $no = $_POST['start'];
@@ -71,11 +71,12 @@ class DatatablesProduct extends Datatables
             $row = array();
             $row[] = ++$no;
 
-            $row[] = $person->title;
-            $row[] = $person->create_at;
-            $row[] = $person->create_by;
-            $row[] = $person->posted_at;
-            $row[] = $person->posted_by;
+            $row[] = $person->nama_product;
+            $row[] = $person->jml_gallery;
+            $row[] = $person->created_at;
+            $row[] = $person->created_by;
+            $row[] = $person->update_at;
+            $row[] = $person->update_by;
 
             $row[] = '
             <div class="text-center">
