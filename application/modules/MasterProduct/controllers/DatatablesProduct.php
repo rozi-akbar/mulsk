@@ -58,12 +58,12 @@ class DatatablesProduct extends Datatables
         echo json_encode($output, JSON_PRETTY_PRINT);
     }
 
-    public function DT_ProductGallery()
+    public function DT_ProductData()
     {
-        $table = 'v_gallery';
-        $column_order = array('m_product_id', 'nama_product', 'gallery_id', 'jml_gallery', 'url_image', 'created_at', 'created_by', 'update_at', 'update_by', null);
-        $column_search = array('m_product_id', 'nama_product', 'gallery_id', 'jml_gallery', 'url_image', 'created_at', 'created_by', 'update_at', 'update_by');
-        $orderby = array('m_product_id' => 'desc');
+        $table = 'v_product_data';
+        $column_order = array('id_m_product', 'product_id', 'nama_product', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon', null);
+        $column_search = array('id_m_product', 'product_id', 'nama_product', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon');
+        $orderby = array('id_m_product' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
         $no = $_POST['start'];
@@ -71,28 +71,40 @@ class DatatablesProduct extends Datatables
             $row = array();
             $row[] = ++$no;
 
+            $teks_deskripsi = substr($person->deskripsi, 0, 50);
+            $teks_benefits = substr($person->benefits, 0, 50);
+            $status_publish = "";
+            if($person->publish == 0){
+                $status_publish = "Waiting";
+            }elseif($person->publish == 1){
+                $status_publish = "Published";
+            }else{
+                $status_publish = "Unknown";
+            }
+
             $row[] = $person->nama_product;
-            $row[] = $person->jml_gallery;
-            $row[] = $person->created_at;
-            $row[] = $person->created_by;
-            $row[] = $person->update_at;
-            $row[] = $person->update_by;
+            $row[] = $teks_deskripsi;
+            $row[] = $teks_benefits;
+            $row[] = $person->total_gallery;
+            $row[] = $person->total_product_icon;
+            $row[] = $status_publish;
+            $row[] = $person->published_at;
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'BlogAdmin/Blog/previewBlog/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/PreviewProductPage/' . $person->id_m_product . '">
                     <button title="Preview" class="btn btn-success btn-icon">
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'BlogAdmin/Blog/NewBlog/edit/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/edit/' . $person->id_m_product . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id_m_product . '">
                     <button title="Hidden Post" class="btn btn-danger btn-icon">
-                        <i class="fa fa-arrow-alt-circle-down"></i>
+                        <i class="fa fa-trash"></i>
                     </button>
                 </a>
             </div>

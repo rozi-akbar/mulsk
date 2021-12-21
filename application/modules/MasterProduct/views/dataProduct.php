@@ -65,10 +65,12 @@ if ($action == "edit") {
                                 <tr>
                                     <th>#</th>
                                     <th>Product Name</th>
-                                    <th>Create Date</th>
-                                    <th>Create By</th>
-                                    <th>Update Date</th>
-                                    <th>Update By</th>
+                                    <th>Description</th>
+                                    <th>Benefits</th>
+                                    <th>Total Gallery</th>
+                                    <th>Total Product Icon</th>
+                                    <th>Publish</th>
+                                    <th>Publish Date</th>
                                     <th style="width:15%;">Action</th>
                                 </tr>
                             </thead>
@@ -77,10 +79,12 @@ if ($action == "edit") {
                             <tfoot>
                                 <th>#</th>
                                 <th>Product Name</th>
-                                <th>Create Date</th>
-                                <th>Create By</th>
-                                <th>Update Date</th>
-                                <th>Update By</th>
+                                <th>Description</th>
+                                <th>Benefits</th>
+                                <th>Total Gallery</th>
+                                <th>Total Product Icon</th>
+                                <th>Publish</th>
+                                <th>Publish Date</th>
                                 <th style="width:15%;">Action</th>
                             </tfoot>
                         </table>
@@ -106,7 +110,7 @@ if ($action == "edit") {
 
                                     // Load data for the table's content from an Ajax source
                                     "ajax": {
-                                        "url": "<?= site_url("MasterProduct/DatatablesProduct/DT_MasterProduct") ?>",
+                                        "url": "<?= site_url("MasterProduct/DatatablesProduct/DT_ProductData") ?>",
                                         "type": "POST"
                                     },
 

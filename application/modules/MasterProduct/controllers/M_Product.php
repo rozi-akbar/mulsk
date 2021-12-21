@@ -67,7 +67,7 @@ class M_Product extends CI_Controller
         $this->load->view('Container/footer');
     }
 
-    function previewProductPage($id = "")
+    function PreviewProductPage($id = "")
     {
         $this->load->view('Container/header');
 
