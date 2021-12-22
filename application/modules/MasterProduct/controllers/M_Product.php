@@ -104,8 +104,14 @@ class M_Product extends CI_Controller
 
     function PreviewProductPage($id = "")
     {
-        $this->load->view('Container/header');
+        $getData = $this->db->query("SELECT * FROM m_product WHERE id = '" . $id . "' ")->row_array();
 
-        $this->load->view('Container/footer');
+        $data['dataMaster']         = $this->model->ViewWhere('m_product', 'id', $id);
+        $data['product_gallery']    = $this->model->ViewWhere('product_gallery', 'm_product_id', $getData['product_id']);
+        $data['product_icon']       = $this->model->ViewWhere('product_icon', 'm_product_id', $getData['product_id']);
+
+        $this->load->view('Container/headerLayoutBlog');
+        $this->load->view('MasterProduct/previewProductData', $data);
+        $this->load->view('Container/footerLayoutBlog');
     }
 }
