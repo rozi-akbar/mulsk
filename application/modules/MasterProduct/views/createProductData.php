@@ -237,7 +237,14 @@ foreach ($dataMaster as $vaData) {
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__review">
                                                     <div class="form-group">
-                                                        <input data-switch="true" type="checkbox" name="publish" data-on-color="success" data-off-color="warning">
+                                                        <?php
+                                                        if ($publish == 1) {
+                                                            $checked = "checked";
+                                                        } else {
+                                                            $checked = "";
+                                                        }
+                                                        ?>
+                                                        <input <?= $checked ?> data-switch="true" data-ktwizard-state="1" type="checkbox" name="publish" data-on-color="success" data-off-color="warning">
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,9 +264,10 @@ foreach ($dataMaster as $vaData) {
                     </div>
                 </div>
                 <div class="kt-form__actions">
-                    <button type="submit" class="btn btn-success btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u">
+                    <button type="submit" id="simpan" onclick="save()" class="btn btn-success btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u">
                         Save Changes
                     </button>
+                    <div id="sending"> </div>
                 </div>
             </form>
         </div>
@@ -271,6 +279,12 @@ foreach ($dataMaster as $vaData) {
 <script src="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+    function save() {
+        document.getElementById("simpan").style.display = "none";
+        document.getElementById("sending").innerHTML =
+            '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
+    }
+
     $(document).ready(function() {
         $('#summernote_desc').summernote({
             height: "500px",

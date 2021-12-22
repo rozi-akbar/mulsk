@@ -76,9 +76,9 @@ class DatatablesProduct extends Datatables
             $teks_benefits = substr($person->benefits, 0, 50);
             $status_publish = "";
             if($person->publish == 0){
-                $status_publish = "Waiting";
+                $status_publish = '<span class="text-warning"> <u> Waiting </u> </span>';
             }elseif($person->publish == 1){
-                $status_publish = "Published";
+                $status_publish = '<span class="text-success"> <u> Published </u> </span>';
             }else{
                 $status_publish = "Unknown";
             }
@@ -104,7 +104,7 @@ class DatatablesProduct extends Datatables
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product_Act/DeleteProductData/' . $person->id . '">
                     <button title="Hidden Post" class="btn btn-danger btn-icon">
                         <i class="fa fa-trash"></i>
                     </button>

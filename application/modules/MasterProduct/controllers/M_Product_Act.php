@@ -96,6 +96,27 @@ class M_Product_Act extends CI_Controller
         }
     }
 
+    function DeleteProductData($id = "")
+    {
+        $UTC = new UTC;
+        $this->db->trans_start();
+
+        $data = array(
+            'is_delete'     => 1,
+            'deleted_at'    => $UTC->DateTimeStamp(),
+            'deleted_by'    => $this->session->userdata('username_mulsk')
+        );
+        $this->model->Update('m_product', 'id', $id, $data);
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            redirect(site_url('MasterProduct/M_Product/ProductData'));
+        } else {
+            redirect(site_url('MasterProduct/M_Product/ProductData'));
+        }
+    }
+
     function EditGallery($id_master = "", $id_gallery = "", $productName = "")
     {
         $this->db->trans_start();
