@@ -17,7 +17,7 @@ class Banner extends CI_Controller
         $dataHeader['title']    = "Data Home Banner - Mulsk";
 
         $data['action']		    = $Aksi;
-        $data['home_banner']    = $this->model->Code('SELECT * FROM banner_home ORDER BY banner_id ASC');
+        $data['home_banner']    = $this->model->Code('SELECT * FROM banner_home WHERE is_deleted = 0 ORDER BY banner_id ASC');
 
 		if ($Aksi == 'Update') {
 			$data['field']      = $this->model->Code("SELECT * FROM banner_home where is_deleted = 0 and banner_id = '" . $Id . "';");
@@ -84,10 +84,10 @@ class Banner extends CI_Controller
 			$data_delete = array(
 				'is_deleted'	=> '1',
 				'delete_by'		=> $this->session->userdata('username_mulsk'),
-				'delete_date'		=> date('Y-m-d')
+				'delete_date'	=> date('Y-m-d')
 			);
 
-			$this->model->Update('banner_home', 'id_banner', $Id, $data_delete);
+			$this->model->Update('banner_home', 'banner_id', $Id, $data_delete);
 			redirect(site_url('Home/Banner'));
 		}
     }
