@@ -95,10 +95,10 @@
                                 <div class="product-image position-relative oh lazyload">
 
                                     <a class="d-block" href="<?= base_url() ?>Products/mulberrysilkpillowcase">
-                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg"></div>
+                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
                                     </a>
                                     <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg"></div>
+                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
                                     </div>
                                     <div class="hover_button op__0 tc pa flex column ts__03">
                                         <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/mulberrysilkpillowcase">
@@ -115,8 +115,9 @@
                                     <span class="price dib mb__5">Rp 750.000</span>
                                     <br />
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_siler"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/cotton-candy-pillowcase-2.jpeg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +150,8 @@
                                     <!-- <span>Promo Price Only in June, Limited Stock!</span> -->
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_siler"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/gift-set-cottoncandy-1.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +183,8 @@
                                     <br />
                                     <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                         <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-2.png" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-1.png" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_siler"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-1.png" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
+                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/cotton-candy-scrunchie-1.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
                                     </div>
                                 </div>
                             </div>

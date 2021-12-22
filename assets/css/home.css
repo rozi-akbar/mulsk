@@ -36,6 +36,10 @@
     background-image: url('../images/homebanner/banner-3-mulsk.jpg');
 }
 
+.img_banner4 {
+    background-image: url('../images/homebanner/banner-4-mulsk.jpg');
+}
+
 .post-content{
     font-size: 12px;
     line-height: 1.5rem;
@@ -86,6 +90,10 @@
     .img_banner3 {
         background-image: url('../images/homebanner/banner-3-mobile.jpg');
     }
+
+    .img_banner4 {
+        background-image: url('../images/homebanner/banner-4-mobile.jpg');
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -109,6 +117,10 @@
 
     .img_banner3 {
         background-image: url('../images/homebanner/banner-3-mobile.jpg');
+    }
+
+    .img_banner4 {
+        background-image: url('../images/homebanner/banner-4-mobile.jpg');
     }
 
     .banner-title1_1 {
