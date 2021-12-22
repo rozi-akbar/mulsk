@@ -62,9 +62,9 @@ class DatatablesProduct extends Datatables
     public function DT_ProductData()
     {
         $table = 'v_product_data';
-        $column_order = array('id_m_product', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon', null);
-        $column_search = array('id_m_product', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon');
-        $orderby = array('id_m_product' => 'desc');
+        $column_order = array('id', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon', null);
+        $column_search = array('id', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon');
+        $orderby = array('id' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
         $no = $_POST['start'];
@@ -94,17 +94,17 @@ class DatatablesProduct extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'MasterProduct/M_Product/PreviewProductPage/' . $person->id_m_product . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/PreviewProductPage/' . $person->id . '">
                     <button title="Preview" class="btn btn-success btn-icon">
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/' . $person->id_m_product . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id_m_product . '">
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/HiddenPost/' . $person->id . '">
                     <button title="Hidden Post" class="btn btn-danger btn-icon">
                         <i class="fa fa-trash"></i>
                     </button>
