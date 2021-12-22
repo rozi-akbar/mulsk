@@ -65,6 +65,7 @@ if ($action == "edit") {
                                 <tr>
                                     <th>#</th>
                                     <th>Product Name</th>
+                                    <th>Price</th>
                                     <th>Description</th>
                                     <th>Benefits</th>
                                     <th>Total Gallery</th>
@@ -79,6 +80,7 @@ if ($action == "edit") {
                             <tfoot>
                                 <th>#</th>
                                 <th>Product Name</th>
+                                <th>Price</th>
                                 <th>Description</th>
                                 <th>Benefits</th>
                                 <th>Total Gallery</th>

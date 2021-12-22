@@ -14,8 +14,8 @@ class DatatablesProduct extends Datatables
     public function DT_MasterProduct()
     {
         $table = 'v_m_product';
-        $column_order = array('product_id', 'nama_product', 'created_at', 'created_by', 'update_at', 'update_by', null);
-        $column_search = array('product_id', 'nama_product', 'created_at', 'created_by', 'update_at', 'update_by');
+        $column_order = array('product_id', 'nama_product', 'price', 'created_at', 'created_by', 'update_at', 'update_by', null);
+        $column_search = array('product_id', 'nama_product', 'price', 'created_at', 'created_by', 'update_at', 'update_by');
         $orderby = array('product_id' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
@@ -25,6 +25,7 @@ class DatatablesProduct extends Datatables
             $row[] = ++$no;
 
             $row[] = $person->nama_product;
+            $row[] = $person->price;
             $row[] = $person->created_at;
             $row[] = $person->created_by;
             $row[] = $person->update_at;
@@ -32,12 +33,12 @@ class DatatablesProduct extends Datatables
 
             $row[] = '
             <div class="text-center">
-                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/edit/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProduct/edit/' . $person->id . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'MasterProduct/M_Product_Act/DeleteMasterProduct/' . $person->id . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product_Act/CreateMasterProduct/Delete/' . $person->id . '">
                     <button title="Post" class="btn btn-danger btn-icon">
                         <i class="fa fa-trash"></i>
                     </button>
@@ -61,8 +62,8 @@ class DatatablesProduct extends Datatables
     public function DT_ProductData()
     {
         $table = 'v_product_data';
-        $column_order = array('id_m_product', 'product_id', 'nama_product', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon', null);
-        $column_search = array('id_m_product', 'product_id', 'nama_product', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon');
+        $column_order = array('id_m_product', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon', null);
+        $column_search = array('id_m_product', 'product_id', 'nama_product', 'price', 'publish', 'published_at', 'id_product_description', 'deskripsi', 'benefits', 'wash_care', 'total_gallery', 'total_product_icon');
         $orderby = array('id_m_product' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
@@ -83,6 +84,7 @@ class DatatablesProduct extends Datatables
             }
 
             $row[] = $person->nama_product;
+            $row[] = $person->price;
             $row[] = $teks_deskripsi;
             $row[] = $teks_benefits;
             $row[] = $person->total_gallery;
@@ -97,7 +99,7 @@ class DatatablesProduct extends Datatables
                         <i class="fa fa-eye" style="color:white"></i>
                     </button>
                 </a>
-                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/edit/' . $person->id_m_product . '">
+                <a href="' . base_url() . 'MasterProduct/M_Product/CreateProductData/' . $person->id_m_product . '">
                     <button title="Edit" class="btn btn-primary btn-icon">
                         <i class="fa fa-edit" style="color:white"></i>
                     </button>

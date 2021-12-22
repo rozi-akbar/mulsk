@@ -3,12 +3,14 @@ if ($action == "edit") {
     foreach ($product as $vaProduct) {
         $id = $vaProduct['id'];
         $nama_product = $vaProduct['nama_product'];
+        $price = $vaProduct['price'];
     }
     $valueAction    = "Save Change";
     $fAction        = 'Update/' . $id;
 } else {
     $id             = "";
     $nama_product   = "";
+    $price          = "";
     $valueAction    = "Save";
     $fAction        = 'Insert/' . $blog_id;
 }
@@ -52,6 +54,10 @@ if ($action == "edit") {
                                         <label>Product Name</label>
                                         <input type="text" name="namaProduct" class="form-control" placeholder="Product Name" value="<?= $nama_product ?>" required>
                                     </div>
+                                    <div class="form-group">
+                                        <label>Price Product</label>
+                                        <input type="number" name="price" id="price" value="<?= $price ?>" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" id="submit" class="btn btn-primary"><?= $valueAction ?></button>
@@ -78,6 +84,7 @@ if ($action == "edit") {
                                 <tr>
                                     <th>#</th>
                                     <th>Product Name</th>
+                                    <th>Price</th>
                                     <th>Create Date</th>
                                     <th>Create By</th>
                                     <th>Update Date</th>
@@ -90,6 +97,7 @@ if ($action == "edit") {
                             <tfoot>
                                 <th>#</th>
                                 <th>Product Name</th>
+                                <th>Price</th>
                                 <th>Create Date</th>
                                 <th>Create By</th>
                                 <th>Update Date</th>
