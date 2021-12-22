@@ -69,7 +69,6 @@ class M_Product_Act extends CI_Controller
         $this->db->trans_start();
 
         $tb_m_product = array(
-            'm_product_id'  => $this->input->post('productId'),
             'deskripsi'     => $this->input->post('deskripsi'),
             'benefits'      => $this->input->post('benefits'),
             'update_at'     => $UTC->DateTimeStamp(),
