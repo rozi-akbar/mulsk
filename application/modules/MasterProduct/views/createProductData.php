@@ -1,7 +1,13 @@
 <?php
 foreach ($dataMaster as $vaData) {
+    $id             = $vaData['id'];
     $productName    = $vaData['nama_product'];
     $productId      = $vaData['product_id'];
+    $price          = $vaData['price'];
+    $publish        = $vaData['publish'];
+    $deskripsi      = $vaData['deskripsi'];
+    $benefits       = $vaData['benefits'];
+    $wash_care      = $vaData['wash_care'];
 }
 ?>
 
@@ -109,13 +115,13 @@ foreach ($dataMaster as $vaData) {
                                                 <div class="kt-wizard-v4__form">
                                                     <div class="form-group">
                                                         <label>Description Product</label>
-                                                        <textarea name="deskripsi" class="summernote" id="summernote_desc"> </textarea>
+                                                        <textarea name="deskripsi" class="summernote" id="summernote_desc"> <?= $deskripsi ?> </textarea>
                                                         <input type="hidden" name="productName" value="<?= $productName ?>">
                                                         <input type="hidden" name="productId" value="<?= $productId ?>">
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Benefits Product</label>
-                                                        <textarea name="benefits" class="summernote" id="summernote_benefits"> </textarea>
+                                                        <textarea name="benefits" class="summernote" id="summernote_benefits"> <?= $benefits ?> </textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,6 +134,26 @@ foreach ($dataMaster as $vaData) {
                                             <div class="kt-heading kt-heading--md">Setup Your Gallery</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
+                                                    <div class="row">
+                                                        <?php
+                                                        if (empty($product_gallery)) {
+                                                        } else {
+                                                            foreach ($product_gallery as $vaGall) {
+                                                                // echo $vaGall['id'] . " | " . $vaGall['url_image'] . "<br />";
+                                                        ?>
+                                                                <div class="col-3">
+                                                                    <div class="form-group">
+                                                                        <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $id . '/' . $vaGall['id'] . '/' . $productName) ?>">
+                                                                            Edit Photo
+                                                                        </a>
+                                                                        <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:100%; height:auto;">
+                                                                    </div>
+                                                                </div>
+                                                        <?php
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </div>
                                                     <div class="form-group">
                                                         <table id="table_field_gallery" class="table table-bordered">
                                                             <thead>
@@ -153,6 +179,36 @@ foreach ($dataMaster as $vaData) {
                                             <div class="kt-heading kt-heading--md">Setup Your Product Icon</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
+                                                    <div class="row">
+                                                        <?php
+                                                        if (empty($product_icon)) {
+                                                        } else {
+                                                            foreach ($product_icon as $vaIcon) {
+                                                                // echo $vaGall['id'] . " | " . $vaGall['url_image'] . "<br />";
+                                                        ?>
+                                                                <div class="col-3">
+                                                                    <div class="form-group">
+                                                                        <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/EditProductIcon/' . $id . '/' . $vaIcon['id'] . '/' . $productName) ?>">
+                                                                            Edit Icon
+                                                                        </a>
+                                                                        <!--begin::Portlet-->
+                                                                        <div class="kt-portlet kt-portlet--bordered">
+                                                                            <div class="kt-portlet__head">
+                                                                                <div class="kt-portlet__head-label">
+                                                                                    <img src="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" style="width:100%; height:auto;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="kt-portlet__body">
+                                                                                <?= $vaIcon['description_product_icon'] ?>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        <?php
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </div>
                                                     <div class="form-group">
                                                         <table id="table_field_icon" class="table table-bordered">
                                                             <thead>
@@ -177,7 +233,7 @@ foreach ($dataMaster as $vaData) {
 
                                         <!--begin: Form Wizard Step 4-->
                                         <div class="kt-wizard-v4__content" data-ktwizard-type="step-content">
-                                            <div class="kt-heading kt-heading--md">Review your Details and Submit</div>
+                                            <div class="kt-heading kt-heading--md">Publish your Details and Submit</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__review">
                                                     <div class="form-group">

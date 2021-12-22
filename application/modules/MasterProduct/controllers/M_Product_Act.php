@@ -88,10 +88,29 @@ class M_Product_Act extends CI_Controller
         $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $this->input->post('productId'), $this->input->post('productName'));
 
         $this->db->trans_complete();
-        if($this->db->trans_status() === FALSE){
+        if ($this->db->trans_status() === FALSE) {
             $this->db->trans_rollback();
-        }else{
             redirect(site_url('MasterProduct/M_Product/T_ProductData'));
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_ProductData'));
+        }
+    }
+
+    function EditGallery($id_master = "", $id_gallery = "", $productName = "")
+    {
+        $this->db->trans_start();
+
+        $photo = $_FILES['p_gallery']['name'];
+        $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+        $key = explode('_', $getData['gallery_id']);
+        $this->U_Gallery($photo, $id_gallery, str_replace('%20', ' ', $productName), $key[1], $getData['url_image']);
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status === FALSE) {
+            $this->db->trans_rollback();
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
         }
     }
 
@@ -153,6 +172,53 @@ class M_Product_Act extends CI_Controller
         }
     }
 
+    function U_Gallery($photo, $id, $productName, $key_gallery, $oldUrl)
+    {
+        $UTC = new UTC;
+        $uuid = date('YmdHis');
+        $to_folder = "";
+        $this->db->trans_start();
+
+        if (empty($photo)) {
+        } else {
+            $t_rename = $uuid . "_$productName-$key_gallery";
+            $image_gallery = $_FILES['p_gallery']['name'];
+            $x_image = explode('.', $image_gallery);
+            $ekstensi = strtolower(end($x_image));
+            $size    = $_FILES['p_gallery']['size'];
+
+            $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+            $file_temp = $_FILES['p_gallery']['tmp_name']; //data temp yang di upload
+            $to_folder    = "assets/images/product/$rename"; //folder tujuan                
+
+            if (!empty($image_gallery)) {
+                if ($size < 1000000 && !empty($ekstensi)) {
+                    $data = array(
+                        'url_image'     => $to_folder,
+                        'update_at'    => $UTC->DateTimeStamp(),
+                        'update_by'    => $this->session->userdata('username_mulsk')
+                    );
+                    // print_r($data);
+                    $this->model->Update('product_gallery', 'id', $id, $data);
+                    move_uploaded_file($file_temp, "$to_folder");
+                } else {
+                }
+            } else {
+            }
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            if (empty($to_folder) || $to_folder == "") {
+            } else {
+                unlink($to_folder);
+            }
+        } else {
+            unlink($oldUrl);
+        }
+    }
+
     function I_ProductIcon($icon, $desc, $noId, $iconName)
     {
         $UTC = new UTC;
@@ -163,32 +229,33 @@ class M_Product_Act extends CI_Controller
         if (empty($icon)) {
         } else {
             //===================== UPLOAD ICON ========================
-            foreach ($icon as $key_icon => $value_icon) {
-                $t_rename = $uuid . "_$iconName-$key_icon";
-                $image_icon = $_FILES['p_icon']['name'][$key_icon];
+            for ($count = 0; $count < count($_FILES['p_icon']['name']); $count++) {
+
+                $t_rename = $uuid . "_$iconName-$count";
+                $image_icon = $_FILES['p_icon']['name'][$count];
                 $x_image = explode('.', $image_icon);
                 $ekstensi = strtolower(end($x_image));
-                $size    = $_FILES['p_icon']['size'][$key_icon];
+                $size    = $_FILES['p_icon']['size'][$count];
 
                 $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
-                $file_temp = $_FILES['p_icon']['tmp_name'][$key_icon]; //data temp yang di upload
+                $file_temp = $_FILES['p_icon']['tmp_name'][$count]; //data temp yang di upload
                 $to_folder    = "assets/images/product-icon/$rename"; //folder tujuan                
 
                 $getJml = $this->db->query("SELECT m_product_id FROM product_icon WHERE m_product_id = '" . $noId . "' ")->num_rows();
 
                 if (!empty($image_icon)) {
                     if ($getJml < 10) {
-                        $icon_id = $uuid . "_" . $key_icon;
+                        $icon_id = $uuid . "_" . $count;
 
                         if ($size < 1000000 && !empty($ekstensi)) {
                             $data = array(
-                                'm_product_id'      => $noId,
-                                'product_icon_id'   => $icon_id,
-                                'url_product_icon'  => $to_folder,
-                                'created_at'        => $UTC->DateTimeStamp(),
-                                'created_by'        => $this->session->userdata('username_mulsk')
+                                'm_product_id'              => $noId,
+                                'product_icon_id'           => $icon_id,
+                                'url_product_icon'          => $to_folder,
+                                'description_product_icon'  => $this->input->post('pi_desc')[$count],
+                                'created_at'                => $UTC->DateTimeStamp(),
+                                'created_by'                => $this->session->userdata('username_mulsk')
                             );
-                            // print_r($data);
                             $this->model->Insert('product_icon', $data);
                             move_uploaded_file($file_temp, "$to_folder");
                         } else {
@@ -198,22 +265,6 @@ class M_Product_Act extends CI_Controller
                 } else {
                 }
             }
-            //===================== END UPLOAD ICON ========================
-            //===================== DESKRIPSI ICON ========================
-            foreach ($desc as $key_desc => $value_desc) {
-
-                $getJml = $this->db->query("SELECT m_product_id FROM product_icon WHERE m_product_id = '" . $noId . "' ")->num_rows();
-
-                if (!empty($image_icon)) {
-                    $data = array(
-                        'description_product_icon'  => $this->input->post('pi_desc')[$key_desc],
-                    );
-                    // print_r($data);
-                    $this->model->Insert('product_icon', $data);
-                } else {
-                }
-            }
-            //===================== END DESKRIPSI ICON ========================
         }
 
         $this->db->trans_complete();
@@ -225,6 +276,73 @@ class M_Product_Act extends CI_Controller
             }
         } else {
             return "success";
+        }
+    }
+
+    function EditProductIcon($id_master = "", $id_icon = "", $productName = "")
+    {
+        $this->db->trans_start();
+
+        $icon = $_FILES['p_icon']['name'];
+        $desc = $this->input->post('pi_desc');
+        $getData = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
+        $key = explode('_', $getData['product_icon_id']);
+        $this->U_ProductIcon($icon, $id_icon, str_replace('%20', ' ', $productName), $key[1], $getData['url_product_icon'], $desc);
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status === FALSE) {
+            $this->db->trans_rollback();
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        }
+    }
+
+    function U_ProductIcon($icon, $id, $productName, $key_icon, $oldUrl, $desc)
+    {
+        $UTC = new UTC;
+        $uuid = date('YmdHis');
+        $to_folder = "";
+        $this->db->trans_start();
+
+        if (empty($icon)) {
+        } else {
+            $t_rename = $uuid . "_$productName-$key_icon";
+            $image_icon = $_FILES['p_icon']['name'];
+            $x_image = explode('.', $image_icon);
+            $ekstensi = strtolower(end($x_image));
+            $size    = $_FILES['p_icon']['size'];
+
+            $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+            $file_temp = $_FILES['p_icon']['tmp_name']; //data temp yang di upload
+            $to_folder    = "assets/images/product-icon/$rename"; //folder tujuan                
+
+            if (!empty($image_icon)) {
+                if ($size < 1000000 && !empty($ekstensi)) {
+                    $data = array(
+                        'url_product_icon'          => $to_folder,
+                        'description_product_icon'  => $desc,
+                        'update_at'                 => $UTC->DateTimeStamp(),
+                        'update_by'                 => $this->session->userdata('username_mulsk')
+                    );
+                    // print_r($data);
+                    $this->model->Update('product_icon', 'id', $id, $data);
+                    move_uploaded_file($file_temp, "$to_folder");
+                } else {
+                }
+            } else {
+            }
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            if (empty($to_folder) || $to_folder == "") {
+            } else {
+                unlink($to_folder);
+            }
+        } else {
+            unlink($oldUrl);
         }
     }
 }

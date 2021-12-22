@@ -53,11 +53,45 @@ class M_Product extends CI_Controller
 
     public function CreateProductData($id = "")
     {
-        $data['dataMaster'] = $this->model->ViewWhere('m_product', 'id', $id);
-        $dataHeader['file'] = "Create Product Data";
+
+        $getData = $this->db->query("SELECT * FROM m_product WHERE id = '" . $id . "' ")->row_array();
+        $dataHeader['file'] = "Create Product Data " . $getData['nama_product'];
+
+        $data['dataMaster']         = $this->model->ViewWhere('m_product', 'id', $id);
+        $data['product_gallery']    = $this->model->ViewWhere('product_gallery', 'm_product_id', $getData['product_id']);
+        $data['product_icon']       = $this->model->ViewWhere('product_icon', 'm_product_id', $getData['product_id']);
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/createProductData', $data);
+        $this->load->view('Container/footer');
+    }
+
+    public function T_CreateProductData($id = "")
+    {
+        redirect(site_url('MasterProduct/M_Product/CreateProductData/' . $id));
+    }
+
+    public function Edit_Gallery($id_master = "", $id_gallery = "", $nama_product = "")
+    {
+        $dataHeader['file']     = "Edit Gallery " . str_replace('%20', ' ', $nama_product);
+        $data['productName']    = $nama_product;
+        $data['id_master']      = $id_master;
+        $data['data_gallery']   = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('MasterProduct/editGallery', $data);
+        $this->load->view('Container/footer');
+    }
+
+    public function EditProducticon($id_master = "", $id_icon = "", $nama_product = "")
+    {
+        $dataHeader['file']         = "Edit Product Icon " . str_replace('%20', ' ', $nama_product);
+        $data['productName']        = $nama_product;
+        $data['id_master']          = $id_master;
+        $data['data_product_icon']  = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
+
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('MasterProduct/editProductIcon', $data);
         $this->load->view('Container/footer');
     }
 
