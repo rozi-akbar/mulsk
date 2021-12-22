@@ -84,10 +84,10 @@ class Banner extends CI_Controller
 			$data_delete = array(
 				'is_deleted'	=> '1',
 				'delete_by'		=> $this->session->userdata('username_mulsk'),
-				'delete_date'		=> date('Y-m-d')
+				'delete_date'	=> date('Y-m-d')
 			);
 
-			$this->model->Update('banner_home', 'id_banner', $Id, $data_delete);
+			$this->model->Update('banner_home', 'banner_id', $Id, $data_delete);
 			redirect(site_url('Home/Banner'));
 		}
     }
