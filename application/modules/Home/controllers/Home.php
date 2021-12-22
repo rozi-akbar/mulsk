@@ -12,7 +12,7 @@ class Home extends CI_Controller
 
     public function index()
     {
-        $data['banner_home']    =   $this->model->Code('SELECT * FROM banner_home ORDER BY banner_id ASC');
+        $data['banner_home']    =   $this->model->Code('SELECT * FROM banner_home WHERE is_deleted = 0 ORDER BY banner_id ASC');
         
         $this->load->view('Layout/header');
         $this->load->view('home', $data);
