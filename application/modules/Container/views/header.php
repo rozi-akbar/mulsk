@@ -125,7 +125,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                 </a>
                             </li>
                             <li class="kt-menu__section ">
-                                <h4 class="kt-menu__section-text">Mulsk Bloger</h4>
+                                <h4 class="kt-menu__section-text">Mulsk Banner</h4>
                                 <i class="kt-menu__section-icon flaticon-more-v2"></i>
                             </li>
                             <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
@@ -134,8 +134,12 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                     <span class="kt-menu__link-text">Home Banner </span>
                                 </a>
                             </li>
-                            <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                <a href="<?= base_url() ?>BlogAdmin/Blog/DataBlog" class="kt-menu__link">
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">Mulsk Bloger</h4>
+                                <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item <?= $this->uri->segment(2) == 'Blog' ? 'kt-menu__item--open kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
                                     <i class="kt-menu__link-icon fa fa-file-invoice"></i>
                                     <span class="kt-menu__link-text">Blogger</span>
                                     <i class="kt-menu__ver-arrow la la-angle-right"></i>

@@ -20,8 +20,10 @@ foreach ($dataMaster as $vaData) {
         border: 0;
     }
 </style>
+<button class="imtt4_btn button pe_auto round_true btn_icon_false" onClick="window.history.back()" style="margin-left: 2%; margin-bottom: 2%;">GO BACK</button>
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-masonry-theme.css">
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/single-product.css">
+
 <div id="nt_content">
     <div class="sp-single sp-single-1 des_pr_layout_1 mb__60">
 
