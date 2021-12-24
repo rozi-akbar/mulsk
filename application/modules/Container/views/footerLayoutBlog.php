@@ -39,6 +39,7 @@
 <!-- back to top button-->
 <a id="nt_backtop" class="pf br__50 z__100 des_bt1" href="#"><span class="tc br__50 db cw"><i class="pr pegk pe-7s-angle-up"></i></span></a>
 
+<script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
 <script src="<?= base_url() ?>assets/js/jarallax.min.js"></script>
 <script src="<?= base_url() ?>assets/js/packery.pkgd.min.js"></script>
 <script src="<?= base_url() ?>assets/js/jquery.hoverIntent.min.js"></script>
@@ -48,21 +49,13 @@
 <script src="<?= base_url() ?>assets/js/js-cookie.min.js"></script>
 <script src="<?= base_url() ?>assets/js/jquery.countdown.min.js"></script>
 <script src="<?= base_url() ?>assets/js/interface.js"></script>
-<script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
-<script src="<?= base_url() ?>assets/js/disabled_CtrlShiftC.js"></script>
-<script src="<?= base_url() ?>assets/js/disabled_viewPageSource.js"></script>
+<!-- <script src="<?= base_url() ?>assets/js/disabled_CtrlShiftC.js"></script>
+<script src="<?= base_url() ?>assets/js/disabled_viewPageSource.js"></script> -->
 <script>
-    function silver() {
+    function colorSelector(urutan) {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '3', false, true
-        );
-    }
-
-    function gold() {
-        $(".p-thumb.flickity-enabled").flickity(
-            "select",
-            '0', false, true
+            urutan,false, true 
         );
     }
 </script>

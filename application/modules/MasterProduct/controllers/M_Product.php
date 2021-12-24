@@ -57,9 +57,10 @@ class M_Product extends CI_Controller
         $getData = $this->db->query("SELECT * FROM m_product WHERE id = '" . $id . "' ")->row_array();
         $dataHeader['file'] = "Create Product Data " . $getData['nama_product'];
 
-        $data['dataMaster']         = $this->model->ViewWhere('m_product', 'id', $id);
-        $data['product_gallery']    = $this->model->ViewWhere('product_gallery', 'm_product_id', $getData['product_id']);
-        $data['product_icon']       = $this->model->ViewWhere('product_icon', 'm_product_id', $getData['product_id']);
+        $data['dataMaster']             = $this->model->ViewWhere('v_m_product', 'id', $id);
+        $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery', 'm_product_id', $getData['product_id']);
+        $data['product_icon']           = $this->model->ViewWhere('v_product_icon', 'm_product_id', $getData['product_id']);
+        $data['color_image_selector']   = $this->model->ViewWhere('v_color_image_selector', 'm_product_id', $getData['product_id']);
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/createProductData', $data);
@@ -76,7 +77,7 @@ class M_Product extends CI_Controller
         $dataHeader['file']     = "Edit Gallery " . str_replace('%20', ' ', $nama_product);
         $data['productName']    = $nama_product;
         $data['id_master']      = $id_master;
-        $data['data_gallery']   = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+        $data['data_gallery']   = $this->db->query("SELECT * FROM v_product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/editGallery', $data);
@@ -88,11 +89,32 @@ class M_Product extends CI_Controller
         $dataHeader['file']         = "Edit Product Icon " . str_replace('%20', ' ', $nama_product);
         $data['productName']        = $nama_product;
         $data['id_master']          = $id_master;
-        $data['data_product_icon']  = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
+        $data['data_product_icon']  = $this->db->query("SELECT * FROM v_product_icon WHERE id = '" . $id_icon . "' ")->row_array();
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/editProductIcon', $data);
         $this->load->view('Container/footer');
+    }
+
+    public function EditColorSelector($id_master = "", $id = "", $nama_product = "")
+    {
+        $dataHeader['file']             = "Edit Color Selector " . str_replace('%20', ' ', $nama_product);
+        $data['productName']            = str_replace('%20', ' ', $nama_product);
+        $data['id_master']              = $id_master;
+
+        $getIdGallery = $this->db->query("SELECT * FROM v_color_selector WHERE id = '" . $id . "' ")->row_array();
+
+        $data['data_gallery']           = $this->db->query("SELECT * FROM v_product_gallery WHERE m_product_id ='" . $getIdGallery['m_product_id'] . "' ")->result_array();
+        $data['data_color_selector']    = $this->db->query("SELECT * FROM v_color_selector WHERE id = '" . $id . "' ")->row_array();
+
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('MasterProduct/editColorSelector', $data);
+        $this->load->view('Container/footer');
+    }
+
+    public function T_EditColorSelector($id = "")
+    {
+        redirect(site_url('MasterProduct/M_Product/CreateProductData/' . $id));
     }
 
     public function ListProduct($action = "", $id)
@@ -104,11 +126,12 @@ class M_Product extends CI_Controller
 
     function PreviewProductPage($id = "")
     {
-        $getData = $this->db->query("SELECT * FROM m_product WHERE id = '" . $id . "' ")->row_array();
+        $getData = $this->db->query("SELECT * FROM v_m_product WHERE id = '" . $id . "' ")->row_array();
 
-        $data['dataMaster']         = $this->model->ViewWhere('m_product', 'id', $id);
-        $data['product_gallery']    = $this->model->ViewWhere('product_gallery', 'm_product_id', $getData['product_id']);
-        $data['product_icon']       = $this->model->ViewWhere('product_icon', 'm_product_id', $getData['product_id']);
+        $data['dataMaster']             = $this->model->ViewWhere('v_m_product', 'id', $id);
+        $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery', 'm_product_id', $getData['product_id']);
+        $data['product_icon']           = $this->model->ViewWhere('v_product_icon', 'm_product_id', $getData['product_id']);
+        $data['color_image_selector']   = $this->model->ViewWhere('v_color_image_selector', 'm_product_id', $getData['product_id']);
 
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('MasterProduct/previewProductData', $data);

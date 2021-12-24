@@ -3,6 +3,7 @@ if ($action == "edit") {
     foreach ($product as $vaProduct) {
         $id = $vaProduct['id'];
         $nama_product = $vaProduct['nama_product'];
+        $url_image = $vaProduct['image'];
         $price = $vaProduct['price'];
     }
     $valueAction    = "Save Change";
@@ -11,6 +12,7 @@ if ($action == "edit") {
     $id             = "";
     $nama_product   = "";
     $price          = "";
+    $url_image      = "";
     $valueAction    = "Save";
     $fAction        = 'Insert/' . $blog_id;
 }
@@ -57,6 +59,22 @@ if ($action == "edit") {
                                     <div class="form-group">
                                         <label>Price Product</label>
                                         <input type="number" name="price" id="price" value="<?= $price ?>" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Product Image</label>
+                                        <?php
+                                        if ($action == "edit") {
+                                        ?>
+                                            <input type="file" name="image" id="image" class="form-control" accept="image/x-png,image/jpeg">
+                                            <img src="<?= base_url() ?><?= $url_image ?>" style="width: 100%;">
+                                            <input type="hidden" name="oldUrl" value="<?= $url_image ?>">
+                                        <?php
+                                        } else {
+                                        ?>
+                                            <input type="file" name="image" id="image" class="form-control" accept="image/x-png,image/jpeg" required>
+                                        <?php
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                                 <div class="col-12">

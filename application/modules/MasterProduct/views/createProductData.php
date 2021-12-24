@@ -88,6 +88,21 @@ foreach ($dataMaster as $vaData) {
                                 </div>
                                 <div class="kt-wizard-v4__nav-label">
                                     <div class="kt-wizard-v4__nav-label-title">
+                                        Color Picker Image
+                                    </div>
+                                    <div class="kt-wizard-v4__nav-label-desc">
+                                        Setup Your Color Image Selector
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kt-wizard-v4__nav-item" data-ktwizard-type="step">
+                            <div class="kt-wizard-v4__nav-body">
+                                <div class="kt-wizard-v4__nav-number">
+                                    5
+                                </div>
+                                <div class="kt-wizard-v4__nav-label">
+                                    <div class="kt-wizard-v4__nav-label-title">
                                         Completed
                                     </div>
                                     <div class="kt-wizard-v4__nav-label-desc">
@@ -135,38 +150,48 @@ foreach ($dataMaster as $vaData) {
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
                                                     <div class="row">
-                                                        <?php
-                                                        if (empty($product_gallery)) {
-                                                        } else {
-                                                            foreach ($product_gallery as $vaGall) {
-                                                                // echo $vaGall['id'] . " | " . $vaGall['url_image'] . "<br />";
-                                                        ?>
-                                                                <div class="col-3">
-                                                                    <div class="form-group">
-                                                                        <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $id . '/' . $vaGall['id'] . '/' . $productName) ?>">
-                                                                            Edit Photo
-                                                                        </a>
-                                                                        <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:100%; height:auto;">
-                                                                    </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label> Image Gallery </label>
+                                                                <div class="row">
+                                                                    <?php
+                                                                    if (empty($product_gallery)) {
+                                                                    } else {
+                                                                        foreach ($product_gallery as $vaGall) {
+                                                                            // echo $vaGall['id'] . " | " . $vaGall['url_image'] . "<br />";
+                                                                    ?>
+                                                                            <div class="col-3">
+                                                                                <div class="form-group">
+                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $id . '/' . $vaGall['id'] . '/' . $productName) ?>">
+                                                                                        Edit Photo
+                                                                                    </a>
+                                                                                    <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:100%; height:auto;">
+                                                                                </div>
+                                                                            </div>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
                                                                 </div>
-                                                        <?php
-                                                            }
-                                                        }
-                                                        ?>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <table id="table_field_gallery" class="table table-bordered">
-                                                            <thead>
-                                                                <th>Image</th>
-                                                                <th>Action</th>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" /> </td>
-                                                                    <td> <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" /> </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label> Upload Gallery </label>
+                                                                <table id="table_field_gallery" class="table table-bordered">
+                                                                    <thead>
+                                                                        <th>Image</th>
+                                                                        <th>Action</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" /> </td>
+                                                                            <td> <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" /> </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,6 +258,118 @@ foreach ($dataMaster as $vaData) {
 
                                         <!--begin: Form Wizard Step 4-->
                                         <div class="kt-wizard-v4__content" data-ktwizard-type="step-content">
+                                            <div class="kt-heading kt-heading--md">Select Color For Image</div>
+                                            <div class="kt-form__section kt-form__section--first">
+                                                <div class="kt-wizard-v4__review">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label> <b> GALLERY IMAGE DATA </b> </label>
+                                                                <div class="row">
+                                                                    <?php
+                                                                    if (empty($product_gallery)) {
+                                                                    } else {
+                                                                        foreach ($product_gallery as $vaGall3) {
+                                                                            // echo $vaGall['id'] . " | " . $vaGall['url_image'] . "<br />";
+                                                                    ?>
+
+                                                                            <div class="col-3">
+                                                                                <div class="form-group">
+                                                                                    <label> Nama : <b> <?= $productName ?> - <?= $vaGall3['id'] ?> </b> </label>
+                                                                                    <img src="<?= base_url() ?><?= $vaGall3['url_image'] ?>" style="width:100%; height:auto;">
+                                                                                </div>
+                                                                            </div>
+
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label> <b> DATA COLOR SELECTOR </b> </label>
+                                                                <table id="table_field_color" class="table table-bordered">
+                                                                    <thead>
+                                                                        <th>Select Image</th>
+                                                                        <th>Select Color</th>
+                                                                        <th>Color Name</th>
+                                                                        <th>Action</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <?php
+                                                                        foreach ($color_image_selector as $rowColor) {
+                                                                        ?>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <?= $productName ?> - <?= $rowColor['id_product_image'] ?>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <?= $rowColor['color'] ?>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <?= $rowColor['color_name'] ?>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/EditColorSelector/' . $id . '/' . $rowColor['id'] . '/' . $productName) ?>">
+                                                                                        Edit
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        <?php
+                                                                        }
+                                                                        ?>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label> <b> NEW COLOR SELECTOR </b> </label>
+                                                                <table id="table_field_color" class="table table-bordered">
+                                                                    <thead>
+                                                                        <th>Select Image</th>
+                                                                        <th>Select Color</th>
+                                                                        <th>Color Name</th>
+                                                                        <th>Action</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <select name="colorSelector[]" class="form-control kt-selectpicker">
+                                                                                    <option>PILIH IMAGE</option>
+                                                                                    <?php
+                                                                                    $no = 0;
+                                                                                    foreach ($product_gallery as $vaPGall) {
+                                                                                    ?>
+                                                                                        <option value="<?= $vaPGall['id'] ?>-<?= ++$no ?>"> <?= $productName ?> - <?= $vaPGall['id'] ?></option>
+                                                                                    <?php
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="color" name="color_hex[]" class="form-control" value="#563d7c">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" name="colorName[]" class="form-control">
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_color" name="add_color" value="Add" />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--end: Form Wizard Step 4-->
+
+                                        <!--begin: Form Wizard Step 5-->
+                                        <div class="kt-wizard-v4__content" data-ktwizard-type="step-content">
                                             <div class="kt-heading kt-heading--md">Publish your Details and Submit</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__review">
@@ -249,10 +386,7 @@ foreach ($dataMaster as $vaData) {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <!--end: Form Wizard Step 4-->
-
-
+                                        <!--end: Form Wizard Step 5-->
                                     </div>
                                 </div>
                                 <!--end: Form Actions -->
@@ -353,28 +487,21 @@ foreach ($dataMaster as $vaData) {
         });
     });
 
-    var rupiah = document.getElementById("price");
-    rupiah.addEventListener("keyup", function(e) {
-        // tambahkan 'Rp.' pada saat form di ketik
-        // gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
-        rupiah.value = formatRupiah(this.value, "Rp. ");
+    $(document).ready(function() {
+        var html = '<tr><td> <select name="colorSelector[]" class="form-control kt-selectpicker"> <option>PILIH IMAGE</option> <?php $no = 0; foreach ($product_gallery as $vaPGall2) { echo '<option value="' . $vaPGall2['id'] . '-' . ++$no . '"> ' . $productName . ' - ' . $vaPGall2['id'] . ' </option>'; } ?> </select> </td><td><input type="color" name="color_hex[]" class="form-control" value="#563d7c"></td><td><input type="text" name="colorName[]" class="form-control"></td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_color" name="remove_color" value="Remove" /> </td></tr>';
+        var max = 10;
+        var x = 1;
+
+        $("#add_color").click(function() {
+            if (x < max) {
+                $("#table_field_color").append(html);
+                x++;
+            }
+        });
+
+        $("#table_field_color").on('click', '#remove_color', function() {
+            $(this).closest('tr').remove();
+            x--;
+        });
     });
-
-    /* Fungsi formatRupiah */
-    function formatRupiah(angka, prefix) {
-        var number_string = angka.replace(/[^,\d]/g, "").toString(),
-            split = number_string.split(","),
-            sisa = split[0].length % 3,
-            rupiah = split[0].substr(0, sisa),
-            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
-
-        // tambahkan titik jika yang di input sudah menjadi angka ribuan
-        if (ribuan) {
-            separator = sisa ? "." : "";
-            rupiah += separator + ribuan.join(".");
-        }
-
-        rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
-        return prefix == undefined ? rupiah : rupiah ? "Rp. " + rupiah : "";
-    }
 </script>

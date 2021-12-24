@@ -165,6 +165,8 @@
 <script src="<?= base_url() ?>web/js/pages/custom/wizard/wizard-4.js" type="text/javascript"></script>
 <script src="<?= base_url() ?>web/js/pages/crud/forms/widgets/bootstrap-switch.js" type="text/javascript"></script>
 
+<script src="<?= base_url() ?>web/js/pages/crud/forms/widgets/bootstrap-select.js" type="text/javascript"></script>
+
 
 <!-- <script src="<?= base_url(); ?>web/chartjs/Chart.bundle.js" type="text/javascript"></script> -->
 

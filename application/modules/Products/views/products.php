@@ -90,133 +90,45 @@
 
                     <!--articles-->
                     <div class="products nt_products_holder row fl_center row_pr_1 cdt_des_5 round_cd_true nt_cover ratio_nt position_8 space_30">
-                        <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
-                            <div class="product-inner pr">
-                                <div class="product-image position-relative oh lazyload">
 
-                                    <a class="d-block" href="<?= base_url() ?>Products/mulberrysilkpillowcase">
-                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
-                                    </a>
-                                    <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
-                                    </div>
-                                    <div class="hover_button op__0 tc pa flex column ts__03">
-                                        <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/mulberrysilkpillowcase">
-                                            <span class="tt_txt">Click to View</span>
-                                            <i class="iccl iccl-eye"></i>
-                                            <span>Click to View</span>
+                        <?php
+                        foreach ($dataMaster as $vaData) {
+                        ?>
+                            <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
+                                <div class="product-inner pr">
+                                    <div class="product-image position-relative oh lazyload">
+
+                                        <a class="d-block" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
+                                            <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
                                         </a>
+                                        <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
+                                            <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
+                                        </div>
+                                        <div class="hover_button op__0 tc pa flex column ts__03">
+                                            <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
+                                                <span class="tt_txt">Click to View</span>
+                                                <i class="iccl iccl-eye"></i>
+                                                <span>Click to View</span>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product-info mt__15">
-                                    <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                        <a class="cd chp" href="<?= base_url() ?>Products/mulberrysilkpillowcase"><b>Mulberry Silk Pillowcase</b></a>
-                                    </h3>
-                                    <span class="price dib mb__5">Rp 750.000</span>
-                                    <br />
-                                    <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/pillow/cotton-candy-pillowcase-2.jpeg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
+                                    <div class="product-info mt__15">
+                                        <h3 class="product-title position-relative fs__14 mg__0 fwm">
+                                            <a class="cd chp" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>"><b><?= $vaData['nama_product'] ?></b></a>
+                                        </h3>
+                                        <span class="price dib mb__5">Rp 750.000</span>
+                                        <br />
+                                        <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
+                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
+                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
+                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/cotton-candy-pillowcase-2.jpeg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
-                            <div class="product-inner pr">
-                                <div class="product-image position-relative oh lazyload">
-                                    <span class="tc nt_labels pa pe_none cw"></span>
-                                    <a class="d-block" href="<?= base_url() ?>Products/luxurygiftset">
-                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-silver.jpg"></div>
-                                    </a>
-                                    <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-silver.jpg"></div>
-                                    </div>
-                                    <div class="hover_button op__0 tc pa flex column ts__03">
-                                        <a class="pr nt_add_qv js_add_qv js_giftset cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/luxurygiftset">
-                                            <span class="tt_txt">Click to View</span>
-                                            <i class="iccl iccl-eye"></i>
-                                            <span>Click to View</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-info mt__15">
-                                    <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                        <a class="cd chp" href="<?= base_url() ?>Products/luxurygiftset"><b>Luxury Gift Set</b></a>
-                                    </h3>
-                                    <span class="price dib mb__5">Rp 999.000</span>
-                                    <br />
-                                    <!-- <span>Promo Price Only in June, Limited Stock!</span> -->
-                                    <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/Luxury-Gift-Set-silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/giftset/gift-set-cottoncandy-1.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
-                            <div class="product-inner pr">
-                                <div class="product-image position-relative oh lazyload">
-                                    <span class="tc nt_labels pa pe_none cw"></span>
-                                    <a class="d-block" href="<?= base_url() ?>Products/mulberrysilkscrunchie">
-                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-1.png"></div>
-                                    </a>
-                                    <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-2.png"></div>
-                                    </div>
-                                    <div class="hover_button op__0 tc pa flex column ts__03">
-                                        <a class="pr nt_add_qv js_add_qv js_scrunchie cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/mulberrysilkscrunchie">
-                                            <span class="tt_txt">Click to View</span>
-                                            <i class="iccl iccl-eye"></i>
-                                            <span>Click to View</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-info mt__15">
-                                    <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                        <a class="cd chp" href="<?= base_url() ?>Products/mulberrysilkscrunchie"><b>Mulberry Silk Scrunchie</b></a>
-                                    </h3>
-                                    <span class="price dib mb__5">Rp 199.000</span>
-                                    <br />
-                                    <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-2.png" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/scrunchie-1.png" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
-                                        <span data-bgset="<?= base_url() ?>assets/images/products/scrunchie/cotton-candy-scrunchie-1.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
-                            <div class="product-inner pr">
-                                <div class="product-image position-relative oh lazyload">
-                                    <span class="tc nt_labels pa pe_none cw"></span>
-                                    <a class="d-block" href="<?= base_url() ?>Products/mulberrysilkfacemask">
-                                        <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/facemask/facemask-1.jpg"></div>
-                                    </a>
-                                    <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                        <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/facemask/facemask-1.jpg"></div>
-                                    </div>
-                                    <div class="hover_button op__0 tc pa flex column ts__03">
-                                        <a class="pr nt_add_qv js_add_qv js_facemask cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/mulberrysilkfacemask">
-                                            <span class="tt_txt">Click to View</span>
-                                            <i class="iccl iccl-eye"></i>
-                                            <span>Click to View</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-info mt__15">
-                                    <h3 class="product-title position-relative fs__14 mg__0 fwm">
-                                        <a class="cd chp" href="<?= base_url() ?>Products/mulberrysilkfacemask"><b>Mulberry Silk Face Mask</b></a>
-                                    </h3>
-                                    <span class="price dib mb__5">Rp 199.000</span>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        }
+                        ?>
 
                     </div>
                     <br><br><br>

@@ -154,66 +154,73 @@
 <!-- <script src="<?= base_url() ?>assets/js/disabled_CtrlShiftC.js"></script>
 <script src="<?= base_url() ?>assets/js/disabled_viewPageSource.js"></script> -->
 <script>
+    function colorSelector(urutan) {
+        $(".p-thumb.flickity-enabled").flickity(
+            "select",
+            urutan, false, true
+        );
+    }
+
     function pillow_silver() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '3',false, true 
+            '3', false, true
         );
     }
 
     function pillow_gold() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '0',false, true 
+            '0', false, true
         );
     }
 
     function pillow_cotton_candy() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '6',false, true 
+            '6', false, true
         );
     }
 
     function gift_gold() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '0',false, true 
+            '0', false, true
         );
     }
 
     function gift_silver() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '3',false, true 
+            '3', false, true
         );
     }
 
     function gift_cotton_candy() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '5',false, true 
+            '5', false, true
         );
     }
 
     function scrunchie_gold() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '0',false, true 
+            '0', false, true
         );
     }
 
     function scrunchie_silver() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '4',false, true 
+            '4', false, true
         );
     }
 
     function scrunchie_cotton_candy() {
         $(".p-thumb.flickity-enabled").flickity(
             "select",
-            '5',false, true 
+            '5', false, true
         );
     }
 </script>
