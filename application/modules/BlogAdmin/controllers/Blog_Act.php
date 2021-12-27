@@ -96,6 +96,19 @@ class Blog_Act extends CI_Controller
         redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 
+    function Delete($id = "")
+    {
+        $UTC = new UTC;
+        $data = array(
+            'is_deleted'   => 1,
+            'deleted_at'   => $UTC->DateTimeStamp(),
+            'deleted_by'   => $this->session->userdata('username_mulsk')
+        );
+        $this->model->Update('blog', 'id', $id, $data);
+
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+    }
+
     function I_upload_banner_blog($banner, $noId)
     {
         if (empty($banner)) {

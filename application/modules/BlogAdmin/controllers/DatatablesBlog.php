@@ -47,6 +47,11 @@ class DatatablesBlog extends Datatables
                         <i class="fa fa-arrow-alt-circle-up"></i>
                     </button>
                 </a>
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/Delete/' . $person->id . '">
+                    <button title="Post" class="btn btn-danger btn-icon">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </a>
             </div>
             ';
 
