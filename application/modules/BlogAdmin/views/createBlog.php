@@ -140,6 +140,17 @@ if ($action == "edit") {
         $('#summernote').summernote({
             height: "500px",
             width: "100%",
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'hr']],
+                ['view', ['fullscreen', 'codeview']],
+                ['help', ['help']]
+            ],
             callbacks: {
                 onImageUpload: function(image) {
                     uploadImage(image[0]);

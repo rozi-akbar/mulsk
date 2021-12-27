@@ -426,7 +426,6 @@ foreach ($dataMaster as $vaData) {
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
-                ['fontname', ['fontname']],
                 ['fontsize', ['fontsize']],
                 ['color', ['color']],
                 ['para', ['ol', 'ul', 'paragraph', 'height']],
@@ -441,7 +440,6 @@ foreach ($dataMaster as $vaData) {
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
-                ['fontname', ['fontname']],
                 ['fontsize', ['fontsize']],
                 ['color', ['color']],
                 ['para', ['ol', 'ul', 'paragraph', 'height']],

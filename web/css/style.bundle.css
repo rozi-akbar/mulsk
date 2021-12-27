@@ -7874,7 +7874,7 @@ button.btn {
     box-shadow: 0 0 0 0.2rem rgba(113, 126, 226, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #5867dd;
+    background-color: gray;
     border-color: #5867dd; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
