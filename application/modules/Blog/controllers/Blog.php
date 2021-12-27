@@ -44,8 +44,8 @@ class Blog extends CI_Controller
         $config["prev_link"]        = '<i class="mdi mdi-chevron-left f-15"></i>';
         $config["prev_tag_open"]    = '';
         $config["prev_tag_close"]   = '';
-        $config["cur_tag_open"]     = '<li class="page-numbers current"><a class="page-numbers" href="#">';
-        $config["cur_tag_close"]    = '</a></span></li>';
+        $config["cur_tag_open"]     = '<li><span class="page-numbers current">';
+        $config["cur_tag_close"]    = '</span></li>';
         $config["num_tag_open"]     = '';
         $config["num_tag_close"]    = '';
         $config["num_links"]        = 3;

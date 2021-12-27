@@ -57,30 +57,15 @@
                     <div class="container container_des">
                         <div class="kalles-section-pr_description kalles-section kalles-tabs sp-tabs nt_section" style="padding-top: 0;">
 
-                            <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
-                                <div class="row filter_data d-flex" id="blog-data">
-                                </div>
-                                <br />
-                                <div class="products-footer tc">
-                                    <nav class="nt-pagination w__100 tc paginate_ajax">
-                                        <div id="pagination_link"></div>
-                                    </nav>
-                                </div>
+                            <div class="filter_data articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt" id="blog-data">
                             </div>
-
-                            <!--navigation-->
+                            <br>
                             <div class="products-footer tc">
                                 <nav class="nt-pagination w__100 tc paginate_ajax">
-                                    <ul class="pagination-page page-numbers">
-                                        <li><a class="prev page-numbers" href="#">Prev</a></li>
-                                        <li><a class="page-numbers" href="#">1</a></li>
-                                        <li><span class="page-numbers current">2</span></li>
-                                        <li><a class="page-numbers" href="#">3</a></li>
-                                        <li><a href="#" class="next page-numbers">Next</a></li>
-                                    </ul>
+                                    <div id="pagination_link"></div>
                                 </nav>
                             </div>
-                            <!--end navigation-->
+                            
                             <!-- tab contents -->
                             <!-- <div class="panel entry-content sp-tab des_mb_2 des_style_1 active" id="tab_1">
                                 <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">

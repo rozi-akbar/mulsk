@@ -583,13 +583,13 @@ class CI_Pagination {
 			if ($i === $base_page)
 			{
 				// First page
-				$output .= $this->prev_tag_open.'<li><a class="page-item page-link" href="'.$first_url.'"'.$attributes.$this->_attr_rel('prev').'>'
+				$output .= $this->prev_tag_open.'<li><a class="prev page-numbers" href="'.$first_url.'"'.$attributes.$this->_attr_rel('prev').'>Prev'
 					.$this->prev_link.'</a></li>'.$this->prev_tag_close;
 			}
 			else
 			{
 				$append = $this->prefix.$i.$this->suffix;
-				$output .= $this->prev_tag_open.'<li class="page-item page-link"><a href="'.$base_url.$append.'"'.$attributes.$this->_attr_rel('prev').'>'
+				$output .= $this->prev_tag_open.'<li class="prev page-numbers"><a href="'.$base_url.$append.'"'.$attributes.$this->_attr_rel('prev').'>Prev'
 					.$this->prev_link.'</a></li>'.$this->prev_tag_close;
 			}
 
@@ -615,13 +615,13 @@ class CI_Pagination {
 					elseif ($i === $base_page)
 					{
 						// First page
-						$output .= $this->num_tag_open.'<li><a class="page-item page-link" href="'.$first_url.'"'.$attributes.$this->_attr_rel('start').'>'
+						$output .= $this->num_tag_open.'<li><a class="page-numbers" href="'.$first_url.'"'.$attributes.$this->_attr_rel('start').'>'
 							.$loop.'</a></li>'.$this->num_tag_close;
 					}
 					else
 					{
 						$append = $this->prefix.$i.$this->suffix;
-						$output .= $this->num_tag_open.'<li><a class="page-item page-link" href="'.$base_url.$append.'"'.$attributes.'>'
+						$output .= $this->num_tag_open.'<li><a class="page-numbers" href="'.$base_url.$append.'"'.$attributes.'>'
 							.$loop.'</a></li>'.$this->num_tag_close;
 					}
 				}
@@ -635,8 +635,8 @@ class CI_Pagination {
 
 			$attributes = sprintf('%s %s="%d"', $this->_attributes, $this->data_page_attr, $this->cur_page + 1);
 
-			$output .= $this->next_tag_open.'<li><a class="page-item page-link" href="'.$base_url.$this->prefix.$i.$this->suffix.'"'.$attributes
-				.$this->_attr_rel('next').'>'.$this->next_link.'</a></li>'.$this->next_tag_close;
+			$output .= $this->next_tag_open.'<li><a class="next page-numbers" href="'.$base_url.$this->prefix.$i.$this->suffix.'"'.$attributes
+				.$this->_attr_rel('next').'>Next'.$this->next_link.'</a></li>'.$this->next_tag_close;
 		}
 
 		// Render the "Last" link
