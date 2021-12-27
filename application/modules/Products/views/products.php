@@ -99,10 +99,10 @@
                                     <div class="product-image position-relative oh lazyload">
 
                                         <a class="d-block" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
-                                            <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
+                                            <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url().$vaData['image'] ?>"></div>
                                         </a>
                                         <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                            <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
+                                            <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url().$vaData['image'] ?>"></div>
                                         </div>
                                         <div class="hover_button op__0 tc pa flex column ts__03">
                                             <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
@@ -116,7 +116,7 @@
                                         <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                             <a class="cd chp" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>"><b><?= $vaData['nama_product'] ?></b></a>
                                         </h3>
-                                        <span class="price dib mb__5">Rp 750.000</span>
+                                        <span class="price dib mb__5"><?= $vaData['price'] ?></span>
                                         <br />
                                         <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                             <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
