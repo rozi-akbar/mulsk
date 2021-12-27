@@ -81,7 +81,7 @@ if ($action == "Update") {
 								if ($action == "Update") {
 								?>
 									<input type="hidden" name="image_desktop_edit" value="<?= $desktop_file ?>" onchange="readURL(this);" />
-									<img style="width: 210px;" src="<?= base_url() . 'assets/images/banner/' . $desktop_file ?>?rand=<?php echo rand(); ?>" id="img_preview" alt="your image" />
+									<img style="width: 210px;" src="<?= base_url() . 'assets/images/banner/' . $desktop_file ?>?rand=<?php echo rand(); ?>" id="img_preview_desktop" alt="your image" />
 								<?php
 								}
 								?>
@@ -200,31 +200,48 @@ if ($action == "Update") {
 		if (p_image.files.length > 0) {
 			for (const i = 0; i <= p_image.files.length - 1; i++) {
 
+				var filetype = p_image.files[0].type;
+				alert(filetype);
 				const fsize = p_image.files.item(i).size;
 				const file = Math.round((fsize / 1024));
 				// The size of the file.
-				if (file >= 500) {
-					alert("File too Big, please select a file less than 500 Kb");
-					p_image.value = null;
-				} else {
-					if (input.files && input.files[0]) {
-						var reader = new FileReader();
+				if (filetype === 'image/png' || filetype === 'image/jpeg') {
+					if (file >= 500) {
+						alert("File too Big, please select a file less than 500 Kb");
+						p_image.value = null;
+					} else {
+						if (input.files && input.files[0]) {
+							var reader = new FileReader();
 
-						reader.onload = function(e) {
-							if (input.getAttribute('id') === 'image_desktop') {
-								$('#img_preview_desktop')
-									.attr('src', e.target.result)
-									.width(210)
-									.height(70);
-							} else if (input.getAttribute('id') === 'image_mobile') {
-								$('#img_preview_mobile')
-									.attr('src', e.target.result)
-									.width(200)
-									.height(120);
-							}
-						};
-						reader.readAsDataURL(input.files[0]);
+							reader.onload = function(e) {
+								if (input.getAttribute('id') === 'image_desktop') {
+									$('#img_preview_desktop')
+										.attr('src', e.target.result)
+										.width(210)
+										.height(70);
+								} else if (input.getAttribute('id') === 'image_mobile') {
+									$('#img_preview_mobile')
+										.attr('src', e.target.result)
+										.width(200)
+										.height(120);
+								} else if (input.getAttribute('id') === 'image_desktop_edit') {
+									$('#img_preview_desktop')
+										.attr('src', e.target.result)
+										.width(210)
+										.height(70);
+								} else if (input.getAttribute('id') === 'image_mobile_edit') {
+									$('#img_preview_mobile')
+										.attr('src', e.target.result)
+										.width(200)
+										.height(120);
+								}
+							};
+							reader.readAsDataURL(input.files[0]);
+						}
 					}
+				} else{
+					alert("File type must be JPG/JPEG or PNG");
+					p_image.value = null;
 				}
 			}
 		}
