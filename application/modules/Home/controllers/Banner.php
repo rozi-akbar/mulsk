@@ -17,7 +17,7 @@ class Banner extends CI_Controller
         $dataHeader['title']    = "Data Home Banner - Mulsk";
 
         $data['action']		    = $Aksi;
-        $data['home_banner']    = $this->model->Code('SELECT * FROM banner_home WHERE is_deleted = 0 ORDER BY banner_id ASC');
+        $data['home_banner']    = $this->model->Code('SELECT * FROM banner_home WHERE is_deleted = 0 ORDER BY banner_id DESC');
 
 		if ($Aksi == 'Update') {
 			$data['field']      = $this->model->Code("SELECT * FROM banner_home where is_deleted = 0 and banner_id = '" . $Id . "';");
