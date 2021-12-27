@@ -156,8 +156,8 @@ if ($action == "Update") {
 										<td>
 											<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
 												<!-- <button type="button" class="btn btn-outline-success btn-icon" data-toggle="modal" data-target="#user_detail" onclick="get_data_user(<?= $vData['id_banner'] ?>)"><i class="fa fa-eye"></i></button> -->
-												<a type="button" href="<?= base_url() ?>Home/Banner/index/Update/<?= $vData['banner_id'] ?>" class="btn btn-outline-info btn-icon"><i class="fa fa-pen"></i></a>
-												<a type="button" href="<?= base_url() ?>Home/Banner/Crud/Delete/<?= $vData['banner_id'] ?>" class="btn btn-outline-danger btn-icon" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>
+												<a title="Edit" type="button" href="<?= base_url() ?>Home/Banner/index/Update/<?= $vData['banner_id'] ?>" class="btn btn-outline-info btn-icon"><i class="fa fa-pen"></i></a>
+												<a title="Delete" type="button" href="<?= base_url() ?>Home/Banner/Crud/Delete/<?= $vData['banner_id'] ?>" class="btn btn-outline-danger btn-icon" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>
 											</div>
 										</td>
 									</tr>
