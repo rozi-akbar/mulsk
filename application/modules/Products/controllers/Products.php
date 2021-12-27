@@ -18,7 +18,8 @@ class Products extends CI_Controller
 
     public function index()
     {
-        $data['dataMaster']             = $this->model->View('v_m_product', 'id');
+        $data['dataMaster']  = $this->model->View('v_m_product', 'id');
+        $data['vColor']      = $this->model->View('v_color_image_selector', 'id');
 
         $this->load->view('Layout/header');
         $this->load->view('products', $data);
