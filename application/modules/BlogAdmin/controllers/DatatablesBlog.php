@@ -48,7 +48,7 @@ class DatatablesBlog extends Datatables
                     </button>
                 </a>
                 <a href="' . base_url() . 'BlogAdmin/Blog_Act/Delete/' . $person->id . '">
-                    <button title="Post" class="btn btn-danger btn-icon">
+                    <button title="Soft Delete" class="btn btn-danger btn-icon">
                         <i class="fa fa-trash"></i>
                     </button>
                 </a>
