@@ -201,7 +201,6 @@ if ($action == "Update") {
 			for (const i = 0; i <= p_image.files.length - 1; i++) {
 
 				var filetype = p_image.files[0].type;
-				alert(filetype);
 				const fsize = p_image.files.item(i).size;
 				const file = Math.round((fsize / 1024));
 				// The size of the file.
