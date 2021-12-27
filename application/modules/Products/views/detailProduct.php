@@ -114,7 +114,6 @@ foreach ($dataMaster as $vaData) {
                                                     <ul class="swatches-select swatch__list_pr d-flex">
                                                         <?php
                                                         foreach ($color_image_selector as $key => $vaCIS) {
-                                                            echo $vaCIS['id']."<br />";
                                                         ?>
                                                             <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item" data-escape="<?= $vaCIS['color_name'] ?>">
                                                                 <span class="tt_txt"><?= $vaCIS['color_name'] ?></span><span class="swatch__value_pr pr lazyload" style="background-color:<?= $vaCIS['color'] ?>;" onclick="colorSelector(<?= $vaCIS['urutan'] ?>)"></span>
