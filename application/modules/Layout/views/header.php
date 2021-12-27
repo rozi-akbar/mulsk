@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/base.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/home-header-02.css">
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/base/script.js"></script>
     <script data-cfasync="false" src="<?= base_url() ?>assets/js/email-decode.min.js"></script>
     <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script>
 

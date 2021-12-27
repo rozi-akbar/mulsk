@@ -8,7 +8,6 @@
         font-weight: 700;
         line-height: 46.87px;
     }
-    
 </style>
 <div id="nt_content">
 
@@ -58,8 +57,32 @@
                     <div class="container container_des">
                         <div class="kalles-section-pr_description kalles-section kalles-tabs sp-tabs nt_section" style="padding-top: 0;">
 
+                            <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
+                                <div class="row filter_data d-flex" id="blog-data">
+                                </div>
+                                <br />
+                                <div class="products-footer tc">
+                                    <nav class="nt-pagination w__100 tc paginate_ajax">
+                                        <div id="pagination_link"></div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <!--navigation-->
+                            <div class="products-footer tc">
+                                <nav class="nt-pagination w__100 tc paginate_ajax">
+                                    <ul class="pagination-page page-numbers">
+                                        <li><a class="prev page-numbers" href="#">Prev</a></li>
+                                        <li><a class="page-numbers" href="#">1</a></li>
+                                        <li><span class="page-numbers current">2</span></li>
+                                        <li><a class="page-numbers" href="#">3</a></li>
+                                        <li><a href="#" class="next page-numbers">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--end navigation-->
                             <!-- tab contents -->
-                            <div class="panel entry-content sp-tab des_mb_2 des_style_1 active" id="tab_1">
+                            <!-- <div class="panel entry-content sp-tab des_mb_2 des_style_1 active" id="tab_1">
                                 <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
                                     <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
                                         <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg0912202101') ?>">
@@ -128,8 +151,8 @@
                                         </div>
                                     </article>
                                 </div>
-                            </div>
-                            <div class="panel entry-content sp-tab des_mb_2 des_style_1 dn" id="tab_2">
+                            </div> -->
+                            <!-- <div class="panel entry-content sp-tab des_mb_2 des_style_1 dn" id="tab_2">
                                 <div class="articles products art_des2 nt_products_holder row des_cnt_1 nt_cover ratio4_3 position_8 equal_nt">
                                     <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
                                         <a class="mb__10 db pr oh" href="<?= site_url('Blog/bg1206202103') ?>">
@@ -165,18 +188,18 @@
                                         </div>
                                     </article>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- end tab contents -->
 
                             <!-- tab buttons -->
-                            <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1">
+                            <!-- <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_2 des_style_1">
                                 <li class="tab_title_block active">
                                     <a class="db cg truncate pr" href="#tab_1">1</a>
                                 </li>
                                 <li class="tab_title_block">
                                     <a class="db cg truncate pr" href="#tab_2">2</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <!-- end tab buttons -->
                         </div>
                     </div>
@@ -187,4 +210,72 @@
     </div>
     <!--end main content-->
 
+
+
 </div>
+<script src="<?= base_url() ?>assets/components/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        filter_data(1);
+
+        $('.common_selector').click(function() {
+            filter_data(1);
+        });
+
+        $('.common_selector2').click(function() {
+            filter_data(1);
+        });
+
+        $('#submit').click(function() {
+            filter_data(1);
+        });
+
+        function get_filter(element_name) {
+            var element = document.getElementsByName(element_name);;
+            var txt = "";
+            var i;
+            for (i = 0; i < element.length; i++) {
+                if (element[i].checked) {
+                    txt = txt + element[i].value + "";
+                }
+            }
+            return txt;
+        }
+
+        function filter_data(page) {
+            $('.filter_data').html('<div id="loading" style="" ></div>');
+            $.ajax({
+                url: "<?= base_url(); ?>Blog/Blog/fetch_data/" + page,
+                method: "POST",
+                dataType: "JSON",
+                data: {},
+                beforeSend: function() {
+                    $('#showing_result').html("<h1> MOHON TUNGGU ... </h1>");
+                },
+                success: function(data) {
+                    $('.filter_data').html(data.blog);
+                    $('#pagination_link').html(data.pagination_link);
+                    $('#showing_result').html(data.showing_result);
+                }
+            })
+        }
+
+        $(document).on("click", ".pagination li a", function(event) {
+            event.preventDefault();
+            var page = $(this).data("ci-pagination-page");
+            filter_data(page);
+            var konten = document.getElementById("blog-data");
+            konten.scrollIntoView();
+        });
+    });
+
+    function searchby() {
+        document.getElementById('searchby_id').value = '';
+    }
+
+    function searchby_id() {
+        document.getElementById('searchby').value = '';
+    }
+</script>

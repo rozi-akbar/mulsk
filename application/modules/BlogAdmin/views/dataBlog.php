@@ -55,7 +55,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="tab" href="#hide" role="tab">
-                                        Hide Post
+                                        Hidden
                                     </a>
                                 </li>
                             </ul>
