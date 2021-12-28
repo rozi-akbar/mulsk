@@ -147,12 +147,6 @@
                     <!--navigation-->
                     <div class="products-footer tc">
                         <nav class="nt-pagination w__100 tc paginate_ajax">
-                            <!-- <ul class="pagination-page page-numbers">
-                                <li><span class="page-numbers current">1</span></li>
-                                <li><a class="page-numbers" href="#">2</a></li>
-                                <li><a class="page-numbers" href="#">3</a></li>
-                                <li><a href="#" class="next page-numbers">Next</a></li>
-                            </ul> -->
                         </nav>
                     </div>
                     <!--end navigation-->

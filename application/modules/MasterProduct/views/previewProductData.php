@@ -1,14 +1,15 @@
 <?php
 foreach ($dataMaster as $vaData) {
-    $id             = $vaData['id'];
-    $productName    = $vaData['nama_product'];
-    $productId      = $vaData['product_id'];
-    $price          = $vaData['price'];
-    $url_image      = $vaData['image'];
-    $publish        = $vaData['publish'];
-    $deskripsi      = $vaData['deskripsi'];
-    $benefits       = $vaData['benefits'];
-    $wash_care      = $vaData['wash_care'];
+    $id                 = $vaData['id'];
+    $productName        = $vaData['nama_product'];
+    $productId          = $vaData['product_id'];
+    $price              = $vaData['price'];
+    $url_image          = $vaData['image'];
+    $url_imageBenefits  = $vaData['benefits_image'];
+    $publish            = $vaData['publish'];
+    $deskripsi          = $vaData['deskripsi'];
+    $benefits           = $vaData['benefits'];
+    $wash_care          = $vaData['wash_care'];
 }
 ?>
 <style>
@@ -91,7 +92,7 @@ foreach ($dataMaster as $vaData) {
                                     <div class="flex wrap fl_between al_center price-review">
                                         <p class="price_range" id="price_ppr">
                                             <span class="price dib mb__5">
-                                                Rp <?= $price ?>
+                                                <?= "Rp " . number_format($price,2,',','.'); ?>
                                             </span>
                                         </p>
                                     </div>
@@ -114,12 +115,20 @@ foreach ($dataMaster as $vaData) {
                                                     </h4>
                                                     <ul class="swatches-select swatch__list_pr d-flex">
                                                         <?php
-                                                        foreach ($color_image_selector as $key => $vaCIS) {
+                                                        $no = 0;
+                                                        foreach ($product_gallery as $rowGall) {
+                                                            $urutan = $no;
+                                                            foreach ($color_image_selector as $key => $vaCIS) {
+                                                                if ($rowGall['id'] == $vaCIS['id']) {
                                                         ?>
-                                                            <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item" data-escape="<?= $vaCIS['color_name'] ?>">
-                                                                <span class="tt_txt"><?= $vaCIS['color_name'] ?></span><span class="swatch__value_pr pr lazyload" style="background-color:<?= $vaCIS['color'] ?>;" onclick="colorSelector(<?= $vaCIS['urutan'] ?>)"></span>
-                                                            </li>
+                                                                    <li class="ttip_nt tooltip_top nt-swatch swatch_pr_item" data-escape="<?= $vaCIS['color_name'] ?>">
+                                                                        <span class="tt_txt"><?= $vaCIS['color_name'] ?></span><span class="swatch__value_pr pr lazyload" style="background-color:<?= $vaCIS['color'] ?>;" onclick="colorSelector(<?= $urutan ?>)"></span>
+                                                                    </li>
                                                         <?php
+                                                                } else {
+                                                                }
+                                                            }
+                                                            $no++;
                                                         }
                                                         ?>
                                                     </ul>
@@ -229,7 +238,7 @@ foreach ($dataMaster as $vaData) {
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-6">
-                                    <img class="lazyload w__100 db" data-srcset="<?= base_url() ?><?= $url_image ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+                                    <img class="lazyload w__100 db" data-srcset="<?= base_url() ?><?= $url_imageBenefits ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
                                 </div>
                                 <div class="col-12 dn_md mt__40"></div>
                                 <div class="col-12 col-md-3 tc tl_md">
