@@ -55,8 +55,11 @@ class Blog extends CI_Controller
         $data['blog_id'] = $id;
 
         if ($action == 'edit') {
-            $data['data_blog']  = $this->model->Code("SELECT * FROM blog WHERE id = '" . $id . "' ");
+            $data['data_blog']          = $this->model->Code("SELECT * FROM blog WHERE id = '" . $id . "' ");
+            $getDataBlog                = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+            $data['product_selected']   = $this->model->Code("SELECT * FROM v_blog_prod_selected WHERE m_blog_id = '".$getDataBlog['id_blog']."' ");
         }
+        $data['dataMaster']  = $this->model->View('v_m_product', 'id');
 
         $data['action'] = $action;
 
@@ -105,7 +108,9 @@ class Blog extends CI_Controller
 
     function previewBlog($id = "")
     {
-        $data['vBlog'] = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+        $data['vBlog']          = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+        $data['dataMaster']     = $this->model->View('v_m_product', 'id');
+
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('detailBlog', $data);
         $this->load->view('Container/footerLayoutBlog');

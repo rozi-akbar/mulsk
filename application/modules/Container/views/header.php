@@ -34,6 +34,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
     <link href="<?= base_url() ?>web/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url() ?>web/plugins/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url() ?>web/plugins/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
 
     <!-- datatable -->
     <link href="<?= base_url() ?>web/plugins/custom/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />

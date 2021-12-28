@@ -34,12 +34,48 @@ class Blog_Act extends CI_Controller
         $this->model->Update('blog', 'id_blog', $id, $data);
         $this->I_upload_banner_blog($banner, $id);
         $this->I_upload_thumbnail_blog($thumbnail, $id);
+        $this->I_product_include($id);
         $this->db->trans_complete();
 
         if ($this->db->trans_status() === FALSE) {
             $this->db->trans_rollback();
         } else {
             redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+        }
+    }
+
+    function I_product_include($id_blog)
+    {
+        $this->db->trans_start();
+
+        if (empty($this->input->post('pi'))) {
+        } else {
+            $getDataBefore = $this->db->query("SELECT * FROM blog_product_selected WHERE m_blog_id = '" . $id_blog . "' ");
+            if ($getDataBefore->num_rows() > 0) {
+                $this->model->Delete('blog_product_selected', 'm_blog_id', $id_blog);
+
+                for ($count = 0; $count < count($this->input->post('pi')); $count++) {
+                    $data = array(
+                        'm_product_id'  => $this->input->post('pi')[$count],
+                        'm_blog_id'     => $id_blog
+                    );
+                    $this->model->Insert('blog_product_selected', $data);
+                }
+            } else {
+                for ($count = 0; $count < count($this->input->post('pi')); $count++) {
+                    $data = array(
+                        'm_product_id'  => $this->input->post('pi')[$count],
+                        'm_blog_id'     => $id_blog
+                    );
+                    $this->model->Insert('blog_product_selected', $data);
+                }
+            }
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+        } else {
         }
     }
 
@@ -54,12 +90,14 @@ class Blog_Act extends CI_Controller
             'update_at'   => $UTC->DateTimeStamp(),
             'update_by' => $this->session->userdata('username_mulsk')
         );
+
         $banner = $_FILES['banner']['name'];
         $thumbnail = $_FILES['thumbnail']['name'];
         $this->db->trans_start();
         $this->model->Update('blog', 'id_blog', $id, $data);
         $this->U_upload_banner_blog($banner, $id, $this->input->post('old_url_banner', TRUE));
         $this->U_upload_thumbnail_blog($thumbnail, $id, $this->input->post('old_url_thumbnail', TRUE));
+        $this->I_product_include($id);
         $this->db->trans_complete();
 
         if ($this->db->trans_status() === FALSE) {

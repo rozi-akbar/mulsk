@@ -5,8 +5,8 @@ if ($action == "edit") {
         $id         = $vaBlog['id_blog'];
         $title      = $vaBlog['title'];
         $contents   = $vaBlog['content'];
-        $banner      = $vaBlog['banner_blog'];
-        $thumbnail      = $vaBlog['thumbnail_blog'];
+        $banner     = $vaBlog['banner_blog'];
+        $thumbnail  = $vaBlog['thumbnail_blog'];
     }
     $valueAction = "Save Change";
     $fAction = 'UpdateBlog/' . $id;
@@ -109,12 +109,38 @@ if ($action == "edit") {
                                 <div class="col-12 col-md-3">
                                     <div id="preview_thumbnail"> </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="col-12 col-md-4">
                                     <div class="form-group">
                                         <label>Title</label>
                                         <input type="text" name="title" class="form-control" placeholder="Title" value="<?= $title ?>" required>
                                         <input type="hidden" name="blog_id" id="blog_id" value="<?= $blog_id ?>">
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Product Include</label>
+                                        <select class="form-control kt-select2" id="kt_select2_3" name="pi[]" multiple="multiple">
+                                            <?php
+                                            foreach ($dataMaster as $vaMasterP) {
+                                            ?>
+                                                <option value="<?= $vaMasterP['id'] ?>">
+                                                    <?= $vaMasterP['nama_product'] ?>
+                                                </option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                        <label> <b class="text-warning">
+                                            <?php
+                                            foreach ($product_selected as $rowP) {
+                                                echo $rowP['nama_product']."; ";
+                                            }
+                                            ?>
+                                            </b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <div class="form-group">
                                         <textarea name="contents" class="summernote" id="summernote" required> <?= $contents ?> </textarea>
                                     </div>
