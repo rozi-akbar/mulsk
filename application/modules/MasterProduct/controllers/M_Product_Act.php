@@ -107,9 +107,76 @@ class M_Product_Act extends CI_Controller
         }
     }
 
-    function ProductData()
+    function U_ThumbnailProduct($id = "", $oldUrl_Thumbnail = "")
+    {
+        $this->db->trans_start();
+
+        $t_rename = date('YmdHis') . "_" . str_replace(' ', '', $this->input->post('productName'));
+        $image_thumbnail = $_FILES['imageThumbnail']['name'];
+        $x_image = explode('.', $image_thumbnail);
+        $ekstensi = strtolower(end($x_image));
+        $size    = $_FILES['imageThumbnail']['size'];
+
+        $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+        $file_temp = $_FILES['imageThumbnail']['tmp_name']; //data temp yang di upload
+        $to_folder    = "assets/images/product/$rename"; //folder tujuan                
+
+        if ($size < 1000000 && !empty($ekstensi)) {
+            $data = array(
+                'image'         => $to_folder
+            );
+            $this->model->Update('m_product', 'product_id', $id, $data);
+            move_uploaded_file($file_temp, "$to_folder");
+        } else {
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            unlink($to_folder);
+        } else {
+            unlink($oldUrl_Thumbnail);
+        }
+    }
+
+    function U_BenefitsImage($id = "", $oldUrl_BenefitsImage = "")
+    {
+        $this->db->trans_start();
+
+        $t_rename = date('YmdHis') . "_Benefits_" . str_replace(' ', '', $this->input->post('productName'));
+        $image_benefits = $_FILES['imageBenefits']['name'];
+        $x_image = explode('.', $image_benefits);
+        $ekstensi = strtolower(end($x_image));
+        $size    = $_FILES['imageBenefits']['size'];
+
+        $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+        $file_temp = $_FILES['imageBenefits']['tmp_name']; //data temp yang di upload
+        $to_folder    = "assets/images/product/$rename"; //folder tujuan                
+
+        if ($size < 1000000 && !empty($ekstensi)) {
+            $data = array(
+                'benefits_image'         => $to_folder
+            );
+            $this->model->Update('m_product', 'product_id', $id, $data);
+            move_uploaded_file($file_temp, "$to_folder");
+        } else {
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            unlink($to_folder);
+        } else {
+            unlink($oldUrl_BenefitsImage);
+        }
+    }
+
+    function ProductDataInsert()
     {
         $UTC = new UTC;
+        $this->input->post('price');
+        $this->input->post('namaProduct');
+        $uuid = date('YmdHis');
 
         if (empty($this->input->post('publish'))) {
             $status_publish = 0;
@@ -119,15 +186,136 @@ class M_Product_Act extends CI_Controller
 
         $this->db->trans_start();
 
-        $tb_m_product = array(
-            'deskripsi'     => $this->input->post('deskripsi'),
-            'benefits'      => $this->input->post('benefits'),
-            'update_at'     => $UTC->DateTimeStamp(),
-            'update_by'     => $this->session->userdata('username_mulsk'),
-            'publish'       => $status_publish,
-            'published_at'  => $UTC->DateTimeStamp(),
-            'published_by'  => $this->session->userdata('username_mulsk')
-        );
+        //===================================IMAGE THUMBNAIL===================================================
+        $t_rename = date('YmdHis') . "_Thumbnail_" . str_replace(' ', '', $this->input->post('namaProduct'));
+        $image_gallery = $_FILES['image']['name'];
+        $x_image = explode('.', $image_gallery);
+        $ekstensi = strtolower(end($x_image));
+        $size    = $_FILES['image']['size'];
+
+        $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+        $file_temp = $_FILES['image']['tmp_name']; //data temp yang di upload
+        $to_folder    = "assets/images/product/$rename"; //folder tujuan 
+        //===================================END IMAGE THUMBNAIL===================================================
+
+        //===================================IMAGE BENEFITS===================================================
+        $t_rename_benefits = date('YmdHis') . "_Benefits_" . str_replace(' ', '', $this->input->post('namaProduct'));
+        $image_gallery_benefits = $_FILES['imageBenefits']['name'];
+        $x_image_benefits = explode('.', $image_gallery_benefits);
+        $ekstensi_benefits = strtolower(end($x_image_benefits));
+        $size_benefits    = $_FILES['imageBenefits']['size'];
+
+        $rename_benefits = $t_rename_benefits . "." . $ekstensi_benefits; //ganti nama file sesuai ekstensi
+        $file_temp_benefits = $_FILES['imageBenefits']['tmp_name']; //data temp yang di upload
+        $to_folder_benefits    = "assets/images/product/$rename_benefits"; //folder tujuan
+        //===================================END IMAGE BENEFITS===================================================
+
+        if ($size < 1000000 && $size_benefits < 1000000) {
+            if ($status_publish == 1) {
+                $data = array(
+                    'product_id'        => $uuid,
+                    'nama_product'      => $this->input->post('namaProduct'),
+                    'price'             => $this->input->post('price'),
+                    'image'             => $to_folder,
+                    'benefits_image'    => $to_folder_benefits,
+                    'deskripsi'         => $this->input->post('deskripsi'),
+                    'benefits'          => $this->input->post('benefits'),
+                    'publish'           => $status_publish,
+                    'published_at'      => $UTC->DateTimeStamp(),
+                    'published_by'      => $this->session->userdata('username_mulsk'),
+                    'created_at'        => $UTC->DateTimeStamp(),
+                    'created_by'        => $this->session->userdata('username_mulsk')
+                );
+                $this->model->Insert('m_product', $data);
+                move_uploaded_file($file_temp, "$to_folder");
+                move_uploaded_file($file_temp_benefits, "$to_folder_benefits");
+            } else {
+                $data = array(
+                    'product_id'        => $uuid,
+                    'nama_product'      => $this->input->post('namaProduct'),
+                    'price'             => $this->input->post('price'),
+                    'image'             => $to_folder,
+                    'benefits_image'    => $to_folder_benefits,
+                    'deskripsi'         => $this->input->post('deskripsi'),
+                    'benefits'          => $this->input->post('benefits'),
+                    'publish'           => $status_publish,
+                    'created_at'        => $UTC->DateTimeStamp(),
+                    'created_by'        => $this->session->userdata('username_mulsk')
+                );
+                $this->model->Insert('m_product', $data);
+                move_uploaded_file($file_temp, "$to_folder");
+                move_uploaded_file($file_temp_benefits, "$to_folder_benefits");
+            }
+
+            $t_gallery = $_FILES['p_gallery']['name'];
+            $this->I_Gallery($t_gallery, $uuid, $this->input->post('namaProduct'));
+
+            $t_productIcon = $_FILES['p_icon']['name'];
+            $t_productIconDesc = $this->input->post('pi_desc');
+            $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $uuid, $this->input->post('namaProduct'));
+
+            $this->db->trans_complete();
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+                unlink($to_folder);
+                unlink($to_folder_benefits);
+                redirect(site_url('MasterProduct/M_Product/T_ProductData'));
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_ProductData'));
+            }
+        } else {
+        }
+    }
+
+    function ProductData()
+    {
+        $UTC = new UTC;
+        $oldUrl_Thumbnail = $this->input->post('oldUrl_thumbnail');
+        $oldUrl_BenefitsImage = $this->input->post('oldUrl_benefits');
+
+        if (empty($this->input->post('publish'))) {
+            $status_publish = 0;
+        } else {
+            $status_publish = 1;
+        }
+
+        $this->db->trans_start();
+
+        if ($status_publish == 1) {
+            $tb_m_product = array(
+                'nama_product'  => $this->input->post('productName'),
+                'price'         => $this->input->post('price'),
+                'deskripsi'     => $this->input->post('deskripsi'),
+                'benefits'      => $this->input->post('benefits'),
+                'update_at'     => $UTC->DateTimeStamp(),
+                'update_by'     => $this->session->userdata('username_mulsk'),
+                'publish'       => $status_publish,
+                'published_at'  => $UTC->DateTimeStamp(),
+                'published_by'  => $this->session->userdata('username_mulsk')
+            );
+        } else {
+            $tb_m_product = array(
+                'nama_product'  => $this->input->post('productName'),
+                'price'         => $this->input->post('price'),
+                'deskripsi'     => $this->input->post('deskripsi'),
+                'benefits'      => $this->input->post('benefits'),
+                'update_at'     => $UTC->DateTimeStamp(),
+                'update_by'     => $this->session->userdata('username_mulsk'),
+                'publish'       => $status_publish,
+                'hidden_at'     => $UTC->DateTimeStamp(),
+                'hidden_by'     => $this->session->userdata('username_mulsk')
+            );
+        }
+
+        if (empty($_FILES['imageThumbnail']['name'])) {
+        } else {
+            $this->U_ThumbnailProduct($this->input->post('productId'), $oldUrl_Thumbnail);
+        }
+
+        if (empty($_FILES['imageBenefits']['name'])) {
+        } else {
+            $this->U_BenefitsImage($this->input->post('productId'), $oldUrl_BenefitsImage);
+        }
 
         $this->model->Update('m_product', 'product_id', $this->input->post('productId'), $tb_m_product);
 
@@ -137,8 +325,6 @@ class M_Product_Act extends CI_Controller
         $t_productIcon = $_FILES['p_icon']['name'];
         $t_productIconDesc = $this->input->post('pi_desc');
         $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $this->input->post('productId'), $this->input->post('productName'));
-
-        $this->I_ColorSelector($this->input->post('colorSelector'), $this->input->post('productId'));
 
         $this->db->trans_complete();
         if ($this->db->trans_status() === FALSE) {
@@ -177,8 +363,7 @@ class M_Product_Act extends CI_Controller
         $photo = $_FILES['p_gallery']['name'];
         $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
         $key = explode('_', $getData['gallery_id']);
-        $this->U_Gallery($photo, $id_gallery, str_replace('%20', ' ', $productName), $key[1], $getData['url_image']);
-
+        $this->U_Gallery($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
         $this->db->trans_complete();
         if ($this->db->trans_status === FALSE) {
             $this->db->trans_rollback();
@@ -291,32 +476,34 @@ class M_Product_Act extends CI_Controller
 
         if (empty($photo)) {
         } else {
-            foreach ($photo as $key_gallery => $value_gallery) {
-                $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery";
-                $image_gallery = $_FILES['p_gallery']['name'][$key_gallery];
+            for ($count = 0; $count < count($_FILES['p_gallery']['name']); $count++) {
+                $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$count";
+                $image_gallery = $_FILES['p_gallery']['name'][$count];
                 $x_image = explode('.', $image_gallery);
                 $ekstensi = strtolower(end($x_image));
-                $size    = $_FILES['p_gallery']['size'][$key_gallery];
+                $size    = $_FILES['p_gallery']['size'][$count];
 
                 $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
-                $file_temp = $_FILES['p_gallery']['tmp_name'][$key_gallery]; //data temp yang di upload
+                $file_temp = $_FILES['p_gallery']['tmp_name'][$count]; //data temp yang di upload
                 $to_folder    = "assets/images/product/$rename"; //folder tujuan                
 
                 $getJml = $this->db->query("SELECT m_product_id FROM product_gallery WHERE m_product_id = '" . $noId . "' ")->num_rows();
 
                 if (!empty($image_gallery)) {
                     if ($getJml < 10) {
-                        $gallery_id = $uuid . "_" . $key_gallery;
+                        $gallery_id = $uuid . "_" . $count;
 
                         if ($size < 1000000 && !empty($ekstensi)) {
                             $data = array(
                                 'm_product_id'  => $noId,
                                 'gallery_id'    => $gallery_id,
                                 'url_image'     => $to_folder,
+                                'color'         => $this->input->post('color_hex')[$count],
+                                'color_name'    => $this->input->post('colorName')[$count],
                                 'created_at'    => $UTC->DateTimeStamp(),
                                 'created_by'    => $this->session->userdata('username_mulsk')
                             );
-                            // print_r($data);
+                            print_r($data);
                             $this->model->Insert('product_gallery', $data);
                             move_uploaded_file($file_temp, "$to_folder");
                         } else {
@@ -348,6 +535,7 @@ class M_Product_Act extends CI_Controller
         $this->db->trans_start();
 
         if (empty($photo)) {
+            echo "nothing";
         } else {
             $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery";
             $image_gallery = $_FILES['p_gallery']['name'];
@@ -363,13 +551,16 @@ class M_Product_Act extends CI_Controller
                 if ($size < 1000000 && !empty($ekstensi)) {
                     $data = array(
                         'url_image'     => $to_folder,
-                        'update_at'    => $UTC->DateTimeStamp(),
-                        'update_by'    => $this->session->userdata('username_mulsk')
+                        'color'         => $this->input->post('color_hex'),
+                        'color_name'    => $this->input->post('colorName'),
+                        'update_at'     => $UTC->DateTimeStamp(),
+                        'update_by'     => $this->session->userdata('username_mulsk')
                     );
                     // print_r($data);
                     $this->model->Update('product_gallery', 'id', $id, $data);
                     move_uploaded_file($file_temp, "$to_folder");
                 } else {
+                    // echo "size gedhe";
                 }
             } else {
             }

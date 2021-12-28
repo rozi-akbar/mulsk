@@ -42,7 +42,7 @@ class M_Product extends CI_Controller
         $data['action'] = $action;
 
         $this->load->view('Container/header', $dataHeader);
-        $this->load->view('MasterProduct/createProduct', $data);
+        $this->load->view('MasterProduct/createProduct_preCreate', $data);
         $this->load->view('Container/footer');
     }
 
@@ -57,7 +57,7 @@ class M_Product extends CI_Controller
         $getData = $this->db->query("SELECT * FROM m_product WHERE id = '" . $id . "' ")->row_array();
         $dataHeader['file'] = "Create Product Data " . $getData['nama_product'];
 
-        $data['dataMaster']             = $this->model->ViewWhere('v_m_product', 'id', $id);
+        $data['dataMaster']             = $this->db->query("SELECT * FROM v_m_product WHERE id = '" . $id . "' ")->row_array();
         $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery', 'm_product_id', $getData['product_id']);
         $data['product_icon']           = $this->model->ViewWhere('v_product_icon', 'm_product_id', $getData['product_id']);
         $data['color_image_selector']   = $this->model->ViewWhere('v_color_image_selector', 'm_product_id', $getData['product_id']);

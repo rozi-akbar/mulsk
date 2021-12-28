@@ -31,16 +31,35 @@
                     <div class="kt-portlet__body">
                         <form action="<?= site_url('MasterProduct/M_Product_Act/EditGallery/' . $id_master . '/' . $data_gallery['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-4">
                                     <div class="form-group">
                                         <label> Gambar Sebelumnya <label>
                                                 <img src="<?= base_url() ?><?= $data_gallery['url_image'] ?>" style="width:100%; height:auto;">
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-8">
                                     <div class="form-group">
                                         <label>Upload Image</label>
-                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <th>Image</th>
+                                                <th>Color Picker</th>
+                                                <th>Color Name</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
+                                                    </td>
+                                                    <td>
+                                                        <input type="color" name="color_hex" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="colorName" class="form-control">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="col-12">
