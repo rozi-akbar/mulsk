@@ -122,11 +122,14 @@ class M_Product_Act extends CI_Controller
         $to_folder    = "assets/images/product/$rename"; //folder tujuan                
 
         if ($size < 1000000 && !empty($ekstensi)) {
-            $data = array(
-                'image'         => $to_folder
-            );
-            $this->model->Update('m_product', 'product_id', $id, $data);
-            move_uploaded_file($file_temp, "$to_folder");
+            if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
+                $data = array(
+                    'image'         => $to_folder
+                );
+                $this->model->Update('m_product', 'product_id', $id, $data);
+                move_uploaded_file($file_temp, "$to_folder");
+            } else {
+            }
         } else {
         }
 
@@ -154,11 +157,14 @@ class M_Product_Act extends CI_Controller
         $to_folder    = "assets/images/product/$rename"; //folder tujuan                
 
         if ($size < 1000000 && !empty($ekstensi)) {
-            $data = array(
-                'benefits_image'         => $to_folder
-            );
-            $this->model->Update('m_product', 'product_id', $id, $data);
-            move_uploaded_file($file_temp, "$to_folder");
+            if ($ekstensi == "png") {
+                $data = array(
+                    'benefits_image'         => $to_folder
+                );
+                $this->model->Update('m_product', 'product_id', $id, $data);
+                move_uploaded_file($file_temp, "$to_folder");
+            } else {
+            }
         } else {
         }
 
@@ -494,18 +500,21 @@ class M_Product_Act extends CI_Controller
                         $gallery_id = $uuid . "_" . $count;
 
                         if ($size < 1000000 && !empty($ekstensi)) {
-                            $data = array(
-                                'm_product_id'  => $noId,
-                                'gallery_id'    => $gallery_id,
-                                'url_image'     => $to_folder,
-                                'color'         => $this->input->post('color_hex')[$count],
-                                'color_name'    => $this->input->post('colorName')[$count],
-                                'created_at'    => $UTC->DateTimeStamp(),
-                                'created_by'    => $this->session->userdata('username_mulsk')
-                            );
-                            print_r($data);
-                            $this->model->Insert('product_gallery', $data);
-                            move_uploaded_file($file_temp, "$to_folder");
+                            if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
+                                $data = array(
+                                    'm_product_id'  => $noId,
+                                    'gallery_id'    => $gallery_id,
+                                    'url_image'     => $to_folder,
+                                    'color'         => $this->input->post('color_hex')[$count],
+                                    'color_name'    => $this->input->post('colorName')[$count],
+                                    'created_at'    => $UTC->DateTimeStamp(),
+                                    'created_by'    => $this->session->userdata('username_mulsk')
+                                );
+                                // print_r($data);
+                                $this->model->Insert('product_gallery', $data);
+                                move_uploaded_file($file_temp, "$to_folder");
+                            } else {
+                            }
                         } else {
                         }
                     } else {
@@ -549,16 +558,19 @@ class M_Product_Act extends CI_Controller
 
             if (!empty($image_gallery)) {
                 if ($size < 1000000 && !empty($ekstensi)) {
-                    $data = array(
-                        'url_image'     => $to_folder,
-                        'color'         => $this->input->post('color_hex'),
-                        'color_name'    => $this->input->post('colorName'),
-                        'update_at'     => $UTC->DateTimeStamp(),
-                        'update_by'     => $this->session->userdata('username_mulsk')
-                    );
-                    // print_r($data);
-                    $this->model->Update('product_gallery', 'id', $id, $data);
-                    move_uploaded_file($file_temp, "$to_folder");
+                    if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
+                        $data = array(
+                            'url_image'     => $to_folder,
+                            'color'         => $this->input->post('color_hex'),
+                            'color_name'    => $this->input->post('colorName'),
+                            'update_at'     => $UTC->DateTimeStamp(),
+                            'update_by'     => $this->session->userdata('username_mulsk')
+                        );
+                        // print_r($data);
+                        $this->model->Update('product_gallery', 'id', $id, $data);
+                        move_uploaded_file($file_temp, "$to_folder");
+                    } else {
+                    }
                 } else {
                     // echo "size gedhe";
                 }
@@ -607,16 +619,19 @@ class M_Product_Act extends CI_Controller
                         $icon_id = $uuid . "_" . $count;
 
                         if ($size < 1000000 && !empty($ekstensi)) {
-                            $data = array(
-                                'm_product_id'              => $noId,
-                                'product_icon_id'           => $icon_id,
-                                'url_product_icon'          => $to_folder,
-                                'description_product_icon'  => $this->input->post('pi_desc')[$count],
-                                'created_at'                => $UTC->DateTimeStamp(),
-                                'created_by'                => $this->session->userdata('username_mulsk')
-                            );
-                            $this->model->Insert('product_icon', $data);
-                            move_uploaded_file($file_temp, "$to_folder");
+                            if ($ekstensi == "png" || $ekstensi == "svg") {
+                                $data = array(
+                                    'm_product_id'              => $noId,
+                                    'product_icon_id'           => $icon_id,
+                                    'url_product_icon'          => $to_folder,
+                                    'description_product_icon'  => $this->input->post('pi_desc')[$count],
+                                    'created_at'                => $UTC->DateTimeStamp(),
+                                    'created_by'                => $this->session->userdata('username_mulsk')
+                                );
+                                $this->model->Insert('product_icon', $data);
+                                move_uploaded_file($file_temp, "$to_folder");
+                            } else {
+                            }
                         } else {
                         }
                     } else {
@@ -678,15 +693,18 @@ class M_Product_Act extends CI_Controller
 
             if (!empty($image_icon)) {
                 if ($size < 1000000 && !empty($ekstensi)) {
-                    $data = array(
-                        'url_product_icon'          => $to_folder,
-                        'description_product_icon'  => $desc,
-                        'update_at'                 => $UTC->DateTimeStamp(),
-                        'update_by'                 => $this->session->userdata('username_mulsk')
-                    );
-                    // print_r($data);
-                    $this->model->Update('product_icon', 'id', $id, $data);
-                    move_uploaded_file($file_temp, "$to_folder");
+                    if ($ekstensi == "png" || $ekstensi == "svg") {
+                        $data = array(
+                            'url_product_icon'          => $to_folder,
+                            'description_product_icon'  => $desc,
+                            'update_at'                 => $UTC->DateTimeStamp(),
+                            'update_by'                 => $this->session->userdata('username_mulsk')
+                        );
+                        // print_r($data);
+                        $this->model->Update('product_icon', 'id', $id, $data);
+                        move_uploaded_file($file_temp, "$to_folder");
+                    } else {
+                    }
                 } else {
                 }
             } else {

@@ -200,7 +200,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/jpeg" multiple="" required/> </td>
+                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" required/> </td>
                                                                     <td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td>
                                                                     <td> <input type="button" class="btn btn-warning btn-sm" id="add_pi" name="add_pi" value="Add" /> </td>
                                                                 </tr>
