@@ -221,6 +221,29 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                     </ul>
                                 </div>
                             </li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">User Management</h4>
+                                <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item <?= $this->uri->segment(2) == 'M_User' ? 'kt-menu__item--open kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+                                    <i class="kt-menu__link-icon fa fa-file-invoice"></i>
+                                    <span class="kt-menu__link-text">User</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'CreateUser' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('User/M_User/CreateUser') ?>" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
+                                                    <span></span>
+                                                </i>
+                                                <span class="kt-menu__link-text">Create User</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
