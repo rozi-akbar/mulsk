@@ -76,7 +76,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
     <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
         <div class="kt-header-mobile__logo">
             <a href="#">
-                <img alt="Logo" src="<?= base_url() ?>web/media/logos/logo-light.png" />
+                <img alt="Logo" src="<?= base_url() ?>assets/images/svg/favicon_mulsk-white.svg" />
             </a>
         </div>
         <div class="kt-header-mobile__toolbar">

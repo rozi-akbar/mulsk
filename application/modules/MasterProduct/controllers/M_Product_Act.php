@@ -232,9 +232,6 @@ class M_Product_Act extends CI_Controller
                     'created_at'        => $UTC->DateTimeStamp(),
                     'created_by'        => $this->session->userdata('username_mulsk')
                 );
-                $this->model->Insert('m_product', $data);
-                move_uploaded_file($file_temp, "$to_folder");
-                move_uploaded_file($file_temp_benefits, "$to_folder_benefits");
             } else {
                 $data = array(
                     'product_id'        => $uuid,
@@ -248,17 +245,23 @@ class M_Product_Act extends CI_Controller
                     'created_at'        => $UTC->DateTimeStamp(),
                     'created_by'        => $this->session->userdata('username_mulsk')
                 );
+            }
+
+            $getId = $this->db->query("SELECT * FROM m_product WHERE product_id = '" . $uuid . "' ");
+
+            if ($getId->num_rows() > 0) {
+            } else {
                 $this->model->Insert('m_product', $data);
                 move_uploaded_file($file_temp, "$to_folder");
                 move_uploaded_file($file_temp_benefits, "$to_folder_benefits");
+
+                $t_gallery = $_FILES['p_gallery']['name'];
+                $this->I_Gallery($t_gallery, $uuid, $this->input->post('namaProduct'));
+
+                $t_productIcon = $_FILES['p_icon']['name'];
+                $t_productIconDesc = $this->input->post('pi_desc');
+                $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $uuid, $this->input->post('namaProduct'));
             }
-
-            $t_gallery = $_FILES['p_gallery']['name'];
-            $this->I_Gallery($t_gallery, $uuid, $this->input->post('namaProduct'));
-
-            $t_productIcon = $_FILES['p_icon']['name'];
-            $t_productIconDesc = $this->input->post('pi_desc');
-            $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $uuid, $this->input->post('namaProduct'));
 
             $this->db->trans_complete();
             if ($this->db->trans_status() === FALSE) {

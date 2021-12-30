@@ -23,18 +23,36 @@ class Blog_Act extends CI_Controller
     {
         $title = $this->input->post('title', TRUE);
         $contents = $this->input->post('contents', TRUE);
+        $UTC = new UTC;
+        // $data = array(
+        //     'title'     => $title,
+        //     'content'   => $contents
+        // );
+
         $data = array(
+            'id_blog'   => $id,
             'title'     => $title,
-            'content'   => $contents
+            'content'   => $contents,
+            'create_at' => $UTC->DateTimeStamp(),
+            'create_by' => $this->session->userdata('username_mulsk'),
+            'draft'     => 1
         );
 
         $banner = $_FILES['banner']['name'];
         $thumbnail = $_FILES['thumbnail']['name'];
         $this->db->trans_start();
-        $this->model->Update('blog', 'id_blog', $id, $data);
-        $this->I_upload_banner_blog($banner, $id);
-        $this->I_upload_thumbnail_blog($thumbnail, $id);
-        $this->I_product_include($id);
+
+        // $this->model->Update('blog', 'id_blog', $id, $data);
+        $getId = $this->db->query("SELECT * FROM blog WHERE id_blog = '" . $id . "' ");
+        if ($getId->num_rows() > 0) {
+        } else {
+            $this->model->Insert('blog', $data);
+
+            $this->I_upload_banner_blog($banner, $id);
+            $this->I_upload_thumbnail_blog($thumbnail, $id);
+            $this->I_product_include($id);
+        }
+
         $this->db->trans_complete();
 
         if ($this->db->trans_status() === FALSE) {

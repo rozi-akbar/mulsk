@@ -17,7 +17,7 @@
     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid">
 
         <div class="kt-wizard-v4" id="kt_wizard_v4" data-ktwizard-state="step-first">
-            <form action="<?= site_url('MasterProduct/M_Product_Act/ProductDataInsert'); ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= site_url('MasterProduct/M_Product_Act/ProductDataInsert'); ?>" method="post" enctype="multipart/form-data" onsubmit="return save()">
                 <!--begin: Form Wizard Nav -->
                 <div class="kt-wizard-v4__nav">
                     <div class="kt-wizard-v4__nav-items">
@@ -104,7 +104,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Name</label>
-                                                                <input type="text" name="namaProduct" class="form-control" placeholder="Product Name" required>
+                                                                <input type="text" id="namaProduct" name="namaProduct" class="form-control" placeholder="Product Name" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
@@ -116,7 +116,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Image Thumbnail</label>
-                                                                <input type="file" name="image" id="image" class="form-control" accept="image/x-png,image/jpeg" required>
+                                                                <input type="file" name="image" id="image" class="form-control" accept="image/x-png,image/jpeg">
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
@@ -163,7 +163,7 @@
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/>
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required />
                                                                             </td>
                                                                             <td>
                                                                                 <input type="color" name="color_hex[]" class="form-control">
@@ -200,7 +200,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" required/> </td>
+                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" required /> </td>
                                                                     <td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td>
                                                                     <td> <input type="button" class="btn btn-warning btn-sm" id="add_pi" name="add_pi" value="Add" /> </td>
                                                                 </tr>
@@ -259,9 +259,28 @@
 
 <script type="text/javascript">
     function save() {
-        document.getElementById("simpan").style.display = "none";
-        document.getElementById("sending").innerHTML =
-            '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
+        var namaProduk = document.getElementById('namaProduct').value;
+        var price = document.getElementById('price').value;
+        var image = document.getElementById('p_gallery').value.replace(/.*(\/|\\)/, '');
+        var p_icon = document.getElementById('p_icon').value.replace(/.*(\/|\\)/, '');
+        if (namaProduk == "") {
+            alert("Nama Produk Belum Di Isi!");
+            return false;
+        } else if (price == "") {
+            alert("Price Produk Belum Di Isi!");
+            return false;
+        } else if (image == "") {
+            alert("Image Gallery Produk Belum Di Isi!");
+            return false;
+        } else if (p_icon == "") {
+            alert("Icon Produk Belum Di Isi!");
+            return false;
+        } else {
+            document.getElementById("simpan").style.display = "none";
+            document.getElementById("sending").innerHTML =
+                '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
+            return true;
+        }
     }
 
     $(document).ready(function() {

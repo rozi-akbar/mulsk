@@ -43,8 +43,8 @@ class Blog extends CI_Controller
             'create_by' => $this->session->userdata('username_mulsk'),
             'draft'     => 1
         );
-        $data['blog_id'] = $blog_id;
-        $this->model->Insert('blog', $draftBlog);
+        // $data['blog_id'] = $blog_id;
+        // $this->model->Insert('blog', $draftBlog);
 
         redirect(site_url('BlogAdmin/Blog/NewBlog/C/' . $blog_id));
     }
