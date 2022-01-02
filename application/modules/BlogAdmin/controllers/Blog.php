@@ -57,7 +57,7 @@ class Blog extends CI_Controller
         if ($action == 'edit') {
             $data['data_blog']          = $this->model->Code("SELECT * FROM blog WHERE id = '" . $id . "' ");
             $getDataBlog                = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
-            $data['product_selected']   = $this->model->Code("SELECT * FROM v_blog_prod_selected WHERE m_blog_id = '".$getDataBlog['id_blog']."' ");
+            $data['product_selected']   = $this->model->Code("SELECT * FROM v_blog_prod_selected WHERE m_blog_id = '" . $getDataBlog['id_blog'] . "' ");
         }
         $data['dataMaster']  = $this->model->View('v_m_product', 'id');
 
@@ -109,7 +109,9 @@ class Blog extends CI_Controller
     function previewBlog($id = "")
     {
         $data['vBlog']          = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
-        $data['dataMaster']     = $this->model->View('v_m_product', 'id');
+        $getId                  = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+        $data['dataMaster']     = $this->model->ViewWhere('v_blog_prod_selected', 'm_blog_id', $getId['id_blog']);
+        $data['vColor']         = $this->model->View('v_color_image_selector', 'id');
 
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('detailBlog', $data);
