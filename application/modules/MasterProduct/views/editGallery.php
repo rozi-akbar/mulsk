@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div id="sending"> </div>
-                                    <button type="submit" id="update" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
+                                    <button type="submit" id="update" onclick="saveChanges()" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
                                     <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteGallery/<?= $id_master ?>/<?= $data_gallery['id'] ?>">
                                         <button title="Delete" class="btn btn-danger btn-icon">
                                             <i class="fa fa-trash"></i>
@@ -83,7 +83,7 @@
 <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    function saveChange() {
+    function saveChanges() {
         document.getElementById("update").style.display = "none";
         document.getElementById("sending").innerHTML =
             '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
