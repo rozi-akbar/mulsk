@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="col-12">
                                     <span id="sending"></span>
-                                    <button type="submit" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
+                                    <button type="submit" id="update" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
                                     <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteProductIcon/<?= $id_master ?>/<?= $data_product_icon['id'] ?>">
                                         <button title="Delete" class="btn btn-danger btn-icon">
                                             <i class="fa fa-trash"></i>
