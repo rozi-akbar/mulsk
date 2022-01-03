@@ -659,12 +659,23 @@ class M_Product_Act extends CI_Controller
     function EditProductIcon($id_master = "", $id_icon = "", $productName = "")
     {
         $this->db->trans_start();
-
+        $UTC = new UTC;
         $icon = $_FILES['p_icon']['name'];
         $desc = $this->input->post('pi_desc');
-        $getData = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
-        $key = explode('_', $getData['product_icon_id']);
-        $this->U_ProductIcon($icon, $id_icon, str_replace('%20', ' ', $productName), $key[1], $getData['url_product_icon'], $desc);
+
+        if (empty($_FILES['p_icon']['name']) || $_FILES['p_icon']['name'] == "") {
+            $data = array(
+                'description_product_icon'  => $desc,
+                'update_at'                 => $UTC->DateTimeStamp(),
+                'update_by'                 => $this->session->userdata('username_mulsk')
+            );
+            $this->model->Update('product_icon', 'id', $id_icon, $data);
+        } else {
+            $getData = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
+            $key = explode('_', $getData['product_icon_id']);
+            $this->U_ProductIcon($icon, $id_icon, str_replace('%20', ' ', $productName), $key[1], $getData['url_product_icon'], $desc);
+        }
+
 
         $this->db->trans_complete();
         if ($this->db->trans_status === FALSE) {
