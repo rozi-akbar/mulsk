@@ -508,7 +508,7 @@ class M_Product_Act extends CI_Controller
                 $file_temp = $_FILES['p_gallery']['tmp_name'][$count]; //data temp yang di upload
                 $to_folder    = "assets/images/product/$rename"; //folder tujuan                
 
-                $getJml = $this->db->query("SELECT m_product_id FROM product_gallery WHERE m_product_id = '" . $noId . "' ")->num_rows();
+                $getJml = $this->db->query("SELECT m_product_id FROM product_gallery WHERE m_product_id = '" . $noId . "' AND is_delete = 0")->num_rows();
 
                 if (!empty($image_gallery)) {
                     if ($getJml < 10) {
@@ -627,7 +627,7 @@ class M_Product_Act extends CI_Controller
                 $file_temp = $_FILES['p_icon']['tmp_name'][$count]; //data temp yang di upload
                 $to_folder    = "assets/images/product-icon/$rename"; //folder tujuan                
 
-                $getJml = $this->db->query("SELECT m_product_id FROM product_icon WHERE m_product_id = '" . $noId . "' ")->num_rows();
+                $getJml = $this->db->query("SELECT m_product_id FROM product_icon WHERE m_product_id = '" . $noId . "' AND is_delete = 0")->num_rows();
 
                 if (!empty($image_icon)) {
                     if ($getJml < 10) {
