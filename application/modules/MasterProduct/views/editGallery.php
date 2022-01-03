@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" id="update" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
-                                    <div id="sending"> </div>
+                                    <span id="sending"> </span>
                                     <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteGallery/<?= $id_master ?>/<?= $data_gallery['id'] ?>">
                                         <button title="Delete" class="btn btn-danger btn-icon">
                                             <i class="fa fa-trash"></i>
