@@ -96,27 +96,6 @@ class M_Product extends CI_Controller
         $this->load->view('Container/footer');
     }
 
-    public function EditColorSelector($id_master = "", $id = "", $nama_product = "")
-    {
-        $dataHeader['file']             = "Edit Color Selector " . str_replace('%20', ' ', $nama_product);
-        $data['productName']            = str_replace('%20', ' ', $nama_product);
-        $data['id_master']              = $id_master;
-
-        $getIdGallery = $this->db->query("SELECT * FROM v_color_selector WHERE id = '" . $id . "' ")->row_array();
-
-        $data['data_gallery']           = $this->db->query("SELECT * FROM v_product_gallery WHERE m_product_id ='" . $getIdGallery['m_product_id'] . "' ")->result_array();
-        $data['data_color_selector']    = $this->db->query("SELECT * FROM v_color_selector WHERE id = '" . $id . "' ")->row_array();
-
-        $this->load->view('Container/header', $dataHeader);
-        $this->load->view('MasterProduct/editColorSelector', $data);
-        $this->load->view('Container/footer');
-    }
-
-    public function T_EditColorSelector($id = "")
-    {
-        redirect(site_url('MasterProduct/M_Product/CreateProductData/' . $id));
-    }
-
     public function ListProduct($action = "", $id)
     {
         $this->load->view('Container/header');
