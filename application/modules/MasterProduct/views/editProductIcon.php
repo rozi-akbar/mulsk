@@ -43,7 +43,7 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label>Upload Icon</label>
-                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon" accept="image/x-png,image/jpeg" multiple="" />
+                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon" accept="image/x-png,image/svg+xml" multiple="" />
                                         <label>Deskripsi</label>
                                         <textarea class="form-control" id="pi_desc" name="pi_desc"> <?= $data_product_icon['description_product_icon'] ?> </textarea>
                                     </div>
