@@ -131,18 +131,18 @@
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-text,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__link-text {
-  color: #ffffff;
+  color: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-icon,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__link-icon {
-  color: #ffff;
+  color: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-icon svg g [fill],
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__link-icon svg g [fill] {
   transition: fill 0.3s ease;
-  fill: #ffff;
+  fill: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-icon svg:hover g [fill],
@@ -152,17 +152,17 @@
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-bullet.kt-menu__link-bullet--dot>span,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__link-bullet.kt-menu__link-bullet--dot>span {
-  background-color: #5d78ff;
+  background-color: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__link-bullet.kt-menu__link-bullet--line>span,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__link-bullet.kt-menu__link-bullet--line>span {
-  background-color: #5d78ff;
+  background-color: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__heading .kt-menu__ver-arrow,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--open>.kt-menu__link .kt-menu__ver-arrow {
-  color: #ffffff;
+  color: #000000;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item.kt-menu__item--here {
@@ -443,7 +443,7 @@
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item.kt-menu__item--active>.kt-menu__heading,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item.kt-menu__item--active>.kt-menu__link {
-  background-color: #EFF3F8;
+  background-color: #F7F9FC;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item.kt-menu__item--active>.kt-menu__heading .kt-menu__link-text,
@@ -488,7 +488,7 @@
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item:not(.kt-menu__item--parent):not(.kt-menu__item--open):not(.kt-menu__item--here):not(.kt-menu__item--active):hover>.kt-menu__heading,
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item:not(.kt-menu__item--parent):not(.kt-menu__item--open):not(.kt-menu__item--here):not(.kt-menu__item--active):hover>.kt-menu__link {
-  background-color: #EFF3F8;
+  background-color: #F7F9FC;
 }
 
 .kt-aside-menu .kt-menu__nav>.kt-menu__item .kt-menu__submenu .kt-menu__item:not(.kt-menu__item--parent):not(.kt-menu__item--open):not(.kt-menu__item--here):not(.kt-menu__item--active):hover>.kt-menu__heading .kt-menu__link-text,
