@@ -670,32 +670,34 @@ class M_Product_Act extends CI_Controller
 
     function EditProductIcon($id_master = "", $id_icon = "", $productName = "")
     {
-        $this->db->trans_start();
+        // $this->db->trans_start();
         $UTC = new UTC;
         $icon = $_FILES['p_icon']['name'];
         $desc = $this->input->post('pi_desc');
 
         if (empty($_FILES['p_icon']['name']) || $_FILES['p_icon']['name'] == "") {
-            $data = array(
-                'description_product_icon'  => $desc,
-                'update_at'                 => $UTC->DateTimeStamp(),
-                'update_by'                 => $this->session->userdata('username_mulsk')
-            );
-            $this->model->Update('product_icon', 'id', $id_icon, $data);
+            // $data = array(
+            //     'description_product_icon'  => $desc,
+            //     'update_at'                 => $UTC->DateTimeStamp(),
+            //     'update_by'                 => $this->session->userdata('username_mulsk')
+            // );
+            // $this->model->Update('product_icon', 'id', $id_icon, $data);
+            echo "no poto";
         } else {
-            $getData = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
-            $key = explode('_', $getData['product_icon_id']);
-            $this->U_ProductIcon($icon, $id_icon, str_replace('%20', ' ', $productName), $key[1], $getData['url_product_icon'], $desc);
+            // $getData = $this->db->query("SELECT * FROM product_icon WHERE id = '" . $id_icon . "' ")->row_array();
+            // $key = explode('_', $getData['product_icon_id']);
+            // $this->U_ProductIcon($icon, $id_icon, str_replace('%20', ' ', $productName), $key[1], $getData['url_product_icon'], $desc);
+            echo "ada poto";
         }
 
 
-        $this->db->trans_complete();
-        if ($this->db->trans_status === FALSE) {
-            $this->db->trans_rollback();
-            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
-        } else {
-            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
-        }
+        // $this->db->trans_complete();
+        // if ($this->db->trans_status === FALSE) {
+        //     $this->db->trans_rollback();
+        //     redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        // } else {
+        //     redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        // }
     }
 
     function U_ProductIcon($icon, $id, $productName, $key_icon, $oldUrl, $desc)
