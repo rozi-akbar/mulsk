@@ -52,10 +52,10 @@
                                                         <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
                                                     </td>
                                                     <td>
-                                                        <input type="color" name="color_hex" class="form-control">
+                                                        <input type="color" name="color_hex" class="form-control" value="<?= $data_gallery['color'] ?>">
                                                     </td>
                                                     <td>
-                                                        <input type="text" name="colorName" class="form-control">
+                                                        <input type="text" name="colorName" class="form-control" value="<?= $data_gallery['color_name'] ?>">
                                                     </td>
                                                 </tr>
                                             </tbody>
