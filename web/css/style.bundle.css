@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #EFF3F8; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -30249,7 +30249,7 @@ body {
     right: 0;
     transition: all 0.3s ease;
     z-index: 94;
-    background-color: #BF8756;
+    background-color: #FFFFFF;
     box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.08);
     margin: 0; }
   .kt-header--fixed.kt-header--minimize.kt-subheader--fixed .kt-subheader {
