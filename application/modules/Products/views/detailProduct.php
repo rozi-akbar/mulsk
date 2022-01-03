@@ -107,7 +107,14 @@ foreach ($dataMaster as $vaData) {
                                         <div id="callBackVariant_ppr">
                                             <div class="variations mb__40 style__circle size_medium style_color des_color_1">
                                                 <div class="swatch is-color kalles_swatch_js">
-                                                    <h4 class="swatch__title">Color:
+                                                    <h4 class="swatch__title">
+                                                        <?php
+                                                        if (empty($color_image_selector)) {
+                                                            echo "1 VARIANT ONLY";
+                                                        } else {
+                                                            echo "Color";
+                                                        }
+                                                        ?>
                                                         <span class="nt_name_current user_choose_js">
                                                             <?= $color_image_selector[0]['color_name']; ?>
                                                         </span>
