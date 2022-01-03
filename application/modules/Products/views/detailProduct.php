@@ -112,7 +112,7 @@ foreach ($dataMaster as $vaData) {
                                                         if (empty($color_image_selector)) {
                                                             echo "1 VARIANT ONLY";
                                                         } else {
-                                                            echo "Color";
+                                                            echo "Color : ";
                                                         }
                                                         ?>
                                                         <span class="nt_name_current user_choose_js">
