@@ -367,12 +367,24 @@ class M_Product_Act extends CI_Controller
 
     function EditGallery($id_master = "", $id_gallery = "", $productName = "")
     {
+        $UTC = new UTC;
         $this->db->trans_start();
 
-        $photo = $_FILES['p_gallery']['name'];
-        $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
-        $key = explode('_', $getData['gallery_id']);
-        $this->U_Gallery($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
+        if (empty($_FILES['p_gallery']['name']) || $_FILES['p_gallery']['name'] == "") {
+            $data = array(
+                'color'         => $this->input->post('color_hex'),
+                'color_name'    => $this->input->post('colorName'),
+                'update_at'     => $UTC->DateTimeStamp(),
+                'update_by'     => $this->session->userdata('username_mulsk')
+            );
+            $this->model->Update('product_gallery', 'id', $id_gallery, $data);
+        } else {
+            $photo = $_FILES['p_gallery']['name'];
+            $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+            $key = explode('_', $getData['gallery_id']);
+            $this->U_Gallery($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
+        }
+
         $this->db->trans_complete();
         if ($this->db->trans_status === FALSE) {
             $this->db->trans_rollback();
