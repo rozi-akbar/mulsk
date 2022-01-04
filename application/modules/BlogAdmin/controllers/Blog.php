@@ -86,8 +86,8 @@ class Blog extends CI_Controller
                 $config['create_thumb'] = FALSE;
                 $config['maintain_ratio'] = TRUE;
                 $config['quality'] = '60%';
-                // $config['width'] = 800;
-                // $config['height'] = 800;
+                $config['width'] = 800;
+                $config['height'] = 800;
                 $config['new_image'] = './assets/images/blog/content_images/' . $data['file_name'];
                 $this->load->library('image_lib', $config);
                 $this->image_lib->resize();
