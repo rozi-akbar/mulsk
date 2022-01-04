@@ -131,7 +131,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                             </li>
                             <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                 <a href="<?= base_url() ?>Home/Banner" class="kt-menu__link">
-                                    <i class="kt-menu__link-icon fa fa-file-invoice"></i>
+                                    <i class="kt-menu__link-icon fa fa-digital-tachograph"></i>
                                     <span class="kt-menu__link-text">Home Banner </span>
                                 </a>
                             </li>
@@ -227,7 +227,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                             </li>
                             <li class="kt-menu__item <?= $this->uri->segment(2) == 'M_User' ? 'kt-menu__item--open kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                 <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
-                                    <i class="kt-menu__link-icon fa fa-file-invoice"></i>
+                                    <i class="kt-menu__link-icon flaticon-users-1"></i>
                                     <span class="kt-menu__link-text">User</span>
                                     <i class="kt-menu__ver-arrow la la-angle-right"></i>
                                 </a>
