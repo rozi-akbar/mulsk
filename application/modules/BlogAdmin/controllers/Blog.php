@@ -81,16 +81,16 @@ class Blog extends CI_Controller
             } else {
                 $data = $this->upload->data();
                 //Compress Image
-                $config['image_library'] = 'gd2';
-                $config['source_image'] = './assets/images/blog/content_images/' . $data['file_name'];
-                $config['create_thumb'] = FALSE;
-                $config['maintain_ratio'] = TRUE;
-                $config['quality'] = '60%';
-                $config['width'] = 800;
-                $config['height'] = 800;
-                $config['new_image'] = './assets/images/blog/content_images/' . $data['file_name'];
-                $this->load->library('image_lib', $config);
-                $this->image_lib->resize();
+                // $config['image_library'] = 'gd2';
+                // $config['source_image'] = './assets/images/blog/content_images/' . $data['file_name'];
+                // $config['create_thumb'] = FALSE;
+                // $config['maintain_ratio'] = TRUE;
+                // $config['quality'] = '60%';
+                // $config['width'] = 800;
+                // $config['height'] = 800;
+                // $config['new_image'] = './assets/images/blog/content_images/' . $data['file_name'];
+                // $this->load->library('image_lib', $config);
+                // $this->image_lib->resize();
                 echo base_url() . 'assets/images/blog/content_images/' . $data['file_name'];
             }
         }
