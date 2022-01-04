@@ -238,7 +238,7 @@
                             </h4>
                             <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z"><?= substr($vaBlog['posted_at'], 0, 10) ?></time></span></span>
                         </div>
-                        <div class="post-content"><?= $desc ?></div>
+                        <!-- <div class="post-content"><?= $desc ?></div> -->
                     </article>
                 <?php
                 }

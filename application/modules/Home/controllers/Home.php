@@ -13,7 +13,7 @@ class Home extends CI_Controller
     public function index()
     {
         $data['banner_home']    = $this->model->Code('SELECT * FROM banner_home WHERE is_deleted = 0 ORDER BY banner_id ASC');
-        $data['vBlog']          = $this->model->View('v_blog_posted', 'id');
+        $data['vBlog']          = $this->model->Code("SELECT * FROM v_blog_posted ORDER BY id DESC LIMIT 6");
         $data['dataMaster']     = $this->model->View('v_m_product', 'id');
         $data['vColor']      = $this->model->View('v_color_image_selector', 'id');
 
