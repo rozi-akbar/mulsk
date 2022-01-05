@@ -78,6 +78,7 @@ $db['default'] = array(
 	'hostname' => '103.157.96.97',
 	'username' => 'root',
 	'password' => 'SrH3qW4#n#++BTTv',
+	// 'password' => '',
 	'database' => 'mulsk',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

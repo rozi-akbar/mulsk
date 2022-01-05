@@ -72,7 +72,7 @@ src="https://www.facebook.com/tr?id=514905976613663&ev=PageView&noscript=1"
 // header("Content-Security-Policy: script-src 'self'; style-src 'self'; img-src: 'self';");
 // header("X-Frame-Options: DENY");
 // header("X-Content-Type-Options: nosniff");
-// header("X-XSS-Protection: 1; mode=block");
+header("X-XSS-Protection: 1; mode=block");
 ?>
 <body class="kalles-template header_full_true des_header_3 css_scrollbar lazy_icons btnt4_style_2 zoom_tp_2 css_scrollbar template-index kalles_toolbar_true hover_img2 swatch_style_rounded swatch_list_size_small label_style_rounded wrapper_full_width header_full_true hide_scrolld_true lazyload">
 

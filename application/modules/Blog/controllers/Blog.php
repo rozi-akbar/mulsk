@@ -37,6 +37,8 @@ class Blog extends CI_Controller
 
     function fetch_data()
     {
+        $sort 		= $this->input->post('sort');
+
         $config                     = array();
         $config["base_url"]         = "#";
         $config["total_rows"]       = $this->model->count_blog();
