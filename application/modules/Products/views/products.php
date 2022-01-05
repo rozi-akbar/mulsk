@@ -116,7 +116,9 @@
                                         <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                             <a class="cd chp" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>"><b><?= $vaData['nama_product'] ?></b></a>
                                         </h3>
-                                        <span class="price dib mb__5"><?= $vaData['price'] ?></span>
+                                        <span class="price dib mb__5">
+                                            <?= "Rp " . number_format($vaData['price'], 2, ',', '.'); ?>
+                                        </span>
                                         <br />
                                         <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                             <?php
