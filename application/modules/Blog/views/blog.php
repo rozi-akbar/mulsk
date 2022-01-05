@@ -103,22 +103,22 @@
         function filter_data(page) {
             $('.filter_data').html('<h3> Searching Data . . . </h3>');
             // var sort = document.getElementById('sort').textContent;
-            var sort = get_filter('sort');
-            alert(sort);
-            // $.ajax({
-            //     url: "<?= base_url(); ?>Blog/Blog/fetch_data/" + page,
-            //     method: "POST",
-            //     dataType: "JSON",
-            //     data: {},
-            //     beforeSend: function() {
-            //         $('#showing_result').html("<h1> MOHON TUNGGU ... </h1>");
-            //     },
-            //     success: function(data) {
-            //         $('.filter_data').html(data.blog);
-            //         $('#pagination_link').html(data.pagination_link);
-            //         $('#showing_result').html(data.showing_result);
-            //     }
-            // })
+            // var sort = get_filter('sort');
+            // alert(sort);
+            $.ajax({
+                url: "<?= base_url(); ?>Blog/Blog/fetch_data/" + page,
+                method: "POST",
+                dataType: "JSON",
+                data: {},
+                beforeSend: function() {
+                    $('#showing_result').html("<h1> MOHON TUNGGU ... </h1>");
+                },
+                success: function(data) {
+                    $('.filter_data').html(data.blog);
+                    $('#pagination_link').html(data.pagination_link);
+                    $('#showing_result').html(data.showing_result);
+                }
+            })
         }
 
         $(document).on("click", ".pagination li a", function(event) {
