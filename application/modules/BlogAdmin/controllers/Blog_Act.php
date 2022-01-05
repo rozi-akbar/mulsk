@@ -22,7 +22,7 @@ class Blog_Act extends CI_Controller
     function save($id = "")
     {
         $title = $this->input->post('title', TRUE);
-        $contents = $this->input->post('contents', TRUE);
+        $contents = $_POST['contents'];
         $UTC = new UTC;
         // $data = array(
         //     'title'     => $title,
@@ -99,9 +99,11 @@ class Blog_Act extends CI_Controller
 
     function UpdateBlog($id = "")
     {
+        // var_dump($_POST['contents']);
+        // die;
         $UTC = new UTC;
         $title = $this->input->post('title', TRUE);
-        $contents = $this->input->post('contents', TRUE);
+        $contents = $_POST['contents'];
         $data = array(
             'title'     => $title,
             'content'   => $contents,
