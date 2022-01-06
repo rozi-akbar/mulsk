@@ -334,6 +334,9 @@ class M_Product_Act extends CI_Controller
         $t_gallery = $_FILES['p_gallery']['name'];
         $this->I_Gallery($t_gallery, $this->input->post('productId'), $this->input->post('productName'));
 
+        $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
+        $this->I_GalleryWithoutColor($t_galleryWOC, $this->input->post('productId'), $this->input->post('namaProduct'));
+
         $t_productIcon = $_FILES['p_icon']['name'];
         $t_productIconDesc = $this->input->post('pi_desc');
         $this->I_ProductIcon($t_productIcon, $t_productIconDesc, $this->input->post('productId'), $this->input->post('productName'));
@@ -537,7 +540,7 @@ class M_Product_Act extends CI_Controller
 
                 if (!empty($image_gallery)) {
                     if ($getJml < 10) {
-                        $gallery_id = $uuid . "_" . $count."_color";
+                        $gallery_id = $uuid . "_" . $count . "_color";
 
                         if ($size < 500000 && !empty($ekstensi)) {
                             if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {

@@ -199,7 +199,7 @@
                                                                                     <?php
                                                                                     foreach ($data_shade_color as $key1 => $vaColor1) {
                                                                                     ?>
-                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?></option>
+                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?><?= $vaColor1['id'] ?></option>
                                                                                         <!-- <option data-content="<span class='kt-badge kt-badge--inline kt-badge--rounded' style='background-color:<?= $vaColor1['color'] ?>;'><?= $vaColor1['color_name'] ?></span>" value="<?= $vaColor1['id'] ?>"><?= $vaColor1['color_name'] ?></option> -->
                                                                                     <?php } ?>
                                                                                 </select>
@@ -475,7 +475,7 @@
     });
 
     $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <select name="color_hex[]" class="form-control" id="color_hex"> <option>Pick Color</option><?php foreach ($data_shade_color as $key => $vaColor) { ?> <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor['color'] ?> !important;"><?= $vaColor['color_name'] ?></option> <?php } ?></select> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <select name="color_hex[]" class="form-control" id="color_hex"> <option>Pick Color</option><?php foreach ($data_shade_color as $key => $vaColor) { ?> <option value="<?= $vaColor['id'] ?>" style="background-color: <?= $vaColor['color'] ?> !important;"><?= $vaColor['color_name'] ?></option> <?php } ?></select> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
         var max = 10;
         var x = 1;
 
