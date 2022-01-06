@@ -199,7 +199,7 @@
                                                                                     <?php
                                                                                     foreach ($data_shade_color as $key1 => $vaColor1) {
                                                                                     ?>
-                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?><?= $vaColor1['id'] ?></option>
+                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?></option>
                                                                                         <!-- <option data-content="<span class='kt-badge kt-badge--inline kt-badge--rounded' style='background-color:<?= $vaColor1['color'] ?>;'><?= $vaColor1['color_name'] ?></span>" value="<?= $vaColor1['id'] ?>"><?= $vaColor1['color_name'] ?></option> -->
                                                                                     <?php } ?>
                                                                                 </select>
