@@ -216,7 +216,7 @@ class M_Product_Act extends CI_Controller
         $to_folder_benefits    = "assets/images/product/$rename_benefits"; //folder tujuan
         //===================================END IMAGE BENEFITS===================================================
 
-        if ($size < 1000000 && $size_benefits < 1000000) {
+        if ($size < 500000 && $size_benefits < 500000) {
             if ($status_publish == 1) {
                 $data = array(
                     'product_id'        => $uuid,
@@ -257,6 +257,9 @@ class M_Product_Act extends CI_Controller
 
                 $t_gallery = $_FILES['p_gallery']['name'];
                 $this->I_Gallery($t_gallery, $uuid, $this->input->post('namaProduct'));
+
+                $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
+                $this->I_GalleryWithoutColor($t_galleryWOC, $uuid, $this->input->post('namaProduct'));
 
                 $t_productIcon = $_FILES['p_icon']['name'];
                 $t_productIconDesc = $this->input->post('pi_desc');
@@ -372,8 +375,9 @@ class M_Product_Act extends CI_Controller
 
         if (empty($_FILES['p_gallery']['name']) || $_FILES['p_gallery']['name'] == "") {
             $data = array(
-                'color'         => $this->input->post('color_hex'),
-                'color_name'    => $this->input->post('colorName'),
+                // 'color'         => $this->input->post('color_hex'),
+                // 'color_name'    => $this->input->post('colorName'),
+                'id_color'      => $this->input->post('color_hex'),
                 'update_at'     => $UTC->DateTimeStamp(),
                 'update_by'     => $this->session->userdata('username_mulsk')
             );
@@ -383,6 +387,27 @@ class M_Product_Act extends CI_Controller
             $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
             $key = explode('_', $getData['gallery_id']);
             $this->U_Gallery($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status === FALSE) {
+            $this->db->trans_rollback();
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        }
+    }
+
+    function EditGalleryWithoutColor($id_master = "", $id_gallery = "", $productName = "")
+    {
+        $this->db->trans_start();
+
+        if (empty($_FILES['p_galleryWOC']['name']) || $_FILES['p_galleryWOC']['name'] == "") {
+        } else {
+            $photo = $_FILES['p_galleryWOC']['name'];
+            $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+            $key = explode('_', $getData['gallery_id']);
+            $this->U_GalleryWithoutColor($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
         }
 
         $this->db->trans_complete();
@@ -498,7 +523,7 @@ class M_Product_Act extends CI_Controller
         if (empty($photo)) {
         } else {
             for ($count = 0; $count < count($_FILES['p_gallery']['name']); $count++) {
-                $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$count";
+                $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$count-color";
                 $image_gallery = $_FILES['p_gallery']['name'][$count];
                 $x_image = explode('.', $image_gallery);
                 $ekstensi = strtolower(end($x_image));
@@ -512,16 +537,17 @@ class M_Product_Act extends CI_Controller
 
                 if (!empty($image_gallery)) {
                     if ($getJml < 10) {
-                        $gallery_id = $uuid . "_" . $count;
+                        $gallery_id = $uuid . "_" . $count."_color";
 
-                        if ($size < 1000000 && !empty($ekstensi)) {
+                        if ($size < 500000 && !empty($ekstensi)) {
                             if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
                                 $data = array(
                                     'm_product_id'  => $noId,
                                     'gallery_id'    => $gallery_id,
                                     'url_image'     => $to_folder,
-                                    'color'         => $this->input->post('color_hex')[$count],
-                                    'color_name'    => $this->input->post('colorName')[$count],
+                                    'id_color'      => $this->input->post('color_hex')[$count],
+                                    // 'color'         => $this->input->post('color_hex')[$count],
+                                    // 'color_name'    => $this->input->post('colorName')[$count],
                                     'created_at'    => $UTC->DateTimeStamp(),
                                     'created_by'    => $this->session->userdata('username_mulsk')
                                 );
@@ -551,7 +577,68 @@ class M_Product_Act extends CI_Controller
         }
     }
 
-    function U_Gallery($photo, $id, $productName, $key_gallery, $oldUrl)
+    function I_GalleryWithoutColor($photo, $noId, $productName)
+    {
+        $UTC = new UTC;
+        $uuid = date('YmdHis');
+        $to_folder = "";
+        $this->db->trans_start();
+
+        if (empty($photo)) {
+        } else {
+            for ($count = 0; $count < count($_FILES['p_galleryWOC']['name']); $count++) {
+                $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$count";
+                $image_gallery = $_FILES['p_galleryWOC']['name'][$count];
+                $x_image = explode('.', $image_gallery);
+                $ekstensi = strtolower(end($x_image));
+                $size    = $_FILES['p_galleryWOC']['size'][$count];
+
+                $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+                $file_temp = $_FILES['p_galleryWOC']['tmp_name'][$count]; //data temp yang di upload
+                $to_folder    = "assets/images/product/$rename"; //folder tujuan                
+
+                $getJml = $this->db->query("SELECT m_product_id FROM product_gallery WHERE m_product_id = '" . $noId . "' AND is_delete = 0")->num_rows();
+
+                if (!empty($image_gallery)) {
+                    if ($getJml < 10) {
+                        $gallery_id = $uuid . "_" . $count;
+
+                        if ($size < 500000 && !empty($ekstensi)) {
+                            if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
+                                $data = array(
+                                    'm_product_id'  => $noId,
+                                    'gallery_id'    => $gallery_id,
+                                    'url_image'     => $to_folder,
+                                    'created_at'    => $UTC->DateTimeStamp(),
+                                    'created_by'    => $this->session->userdata('username_mulsk')
+                                );
+                                // print_r($data);
+                                $this->model->Insert('product_gallery', $data);
+                                move_uploaded_file($file_temp, "$to_folder");
+                            } else {
+                            }
+                        } else {
+                        }
+                    } else {
+                    }
+                } else {
+                }
+            }
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            if (empty($to_folder) || $to_folder == "") {
+            } else {
+                unlink($to_folder);
+            }
+        } else {
+            return "success";
+        }
+    }
+
+    function U_GalleryWithoutColor($photo, $id, $productName, $key_gallery, $oldUrl)
     {
         $UTC = new UTC;
         $uuid = date('YmdHis');
@@ -562,6 +649,58 @@ class M_Product_Act extends CI_Controller
             echo "nothing";
         } else {
             $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery";
+            $image_gallery = $_FILES['p_galleryWOC']['name'];
+            $x_image = explode('.', $image_gallery);
+            $ekstensi = strtolower(end($x_image));
+            $size    = $_FILES['p_galleryWOC']['size'];
+
+            $rename = $t_rename . "." . $ekstensi; //ganti nama file sesuai ekstensi
+            $file_temp = $_FILES['p_galleryWOC']['tmp_name']; //data temp yang di upload
+            $to_folder    = "assets/images/product/$rename"; //folder tujuan                
+
+            if (!empty($image_gallery)) {
+                if ($size < 500000 && !empty($ekstensi)) {
+                    if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
+                        $data = array(
+                            'url_image'     => $to_folder,
+                            'update_at'     => $UTC->DateTimeStamp(),
+                            'update_by'     => $this->session->userdata('username_mulsk')
+                        );
+                        // print_r($data);
+                        $this->model->Update('product_gallery', 'id', $id, $data);
+                        move_uploaded_file($file_temp, "$to_folder");
+                    } else {
+                    }
+                } else {
+                    // echo "size gedhe";
+                }
+            } else {
+            }
+        }
+
+        $this->db->trans_complete();
+        if ($this->db->trans_status() === FALSE) {
+            $this->db->trans_rollback();
+            if (empty($to_folder) || $to_folder == "") {
+            } else {
+                unlink($to_folder);
+            }
+        } else {
+            unlink($oldUrl);
+        }
+    }
+
+    function U_Gallery($photo, $id, $productName, $key_gallery, $oldUrl)
+    {
+        $UTC = new UTC;
+        $uuid = date('YmdHis');
+        $to_folder = "";
+        $this->db->trans_start();
+
+        if (empty($photo)) {
+            echo "nothing";
+        } else {
+            $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery-color";
             $image_gallery = $_FILES['p_gallery']['name'];
             $x_image = explode('.', $image_gallery);
             $ekstensi = strtolower(end($x_image));
@@ -572,12 +711,13 @@ class M_Product_Act extends CI_Controller
             $to_folder    = "assets/images/product/$rename"; //folder tujuan                
 
             if (!empty($image_gallery)) {
-                if ($size < 1000000 && !empty($ekstensi)) {
+                if ($size < 500000 && !empty($ekstensi)) {
                     if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
                         $data = array(
                             'url_image'     => $to_folder,
-                            'color'         => $this->input->post('color_hex'),
-                            'color_name'    => $this->input->post('colorName'),
+                            'id_color'      => $this->input->post('color_hex'),
+                            // 'color'         => $this->input->post('color_hex'),
+                            // 'color_name'    => $this->input->post('colorName'),
                             'update_at'     => $UTC->DateTimeStamp(),
                             'update_by'     => $this->session->userdata('username_mulsk')
                         );
@@ -633,7 +773,7 @@ class M_Product_Act extends CI_Controller
                     if ($getJml < 10) {
                         $icon_id = $uuid . "_" . $count;
 
-                        if ($size < 1000000 && !empty($ekstensi)) {
+                        if ($size < 100000 && !empty($ekstensi)) {
                             if ($ekstensi == "png" || $ekstensi == "svg") {
                                 $data = array(
                                     'm_product_id'              => $noId,
@@ -718,7 +858,7 @@ class M_Product_Act extends CI_Controller
             $to_folder    = "assets/images/product-icon/$rename"; //folder tujuan                
 
             if (!empty($image_icon)) {
-                if ($size < 1000000 && !empty($ekstensi)) {
+                if ($size < 100000 && !empty($ekstensi)) {
                     if ($ekstensi == "png" || $ekstensi == "svg") {
                         $data = array(
                             'url_product_icon'          => $to_folder,
@@ -784,6 +924,65 @@ class M_Product_Act extends CI_Controller
             $this->db->trans_rollback();
         } else {
             return "success";
+        }
+    }
+
+    function CreateShadeColor($aksi = "", $id = "")
+    {
+        $UTC = new UTC;
+        if ($aksi == "Insert") {
+            $this->db->trans_start();
+
+            for ($count = 0; $count < count($this->input->post('color_hex')); $count++) {
+                $data = array(
+                    'color'                     => $this->input->post('color_hex')[$count],
+                    'color_name'                => $this->input->post('colorName')[$count],
+                    'created_at'                => $UTC->DateTimeStamp(),
+                    'created_by'                => $this->session->userdata('username_mulsk')
+                );
+                $this->model->Insert('m_color', $data);
+            }
+
+            $this->db->trans_complete();
+            if ($this->db->trans_status === FALSE) {
+                $this->db->trans_rollback();
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            }
+        } elseif ($aksi == "Update") {
+            $this->db->trans_start();
+            $data = array(
+                'color'                     => $this->input->post('u_color_hex'),
+                'color_name'                => $this->input->post('u_colorName'),
+                'update_at'                => $UTC->DateTimeStamp(),
+                'update_by'                => $this->session->userdata('username_mulsk')
+            );
+            $this->model->Update('m_color', 'id', $id, $data);
+            $this->db->trans_complete();
+            if ($this->db->trans_status === FALSE) {
+                $this->db->trans_rollback();
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            }
+        } elseif ($aksi == "Delete") {
+            $this->db->trans_start();
+            $data = array(
+                'is_delete'                => 1,
+                'deleted_at'               => $UTC->DateTimeStamp(),
+                'deleted_by'               => $this->session->userdata('username_mulsk')
+            );
+            $this->model->Update('m_color', 'id', $id, $data);
+            $this->db->trans_complete();
+            if ($this->db->trans_status === FALSE) {
+                $this->db->trans_rollback();
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            } else {
+                redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
+            }
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
         }
     }
 }

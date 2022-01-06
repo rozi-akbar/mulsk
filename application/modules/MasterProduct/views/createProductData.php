@@ -30,10 +30,10 @@
                                 </div>
                                 <div class="kt-wizard-v4__nav-label">
                                     <div class="kt-wizard-v4__nav-label-title">
-                                        Add Description
+                                        Main Description
                                     </div>
                                     <div class="kt-wizard-v4__nav-label-desc">
-                                        Create Product Description
+                                        Setup Your Main Description
                                     </div>
                                 </div>
                             </div>
@@ -60,10 +60,10 @@
                                 </div>
                                 <div class="kt-wizard-v4__nav-label">
                                     <div class="kt-wizard-v4__nav-label-title">
-                                        Product Icon
+                                        Product Benefits
                                     </div>
                                     <div class="kt-wizard-v4__nav-label-desc">
-                                        Setup Your Product Icon
+                                        Setup Your Product Benefits
                                     </div>
                                 </div>
                             </div>
@@ -75,10 +75,10 @@
                                 </div>
                                 <div class="kt-wizard-v4__nav-label">
                                     <div class="kt-wizard-v4__nav-label-title">
-                                        Completed
+                                        Publish
                                     </div>
                                     <div class="kt-wizard-v4__nav-label-desc">
-                                        Publish and Submit
+                                        Publish Your Product
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                                     <div class="col-12">
                                         <!--begin: Form Wizard Step 1-->
                                         <div class="kt-wizard-v4__content" data-ktwizard-type="step-content" data-ktwizard-state="current">
-                                            <div class="kt-heading kt-heading--md">Enter your Description And Benefits Product</div>
+                                            <div class="kt-heading kt-heading--md">Setup your Main Description Product</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
                                                     <div class="row">
@@ -116,42 +116,103 @@
                                                                 <input type="number" name="price" id="price" value="<?= $dataMaster['price'] ?>" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                        <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Image Thumbnail</label>
                                                                 <input type="file" name="imageThumbnail" id="image" class="form-control" accept="image/x-png,image/jpeg">
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                        <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Existing Thumbnail</label>
-                                                                <img src="<?= base_url() . $dataMaster['image'] ?>" style="width: 100%;">
+                                                                <br />
+                                                                <img src="<?= base_url() . $dataMaster['image'] ?>" style="width: 30%;">
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
-                                                            <div class="form-group">
-                                                                <label>Product Benefits Image</label>
-                                                                <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-3">
-                                                            <div class="form-group">
-                                                                <label>Existing Benefits Image</label>
-                                                                <img src="<?= base_url() . $dataMaster['benefits_image'] ?>" style="width: 100%;">
-                                                            </div>
-                                                        </div>
+
                                                         <div class="col-12">
                                                             <div class="form-group">
                                                                 <label>Description Product</label>
                                                                 <textarea name="deskripsi" class="summernote" id="summernote_desc"> <?= $dataMaster['deskripsi'] ?> </textarea>
                                                             </div>
                                                         </div>
+                                                        <?php
+                                                        if (empty($color_image_selector)) {
+                                                        } else {
+                                                        ?>
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <?php
+                                                                    foreach ($color_image_selector as $vaGallSel) {
+                                                                    ?>
+                                                                        <div class="col-12 col-md-2">
+                                                                            <div class="form-group">
+                                                                                <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $dataMaster['id'] . '/' . $vaGallSel['id'] . '/' . $dataMaster['nama_product']) ?>">
+                                                                                    Edit Photo
+                                                                                </a>
+                                                                                <br />
+                                                                                <img src="<?= base_url() ?><?= $vaGallSel['url_image'] ?>" style="width:80%; height:auto;">
+                                                                                <br />
+                                                                                <label>
+                                                                                    Color : <?= $vaGallSel['color_name'] ?>
+                                                                                    <?php
+                                                                                    if ($vaGallSel['color'] == "#000000" && empty($vaGallSel['color_name'])) {
+                                                                                    } else {
+                                                                                        if ($vaGallSel['color_name'] == "") {
+                                                                                        } else {
+                                                                                    ?>
+                                                                                            <input type="color" class="form-control" disabled value="<?= $vaGallSel['color'] ?>">
+                                                                                    <?php
+                                                                                        }
+                                                                                    }
+                                                                                    ?>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    <?php
+                                                                    }
+                                                                    ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                        ?>
+
+
                                                         <div class="col-12">
                                                             <div class="form-group">
-                                                                <label>Benefits Product</label>
-                                                                <textarea name="benefits" class="summernote" id="summernote_benefits"> <?= $dataMaster['benefits'] ?> </textarea>
+                                                                <label> Upload Gallery Color Selector </label>
+                                                                <table id="table_field_gallery" class="table table-bordered">
+                                                                    <thead>
+                                                                        <th>Image</th>
+                                                                        <th>Color Picker</th>
+                                                                        <th>Action</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <select name="color_hex[]" class="form-control">
+                                                                                    <option value="">Pick Color</option>
+                                                                                    <?php
+                                                                                    foreach ($data_shade_color as $key1 => $vaColor1) {
+                                                                                    ?>
+                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?></option>
+                                                                                        <!-- <option data-content="<span class='kt-badge kt-badge--inline kt-badge--rounded' style='background-color:<?= $vaColor1['color'] ?>;'><?= $vaColor1['color_name'] ?></span>" value="<?= $vaColor1['id'] ?>"><?= $vaColor1['color_name'] ?></option> -->
+                                                                                    <?php } ?>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,7 +226,7 @@
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
                                                     <div class="row">
-                                                        <div class="col-12 col-md-6">
+                                                        <div class="col-12">
                                                             <div class="form-group">
                                                                 <label> Image Gallery </label>
                                                                 <div class="row">
@@ -174,26 +235,13 @@
                                                                     } else {
                                                                         foreach ($product_gallery as $vaGall) {
                                                                     ?>
-                                                                            <div class="col-12 col-md-6">
+                                                                            <div class="col-12 col-md-2">
                                                                                 <div class="form-group">
-                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $dataMaster['id'] . '/' . $vaGall['id'] . '/' . $dataMaster['nama_product']) ?>">
+                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_GalleryWithoutColor/' . $dataMaster['id'] . '/' . $vaGall['id'] . '/' . $dataMaster['nama_product']) ?>">
                                                                                         Edit Photo
                                                                                     </a>
-                                                                                    <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:100%; height:auto;">
-                                                                                    <label>
-                                                                                        Color : <?= $vaGall['color_name'] ?>
-                                                                                        <?php
-                                                                                        if ($vaGall['color'] == "#000000" && empty($vaGall['color_name'])) {
-                                                                                        } else {
-                                                                                            if ($vaGall['color_name'] == "") {
-                                                                                            } else {
-                                                                                        ?>
-                                                                                                <input type="color" class="form-control" disabled value="<?= $vaGall['color'] ?>">
-                                                                                        <?php
-                                                                                            }
-                                                                                        }
-                                                                                        ?>
-                                                                                    </label>
+                                                                                    <br />
+                                                                                    <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:80%; height:auto;">
                                                                                 </div>
                                                                             </div>
                                                                     <?php
@@ -203,33 +251,37 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-6">
+                                                        <div class="col-12">
                                                             <div class="form-group">
-                                                                <label> Upload Gallery </label>
-                                                                <table id="table_field_gallery" class="table table-bordered">
+                                                                <label> Add More Gallery </label>
+                                                                <table id="table_field_galleryWOC" class="table table-bordered">
                                                                     <thead>
                                                                         <th>Image</th>
-                                                                        <th>Color Picker</th>
-                                                                        <th>Color Name</th>
                                                                         <th>Action</th>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" />
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple=""/>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="color" name="color_hex[]" class="form-control">
-                                                                            </td>
-                                                                            <td>
-                                                                                <input type="text" name="colorName[]" class="form-control">
-                                                                            </td>
-                                                                            <td>
-                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" />
+                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_galleryWOC" name="add_galleryWOC" value="Add" />
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
+                                                                <div class="kt-section">
+                                                                    <div class="kt-section__content">
+                                                                        <div class="alert alert-secondary" role="alert">
+                                                                            <div class="alert-text">
+                                                                                <p><span> <strong>Ratio</strong> => 3 : 4</span></p>
+                                                                                <p><span> <strong>Recomended Size</strong> => 600 x 800 px</span></p>
+                                                                                <p><span> <strong>File Type</strong> => JPG, PNG, JPEG</span></p>
+                                                                                <p><span> <strong>File Size</strong> => 500 Kb</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -241,10 +293,43 @@
 
                                         <!--begin: Form Wizard Step 3-->
                                         <div class="kt-wizard-v4__content" data-ktwizard-type="step-content">
-                                            <div class="kt-heading kt-heading--md">Setup Your Product Icon</div>
+                                            <div class="kt-heading kt-heading--md">Setup Your Product Benefits</div>
                                             <div class="kt-form__section kt-form__section--first">
                                                 <div class="kt-wizard-v4__form">
                                                     <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Benefits Product</label>
+                                                                <textarea name="benefits" class="summernote" id="summernote_benefits"> <?= $dataMaster['benefits'] ?> </textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Product Benefits Image</label>
+                                                                <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png">
+                                                                <br />
+                                                                <div class="kt-section">
+                                                                    <div class="kt-section__content">
+                                                                        <div class="alert alert-secondary" role="alert">
+                                                                            <div class="alert-text">
+                                                                                <p><span> <strong>Ratio</strong> => 1 : 1</span></p>
+                                                                                <p><span> <strong>File Type</strong> => PNG ONLY</span></p>
+                                                                                <p><span> <strong>File Size</strong> => 500 Kb</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Existing Benefits Image</label>
+                                                                <br />
+                                                                <img src="<?= base_url() . $dataMaster['benefits_image'] ?>" style="width: 50%;">
+                                                            </div>
+                                                        </div>
+
                                                         <?php
                                                         if (empty($product_icon)) {
                                                         } else {
@@ -260,7 +345,7 @@
                                                                         <div class="kt-portlet kt-portlet--bordered">
                                                                             <div class="kt-portlet__head">
                                                                                 <div class="kt-portlet__head-label">
-                                                                                    <img src="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" style="width:100%; height:auto;">
+                                                                                    <img src="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" style="width:80%; height:auto;">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="kt-portlet__body">
@@ -273,8 +358,10 @@
                                                             }
                                                         }
                                                         ?>
+
                                                     </div>
                                                     <div class="form-group">
+                                                        <label> Add More Product Icon </label>
                                                         <table id="table_field_icon" class="table table-bordered">
                                                             <thead>
                                                                 <th>Product Icon</th>
@@ -289,6 +376,16 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
+                                                        <div class="kt-section">
+                                                            <div class="kt-section__content">
+                                                                <div class="alert alert-secondary" role="alert">
+                                                                    <div class="alert-text">
+                                                                        <p><span> <strong>File Type</strong> => JPG / SVG</span></p>
+                                                                        <p><span> <strong>File Size</strong> => 100 Kb</span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -378,7 +475,7 @@
     });
 
     $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td><input type="color" name="color_hex[]" class="form-control"></td><td><input type="text" name="colorName[]" class="form-control"></td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <select name="color_hex[]" class="form-control" id="color_hex"> <option>Pick Color</option><?php foreach ($data_shade_color as $key => $vaColor) { ?> <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor['color'] ?> !important;"><?= $vaColor['color_name'] ?></option> <?php } ?></select> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
         var max = 10;
         var x = 1;
 
@@ -390,6 +487,24 @@
         });
 
         $("#table_field_gallery").on('click', '#remove_gallery', function() {
+            $(this).closest('tr').remove();
+            x--;
+        });
+    });
+
+    $(document).ready(function() {
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_galleryWOC" name="remove_galleryWOC" value="Remove" /> </td></tr>';
+        var max = 10;
+        var x = 1;
+
+        $("#add_galleryWOC").click(function() {
+            if (x < max) {
+                $("#table_field_galleryWOC").append(html);
+                x++;
+            }
+        });
+
+        $("#table_field_galleryWOC").on('click', '#remove_galleryWOC', function() {
             $(this).closest('tr').remove();
             x--;
         });

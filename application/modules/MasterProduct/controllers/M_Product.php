@@ -38,7 +38,7 @@ class M_Product extends CI_Controller
         if ($action == "edit") {
             $data['product']    = $this->model->ViewWhere('v_m_product', 'id', $id);
         }
-
+        $data['data_shade_color']   = $this->model->View('v_m_color', 'id');
         $data['action'] = $action;
 
         $this->load->view('Container/header', $dataHeader);
@@ -58,9 +58,10 @@ class M_Product extends CI_Controller
         $dataHeader['file'] = "Create Product Data " . $getData['nama_product'];
 
         $data['dataMaster']             = $this->db->query("SELECT * FROM v_m_product WHERE id = '" . $id . "' ")->row_array();
-        $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery', 'm_product_id', $getData['product_id']);
+        $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery_update', 'm_product_id', $getData['product_id']);
         $data['product_icon']           = $this->model->ViewWhere('v_product_icon', 'm_product_id', $getData['product_id']);
         $data['color_image_selector']   = $this->model->ViewWhere('v_color_image_selector', 'm_product_id', $getData['product_id']);
+        $data['data_shade_color']       = $this->model->View('v_m_color', 'id');
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/createProductData', $data);
@@ -78,9 +79,22 @@ class M_Product extends CI_Controller
         $data['productName']    = $nama_product;
         $data['id_master']      = $id_master;
         $data['data_gallery']   = $this->db->query("SELECT * FROM v_product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+        $data['data_shade_color']   = $this->model->View('v_m_color', 'id');
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('MasterProduct/editGallery', $data);
+        $this->load->view('Container/footer');
+    }
+
+    public function Edit_GalleryWithoutColor($id_master = "", $id_gallery = "", $nama_product = "")
+    {
+        $dataHeader['file']     = "Edit Gallery " . str_replace('%20', ' ', $nama_product);
+        $data['productName']    = $nama_product;
+        $data['id_master']      = $id_master;
+        $data['data_gallery']   = $this->db->query("SELECT * FROM v_product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
+
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('MasterProduct/editGalleryWithoutColor', $data);
         $this->load->view('Container/footer');
     }
 
@@ -115,5 +129,26 @@ class M_Product extends CI_Controller
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('MasterProduct/previewProductData', $data);
         $this->load->view('Container/footerLayoutBlog');
+    }
+
+    function M_ShadeColor($aksi = "", $id = "")
+    {
+        $dataHeader['file']         = "Master Data Shade Color";
+
+        if ($aksi == "edit") {
+            $data['data_color']         = $this->db->query("SELECT * FROM v_m_color")->row_array();
+        }
+
+        $data['data_shade_color']   = $this->model->View('v_m_color', 'id');
+        $data['action']   = $aksi;
+
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('MasterProduct/dataColor', $data);
+        $this->load->view('Container/footer');
+    }
+
+    function T_M_ShadeColor()
+    {
+        redirect(site_url('MasterProduct/M_Product/M_ShadeColor'));
     }
 }

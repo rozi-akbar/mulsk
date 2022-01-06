@@ -186,31 +186,15 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                                 <span class="kt-menu__link-text">Product Data</span>
                                             </a>
                                         </li>
-                                        <!-- <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductGallery' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductGallery') ?>" class="kt-menu__link ">
+                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'M_ShadeColor' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('MasterProduct/M_Product/M_ShadeColor') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
-                                                <span class="kt-menu__link-text">Create Product Gallery</span>
+                                                <span class="kt-menu__link-text">Shade Color</span>
                                             </a>
                                         </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductDesc' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductDesc') ?>" class="kt-menu__link ">
-                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
-                                                    <span></span>
-                                                </i>
-                                                <span class="kt-menu__link-text">Product Description</span>
-                                            </a>
-                                        </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductIcon' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductIcon') ?>" class="kt-menu__link ">
-                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
-                                                    <span></span>
-                                                </i>
-                                                <span class="kt-menu__link-text">Product Icon</span>
-                                            </a>
-                                        </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ListProduct' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                        <!--<li class="kt-menu__item <?= $this->uri->segment(3) == 'ListProduct' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                             <a href="<?= site_url('MasterProduct/M_Product/ListProduct') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>

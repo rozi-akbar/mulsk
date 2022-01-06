@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditGallery/' . $id_master . '/' . $data_gallery['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data" onsubmit="return saveChanges()">
+                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditGalleryWithoutColor/' . $id_master . '/' . $data_gallery['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data" onsubmit="return saveChanges()">
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
@@ -49,18 +49,14 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
+                                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC" accept="image/x-png,image/jpeg" multiple="" />
+                                                    </td>
+                                                    <!-- <td>
+                                                        <input type="color" name="color_hex" class="form-control" value="<?= $data_gallery['color'] ?>">
                                                     </td>
                                                     <td>
-                                                        <select name="color_hex" class="form-control">
-                                                            <option value="">Pick Color</option>
-                                                            <?php
-                                                            foreach ($data_shade_color as $key1 => $vaColor1) {
-                                                            ?>
-                                                                <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;" <?php if ($vaColor1['id'] == $data_gallery['id_color']) { ?> selected <?php } ?>><?= $vaColor1['color_name'] ?></option>
-                                                            <?php } ?>
-                                                        </select>
-                                                    </td>
+                                                        <input type="text" name="colorName" class="form-control" value="<?= $data_gallery['color_name'] ?>">
+                                                    </td> -->
                                                 </tr>
                                             </tbody>
                                         </table>
