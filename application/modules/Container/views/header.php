@@ -222,7 +222,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
-                                                <span class="kt-menu__link-text">Create User</span>
+                                                <span class="kt-menu__link-text">List User</span>
                                             </a>
                                         </li>
                                     </ul>
