@@ -1,3 +1,12 @@
+<style>
+    .table-bordered {
+        border: none;
+    }
+
+    img {
+        margin: 0% 2%;
+    }
+</style>
 <div id="nt_content" style="margin-top: 2%;">
 
     <!--hero banner-->

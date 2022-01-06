@@ -1,3 +1,12 @@
+<style>
+    .table-bordered {
+        border: none;
+    }
+
+    img {
+        margin: 0% 2%;
+    }
+</style>
 <button class="imtt4_btn button pe_auto round_true btn_icon_false" onClick="window.history.back()" style="margin-left: 2%;">GO BACK</button>
 <div id="nt_content" style="margin-top: 2%;">
 
