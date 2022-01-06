@@ -3,7 +3,7 @@ if ($action == "edit") {
     $idUser     = $data_user['id'];
     $nama       = $data_user['name'];
     $username   = $data_user['username'];
-    $pass       = $data_user['password'];
+    $pass       = $get_pass['pass'];
     $level      = $data_user['level'];
     $active     = $data_user['active'];
 
@@ -60,15 +60,19 @@ if ($action == "edit") {
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label style="color: #00b26a;">Username <span id="result_username"></span></label>
+                                    <label style="color: #00b26a;"> Username </label>
                                     <input type="text" class="form-control" placeholder="Username" name="cUsername" id="cUsername" onchange="cek_username()" value="<?= $username ?>" required />
+                                    <span id="result_username"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label style="color: #00b26a;">Password : <span id="result_check_kode"></span></label>
-                                    <input type="password" class="form-control" placeholder="Password" name="cPassword" id="cPassword" />
-                                    <span class="text-muted"> Jika ingin ganti password, langsung isi form input diatas </span>
+                                    <div class="input-group">
+                                        <input type="password" value="<?= $pass ?>" class="form-control" name="cPassword" autocomplete="current-password" id="id_password">
+                                        <div class="input-group-append"><span class="input-group-text" id="basic-addon2"><i class="far fa-eye" id="togglePassword"></i></span></div>
+                                    </div>
+                                    <!-- <label style="color: #00b26a;">Password : <span id="result_check_kode"></span></label>
+                                    <span class="text-muted"> Jika ingin ganti password, langsung isi form input diatas </span> -->
                                 </div>
                             </div>
                             <div class="col-sm-12">
@@ -174,6 +178,26 @@ if ($action == "edit") {
     </div>
 </div>
 <script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("cPassword");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
+
+    togglePassword.addEventListener('click', function(e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+    });
+
     function cek_username() {
         var username = document.getElementById("cUsername").value;
         if (username == "") {

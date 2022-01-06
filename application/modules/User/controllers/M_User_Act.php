@@ -53,6 +53,12 @@ class M_User_Act extends CI_Controller
                 );
             }
             $this->model->Insert('user', $data);
+
+            $dataTemp = array(
+                'id_user'   => $this->db->insert_id(),
+                'pass'  => $this->input->post('cPassword')
+            );
+            $this->model->Insert('temp', $dataTemp);
         } elseif ($aksi == "Update") {
             if (empty($this->input->post('active')) || $this->input->post('active') == "") {
                 $active = 0;
@@ -68,6 +74,9 @@ class M_User_Act extends CI_Controller
                     'add_by'    => $this->session->userdata('username_mulsk'),
                     'add_date'  => $UTC->DateTimeStamp()
                 );
+                $dataTemp = array(
+                    'pass'  => $this->input->post('cPassword')
+                );
             } else {
                 $data = array(
                     'name'      => $this->input->post('cNama'),
@@ -78,8 +87,12 @@ class M_User_Act extends CI_Controller
                     'add_by'    => $this->session->userdata('username_mulsk'),
                     'add_date'  => $UTC->DateTimeStamp()
                 );
+                $dataTemp = array(
+                    'pass'  => $this->input->post('cPassword')
+                );
             }
             $this->model->Update('user', 'id', $id, $data);
+            $this->model->Update('temp', 'id_user', $id, $data);
         } elseif ($aksi == "Delete") {
             $data = array(
                 'is_delete' => 1,
@@ -100,7 +113,7 @@ class M_User_Act extends CI_Controller
             redirect(site_url('User/M_User/T_CreateUser'));
         }
     }
-    
+
     public function check_username()
     {
         header('Access-Control-Allow-Origin: *');

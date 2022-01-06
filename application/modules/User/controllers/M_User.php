@@ -22,13 +22,14 @@ class M_User extends CI_Controller
     public function CreateUser($aksi = "", $id = "")
     {
         if ($aksi == "edit") {
-			$data['data_user']		= $this->db->query("SELECT * FROM v_create_user WHERE id = '".$id."' ")->row_array();
-		}
-		$data['data_user_table']	= $this->model->View('v_create_user', 'id');
-		$data['action']			    = $aksi;
+            $data['data_user']        = $this->db->query("SELECT * FROM v_create_user WHERE id = '" . $id . "' ")->row_array();
+            $data['get_pass']       = $this->db->query("SELECT * FROM temp WHERE id_user = '" . $id . "' ")->row_array();
+        }
+        $data['data_user_table']    = $this->model->View('v_create_user', 'id');
+        $data['action']                = $aksi;
 
-		$dataHeader['file']   		= 'Create User Data';
-		$dataHeader['data_level']   = $this->model->View('m_level', 'id');
+        $dataHeader['file']           = 'Create User Data';
+        $dataHeader['data_level']   = $this->model->View('m_level', 'id');
 
         $this->load->view('Container/header', $dataHeader);
         $this->load->view('User/createUser', $data);
@@ -53,21 +54,21 @@ class M_User extends CI_Controller
     }
 
     public function check_username()
-	{
-		header('Access-Control-Allow-Origin: *');
+    {
+        header('Access-Control-Allow-Origin: *');
 
-		$check_username = $this->db->query("SELECT username FROM user WHERE username = '" . strtolower($_POST['username']) . "' ");
+        $check_username = $this->db->query("SELECT username FROM user WHERE username = '" . strtolower($_POST['username']) . "' ");
 
-		if ($check_username->num_rows() > 0) {
-			$data = "Not Valid";
-		} else {
-			foreach ($check_username->result_array() as $vaData) {
-				$username = $vaData['username'];
-				$data = "$username";
-			}
-		}
+        if ($check_username->num_rows() > 0) {
+            $data = "Not Valid";
+        } else {
+            foreach ($check_username->result_array() as $vaData) {
+                $username = $vaData['username'];
+                $data = "$username";
+            }
+        }
 
-		echo $data;
-		return $data;
-	}
+        echo $data;
+        return $data;
+    }
 }
