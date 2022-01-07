@@ -136,48 +136,7 @@
                                                                 <textarea name="deskripsi" class="summernote" id="summernote_desc"> <?= $dataMaster['deskripsi'] ?> </textarea>
                                                             </div>
                                                         </div>
-                                                        <?php
-                                                        if (empty($color_image_selector)) {
-                                                        } else {
-                                                        ?>
-                                                            <div class="col-12">
-                                                                <div class="row">
-                                                                    <?php
-                                                                    foreach ($color_image_selector as $vaGallSel) {
-                                                                    ?>
-                                                                        <div class="col-12 col-md-2">
-                                                                            <div class="form-group">
-                                                                                <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $dataMaster['id'] . '/' . $vaGallSel['id'] . '/' . $dataMaster['nama_product']) ?>">
-                                                                                    Edit Photo
-                                                                                </a>
-                                                                                <br />
-                                                                                <img src="<?= base_url() ?><?= $vaGallSel['url_image'] ?>" style="width:80%; height:auto;">
-                                                                                <br />
-                                                                                <label>
-                                                                                    Color : <?= $vaGallSel['color_name'] ?>
-                                                                                    <?php
-                                                                                    if ($vaGallSel['color'] == "#000000" && empty($vaGallSel['color_name'])) {
-                                                                                    } else {
-                                                                                        if ($vaGallSel['color_name'] == "") {
-                                                                                        } else {
-                                                                                    ?>
-                                                                                            <input type="color" class="form-control" disabled value="<?= $vaGallSel['color'] ?>">
-                                                                                    <?php
-                                                                                        }
-                                                                                    }
-                                                                                    ?>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    <?php
-                                                                    }
-                                                                    ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php
-                                                        }
-                                                        ?>
-
+                                                        
                                                         <!-- <div class="col-12">
                                                             <div class="form-group">
                                                                 <label> Upload Gallery Color Selector </label>
@@ -224,12 +183,24 @@
                                                                     ?>
                                                                             <div class="col-12 col-md-2">
                                                                                 <div class="form-group">
-                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_GalleryWithoutColor/' . $dataMaster['id'] . '/' . $vaGall['id'] . '/' . $dataMaster['nama_product']) ?>">
+                                                                                    <a class="btn btn-warning" href="<?= site_url('MasterProduct/M_Product/Edit_Gallery/' . $dataMaster['id'] . '/' . $vaGall['id'] . '/' . $dataMaster['nama_product']) ?>">
                                                                                         Edit Photo
                                                                                     </a>
                                                                                     <br />
                                                                                     <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:80%; height:auto;">
-                                                                                    <label>Color : <b style="color:<?= $vaGall['color'] ?>"><?= $vaGall['color_name'] ?></b></label>
+
+                                                                                    <?php
+                                                                                    if ($vaGall['color'] == "" || empty($vaGall['color']) || $vaGall['color'] == "Pick Color") {
+                                                                                    } else {
+                                                                                    ?>
+                                                                                        <label>
+                                                                                            Color : <?= $vaGall['color_name'] ?>
+                                                                                            <input type="color" class="form-control" disabled value="<?= $vaGall['color'] ?>">
+                                                                                        </label>
+                                                                                    <?php
+                                                                                    }
+                                                                                    ?>
+
                                                                                 </div>
                                                                             </div>
                                                                     <?php

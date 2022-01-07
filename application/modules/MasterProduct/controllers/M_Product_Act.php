@@ -544,7 +544,7 @@ class M_Product_Act extends CI_Controller
 
                         if ($size < 500000 && !empty($ekstensi)) {
                             if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
-                                if ($this->input->post('color_hex')[$count] == "Pick Color") {
+                                if ($this->input->post('color_hex')[$count] == "Pick Color" || $this->input->post('color_hex')[$count] == "" || empty($this->input->post('color_hex')[$count])) {
                                     $data = array(
                                         'm_product_id'  => $noId,
                                         'gallery_id'    => $gallery_id,
@@ -713,7 +713,7 @@ class M_Product_Act extends CI_Controller
         if (empty($photo)) {
             echo "nothing";
         } else {
-            $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery-color";
+            $t_rename = $uuid . "_" . str_replace(' ', '_', $productName) . "-$key_gallery";
             $image_gallery = $_FILES['p_gallery']['name'];
             $x_image = explode('.', $image_gallery);
             $ekstensi = strtolower(end($x_image));
@@ -726,14 +726,23 @@ class M_Product_Act extends CI_Controller
             if (!empty($image_gallery)) {
                 if ($size < 500000 && !empty($ekstensi)) {
                     if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
-                        $data = array(
-                            'url_image'     => $to_folder,
-                            'id_color'      => $this->input->post('color_hex'),
-                            // 'color'         => $this->input->post('color_hex'),
-                            // 'color_name'    => $this->input->post('colorName'),
-                            'update_at'     => $UTC->DateTimeStamp(),
-                            'update_by'     => $this->session->userdata('username_mulsk')
-                        );
+                        if ($this->input->post('color_hex') == "" || $this->input->post('color_hex') == "Pick Color" || empty($this->input->post('color_hex'))) {
+                            $data = array(
+                                'url_image'     => $to_folder,
+                                'update_at'     => $UTC->DateTimeStamp(),
+                                'update_by'     => $this->session->userdata('username_mulsk')
+                            );
+                        } else {
+                            $data = array(
+                                'url_image'     => $to_folder,
+                                'id_color'      => $this->input->post('color_hex'),
+                                // 'color'         => $this->input->post('color_hex'),
+                                // 'color_name'    => $this->input->post('colorName'),
+                                'update_at'     => $UTC->DateTimeStamp(),
+                                'update_by'     => $this->session->userdata('username_mulsk')
+                            );
+                        }
+
                         // print_r($data);
                         $this->model->Update('product_gallery', 'id', $id, $data);
                         move_uploaded_file($file_temp, "$to_folder");
