@@ -258,8 +258,8 @@ class M_Product_Act extends CI_Controller
                 $t_gallery = $_FILES['p_gallery']['name'];
                 $this->I_Gallery($t_gallery, $uuid, $this->input->post('namaProduct'));
 
-                $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
-                $this->I_GalleryWithoutColor($t_galleryWOC, $uuid, $this->input->post('namaProduct'));
+                // $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
+                // $this->I_GalleryWithoutColor($t_galleryWOC, $uuid, $this->input->post('namaProduct'));
 
                 $t_productIcon = $_FILES['p_icon']['name'];
                 $t_productIconDesc = $this->input->post('pi_desc');
@@ -334,8 +334,8 @@ class M_Product_Act extends CI_Controller
         $t_gallery = $_FILES['p_gallery']['name'];
         $this->I_Gallery($t_gallery, $this->input->post('productId'), $this->input->post('productName'));
 
-        $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
-        $this->I_GalleryWithoutColor($t_galleryWOC, $this->input->post('productId'), $this->input->post('namaProduct'));
+        // $t_galleryWOC = $_FILES['p_galleryWOC']['name'];
+        // $this->I_GalleryWithoutColor($t_galleryWOC, $this->input->post('productId'), $this->input->post('namaProduct'));
 
         $t_productIcon = $_FILES['p_icon']['name'];
         $t_productIconDesc = $this->input->post('pi_desc');
@@ -540,20 +540,30 @@ class M_Product_Act extends CI_Controller
 
                 if (!empty($image_gallery)) {
                     if ($getJml < 10) {
-                        $gallery_id = $uuid . "_" . $count . "_color";
+                        $gallery_id = $uuid . "_" . $count . "";
 
                         if ($size < 500000 && !empty($ekstensi)) {
                             if ($ekstensi == "png" || $ekstensi == "jpg" || $ekstensi == "jpeg") {
-                                $data = array(
-                                    'm_product_id'  => $noId,
-                                    'gallery_id'    => $gallery_id,
-                                    'url_image'     => $to_folder,
-                                    'id_color'      => $this->input->post('color_hex')[$count],
-                                    // 'color'         => $this->input->post('color_hex')[$count],
-                                    // 'color_name'    => $this->input->post('colorName')[$count],
-                                    'created_at'    => $UTC->DateTimeStamp(),
-                                    'created_by'    => $this->session->userdata('username_mulsk')
-                                );
+                                if ($this->input->post('color_hex')[$count] == "Pick Color") {
+                                    $data = array(
+                                        'm_product_id'  => $noId,
+                                        'gallery_id'    => $gallery_id,
+                                        'url_image'     => $to_folder,
+                                        'created_at'    => $UTC->DateTimeStamp(),
+                                        'created_by'    => $this->session->userdata('username_mulsk')
+                                    );
+                                } else {
+                                    $data = array(
+                                        'm_product_id'  => $noId,
+                                        'gallery_id'    => $gallery_id,
+                                        'url_image'     => $to_folder,
+                                        'id_color'      => $this->input->post('color_hex')[$count],
+                                        // 'color'         => $this->input->post('color_hex')[$count],
+                                        // 'color_name'    => $this->input->post('colorName')[$count],
+                                        'created_at'    => $UTC->DateTimeStamp(),
+                                        'created_by'    => $this->session->userdata('username_mulsk')
+                                    );
+                                }
                                 // print_r($data);
                                 $this->model->Insert('product_gallery', $data);
                                 move_uploaded_file($file_temp, "$to_folder");

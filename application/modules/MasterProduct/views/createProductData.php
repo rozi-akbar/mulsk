@@ -178,40 +178,27 @@
                                                         }
                                                         ?>
 
-
-                                                        <div class="col-12">
+                                                        <!-- <div class="col-12">
                                                             <div class="form-group">
                                                                 <label> Upload Gallery Color Selector </label>
-                                                                <table id="table_field_gallery" class="table table-bordered">
+                                                                <table id="table_field_galleryWOC" class="table table-bordered">
                                                                     <thead>
                                                                         <th>Image</th>
-                                                                        <th>Color Picker</th>
                                                                         <th>Action</th>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" />
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple="" />
                                                                             </td>
                                                                             <td>
-                                                                                <select name="color_hex[]" class="form-control">
-                                                                                    <option value="">Pick Color</option>
-                                                                                    <?php
-                                                                                    foreach ($data_shade_color as $key1 => $vaColor1) {
-                                                                                    ?>
-                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?></option>
-                                                                                        <!-- <option data-content="<span class='kt-badge kt-badge--inline kt-badge--rounded' style='background-color:<?= $vaColor1['color'] ?>;'><?= $vaColor1['color_name'] ?></span>" value="<?= $vaColor1['id'] ?>"><?= $vaColor1['color_name'] ?></option> -->
-                                                                                    <?php } ?>
-                                                                                </select>
-                                                                            </td>
-                                                                            <td>
-                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" />
+                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_galleryWOC" name="add_galleryWOC" value="Add" />
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
 
                                                     </div>
                                                 </div>
@@ -242,6 +229,7 @@
                                                                                     </a>
                                                                                     <br />
                                                                                     <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:80%; height:auto;">
+                                                                                    <label>Color : <b style="color:<?= $vaGall['color'] ?>"><?= $vaGall['color_name'] ?></b></label>
                                                                                 </div>
                                                                             </div>
                                                                     <?php
@@ -254,18 +242,30 @@
                                                         <div class="col-12">
                                                             <div class="form-group">
                                                                 <label> Add More Gallery </label>
-                                                                <table id="table_field_galleryWOC" class="table table-bordered">
+                                                                <table id="table_field_gallery" class="table table-bordered">
                                                                     <thead>
                                                                         <th>Image</th>
+                                                                        <th>Color Picker</th>
                                                                         <th>Action</th>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple=""/>
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" />
                                                                             </td>
                                                                             <td>
-                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_galleryWOC" name="add_galleryWOC" value="Add" />
+                                                                                <select name="color_hex[]" class="form-control">
+                                                                                    <option value="">Pick Color</option>
+                                                                                    <?php
+                                                                                    foreach ($data_shade_color as $key1 => $vaColor1) {
+                                                                                    ?>
+                                                                                        <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;"><?= $vaColor1['color_name'] ?></option>
+                                                                                        <!-- <option data-content="<span class='kt-badge kt-badge--inline kt-badge--rounded' style='background-color:<?= $vaColor1['color'] ?>;'><?= $vaColor1['color_name'] ?></span>" value="<?= $vaColor1['id'] ?>"><?= $vaColor1['color_name'] ?></option> -->
+                                                                                    <?php } ?>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" class="btn btn-warning btn-sm" id="add_gallery" name="add_gallery" value="Add" />
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -492,23 +492,23 @@
         });
     });
 
-    $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_galleryWOC" name="remove_galleryWOC" value="Remove" /> </td></tr>';
-        var max = 10;
-        var x = 1;
+    // $(document).ready(function() {
+    //     var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_galleryWOC" name="p_galleryWOC[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_galleryWOC" name="remove_galleryWOC" value="Remove" /> </td></tr>';
+    //     var max = 10;
+    //     var x = 1;
 
-        $("#add_galleryWOC").click(function() {
-            if (x < max) {
-                $("#table_field_galleryWOC").append(html);
-                x++;
-            }
-        });
+    //     $("#add_galleryWOC").click(function() {
+    //         if (x < max) {
+    //             $("#table_field_galleryWOC").append(html);
+    //             x++;
+    //         }
+    //     });
 
-        $("#table_field_galleryWOC").on('click', '#remove_galleryWOC', function() {
-            $(this).closest('tr').remove();
-            x--;
-        });
-    });
+    //     $("#table_field_galleryWOC").on('click', '#remove_galleryWOC', function() {
+    //         $(this).closest('tr').remove();
+    //         x--;
+    //     });
+    // });
 
     $(document).ready(function() {
         var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" required/> </td><td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_pi" name="remove_pi" value="Remove" /> </td></tr>';
