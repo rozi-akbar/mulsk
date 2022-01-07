@@ -384,6 +384,7 @@ class M_Product_Act extends CI_Controller
                 'update_at'     => $UTC->DateTimeStamp(),
                 'update_by'     => $this->session->userdata('username_mulsk')
             );
+            print_r($data);
             // $this->model->Update('product_gallery', 'id', $id_gallery, $data);
         } else {
             $photo = $_FILES['p_gallery']['name'];
