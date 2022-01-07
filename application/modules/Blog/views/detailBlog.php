@@ -77,7 +77,9 @@
                                             <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                                 <a class="cd chp" href="<?= site_url('Products/detailProduct/' . $rowData['id']) ?>"><?= $rowData['nama_product'] ?></a>
                                             </h3>
-                                            <span class="price dib mb__5"><?= $rowData['price'] ?></span>
+                                            <span class="price dib mb__5">
+                                            <?= "Rp " . number_format($rowData['price'], 2, ',', '.'); ?>
+                                            </span>
                                             <br />
                                             <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
                                                 <?php
