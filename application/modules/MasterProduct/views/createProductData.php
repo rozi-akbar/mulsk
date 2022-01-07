@@ -314,7 +314,7 @@
                                                                         </a>
                                                                         <!--begin::Portlet-->
                                                                         <div class="kt-portlet kt-portlet--bordered">
-                                                                            <div class="kt-portlet__head">
+                                                                            <div class="kt-portlet__body">
                                                                                 <div class="kt-portlet__head-label">
                                                                                     <svg width="80%" viewBox="0 0 45 45">
                                                                                         <image x="0" y="0" width="10" height="10" id="knight" xlink:href="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" />
