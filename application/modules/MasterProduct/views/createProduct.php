@@ -61,7 +61,7 @@ if ($action == "edit") {
                                         <input type="number" name="price" id="price" value="<?= $price ?>" class="form-control" required>
                                     </div>
                                     <div class="form-group">
-                                        <label>Product Image</label>
+                                        <label>Product Image Thumbnail</label>
                                         <?php
                                         if ($action == "edit") {
                                         ?>

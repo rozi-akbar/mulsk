@@ -29,26 +29,48 @@
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditGallery/' . $id_master . '/' . $data_gallery['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditGallery/' . $id_master . '/' . $data_gallery['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data" onsubmit="return saveChanges()">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-4">
                                     <div class="form-group">
                                         <label> Gambar Sebelumnya <label>
                                                 <img src="<?= base_url() ?><?= $data_gallery['url_image'] ?>" style="width:100%; height:auto;">
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-8">
                                     <div class="form-group">
                                         <label>Upload Image</label>
-                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <th>Image</th>
+                                                <!-- <th>Color Picker</th>
+                                                <th>Color Name</th> -->
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery" accept="image/x-png,image/jpeg" multiple="" />
+                                                    </td>
+                                                    <td>
+                                                        <select name="color_hex" class="form-control">
+                                                            <option value="">Pick Color</option>
+                                                            <?php
+                                                            foreach ($data_shade_color as $key1 => $vaColor1) {
+                                                            ?>
+                                                                <option value="<?= $vaColor1['id'] ?>" style="background-color: <?= $vaColor1['color'] ?> !important;" <?php if ($vaColor1['id'] == $data_gallery['id_color']) { ?> selected <?php } ?>><?= $vaColor1['color_name'] ?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
-                                    <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteGallery/<?= $id_master ?>/<?= $data_gallery['id'] ?>">
-                                        <button title="Delete" class="btn btn-danger btn-icon">
-                                            <i class="fa fa-trash"></i>
-                                        </button>
+                                    <span id="sending"> </span>
+                                    <button type="submit" id="update" onclick="saveChanges()" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
+                                    <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteGallery/<?= $id_master ?>/<?= $data_gallery['id'] ?>" class="btn btn-danger btn-icon" title="Delete">
+                                        <i class="fa fa-trash"></i>
                                     </a>
                                 </div>
                             </div>
@@ -59,3 +81,13 @@
         </div>
     </div>
 </div>
+
+<script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    function saveChanges() {
+        document.getElementById("update").style.display = "none";
+        document.getElementById("sending").innerHTML =
+            '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
+    }
+</script>

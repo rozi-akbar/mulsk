@@ -92,17 +92,17 @@
                     <div class="products nt_products_holder row fl_center row_pr_1 cdt_des_5 round_cd_true nt_cover ratio_nt position_8 space_30">
 
                         <?php
-                        foreach ($dataMaster as $vaData) {
+                        foreach ($dataMaster as $key => $vaData) {
                         ?>
                             <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
                                 <div class="product-inner pr">
                                     <div class="product-image position-relative oh lazyload">
 
                                         <a class="d-block" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
-                                            <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
+                                            <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() . $vaData['image'] ?>"></div>
                                         </a>
                                         <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
-                                            <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg"></div>
+                                            <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() . $vaData['image'] ?>"></div>
                                         </div>
                                         <div class="hover_button op__0 tc pa flex column ts__03">
                                             <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>">
@@ -116,12 +116,24 @@
                                         <h3 class="product-title position-relative fs__14 mg__0 fwm">
                                             <a class="cd chp" href="<?= base_url() ?>Products/detailProduct/<?= $vaData['id'] ?>"><b><?= $vaData['nama_product'] ?></b></a>
                                         </h3>
-                                        <span class="price dib mb__5">Rp 750.000</span>
+                                        <span class="price dib mb__5">
+                                            <?= "Rp " . number_format($vaData['price'], 2, ',', '.'); ?>
+                                        </span>
                                         <br />
                                         <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
-                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_gold.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Gold</span><span class="swatch__value bg_color_gold"></span></span>
-                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/pillow_silver.jpg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Rich Silver</span><span class="swatch__value bg_color_silver"></span></span>
-                                            <span data-bgset="<?= base_url() ?>assets/images/products/pillow/cotton-candy-pillowcase-2.jpeg" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right"><span class="tt_txt">Cotton Candy</span><span class="swatch__value bg_color_candy"></span></span>
+                                            <?php
+                                            foreach ($vColor as $keyColor => $vaDataSelector) {
+                                                if ($vaData['product_id'] == $vaDataSelector['m_product_id']) {
+                                            ?>
+                                                    <span data-bgset="<?= base_url() . $vaDataSelector['url_image'] ?>" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right">
+                                                        <span class="tt_txt"><?= $vaDataSelector['color_name'] ?></span>
+                                                        <span class="swatch__value" style="background-color: <?= $vaDataSelector['color'] ?>;"></span>
+                                                    </span>
+                                            <?php
+                                                } else {
+                                                }
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -137,12 +149,6 @@
                     <!--navigation-->
                     <div class="products-footer tc">
                         <nav class="nt-pagination w__100 tc paginate_ajax">
-                            <!-- <ul class="pagination-page page-numbers">
-                                <li><span class="page-numbers current">1</span></li>
-                                <li><a class="page-numbers" href="#">2</a></li>
-                                <li><a class="page-numbers" href="#">3</a></li>
-                                <li><a href="#" class="next page-numbers">Next</a></li>
-                            </ul> -->
                         </nav>
                     </div>
                     <!--end navigation-->

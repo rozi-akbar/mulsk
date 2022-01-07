@@ -34,6 +34,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
     <link href="<?= base_url() ?>web/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url() ?>web/plugins/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url() ?>web/plugins/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
 
     <!-- datatable -->
     <link href="<?= base_url() ?>web/plugins/custom/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
@@ -75,7 +76,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
     <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
         <div class="kt-header-mobile__logo">
             <a href="#">
-                <img alt="Logo" src="<?= base_url() ?>web/media/logos/logo-light.png" />
+                <img alt="Logo" src="<?= base_url() ?>assets/images/svg/favicon_mulsk-white.svg" />
             </a>
         </div>
         <div class="kt-header-mobile__toolbar">
@@ -94,7 +95,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
             <!-- Uncomment this to display the close button of the panel
 <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
 -->
-            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside" style="box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;">
 
                 <!-- begin:: Aside -->
                 <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
@@ -130,7 +131,7 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                             </li>
                             <li class="kt-menu__item <?= $this->uri->segment(1) == '' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                 <a href="<?= base_url() ?>Home/Banner" class="kt-menu__link">
-                                    <i class="kt-menu__link-icon fa fa-file-invoice"></i>
+                                    <i class="kt-menu__link-icon fa fa-digital-tachograph"></i>
                                     <span class="kt-menu__link-text">Home Banner </span>
                                 </a>
                             </li>
@@ -185,31 +186,15 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                                 <span class="kt-menu__link-text">Product Data</span>
                                             </a>
                                         </li>
-                                        <!-- <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductGallery' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductGallery') ?>" class="kt-menu__link ">
+                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'M_ShadeColor' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('MasterProduct/M_Product/M_ShadeColor') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
                                                 </i>
-                                                <span class="kt-menu__link-text">Create Product Gallery</span>
+                                                <span class="kt-menu__link-text">Shade Color</span>
                                             </a>
                                         </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductDesc' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductDesc') ?>" class="kt-menu__link ">
-                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
-                                                    <span></span>
-                                                </i>
-                                                <span class="kt-menu__link-text">Product Description</span>
-                                            </a>
-                                        </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ProductIcon' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
-                                            <a href="<?= site_url('MasterProduct/M_Product/ProductIcon') ?>" class="kt-menu__link ">
-                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
-                                                    <span></span>
-                                                </i>
-                                                <span class="kt-menu__link-text">Product Icon</span>
-                                            </a>
-                                        </li>
-                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'ListProduct' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                        <!--<li class="kt-menu__item <?= $this->uri->segment(3) == 'ListProduct' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
                                             <a href="<?= site_url('MasterProduct/M_Product/ListProduct') ?>" class="kt-menu__link ">
                                                 <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
                                                     <span></span>
@@ -217,6 +202,29 @@ if ($this->session->userdata('isLogin_mulsk') == '' || empty($this->session->use
                                                 <span class="kt-menu__link-text">List Product</span>
                                             </a>
                                         </li> -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">User Management</h4>
+                                <i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item <?= $this->uri->segment(2) == 'M_User' ? 'kt-menu__item--open kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+                                    <i class="kt-menu__link-icon flaticon-users-1"></i>
+                                    <span class="kt-menu__link-text">User</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item <?= $this->uri->segment(3) == 'CreateUser' ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true">
+                                            <a href="<?= site_url('User/M_User/CreateUser') ?>" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--line">
+                                                    <span></span>
+                                                </i>
+                                                <span class="kt-menu__link-text">List User</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>

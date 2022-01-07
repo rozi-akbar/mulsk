@@ -5,8 +5,8 @@ if ($action == "edit") {
         $id         = $vaBlog['id_blog'];
         $title      = $vaBlog['title'];
         $contents   = $vaBlog['content'];
-        $banner      = $vaBlog['banner_blog'];
-        $thumbnail      = $vaBlog['thumbnail_blog'];
+        $banner     = $vaBlog['banner_blog'];
+        $thumbnail  = $vaBlog['thumbnail_blog'];
     }
     $valueAction = "Save Change";
     $fAction = 'UpdateBlog/' . $id;
@@ -55,33 +55,14 @@ if ($action == "edit") {
                     <div class="kt-portlet__body">
                         <form action="<?= site_url('BlogAdmin/Blog_Act/' . $fAction); ?>" method="post" enctype="multipart/form-data">
                             <div class="row">
-                                <div class="col-12 col-md-3">
+                                <div class="col-12">
                                     <div class="form-group">
-                                        <label>Banner Blog <span id="file_error_banner"></span></label>
-                                        <input type="file" name="banner" id="banner" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
-                                        <input type="hidden" name="old_url_banner" value="<?= $banner ?>">
-                                        <span class="form-text text-muted">
-                                            <ol>
-                                                <li>Allowed File - <b>images(jpeg,jpg,png).</b></li>
-                                                <li>Max Size 1Mb</li>
-                                                <li>Dimensi : 1920px x 250px</li>
-                                            </ol>
-                                        </span>
-                                        <?php
-                                        if ($action == "edit") {
-                                            if (empty($banner)) {
-                                            } else {
-                                                echo '<img src="' . base_url() . '' . $banner .
-                                                    '" style="margin-bottom:2%; margin-top:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
-                                            }
-                                        } else {
-                                        }
-                                        ?>
+                                        <label>Title</label>
+                                        <input type="text" name="title" class="form-control" placeholder="Title" value="<?= $title ?>" required>
+                                        <input type="hidden" name="blog_id" id="blog_id" value="<?= $blog_id ?>">
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <div id="preview_banner"> </div>
-                                </div>
+
                                 <div class="col-12 col-md-3">
                                     <div class="form-group">
                                         <label>Thumbnail <span id="file_error_thumbnail"></span></label>
@@ -90,7 +71,7 @@ if ($action == "edit") {
                                         <span class="form-text text-muted">
                                             <ol>
                                                 <li>Allowed File - <b>images(jpeg,jpg,png).</b></li>
-                                                <li>Max Size 1Mb</li>
+                                                <li>Max Size 2Mb</li>
                                                 <li>Dimensi : 1000px x 750px</li>
                                             </ol>
                                         </span>
@@ -109,16 +90,66 @@ if ($action == "edit") {
                                 <div class="col-12 col-md-3">
                                     <div id="preview_thumbnail"> </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                <div class="col-12 col-md-3">
                                     <div class="form-group">
-                                        <label>Title</label>
-                                        <input type="text" name="title" class="form-control" placeholder="Title" value="<?= $title ?>" required>
-                                        <input type="hidden" name="blog_id" id="blog_id" value="<?= $blog_id ?>">
+                                        <label>Banner Blog <span id="file_error_banner"></span></label>
+                                        <input type="file" name="banner" id="banner" onchange="return ValidasiPhoto();" class="form-control" accept="image/x-png,image/jpeg">
+                                        <input type="hidden" name="old_url_banner" value="<?= $banner ?>">
+                                        <span class="form-text text-muted">
+                                            <ol>
+                                                <li>Allowed File - <b>images(jpeg,jpg,png).</b></li>
+                                                <li>Max Size 2Mb</li>
+                                                <li>Dimensi : 1920px x 250px</li>
+                                            </ol>
+                                        </span>
+                                        <?php
+                                        if ($action == "edit") {
+                                            if (empty($banner)) {
+                                            } else {
+                                                echo '<img src="' . base_url() . '' . $banner .
+                                                    '" style="margin-bottom:2%; margin-top:2%; background-position: center; background-size: cover; width: 100%; height: auto;"/>';
+                                            }
+                                        } else {
+                                        }
+                                        ?>
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div id="preview_banner"> </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <div class="form-group">
                                         <textarea name="contents" class="summernote" id="summernote" required> <?= $contents ?> </textarea>
                                     </div>
                                 </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Product Include</label>
+                                        <select class="form-control kt-select2" id="kt_select2_3" name="pi[]" multiple="multiple">
+                                            <?php
+                                            foreach ($dataMaster as $vaMasterP) {
+                                            ?>
+                                                <option value="<?= $vaMasterP['id'] ?>">
+                                                    <?= $vaMasterP['nama_product'] ?>
+                                                </option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                        <label> <b class="text-warning">
+                                                <?php
+                                                foreach ($product_selected as $rowP) {
+                                                    echo $rowP['nama_product'] . "; ";
+                                                }
+                                                ?>
+                                            </b>
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <button type="submit" id="submit" class="btn btn-primary"><?= $valueAction ?></button>
                                 </div>
@@ -134,6 +165,7 @@ if ($action == "edit") {
 
 <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
 <script src="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.js" type="text/javascript"></script>
+<script src="<?= base_url() ?>assets/js/summernote/summernote-image-attributes.js" type="text/javascript"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -151,6 +183,20 @@ if ($action == "edit") {
                 ['view', ['fullscreen', 'codeview']],
                 ['help', ['help']]
             ],
+            // popover: {
+            //     image: [
+            //         ['custom', ['imageAttributes']],
+            //         ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+            //         ['float', ['floatLeft', 'floatRight', 'floatNone']],
+            //         ['remove', ['removeMedia']]
+            //     ],
+            // },
+            // lang: 'en-US', // Change to your chosen language
+            // imageAttributes: {
+            //     icon: '<i class="note-icon-pencil"/>',
+            //     removeEmpty: false, // true = remove attributes | false = leave empty if present
+            //     disableUpload: false // true = don't display Upload Options | Display Upload Options
+            // },
             callbacks: {
                 onImageUpload: function(image) {
                     uploadImage(image[0]);
@@ -236,7 +282,7 @@ if ($action == "edit") {
         }
         //========================= END DEKLARASI THUMBNAIL ========================
 
-        if (inputFile1 != "" && file_size1 > 1000000) { //DOC BANNER
+        if (inputFile1 != "" && file_size1 > 2000000) { //DOC BANNER
             $("#file_error_banner").html(
                 '<span style="color:red; text-transform: none; font-size: 12px;"> File Melebihi 1 Mb </span>');
             var reader = new FileReader();
@@ -257,7 +303,7 @@ if ($action == "edit") {
             }
 
             //return false;
-        } else if (inputFile1 != "" && file_size2 < 1000000) {
+        } else if (inputFile1 != "" && file_size2 < 2000000) {
             var hasil1 = file_size1 / 1024;
             $("#file_error_banner").html(
                 '<span style="color:green; text-transform: none; font-size: 12px;"> File Size : ' + hasil1.toFixed(2) +
@@ -271,7 +317,7 @@ if ($action == "edit") {
         }
 
 
-        if (inputFile2 != "" && file_size2 > 1000000) { //DOC THUMBNAIL
+        if (inputFile2 != "" && file_size2 > 2000000) { //DOC THUMBNAIL
             $("#file_error_thumbnail").html(
                 '<span style="color:red; text-transform: none; font-size: 12px;"> File Melebihi 1 Mb </span>');
             var reader = new FileReader();
@@ -290,7 +336,7 @@ if ($action == "edit") {
                 };
                 reader.readAsDataURL(inputFile2.files[0]);
             }
-        } else if (inputFile2 != "" && file_size2 < 1000000) {
+        } else if (inputFile2 != "" && file_size2 < 2000000) {
             var hasil2 = file_size2 / 1024;
             $("#file_error_thumbnail").html(
                 '<span style="color:green; text-transform: none; font-size: 12px;"> File Size : ' + hasil2.toFixed(2) +
@@ -322,7 +368,7 @@ if ($action == "edit") {
                 reader.readAsDataURL(inputFile2.files[0]);
             }
 
-            if (file_size1 > 1000000 || file_size2 > 1000000) {
+            if (file_size1 > 2000000 || file_size2 > 2000000) {
                 document.getElementById("submit").disabled = true;
             } else {
                 document.getElementById("submit").disabled = false;

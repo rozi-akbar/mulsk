@@ -32,17 +32,17 @@ class Model extends CI_Model
             foreach ($data->result_array() as $row) {
                 $output .= '
                 <article class="post_nt_loop post_1 col-lg-4 col-md-6 col-12 mb__40">
-                    <a class="mb__10 db pr oh" href="'. site_url("Blog/bg0912202101") .'">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="'. base_url() .'assets/images/blog/article9_2.jpg"></div>
+                    <a class="mb__10 db pr oh" href="' . site_url("Blog/DetailBlog/" . $row['id_blog'] . "") . '">
+                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="' . base_url() . $row['thumbnail_blog'] . '"></div>
                     </a>
                     <div class="post-info">
                         <span class="post-author mr__5">
                             <span class="cd">
-                                <time datetime="2020-04-06T02:17:00Z">09 Desember 2021</time>
+                                <time datetime="2020-04-06T02:17:00Z">' . substr($row['posted_at'], 0, 10) . '</time>
                             </span>
                         </span>
                         <h4 class="mg__0 fs__16 mt__10 ls__0">
-                            <a class="cd chp open" href="'. site_url("Blog/bg0912202101") .'">'.$row['title'].'</a>
+                            <a class="cd chp open" href="' . site_url("Blog/DetailBlog/" . $row['id_blog'] . "") . '">' . $row['title'] . '</a>
                         </h4>
                     </div>
                 </article>

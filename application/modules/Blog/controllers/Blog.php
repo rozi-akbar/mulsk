@@ -24,8 +24,21 @@ class Blog extends CI_Controller
         $this->load->view('Layout/footer');
     }
 
+    public function DetailBlog($id_blog = "")
+    {
+        $data['vBlog']       = $this->db->query("SELECT * FROM v_blog_posted WHERE id_blog = '" . $id_blog . "' ")->row_array();
+        $data['dataMaster']  = $this->model->ViewWhere('v_blog_prod_selected', 'm_blog_id', $id_blog);
+        $data['vColor']      = $this->model->View('v_color_image_selector', 'id');
+
+        $this->load->view('Layout/header');
+        $this->load->view('detailBlog', $data);
+        $this->load->view('Layout/footer');
+    }
+
     function fetch_data()
     {
+        $sort 		= $this->input->post('sort');
+
         $config                     = array();
         $config["base_url"]         = "#";
         $config["total_rows"]       = $this->model->count_blog();

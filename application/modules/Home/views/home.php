@@ -117,7 +117,146 @@
     <!-- end main slide -->
 
     <!-- begin our product -->
-    <div class="nt_section type_featured_collection tp_se_cdt">
+    <div class="kalles-section kalles-section_type_featured_blog nt_section type_featured_blog type_carousel">
+        <div class="container">
+            <div class="wrap_title mb__30 des_title_2">
+                <h3 class="section-title tc pr flex fl_center al_center fs__24 title_2">
+                    <span class="mr__10 ml__10">OUR PRODUCTS</span>
+                </h3>
+                <span class="dn tt_divider">
+                    <span></span><i class="dn clprfalse title_2 la-pencil-alt"></i><span></span>
+                </span>
+            </div>
+            <div class="articles art_des1 nt_products_holder row nt_cover ratio6_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
+                <?php
+                foreach ($dataMaster as $vaProduct) {
+                ?>
+                    <div class="col-lg-3 col-md-3 col-6 pr_animated done mt__30 pr_grid_item product nt_pr desgin__1">
+                        <div class="product-inner pr">
+                            <div class="product-image position-relative oh lazyload">
+
+                                <a class="d-block" href="<?= base_url() ?>Products/detailProduct/<?= $vaProduct['id'] ?>">
+                                    <div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() . $vaProduct['image'] ?>"></div>
+                                </a>
+                                <div class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
+                                    <div class="pr_lazy_img back-img pa nt_bg_lz lazyload padding-top__127_571" data-bgset="<?= base_url() . $vaProduct['image'] ?>"></div>
+                                </div>
+                                <div class="hover_button op__0 tc pa flex column ts__03">
+                                    <a class="pr nt_add_qv js_add_qv js_pillowcase cd br__40 pl__25 pr__25 bgw tc dib ttip_nt tooltip_top_left" href="<?= base_url() ?>Products/detailProduct/<?= $vaProduct['id'] ?>">
+                                        <span class="tt_txt">Click to View</span>
+                                        <i class="iccl iccl-eye"></i>
+                                        <span>Click to View</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-info mt__15">
+                                <h3 class="product-title position-relative fs__14 mg__0 fwm">
+                                    <a class="cd chp" href="<?= base_url() ?>Products/detailProduct/<?= $vaProduct['id'] ?>"><b><?= $vaProduct['nama_product'] ?></b></a>
+                                </h3>
+                                <span class="price dib mb__5">
+                                    <?= "Rp " . number_format($vaProduct['price'], 2, ',', '.'); ?>
+                                </span>
+                                <br />
+                                <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid">
+                                    <?php
+                                    foreach ($vColor as $keyColor => $vaDataSelector) {
+                                        if ($vaProduct['product_id'] == $vaDataSelector['m_product_id']) {
+                                    ?>
+                                            <span data-bgset="<?= base_url() . $vaDataSelector['url_image'] ?>" class="lazyload nt_swatch_on_bg swatch__list--item position-relative ttip_nt tooltip_top_right">
+                                                <span class="tt_txt"><?= $vaDataSelector['color_name'] ?></span>
+                                                <span class="swatch__value" style="background-color: <?= $vaDataSelector['color'] ?>;"></span>
+                                            </span>
+                                    <?php
+                                        } else {
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+    <!-- end our product -->
+
+    <!--full width banner section-->
+    <div class="kalles-section nt_section type_image_text_overlay">
+        <div class="kalles-handmade__full-width-banner nt_full txt_shadow_false se_height_cus_h nt_first">
+            <div class="row equal_nt">
+                <div class="col-12">
+                    <div class="nt_img_txt oh pr middle center">
+                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center background-change" data-bgset="<?= base_url() ?>assets/images/how-to-order.jpg"></div>
+                        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-1 flex column shadow_wrap tl pe_none z__100">
+                            <div class="pa pa_txts">
+                                <h3 class="mt__0 mg__0 lh__1 content_889">100% Mulberry Silk Pillowcase</h3>
+                                <div class="kalles-handmade__full-width-banner__br imtt4_space"></div>
+                                <p class="kalles-handmade__full-width-banner__desc content_890">
+                                    Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEXⓇ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.
+                                </p>
+                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end full width banner section-->
+
+    <!--blog post-->
+    <div class="kalles-section kalles-section_type_featured_blog nt_section type_featured_blog type_carousel">
+        <div class="container">
+            <div class="wrap_title mb__30 des_title_2">
+                <h3 class="section-title tc pr flex fl_center al_center fs__24 title_2">
+                    <span class="mr__10 ml__10">LATEST FROM BLOG</span>
+                </h3>
+                <span class="dn tt_divider">
+                    <span></span><i class="dn clprfalse title_2 la-pencil-alt"></i><span></span>
+                </span>
+            </div>
+            <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
+                <?php
+                foreach ($vBlog as $vaBlog) {
+                    $jumlahkarakter = 70;
+
+                    $text = $vaBlog['content'];
+                    $char     = $text{
+                        $jumlahkarakter - 1};
+                    while ($char != ' ') {
+                        $char = $text{
+                            --$jumlahkarakter}; // Cari spasi pada posisi 49, 48, 47, dst...
+                    }
+                    $desc = substr($text, 0, $jumlahkarakter) . ' ';
+                ?>
+                    <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                        <a class="mb__15 db pr oh" href="<?= site_url('Blog/DetailBlog/' . $vaBlog['id_blog']) ?>">
+                            <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url($vaBlog['thumbnail_blog']) ?>"></div>
+                        </a>
+                        <div class="post-info mb__10">
+                            <h4 class="mg__0 fs__16 mb__5 ls__0">
+                                <a class="cd chp open" href="<?= site_url('Blog/DetailBlog/' . $vaBlog['id_blog']) ?>"><?= $vaBlog['title'] ?></a>
+                            </h4>
+                            <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z"><?= substr($vaBlog['posted_at'], 0, 10) ?></time></span></span>
+                        </div>
+                        <!-- <div class="post-content"><?= $desc ?></div> -->
+                    </article>
+                <?php
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+    <!--end blog post-->
+</div>
+
+
+<!-- ===================================== OUR PRODUCT BACKUP ================================================ -->
+
+<!-- <div class="nt_section type_featured_collection tp_se_cdt">
         <div class="kalles-otp-01__feature container">
             <div class="wrap_title des_title_2">
                 <h3 class="section-title tc position-relative flex fl_center al_center fs__24 title_2">
@@ -227,108 +366,86 @@
 
             </div>
         </div>
-    </div>
-    <!-- end our product -->
+    </div> -->
 
-    <!--full width banner section-->
-    <div class="kalles-section nt_section type_image_text_overlay">
-        <div class="kalles-handmade__full-width-banner nt_full txt_shadow_false se_height_cus_h nt_first">
-            <div class="row equal_nt">
-                <div class="col-12">
-                    <div class="nt_img_txt oh pr middle center">
-                        <div class="js_full_ht4 lazyload item__position bg_rp_norepeat bg_sz_cover center background-change" data-bgset="<?= base_url() ?>assets/images/how-to-order.jpg"></div>
-                        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-1 flex column shadow_wrap tl pe_none z__100">
-                            <div class="pa pa_txts">
-                                <h3 class="mt__0 mg__0 lh__1 content_889">100% Mulberry Silk Pillowcase</h3>
-                                <div class="kalles-handmade__full-width-banner__br imtt4_space"></div>
-                                <p class="kalles-handmade__full-width-banner__desc content_890">
-                                    Mulsk Mulberry Silk Pillow Case telah tersertifikasi oleh OEKO-TEXⓇ Standard 100 yang telah dites dan bergaransi 100% bebas dari bahan berbaya, toksin, dan subtansi yang dapat mengiritasi kulit dan rambut.
-                                </p>
-                                <a class="imtt4_btn button pe_auto round_true btn_icon_false" href="<?= site_url('How_to_Buy') ?>">How to Buy</a>
-                            </div>
-                        </div>
-                    </div>
+<!-- ===================================== END OUR PRODUCT BACKUP ================================================ -->
+
+<!-- ===================================== LATES FROM BLOG ================================================ -->
+<!--blog post-->
+<!-- <div class="kalles-section kalles-section_type_featured_blog nt_section type_featured_blog type_carousel">
+    <div class="container">
+        <div class="wrap_title mb__30 des_title_2">
+            <h3 class="section-title tc pr flex fl_center al_center fs__24 title_2">
+                <span class="mr__10 ml__10">LATEST FROM BLOG</span>
+            </h3>
+            <span class="dn tt_divider">
+                <span></span><i class="dn clprfalse title_2 la-pencil-alt"></i><span></span>
+            </span>
+        </div>
+        <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
+            <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg0912202101') ?>">
+                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article9_2.jpg"></div>
+                </a>
+                <div class="post-info mb__10">
+                    <h4 class="mg__0 fs__16 mb__5 ls__0">
+                        <a class="cd chp open" href="<?= site_url('Blog/bg0912202101') ?>">Sarung Bantal Mulsk Mampu Maksimalkan Penyerapan Skincare ke Kulit</a>
+                    </h4>
+                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">09 Desember 2021</time></span></span>
                 </div>
-            </div>
+                <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah?</div>
+            </article>
+            <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg2911202101') ?>">
+                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article8_mulsk.jpg"></div>
+                </a>
+                <div class="post-info mb__10">
+                    <h4 class="mg__0 fs__16 mb__5 ls__0">
+                        <a class="cd chp open" href="<?= site_url('Blog/bg2911202101') ?>">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</a>
+                    </h4>
+                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">29 November 2021</time></span></span>
+                </div>
+                <div class="post-content">Melakukan perawatan kulit wajah agaknya saat ini menjadi keharusan bagi banyak orang. Tidak hanya wanita, tetapi para pria juga mulai banyak yang sadar untuk merawat kulit.</div>
+            </article>
+            <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1511202101') ?>">
+                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article-7.jpg"></div>
+                </a>
+                <div class="post-info mb__10">
+                    <h4 class="mg__0 fs__16 mb__5 ls__0">
+                        <a class="cd chp open" href="<?= site_url('Blog/bg1511202101') ?>">Punya Segudang Manfaat, Sarung Bantal Mulberry Silk Jadi Ide Hadiah Istimewa untuk Orang-orang Terkasih</a>
+                    </h4>
+                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">15 Oktober 2021</time></span></span>
+                </div>
+                <div class="post-content">Sering bingung saat memberi hadiah untuk orang-orang terkasih? Memilih hadiah bukan perkara sederhana dan mudah.</div>
+            </article>
+            <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202103') ?>">
+                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog6.jpg"></div>
+                </a>
+                <div class="post-info mb__10">
+                    <h4 class="mg__0 fs__16 mb__5 ls__0">
+                        <a class="cd chp open" href="<?= site_url('Blog/bg1506202103') ?>">Benarkah Sarung Bantal Mulberry Silk Bisa Cegah Jerawat di Wajah?</a>
+                    </h4>
+                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">13 Oktober 2021</time></span></span>
+                </div>
+                <div class="post-content">Sarung bantal Anda memang terlihat bersih, tetapi bakteri yang telah menempel dapat kembali ke wajah.</div>
+            </article>
+            <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
+                <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202102') ?>">
+                    <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article-5.png"></div>
+                </a>
+                <div class="post-info mb__10">
+                    <h4 class="mg__0 fs__16 mb__5 ls__0">
+                        <a class="cd chp open" href="<?= site_url('Blog/bg1506202102') ?>">Ramai Dipakai Selebriti Tanah Air hingga Luar Negeri, Sarung Bantal Mulberry Silk Bikin Tetap Cantik saat Bangun Tidur</a>
+                    </h4>
+                    <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">11 Oktober 2021</time></span></span>
+                </div>
+                <div class="post-content">Tidur menggunakan sarung bantal berbahan sutra seolah menjadi tren di kalangan selebriti baik Tanah Air maupun luar negeri beberapa tahun belakang. </div>
+            </article>
         </div>
     </div>
-    <!--end full width banner section-->
+</div> -->
+<!--end blog post-->
 
-    <!--blog post-->
-    <div class="kalles-section kalles-section_type_featured_blog nt_section type_featured_blog type_carousel">
-        <div class="container">
-            <div class="wrap_title mb__30 des_title_2">
-                <h3 class="section-title tc pr flex fl_center al_center fs__24 title_2">
-                    <span class="mr__10 ml__10">LATEST FROM BLOG</span>
-                </h3>
-                <span class="dn tt_divider">
-                    <span></span><i class="dn clprfalse title_2 la-pencil-alt"></i><span></span>
-                </span>
-            </div>
-            <div class="articles art_des1 nt_products_holder row nt_cover ratio4_3 position_8 equal_nt js_carousel nt_slider prev_next_1 btn_owl_1 dot_owl_1 dot_color_1 btn_vi_1" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true, "rightToLeft": false }'>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg0912202101') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article9_2.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg0912202101') ?>">Sarung Bantal Mulsk Mampu Maksimalkan Penyerapan Skincare ke Kulit</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">09 Desember 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Pernah menyangka sarung bantal ternyata turut berperan penting dalam menjaga kulit wajah?</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg2911202101') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article8_mulsk.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg2911202101') ?>">Ogah Alami Kulit Berjerawat? Perhatikan Skincare hingga Sarung Bantalmu</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">29 November 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Melakukan perawatan kulit wajah agaknya saat ini menjadi keharusan bagi banyak orang. Tidak hanya wanita, tetapi para pria juga mulai banyak yang sadar untuk merawat kulit.</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1511202101') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article-7.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1511202101') ?>">Punya Segudang Manfaat, Sarung Bantal Mulberry Silk Jadi Ide Hadiah Istimewa untuk Orang-orang Terkasih</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">15 Oktober 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Sering bingung saat memberi hadiah untuk orang-orang terkasih? Memilih hadiah bukan perkara sederhana dan mudah.</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202103') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/img-blog6.jpg"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1506202103') ?>">Benarkah Sarung Bantal Mulberry Silk Bisa Cegah Jerawat di Wajah?</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">13 Oktober 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Sarung bantal Anda memang terlihat bersih, tetapi bakteri yang telah menempel dapat kembali ke wajah.</div>
-                </article>
-                <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
-                    <a class="mb__15 db pr oh" href="<?= site_url('Blog/bg1506202102') ?>">
-                        <div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="<?= base_url() ?>assets/images/blog/article-5.png"></div>
-                    </a>
-                    <div class="post-info mb__10">
-                        <h4 class="mg__0 fs__16 mb__5 ls__0">
-                            <a class="cd chp open" href="<?= site_url('Blog/bg1506202102') ?>">Ramai Dipakai Selebriti Tanah Air hingga Luar Negeri, Sarung Bantal Mulberry Silk Bikin Tetap Cantik saat Bangun Tidur</a>
-                        </h4>
-                        <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z">11 Oktober 2021</time></span></span>
-                    </div>
-                    <div class="post-content">Tidur menggunakan sarung bantal berbahan sutra seolah menjadi tren di kalangan selebriti baik Tanah Air maupun luar negeri beberapa tahun belakang. </div>
-                </article>
-            </div>
-        </div>
-    </div>
-    <!--end blog post-->
-
-</div>
+<!-- ===================================== END LATES FROM BLOG ================================================ -->

@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="kt-portlet__body">
-                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditProductIcon/' . $id_master . '/' . $data_product_icon['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?= site_url('MasterProduct/M_Product_Act/EditProductIcon/' . $id_master . '/' . $data_product_icon['id'] . '/' . $productName); ?>" method="post" enctype="multipart/form-data" onsubmit="return saveChanges()">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
@@ -43,13 +43,14 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label>Upload Icon</label>
-                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon" accept="image/x-png,image/jpeg" multiple="" />
+                                        <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon" accept="image/x-png,image/svg+xml" multiple="" />
                                         <label>Deskripsi</label>
                                         <textarea class="form-control" id="pi_desc" name="pi_desc"> <?= $data_product_icon['description_product_icon'] ?> </textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
+                                    <span id="sending"></span>
+                                    <button type="submit" id="update" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
                                     <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteProductIcon/<?= $id_master ?>/<?= $data_product_icon['id'] ?>">
                                         <button title="Delete" class="btn btn-danger btn-icon">
                                             <i class="fa fa-trash"></i>
@@ -64,3 +65,13 @@
         </div>
     </div>
 </div>
+
+<script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    function saveChanges() {
+        document.getElementById("update").style.display = "none";
+        document.getElementById("sending").innerHTML =
+            '<button type="button" class="btn btn-warning btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u" disabled>Sending Data...</button>';
+    }
+</script>
