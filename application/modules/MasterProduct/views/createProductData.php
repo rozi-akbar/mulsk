@@ -136,7 +136,7 @@
                                                                 <textarea name="deskripsi" class="summernote" id="summernote_desc"> <?= $dataMaster['deskripsi'] ?> </textarea>
                                                             </div>
                                                         </div>
-                                                        
+
                                                         <!-- <div class="col-12">
                                                             <div class="form-group">
                                                                 <label> Upload Gallery Color Selector </label>
@@ -316,7 +316,10 @@
                                                                         <div class="kt-portlet kt-portlet--bordered">
                                                                             <div class="kt-portlet__head">
                                                                                 <div class="kt-portlet__head-label">
-                                                                                    <img src="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" style="width:80%; height:auto;">
+                                                                                    <svg width="500px" height="500px" viewBox="0 0 45 45">
+                                                                                        <image x="0" y="0" width="10" height="10" id="knight" xlink:href="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" />
+                                                                                        <!-- <img src="<?= base_url() ?><?= $vaIcon['url_product_icon'] ?>" style="width:80%; height:auto;"> -->
+                                                                                    </svg>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="kt-portlet__body">
