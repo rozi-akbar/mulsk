@@ -374,7 +374,7 @@ class M_Product_Act extends CI_Controller
     function EditGallery($id_master = "", $id_gallery = "", $productName = "")
     {
         $UTC = new UTC;
-        $this->db->trans_start();
+        // $this->db->trans_start();
 
         if (empty($_FILES['p_gallery']['name']) || $_FILES['p_gallery']['name'] == "") {
             $data = array(
@@ -384,7 +384,7 @@ class M_Product_Act extends CI_Controller
                 'update_at'     => $UTC->DateTimeStamp(),
                 'update_by'     => $this->session->userdata('username_mulsk')
             );
-            $this->model->Update('product_gallery', 'id', $id_gallery, $data);
+            // $this->model->Update('product_gallery', 'id', $id_gallery, $data);
         } else {
             $photo = $_FILES['p_gallery']['name'];
             $getData = $this->db->query("SELECT * FROM product_gallery WHERE id = '" . $id_gallery . "' ")->row_array();
@@ -392,13 +392,13 @@ class M_Product_Act extends CI_Controller
             $this->U_Gallery($photo, $id_gallery, str_replace('%20', '_', $productName), $key[1], $getData['url_image']);
         }
 
-        $this->db->trans_complete();
-        if ($this->db->trans_status === FALSE) {
-            $this->db->trans_rollback();
-            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
-        } else {
-            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
-        }
+        // $this->db->trans_complete();
+        // if ($this->db->trans_status === FALSE) {
+        //     $this->db->trans_rollback();
+        //     redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        // } else {
+        //     redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        // }
     }
 
     function EditGalleryWithoutColor($id_master = "", $id_gallery = "", $productName = "")
@@ -708,7 +708,7 @@ class M_Product_Act extends CI_Controller
         $UTC = new UTC;
         $uuid = date('YmdHis');
         $to_folder = "";
-        $this->db->trans_start();
+        // $this->db->trans_start();
 
         if (empty($photo)) {
             echo "nothing";
@@ -743,7 +743,8 @@ class M_Product_Act extends CI_Controller
                             );
                         }
 
-                        // print_r($data);
+                        print_r($data);
+                        die;
                         $this->model->Update('product_gallery', 'id', $id, $data);
                         move_uploaded_file($file_temp, "$to_folder");
                     } else {
@@ -755,16 +756,16 @@ class M_Product_Act extends CI_Controller
             }
         }
 
-        $this->db->trans_complete();
-        if ($this->db->trans_status() === FALSE) {
-            $this->db->trans_rollback();
-            if (empty($to_folder) || $to_folder == "") {
-            } else {
-                unlink($to_folder);
-            }
-        } else {
-            unlink($oldUrl);
-        }
+        // $this->db->trans_complete();
+        // if ($this->db->trans_status() === FALSE) {
+        //     $this->db->trans_rollback();
+        //     if (empty($to_folder) || $to_folder == "") {
+        //     } else {
+        //         unlink($to_folder);
+        //     }
+        // } else {
+        //     unlink($oldUrl);
+        // }
     }
 
     function I_ProductIcon($icon, $desc, $noId, $iconName)
