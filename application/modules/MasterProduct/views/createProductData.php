@@ -190,7 +190,7 @@
                                                                                     <img src="<?= base_url() ?><?= $vaGall['url_image'] ?>" style="width:80%; height:auto;">
 
                                                                                     <?php
-                                                                                    if ($vaGall['color'] == "" || empty($vaGall['color']) || $vaGall['color'] == "Pick Color") {
+                                                                                    if ($vaGall['color'] == "" && empty($vaGall['color_name'])) {
                                                                                     } else {
                                                                                     ?>
                                                                                         <label>
