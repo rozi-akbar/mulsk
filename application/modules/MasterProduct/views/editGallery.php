@@ -69,6 +69,9 @@
                                 <div class="col-12">
                                     <span id="sending"> </span>
                                     <button type="submit" id="update" onclick="saveChanges()" title="Save Change" id="submit" class="btn btn-primary"> Save Change </button>
+                                    <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/RemoveColor/<?= $id_master ?>/<?= $data_gallery['id'] ?>" class="btn btn-warning">
+                                        Remove Color
+                                    </a>
                                     <a href="<?= base_url() ?>/MasterProduct/M_Product_Act/DeleteGallery/<?= $id_master ?>/<?= $data_gallery['id'] ?>" class="btn btn-danger btn-icon" title="Delete">
                                         <i class="fa fa-trash"></i>
                                     </a>

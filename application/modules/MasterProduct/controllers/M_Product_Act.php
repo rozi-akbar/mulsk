@@ -1007,4 +1007,16 @@ class M_Product_Act extends CI_Controller
             redirect(site_url('MasterProduct/M_Product/T_M_ShadeColor'));
         }
     }
+
+    function RemoveColor($id_master = "", $id = "")
+    {
+        $this->db->trans_start();
+        $this->db->query("UPDATE product_gallery SET id_color = NULL WHERE id = '" . $id . "' ");
+        $this->db->trans_complete();
+        if ($this->db->trans_status === FALSE) {
+            $this->db->trans_rollback();
+        } else {
+            redirect(site_url('MasterProduct/M_Product/T_CreateProductData/' . $id_master));
+        }
+    }
 }
