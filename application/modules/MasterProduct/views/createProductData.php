@@ -119,7 +119,8 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Image Thumbnail</label>
-                                                                <input type="file" name="imageThumbnail" id="image" class="form-control" accept="image/x-png,image/jpeg">
+                                                                <input type="file" name="imageThumbnail" id="image" class="form-control" accept="image/x-png,image/jpeg" onchange="loadFileThumbnail(this, event)">
+                                                                <div id="preview_thumbnail"></div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
@@ -222,7 +223,7 @@
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" />
+                                                                                <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" onchange="loadFileGallery(this, event)" />
                                                                             </td>
                                                                             <td>
                                                                                 <select name="color_hex[]" class="form-control">
@@ -278,7 +279,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Benefits Image</label>
-                                                                <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png">
+                                                                <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png" onchange="loadFileBenefits(this, event)">
                                                                 <br />
                                                                 <div class="kt-section">
                                                                     <div class="kt-section__content">
@@ -350,7 +351,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" /> </td>
+                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" /> </td>
                                                                     <td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td>
                                                                     <td> <input type="button" class="btn btn-warning btn-sm" id="add_pi" name="add_pi" value="Add" /> </td>
                                                                 </tr>
@@ -455,7 +456,7 @@
     });
 
     $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" required/> </td><td> <select name="color_hex[]" class="form-control" id="color_hex"> <option>Pick Color</option><?php foreach ($data_shade_color as $key => $vaColor) { ?> <option value="<?= $vaColor['id'] ?>" style="background-color: <?= $vaColor['color'] ?> !important;"><?= $vaColor['color_name'] ?></option> <?php } ?></select> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_gallery" name="p_gallery[]" accept="image/x-png,image/jpeg" multiple="" onchange="loadFileGallery(this, event)" required/> </td><td> <select name="color_hex[]" class="form-control" id="color_hex"> <option>Pick Color</option><?php foreach ($data_shade_color as $key => $vaColor) { ?> <option value="<?= $vaColor['id'] ?>" style="background-color: <?= $vaColor['color'] ?> !important;"><?= $vaColor['color_name'] ?></option> <?php } ?></select> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_gallery" name="remove_gallery" value="Remove" /> </td></tr>';
         var max = 10;
         var x = 1;
 
@@ -491,7 +492,7 @@
     // });
 
     $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" required/> </td><td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_pi" name="remove_pi" value="Remove" /> </td></tr>';
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" required/> </td><td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_pi" name="remove_pi" value="Remove" /> </td></tr>';
         var max = 10;
         var x = 1;
 
@@ -507,4 +508,54 @@
             x--;
         });
     });
+
+    loadFileGallery = (a, event) => {
+        if (event.target.files[0].size > 500000) {
+            alert("Ukuran File Terlalu Besar.");
+            a.value = null;
+
+            console.log(event.target.files[0]);
+        } else {}
+    }
+
+    loadFileIcon = (b, event) => {
+        if (event.target.files[0].size > 100000) {
+            alert("Ukuran File Terlalu Besar.");
+            b.value = null;
+
+            console.log(event.target.files[0]);
+        } else {}
+    }
+
+    loadFileThumbnail = (c, event) => {
+        if (event.target.files[0].size > 500000) {
+            alert("Ukuran File Terlalu Besar.");
+            c.value = null;
+
+            console.log(event.target.files[0]);
+        } else {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
+                    '" style="width:100%;"/>';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
+                    '" style="width:100%;"/>';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    }
+
+    loadFileBenefits = (d, event) => {
+        if (event.target.files[0].size > 500000) {
+            alert("Ukuran File Terlalu Besar.");
+            d.value = null;
+
+            console.log(event.target.files[0]);
+        } else {}
+    }
 </script>
