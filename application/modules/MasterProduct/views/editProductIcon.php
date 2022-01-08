@@ -33,11 +33,13 @@
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label> Gambar Sebelumnya <label>
-                                                <img src="<?= base_url() ?><?= $data_product_icon['url_product_icon'] ?>" style="width:100%; height:auto;">
-                                                <span>
-                                                    <p> <?= $data_product_icon['description_product_icon'] ?> </p>
-                                                </span>
+                                        <label> Gambar Sebelumnya </label>
+                                        <br />
+                                        <img src="<?= base_url() ?><?= $data_product_icon['url_product_icon'] ?>" style="width:100%; height:auto;">
+                                        <br />
+                                        <span>
+                                            <p> <?= $data_product_icon['description_product_icon'] ?> </p>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
