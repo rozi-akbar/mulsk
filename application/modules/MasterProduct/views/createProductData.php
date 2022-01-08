@@ -300,6 +300,12 @@
                                                                 <img src="<?= base_url() . $dataMaster['benefits_image'] ?>" style="width: 50%;">
                                                             </div>
                                                         </div>
+                                                        <div class="col-12">
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <label>Existing Product Icon</label>
+                                                            </div>
+                                                        </div>
 
                                                         <?php
                                                         if (empty($product_icon)) {
