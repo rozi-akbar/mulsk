@@ -280,6 +280,7 @@
                                                             <div class="form-group">
                                                                 <label>Product Benefits Image</label>
                                                                 <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png" onchange="loadFileBenefits(this, event)">
+                                                                <div id="preview_ImgBenefits"></div>
                                                                 <br />
                                                                 <div class="kt-section">
                                                                     <div class="kt-section__content">
@@ -351,7 +352,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" /> </td>
+                                                                    <td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/jpeg,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" /> </td>
                                                                     <td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td>
                                                                     <td> <input type="button" class="btn btn-warning btn-sm" id="add_pi" name="add_pi" value="Add" /> </td>
                                                                 </tr>
@@ -492,7 +493,7 @@
     // });
 
     $(document).ready(function() {
-        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/x-png,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" required/> </td><td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_pi" name="remove_pi" value="Remove" /> </td></tr>';
+        var html = '<tr><td> <input type="file" class="form-control btn btn-label-brand btn-bold btn-sm" id="p_icon" name="p_icon[]" accept="image/jpeg,image/svg+xml" multiple="" onchange="loadFileIcon(this, event)" required/> </td><td> <textarea class="form-control" id="pi_desc" name="pi_desc[]"></textarea> </td><td> <input type="button" class="btn btn-danger btn-sm" id="remove_pi" name="remove_pi" value="Remove" /> </td></tr>';
         var max = 10;
         var x = 1;
 
@@ -510,52 +511,105 @@
     });
 
     loadFileGallery = (a, event) => {
-        if (event.target.files[0].size > 500000) {
-            alert("Ukuran File Terlalu Besar.");
-            a.value = null;
+        ext = this.GetExtension(a.value);
 
-            console.log(event.target.files[0]);
-        } else {}
+        if (ext == 'png' || ext == 'jpg' || ext == 'jpeg') {
+            if (event.target.files[0].size > 500000) {
+                swal.fire("Sorry!", "File Size too Big!", "error");
+                a.value = null;
+
+                console.log(event.target.files[0]);
+            } else {}
+        } else {
+            swal.fire("Sorry!", "File Type Not Allowed!", "error");
+            a.value = null;
+        }
     }
 
     loadFileIcon = (b, event) => {
-        if (event.target.files[0].size > 100000) {
-            alert("Ukuran File Terlalu Besar.");
-            b.value = null;
+        ext = this.GetExtension(b.value);
 
-            console.log(event.target.files[0]);
-        } else {}
+        if (ext == 'jpg' || ext == 'svg') {
+            if (event.target.files[0].size > 100000) {
+                swal.fire("Sorry!", "File Size too Big!", "error");
+                b.value = null;
+
+                console.log(event.target.files[0]);
+            } else {}
+        } else {
+            swal.fire("Sorry!", "File Type Not Allowed!", "error");
+            b.value = null;
+        }
+
     }
 
     loadFileThumbnail = (c, event) => {
-        if (event.target.files[0].size > 500000) {
-            alert("Ukuran File Terlalu Besar.");
-            c.value = null;
+        ext = this.GetExtension(c.value);
 
-            console.log(event.target.files[0]);
+        if (ext == 'jpg' || ext == 'jpeg' || ext == 'png') {
+            if (event.target.files[0].size > 500000) {
+                swal.fire("Sorry!", "File Size too Big!", "error");
+                c.value = null;
+                document.getElementById('preview_thumbnail').innerHTML = '';
+
+                console.log(event.target.files[0]);
+            } else {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
+                        '" style="width:50%; margin:2%;"/>';
+                };
+                reader.readAsDataURL(event.target.files[0]);
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
+                        '" style="width:50%; margin:2%;"/>';
+                };
+                reader.readAsDataURL(event.target.files[0]);
+            }
         } else {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
-                    '" style="width:100%;"/>';
-            };
-            reader.readAsDataURL(event.target.files[0]);
-
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
-                    '" style="width:100%;"/>';
-            };
-            reader.readAsDataURL(event.target.files[0]);
+            swal.fire("Sorry!", "File Type Not Allowed!", "error");
+            c.value = null;
+            document.getElementById('preview_thumbnail').innerHTML = '';
         }
     }
 
     loadFileBenefits = (d, event) => {
-        if (event.target.files[0].size > 500000) {
-            alert("Ukuran File Terlalu Besar.");
-            d.value = null;
+        ext = this.GetExtension(d.value);
 
-            console.log(event.target.files[0]);
-        } else {}
+        if (ext == 'png') {
+            if (event.target.files[0].size > 500000) {
+                swal.fire("Sorry!", "File Size too Big!", "error");
+                d.value = null;
+                document.getElementById('preview_ImgBenefits').innerHTML = '';
+
+                console.log(event.target.files[0]);
+            } else {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview_ImgBenefits').innerHTML = '<img src="' + e.target.result +
+                        '" style="width:50%; margin:2%;"/>';
+                };
+                reader.readAsDataURL(event.target.files[0]);
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview_ImgBenefits').innerHTML = '<img src="' + e.target.result +
+                        '" style="width:50%; margin:2%;"/>';
+                };
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        } else {
+            swal.fire("Sorry!", "File Type Not Allowed!", "error");
+            d.value = null;
+            document.getElementById('preview_ImgBenefits').innerHTML = '';
+        }
+
+    }
+
+    function GetExtension(path) {
+        var ext = path.split(/[\\./]/).pop();
+        return ext.toLowerCase();
     }
 </script>
