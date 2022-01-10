@@ -175,4 +175,54 @@ class DatatablesBlog extends Datatables
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($output, JSON_PRETTY_PRINT);
     }
+
+    public function trashBlog()
+    {
+        $table = 'v_trash_blog';
+        $column_order = array('title', 'create_at', 'create_by', 'deleted_at', 'deleted_by', null);
+        $column_search = array('title', 'create_at', 'create_by', 'deleted_at', 'deleted_by');
+        $orderby = array('id_blog' => 'desc');
+        $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
+        $data = array();
+        $no = $_POST['start'];
+        foreach ($list as $person) {
+            $row = array();
+            $row[] = ++$no;
+
+            $row[] = $person->title;
+            $row[] = $person->create_at;
+            $row[] = $person->create_by;
+            $row[] = $person->deleted_at;
+            $row[] = $person->deleted_by;
+
+            $row[] = '
+            <div class="text-center">
+                <a href="' . base_url() . 'BlogAdmin/Blog/previewBlog/' . $person->id . '">
+                    <button title="Preview" class="btn btn-success btn-icon">
+                        <i class="fa fa-eye" style="color:white"></i>
+                    </button>
+                </a>
+                <a href="' . base_url() . 'BlogAdmin/Blog_Act/RestoreBlog/' . $person->id . '">
+                    <button title="Restore" class="btn btn-warning btn-icon">
+                        <i class="fa fa-trash-restore" style="color:white"></i>
+                    </button>
+                </a>
+                <button onclick="deletePermanent(' . $person->id . ')" title="Delete Permanently" class="btn btn-danger btn-icon">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+            ';
+
+            $data[] = $row;
+        }
+
+        $output = array(
+            "draw" => $_POST['draw'],
+            "recordsTotal" => $this->count_all($table),
+            "recordsFiltered" => $this->count_filtered($table, $column_order, $column_search, $orderby),
+            "data" => $data,
+        );
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode($output, JSON_PRETTY_PRINT);
+    }
 }

@@ -117,4 +117,16 @@ class Blog extends CI_Controller
         $this->load->view('detailBlog', $data);
         $this->load->view('Container/footerLayoutBlog');
     }
+
+    function BlogTrash()
+    {
+        $dataHeader['file'] = "Trash Data Blog Mulsk";
+        $this->load->view('Container/header', $dataHeader);
+        $this->load->view('trashBlog');
+        $this->load->view('Container/footer');
+    }
+    function T_BlogTrash()
+    {
+        redirect(site_url('BlogAdmin/Blog/BlogTrash'));
+    }
 }

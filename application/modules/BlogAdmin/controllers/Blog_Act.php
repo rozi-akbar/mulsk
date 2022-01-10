@@ -351,4 +351,41 @@ class Blog_Act extends CI_Controller
             }
         }
     }
+
+    function RestoreAll()
+    {
+        $UTC = new UTC;
+        $getDataSoftDelete = $this->model->Code("SELECT * FROM blog WHERE is_deleted = 1 ORDER BY id DESC");
+        foreach ($getDataSoftDelete as $rowData) {
+            $data = array(
+                'draft'         => 1,
+                'posted'        => 0,
+                'is_deleted'    => 0,
+                'restore_at'    => $UTC->DateTimeStamp(),
+                'restore_by'    => $this->session->userdata('username_mulsk')
+            );
+            $this->model->Update('blog', 'id', $rowData['id'], $data);
+        }
+        redirect(site_url('BlogAdmin/Blog/T_BlogTrash'));
+    }
+
+    function RestoreBlog($id = "")
+    {
+        $UTC = new UTC;
+        $data = array(
+            'draft'         => 1,
+            'posted'        => 0,
+            'is_deleted'    => 0,
+            'restore_at'    => $UTC->DateTimeStamp(),
+            'restore_by'    => $this->session->userdata('username_mulsk')
+        );
+        $this->model->Update('blog', 'id', $id, $data);
+        redirect(site_url('BlogAdmin/Blog/T_BlogTrash'));
+    }
+
+    function DeletePermanent($id = "")
+    {
+        $this->model->Delete('blog', 'id', $id);
+        redirect(site_url('BlogAdmin/Blog/T_BlogTrash'));
+    }
 }
