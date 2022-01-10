@@ -152,8 +152,10 @@
                                                 <th>Title</th>
                                                 <th>Create Date</th>
                                                 <th>Create By</th>
-                                                <th>Posted Date</th>
-                                                <th>Posted By</th>
+                                                <th>First Posted Date</th>
+                                                <th>First Posted By</th>
+                                                <th>Last Posted Date</th>
+                                                <th>Last Posted By</th>
                                                 <th style="width:15%;">Action</th>
                                             </tr>
                                         </thead>

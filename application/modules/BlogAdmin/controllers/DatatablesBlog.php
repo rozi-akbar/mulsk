@@ -84,6 +84,8 @@ class DatatablesBlog extends Datatables
             $row[] = $person->title;
             $row[] = $person->create_at;
             $row[] = $person->create_by;
+            $row[] = $person->first_posted_at;
+            $row[] = $person->first_posted_by;
             $row[] = $person->posted_at;
             $row[] = $person->posted_by;
 
