@@ -16,7 +16,7 @@
             <div class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="<?= base_url() ?><?= $vBlog['banner_blog'] ?>"></div>
             <div class="container pr z_100">
                 <h1 class="mb__5 cw"><?= $vBlog['title'] ?></h1>
-                <p class="mg__0"><?= $vBlog['posted_at'] ?></p>
+                <p class="mg__0"><?= substr($vBlog['first_posted_at'], 0, 10) ?></p>
             </div>
         </div>
     </div>

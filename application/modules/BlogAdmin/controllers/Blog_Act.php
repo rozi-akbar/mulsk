@@ -129,6 +129,31 @@ class Blog_Act extends CI_Controller
 
     function Posting($id = "")
     {
+        $checkFirstPublish = $this->db->query("SELECT * FROM blog WHERE id = '" . $id . "' ")->row_array();
+        if ($checkFirstPublish['first_posted_at'] == null || empty($checkFirstPublish['first_posted_at']) || $checkFirstPublish['first_posted_at'] == "") {
+            $this->FirstPosting($id);
+        } else {
+            $this->LastPosting($id);
+        }
+        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
+    }
+
+    function FirstPosting($id = "")
+    {
+        $UTC = new UTC;
+        $data = array(
+            'draft'             => 0,
+            'posted'            => 1,
+            'first_posted_at'   => $UTC->DateTimeStamp(),
+            'first_posted_by'   => $this->session->userdata('username_mulsk'),
+            'posted_at'         => $UTC->DateTimeStamp(),
+            'posted_by'         => $this->session->userdata('username_mulsk')
+        );
+        $this->model->Update('blog', 'id', $id, $data);
+    }
+
+    function LastPosting($id = "")
+    {
         $UTC = new UTC;
         $data = array(
             'draft'       => 0,
@@ -137,8 +162,6 @@ class Blog_Act extends CI_Controller
             'posted_by'   => $this->session->userdata('username_mulsk')
         );
         $this->model->Update('blog', 'id', $id, $data);
-
-        redirect(site_url('BlogAdmin/Blog/T_DataBlog'));
     }
 
     function HiddenPost($id = "")
