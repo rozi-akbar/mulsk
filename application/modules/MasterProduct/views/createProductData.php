@@ -120,6 +120,7 @@
                                                             <div class="form-group">
                                                                 <label>Product Image Thumbnail</label>
                                                                 <input type="file" name="imageThumbnail" id="image" class="form-control" accept="image/x-png,image/jpeg" onchange="loadFileThumbnail(this, event)">
+                                                                <img style="width: 20%; margin:2%;" src="<?= base_url() ?>assets/images/image2x.png" id="defaultThumbnail" alt="your image" />
                                                                 <div id="preview_thumbnail"></div>
                                                             </div>
                                                         </div>
@@ -280,6 +281,7 @@
                                                             <div class="form-group">
                                                                 <label>Product Benefits Image</label>
                                                                 <input type="file" name="imageBenefits" id="imageBenefits" class="form-control" accept="image/x-png" onchange="loadFileBenefits(this, event)">
+                                                                <img style="width: 20%; margin:2%;" src="<?= base_url() ?>assets/images/image2x.png" id="defaultBenefits" alt="your image" />
                                                                 <div id="preview_ImgBenefits"></div>
                                                                 <br />
                                                                 <div class="kt-section">
@@ -551,9 +553,11 @@
                 swal.fire("Sorry!", "File Size too Big!", "error");
                 c.value = null;
                 document.getElementById('preview_thumbnail').innerHTML = '';
+                document.getElementById("defaultThumbnail").style.display = "block";
 
                 console.log(event.target.files[0]);
             } else {
+                document.getElementById("defaultThumbnail").style.display = "none";
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_thumbnail').innerHTML = '<img src="' + e.target.result +
@@ -572,6 +576,7 @@
             swal.fire("Sorry!", "File Type Not Allowed!", "error");
             c.value = null;
             document.getElementById('preview_thumbnail').innerHTML = '';
+            document.getElementById("defaultThumbnail").style.display = "block";
         }
     }
 
@@ -583,9 +588,11 @@
                 swal.fire("Sorry!", "File Size too Big!", "error");
                 d.value = null;
                 document.getElementById('preview_ImgBenefits').innerHTML = '';
+                document.getElementById("defaultBenefits").style.display = "block";
 
                 console.log(event.target.files[0]);
             } else {
+                document.getElementById("defaultBenefits").style.display = "none";
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview_ImgBenefits').innerHTML = '<img src="' + e.target.result +
@@ -604,6 +611,7 @@
             swal.fire("Sorry!", "File Type Not Allowed!", "error");
             d.value = null;
             document.getElementById('preview_ImgBenefits').innerHTML = '';
+            document.getElementById("defaultBenefits").style.display = "block";
         }
 
     }
