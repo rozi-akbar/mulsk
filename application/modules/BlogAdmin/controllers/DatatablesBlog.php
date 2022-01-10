@@ -71,8 +71,8 @@ class DatatablesBlog extends Datatables
     public function blogPosted()
     {
         $table = 'v_blog_posted';
-        $column_order = array('title', 'create_at', 'create_by', 'posted_at', 'posted_by', null);
-        $column_search = array('title', 'create_at', 'create_by', 'posted_at', 'posted_by');
+        $column_order = array('title', 'create_at', 'create_by', 'first_posted_at', 'first_posted_at', 'posted_at', 'posted_by', null);
+        $column_search = array('title', 'create_at', 'create_by', 'first_posted_at', 'first_posted_at', 'posted_at', 'posted_by');
         $orderby = array('id_blog' => 'desc');
         $list = $this->get_datatables($table, $column_order, $column_search, $orderby);
         $data = array();
