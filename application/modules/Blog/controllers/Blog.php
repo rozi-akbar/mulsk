@@ -28,7 +28,7 @@ class Blog extends CI_Controller
     {
         $data['vBlog']       = $this->db->query("SELECT * FROM v_blog_posted WHERE id_blog = '" . $id_blog . "' ")->row_array();
         $data['dataMaster']  = $this->model->ViewWhere('v_blog_prod_selected', 'm_blog_id', $id_blog);
-        $data['vColor']      = $this->model->View('v_color_image_selector', 'id');
+        $data['vColor']      = $this->model->Code("SELECT * FROM v_color_image_selector GROUP BY id_color ");
 
         $this->load->view('Layout/header');
         $this->load->view('detailBlog', $data);

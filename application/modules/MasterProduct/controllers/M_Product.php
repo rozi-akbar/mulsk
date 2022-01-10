@@ -124,7 +124,7 @@ class M_Product extends CI_Controller
         $data['dataMaster']             = $this->model->ViewWhere('v_m_product', 'id', $id);
         $data['product_gallery']        = $this->model->ViewWhere('v_product_gallery', 'm_product_id', $getData['product_id']);
         $data['product_icon']           = $this->model->ViewWhere('v_product_icon', 'm_product_id', $getData['product_id']);
-        $data['color_image_selector']   = $this->model->ViewWhere('v_color_image_selector', 'm_product_id', $getData['product_id']);
+        $data['color_image_selector']   = $this->model->Code("SELECT * FROM v_color_image_selector WHERE m_product_id = '".$getData['product_id']."' GROUP BY id_color ");
 
         $this->load->view('Container/headerLayoutBlog');
         $this->load->view('MasterProduct/previewProductData', $data);
