@@ -1,19 +1,3 @@
-<?php
-foreach ($data_status_seller as $vaDataStatusSeller) {
-    if ($vaDataStatusSeller['id_status'] == 1) {
-        $total_reseller = $vaDataStatusSeller['juml_seller'];
-    } elseif ($vaDataStatusSeller['id_status'] == 2) {
-        $total_member = $vaDataStatusSeller['juml_seller'];
-    } elseif ($vaDataStatusSeller['id_status'] == 3) {
-        $total_agen = $vaDataStatusSeller['juml_seller'];
-    } elseif ($vaDataStatusSeller['id_status'] == 4) {
-        $total_agen_online = $vaDataStatusSeller['juml_seller'];
-    } elseif ($vaDataStatusSeller['id_status'] == 5) {
-        $total_distributor = $vaDataStatusSeller['juml_seller'];
-    } else {
-    }
-}
-?>
 <div class="kt-content kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
     <!-- begin:: Subheader -->
     <div class="kt-subheader kt-grid__item" id="kt_subheader">
