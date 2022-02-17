@@ -4,6 +4,7 @@ if ($action == "edit") {
     foreach ($data_blog as $vaBlog) {
         $id         = $vaBlog['id_blog'];
         $title      = $vaBlog['title'];
+        $caption    = $vaBlog['caption'];
         $contents   = $vaBlog['content'];
         $banner     = $vaBlog['banner_blog'];
         $thumbnail  = $vaBlog['thumbnail_blog'];
@@ -13,6 +14,7 @@ if ($action == "edit") {
 } else {
     $id         = "";
     $title      = "";
+    $caption    = "";
     $contents   = "";
     $banner     = "";
     $thumbnail  = "";
@@ -62,7 +64,12 @@ if ($action == "edit") {
                                         <input type="hidden" name="blog_id" id="blog_id" value="<?= $blog_id ?>">
                                     </div>
                                 </div>
-
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Caption</label>
+                                        <textarea name="caption" class="form-control" placeholder="Caption" required><?= $caption ?></textarea>
+                                    </div>
+                                </div>
                                 <div class="col-12 col-md-3">
                                     <div class="form-group">
                                         <label>Thumbnail <span id="file_error_thumbnail"></span></label>

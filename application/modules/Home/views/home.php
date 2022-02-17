@@ -223,14 +223,14 @@
                 foreach ($vBlog as $vaBlog) {
                     $jumlahkarakter = 70;
 
-                    $text = $vaBlog['content'];
-                    $char     = $text{
-                        $jumlahkarakter - 1};
-                    while ($char != ' ') {
-                        $char = $text{
-                            --$jumlahkarakter}; // Cari spasi pada posisi 49, 48, 47, dst...
-                    }
-                    $desc = substr($text, 0, $jumlahkarakter) . ' ';
+                    // $text = $vaBlog['content'];
+                    // $char     = $text[
+                    //     $jumlahkarakter - 1];
+                    // while ($char != ' ') {
+                    //     $char = $text[
+                    //         --$jumlahkarakter]; // Cari spasi pada posisi 49, 48, 47, dst...
+                    // }
+                    // $desc = substr($text, 0, $jumlahkarakter) . ' ';
                 ?>
                     <article class="post_nt_loop post_1 col-lg-4 col-md-4 col-12 pr_animated done mb__40">
                         <a class="mb__15 db pr oh" href="<?= site_url('Blog/DetailBlog/' . $vaBlog['id_blog']) ?>">
@@ -240,9 +240,17 @@
                             <h4 class="mg__0 fs__16 mb__5 ls__0">
                                 <a class="cd chp open" href="<?= site_url('Blog/DetailBlog/' . $vaBlog['id_blog']) ?>"><?= $vaBlog['title'] ?></a>
                             </h4>
-                            <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z"><?= substr($vaBlog['posted_at'], 0, 10) ?></time></span></span>
+                            <span class="post-author mr__5"><span class="cd"><time datetime="2020-04-06T02:22:00Z"><?= date('d F Y', strtotime($vaBlog['posted_at'])); ?></time></span></span>
                         </div>
-                        <!-- <div class="post-content"><?= $desc ?></div> -->
+                        <div class="post-content">
+                            <?php 
+                            if(strlen($vaBlog['caption']) > 70){
+                                echo substr($vaBlog['caption'], 0, $jumlahkarakter).'...';    
+                            } else{
+                                echo $vaBlog['caption'];    
+                            }
+                            ?>
+                        </div>
                     </article>
                 <?php
                 }

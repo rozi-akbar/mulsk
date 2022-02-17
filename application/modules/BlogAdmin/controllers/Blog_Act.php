@@ -22,6 +22,7 @@ class Blog_Act extends CI_Controller
     function save($id = "")
     {
         $title = $this->input->post('title', TRUE);
+        $caption = $this->input->post('caption', TRUE);
         $contents = $_POST['contents'];
         $UTC = new UTC;
         // $data = array(
@@ -32,6 +33,7 @@ class Blog_Act extends CI_Controller
         $data = array(
             'id_blog'   => $id,
             'title'     => $title,
+            'caption'   => $caption,
             'content'   => $contents,
             'create_at' => $UTC->DateTimeStamp(),
             'create_by' => $this->session->userdata('username_mulsk'),
@@ -103,11 +105,13 @@ class Blog_Act extends CI_Controller
         // die;
         $UTC = new UTC;
         $title = $this->input->post('title', TRUE);
+        $caption = $this->input->post('caption', TRUE);
         $contents = $_POST['contents'];
         $data = array(
             'title'     => $title,
+            'caption'   => $caption,
             'content'   => $contents,
-            'update_at'   => $UTC->DateTimeStamp(),
+            'update_at' => $UTC->DateTimeStamp(),
             'update_by' => $this->session->userdata('username_mulsk')
         );
 
