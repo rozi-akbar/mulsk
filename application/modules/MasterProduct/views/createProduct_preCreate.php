@@ -104,7 +104,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Product Name</label>
-                                                                <input type="text" id="namaProduct" name="namaProduct" class="form-control" placeholder="Product Name" required>
+                                                                <input type="text" id="namaProduct" name="namaProduct" class="form-control product-name" placeholder="Product Name" required>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
@@ -330,6 +330,11 @@
 <script src="<?= base_url() ?>web/plugins/general/summernote/dist/summernote.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+    var input = document.querySelector('input.product-name');
+    input.addEventListener('keyup', function(e) {
+        this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '');
+    });
+
     function save() {
         var namaProduk = document.getElementById('namaProduct').value;
         var price = document.getElementById('price').value;
