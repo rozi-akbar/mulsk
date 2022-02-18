@@ -92,7 +92,7 @@ class M_User_Act extends CI_Controller
                 );
             }
             $this->model->Update('user', 'id', $id, $data);
-            $this->model->Update('temp', 'id_user', $id, $data);
+            $this->model->Update('temp', 'id_user', $id, $dataTemp);
         } elseif ($aksi == "Delete") {
             $data = array(
                 'is_delete' => 1,

@@ -54,30 +54,29 @@ if ($action == "edit") {
                         <form class="kt-form" method="post" action="<?= base_url() ?>User/M_User_Act/CreateUser/<?= $actionButton ?>">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label style="color: #00b26a;">Nama </span></label>
+                                    <label>Nama</label>
                                     <input type="text" class="form-control" placeholder="Nama" name="cNama" id="cNama" value="<?= $nama ?>" />
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label style="color: #00b26a;"> Username </label>
+                                    <label>Username</label>
                                     <input type="text" class="form-control" placeholder="Username" name="cUsername" id="cUsername" onchange="cek_username()" value="<?= $username ?>" required />
                                     <span id="result_username"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
+                                    <label>Password</label>
                                     <div class="input-group">
-                                        <input type="password" value="<?= $pass ?>" class="form-control" name="cPassword" autocomplete="current-password" id="id_password">
+                                        <input type="password" value="<?= $pass ?>" class="form-control" name="cPassword" autocomplete="current-password" placeholder="Password" id="id_password">
                                         <div class="input-group-append"><span class="input-group-text" id="basic-addon2"><i class="far fa-eye" id="togglePassword"></i></span></div>
                                     </div>
-                                    <!-- <label style="color: #00b26a;">Password : <span id="result_check_kode"></span></label>
-                                    <span class="text-muted"> Jika ingin ganti password, langsung isi form input diatas </span> -->
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label style="color: #00b26a;">Level</label>
+                                    <label>Level</label>
                                     <select name="cLevel" id="cLevel" class="form-control comboBox">
                                         <option value="">PILIH STATUS</option>
                                         <?php

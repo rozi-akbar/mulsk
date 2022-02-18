@@ -32,7 +32,7 @@ class M_User extends CI_Controller
         $dataHeader['data_level']   = $this->model->View('m_level', 'id');
 
         $this->load->view('Container/header', $dataHeader);
-        $this->load->view('User/createUser', $data);
+        $this->load->view('createUser', $data);
         $this->load->view('Container/footer');
     }
 
