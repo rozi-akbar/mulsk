@@ -38,7 +38,7 @@ class Model extends CI_Model
                     <div class="post-info">
                         <span class="post-author mr__5">
                             <span class="cd">
-                                <time datetime="2020-04-06T02:17:00Z">' . substr($row['posted_at'], 0, 10) . '</time>
+                                <time datetime="2020-04-06T02:17:00Z">' . date('d F Y',strtotime($row['posted_at'])) . '</time>
                             </span>
                         </span>
                         <h4 class="mg__0 fs__16 mt__10 ls__0">

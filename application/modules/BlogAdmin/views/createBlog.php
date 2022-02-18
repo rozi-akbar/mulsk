@@ -301,14 +301,14 @@ if ($action == "edit") {
             } else {
                 var reader = new FileReader();
                 reader.onload = function(e) {
-                    document.getElementById('preview_ImgBenefits').innerHTML = '<img src="' + e.target.result +
+                    document.getElementById('preview_ImgBanner').innerHTML = '<img src="' + e.target.result +
                         '" style="width:50%; margin:2%;"/>';
                 };
                 reader.readAsDataURL(event.target.files[0]);
 
                 var reader = new FileReader();
                 reader.onload = function(e) {
-                    document.getElementById('preview_ImgBenefits').innerHTML = '<img src="' + e.target.result +
+                    document.getElementById('preview_ImgBanner').innerHTML = '<img src="' + e.target.result +
                         '" style="width:50%; margin:2%;"/>';
                 };
                 reader.readAsDataURL(event.target.files[0]);
