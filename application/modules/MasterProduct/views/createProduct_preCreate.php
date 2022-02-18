@@ -332,7 +332,7 @@
 <script type="text/javascript">
     var input = document.querySelector('input.product-name');
     input.addEventListener('keyup', function(e) {
-        this.value = this.value.replace(/[^0-9]/, '');
+        this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '');
     });
 
     function save() {
