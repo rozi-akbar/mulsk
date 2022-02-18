@@ -239,7 +239,7 @@ if ($action == "Update") {
 						}
 					}
 				} else{
-					alert("File type must be JPG/JPEG or PNG");
+					alert("Please provide asset with the right file type");
 					p_image.value = null;
 				}
 			}
