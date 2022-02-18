@@ -10,7 +10,7 @@
     <?php
         $i++;
     }
-    ?>@media only screen and (max-width: 768px) {
+    ?>@media only screen and (max-width: 810px) {
         <?php
         $j = 0;
         foreach ($banner_home as $vData) {
